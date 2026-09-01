@@ -1,0 +1,671 @@
+{
+  "code": "SUCCESS",
+  "message": "SUCCESS",
+  "data": {
+    "mainFare": {
+      "departureFlight": null,
+      "returnFlight": null,
+      "roundTripCombine": null,
+      "multiCities": {
+        "searchAvailabilities": [
+          {
+            "flighSelect": "OD 9106",
+            "currency": "IDR",
+            "origin": "CGK",
+            "destination": "SIN",
+            "date": "2026-09-21",
+            "marketingAirline": "OD",
+            "adult": 1,
+            "child": 0,
+            "infant": 0,
+            "departure": {
+              "date": "2026-09-21",
+              "time": "07:45",
+              "timezone": 7,
+              "airportCode": "CGK"
+            },
+            "arrival": {
+              "date": "2026-09-21",
+              "time": "10:30",
+              "timezone": 8,
+              "airportCode": "SIN"
+            },
+            "totalTransit": 0,
+            "seatsAvailable": 0,
+            "upgradable": false,
+            "schedules": [
+              {
+                "flightNumber": "9106",
+                "airline": "OD",
+                "aircraftType": "32A",
+                "departureDetail": {
+                  "date": "2026-09-21",
+                  "time": "07:45",
+                  "timezone": 7,
+                  "airportCode": "CGK"
+                },
+                "arrivalDetail": {
+                  "date": "2026-09-21",
+                  "time": "10:30",
+                  "timezone": 8,
+                  "airportCode": "SIN"
+                },
+                "cabinClass": "ECONOMY",
+                "fareClass": "H",
+                "travelTime": 105,
+                "baggage": {
+                  "cabin": {
+                    "unit": "1",
+                    "measurement": "Pc",
+                    "qty": 0,
+                    "validateBaggage": false
+                  },
+                  "checkIn": {
+                    "measurement": "Kg",
+                    "qty": 20,
+                    "validateBaggage": false
+                  }
+                },
+                "connectings": null,
+                "marriageGroup": "O",
+                "operatingAirline": "ID",
+                "operatingFlightNumber": "7153"
+              }
+            ],
+            "journeySellKey": "",
+            "fareSellKey": ""
+          },
+          {
+            "flighSelect": "OD 802",
+            "currency": "IDR",
+            "origin": "SIN",
+            "destination": "KUL",
+            "date": "2026-09-23",
+            "marketingAirline": "OD",
+            "adult": 1,
+            "child": 0,
+            "infant": 0,
+            "departure": {
+              "date": "2026-09-23",
+              "time": "10:20",
+              "timezone": 8,
+              "airportCode": "SIN",
+              "terminal": "4"
+            },
+            "arrival": {
+              "date": "2026-09-23",
+              "time": "11:20",
+              "timezone": 8,
+              "airportCode": "KUL",
+              "terminal": "1"
+            },
+            "totalTransit": 0,
+            "seatsAvailable": 0,
+            "upgradable": false,
+            "schedules": [
+              {
+                "flightNumber": "802",
+                "airline": "OD",
+                "aircraftType": "738",
+                "departureDetail": {
+                  "date": "2026-09-23",
+                  "time": "10:20",
+                  "timezone": 8,
+                  "airportCode": "SIN",
+                  "terminal": "4"
+                },
+                "arrivalDetail": {
+                  "date": "2026-09-23",
+                  "time": "11:20",
+                  "timezone": 8,
+                  "airportCode": "KUL",
+                  "terminal": "1"
+                },
+                "cabinClass": "ECONOMY",
+                "fareClass": "X",
+                "travelTime": 60,
+                "baggage": {
+                  "cabin": {
+                    "unit": "1",
+                    "measurement": "Pc",
+                    "qty": 0,
+                    "validateBaggage": false
+                  },
+                  "checkIn": {
+                    "measurement": "Kg",
+                    "qty": 0,
+                    "validateBaggage": false
+                  }
+                },
+                "connectings": null,
+                "marriageGroup": "O",
+                "operatingAirline": "OD",
+                "operatingFlightNumber": "802"
+              }
+            ],
+            "journeySellKey": "",
+            "fareSellKey": ""
+          },
+          {
+            "flighSelect": "OD 803",
+            "currency": "IDR",
+            "origin": "KUL",
+            "destination": "SIN",
+            "date": "2026-09-25",
+            "marketingAirline": "OD",
+            "adult": 1,
+            "child": 0,
+            "infant": 0,
+            "departure": {
+              "date": "2026-09-25",
+              "time": "10:30",
+              "timezone": 8,
+              "airportCode": "KUL",
+              "terminal": "1"
+            },
+            "arrival": {
+              "date": "2026-09-25",
+              "time": "11:30",
+              "timezone": 8,
+              "airportCode": "SIN",
+              "terminal": "4"
+            },
+            "totalTransit": 0,
+            "seatsAvailable": 0,
+            "upgradable": false,
+            "schedules": [
+              {
+                "flightNumber": "803",
+                "airline": "OD",
+                "aircraftType": "738",
+                "departureDetail": {
+                  "date": "2026-09-25",
+                  "time": "10:30",
+                  "timezone": 8,
+                  "airportCode": "KUL",
+                  "terminal": "1"
+                },
+                "arrivalDetail": {
+                  "date": "2026-09-25",
+                  "time": "11:30",
+                  "timezone": 8,
+                  "airportCode": "SIN",
+                  "terminal": "4"
+                },
+                "cabinClass": "ECONOMY",
+                "fareClass": "X",
+                "travelTime": 60,
+                "baggage": {
+                  "cabin": {
+                    "unit": "1",
+                    "measurement": "Pc",
+                    "qty": 0,
+                    "validateBaggage": false
+                  },
+                  "checkIn": {
+                    "measurement": "Kg",
+                    "qty": 0,
+                    "validateBaggage": false
+                  }
+                },
+                "connectings": null,
+                "marriageGroup": "O",
+                "operatingAirline": "OD",
+                "operatingFlightNumber": "803"
+              }
+            ],
+            "journeySellKey": "",
+            "fareSellKey": ""
+          }
+        ],
+        "fares": [
+          {
+            "distributionType": "sabre-gds",
+            "supplierId": "tiketcomSabre",
+            "originalCurrency": "IDR",
+            "validatingAirline": "OD",
+            "promotionCode": {
+              "id": "",
+              "name": ""
+            },
+            "brandedFare": null,
+            "fareClassDetails": [
+              {
+                "origin": "CGK",
+                "destination": "SIN",
+                "fareClass": "H"
+              },
+              {
+                "origin": "SIN",
+                "destination": "KUL",
+                "fareClass": "X"
+              },
+              {
+                "origin": "KUL",
+                "destination": "SIN",
+                "fareClass": "X"
+              }
+            ],
+            "originalTotalFare": {
+              "total": 4747600,
+              "base": 2457000,
+              "tax": 2290600,
+              "taxBreakDowns": null,
+              "supplierDiscount": 0,
+              "seatAvailables": 9,
+              "fareBasisCodes": [
+                "HCSOWID",
+                "XRTBSSSG",
+                "XRTBSSSG"
+              ],
+              "fareClasses": [
+                "H",
+                "X",
+                "X"
+              ],
+              "iwjr": 0,
+              "psc": 0,
+              "commission": 0,
+              "agt": 0,
+              "gst": 0,
+              "airportTax": 0,
+              "unidentified": 0,
+              "flyThru": 0,
+              "upselling": 0,
+              "nta": 4747600,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null,
+              "penaltyInfos": null,
+              "scheduleFareDetailInformations": null
+            },
+            "originalAdultFare": {
+              "total": 4747600,
+              "base": 2457000,
+              "tax": 2290600,
+              "taxBreakDowns": {},
+              "supplierDiscount": 0,
+              "seatAvailables": 9,
+              "fareBasisCodes": [
+                "HCSOWID",
+                "XRTBSSSG",
+                "XRTBSSSG"
+              ],
+              "fareClasses": [
+                "H",
+                "X",
+                "X"
+              ],
+              "iwjr": 0,
+              "psc": 0,
+              "commission": 0,
+              "agt": 0,
+              "gst": 0,
+              "airportTax": 0,
+              "unidentified": 0,
+              "flyThru": 0,
+              "upselling": 0,
+              "nta": 4747600,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": [
+                {
+                  "code": "YQF",
+                  "currencyCode": "IDR",
+                  "amount": 280000
+                },
+                {
+                  "code": "YQF",
+                  "currencyCode": "IDR",
+                  "amount": 280000
+                },
+                {
+                  "code": "YQF",
+                  "currencyCode": "IDR",
+                  "amount": 280000
+                },
+                {
+                  "code": "D5",
+                  "currencyCode": "IDR",
+                  "amount": 177600
+                },
+                {
+                  "code": "G1",
+                  "currencyCode": "IDR",
+                  "amount": 35300
+                },
+                {
+                  "code": "H8",
+                  "currencyCode": "IDR",
+                  "amount": 4500
+                },
+                {
+                  "code": "MY",
+                  "currencyCode": "IDR",
+                  "amount": 321900
+                },
+                {
+                  "code": "L7",
+                  "currencyCode": "IDR",
+                  "amount": 151000
+                },
+                {
+                  "code": "OP",
+                  "currencyCode": "IDR",
+                  "amount": 111800
+                },
+                {
+                  "code": "SG",
+                  "currencyCode": "IDR",
+                  "amount": 648500
+                }
+              ],
+              "penaltyInfos": [
+                {
+                  "penaltyType": "RESCHEDULE",
+                  "penaltyStatus": "YES",
+                  "applicability": "Before",
+                  "amount": 1600000,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 1600000,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                },
+                {
+                  "penaltyType": "RESCHEDULE",
+                  "penaltyStatus": "YES",
+                  "applicability": "After",
+                  "amount": 1600000,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 1600000,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                },
+                {
+                  "penaltyType": "REFUND",
+                  "penaltyStatus": "YES",
+                  "applicability": "Before",
+                  "amount": 2267000,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 2267000,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                },
+                {
+                  "penaltyType": "REFUND",
+                  "penaltyStatus": "NO",
+                  "applicability": "After",
+                  "amount": 0,
+                  "currencyCode": "",
+                  "decimalPlaces": 0,
+                  "originalAmount": 0,
+                  "originalCurrencyCode": "",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                }
+              ],
+              "scheduleFareDetailInformations": [
+                {
+                  "origin": "CGK",
+                  "destination": "SIN",
+                  "fareBasisCode": "HCSOWID",
+                  "breakpoint": true,
+                  "fareClasses": "H"
+                },
+                {
+                  "origin": "SIN",
+                  "destination": "KUL",
+                  "fareBasisCode": "XRTBSSSG",
+                  "breakpoint": true,
+                  "fareClasses": "X"
+                },
+                {
+                  "origin": "KUL",
+                  "destination": "SIN",
+                  "fareBasisCode": "XRTBSSSG",
+                  "breakpoint": true,
+                  "fareClasses": "X"
+                }
+              ]
+            },
+            "originalChildFare": {
+              "total": 0,
+              "base": 0,
+              "tax": 0,
+              "taxBreakDowns": null,
+              "supplierDiscount": 0,
+              "fareBasisCodes": null,
+              "fareClasses": null,
+              "iwjr": 0,
+              "psc": 0,
+              "commission": 0,
+              "agt": 0,
+              "gst": 0,
+              "airportTax": 0,
+              "unidentified": 0,
+              "flyThru": 0,
+              "upselling": 0,
+              "nta": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null,
+              "penaltyInfos": null,
+              "scheduleFareDetailInformations": null
+            },
+            "originalInfantFare": {
+              "total": 0,
+              "base": 0,
+              "tax": 0,
+              "taxBreakDowns": null,
+              "supplierDiscount": 0,
+              "fareBasisCodes": null,
+              "fareClasses": null,
+              "iwjr": 0,
+              "psc": 0,
+              "commission": 0,
+              "agt": 0,
+              "gst": 0,
+              "airportTax": 0,
+              "unidentified": 0,
+              "flyThru": 0,
+              "upselling": 0,
+              "nta": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null,
+              "penaltyInfos": null,
+              "scheduleFareDetailInformations": null
+            },
+            "fareClasses": "H|X|X",
+            "otherFares": [],
+            "flexiFare": false,
+            "privateFare": false,
+            "inclusiveAddons": {
+              "departureScheduleAddonsList": [
+                {
+                  "origin": "CGK",
+                  "departureDateTime": "2026-09-21 07:45",
+                  "destination": "SIN",
+                  "airline": "OD",
+                  "flightNumber": "9106",
+                  "baggage": {
+                    "cabin": {
+                      "unit": "1",
+                      "measurement": "Pc",
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 20,
+                      "validateBaggage": false
+                    }
+                  },
+                  "meal": ""
+                },
+                {
+                  "origin": "SIN",
+                  "departureDateTime": "2026-09-23 10:20",
+                  "destination": "KUL",
+                  "airline": "OD",
+                  "flightNumber": "802",
+                  "baggage": {
+                    "cabin": {
+                      "unit": "1",
+                      "measurement": "Pc",
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 0,
+                      "validateBaggage": false
+                    }
+                  },
+                  "meal": ""
+                },
+                {
+                  "origin": "KUL",
+                  "departureDateTime": "2026-09-25 10:30",
+                  "destination": "SIN",
+                  "airline": "OD",
+                  "flightNumber": "803",
+                  "baggage": {
+                    "cabin": {
+                      "unit": "1",
+                      "measurement": "Pc",
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 0,
+                      "validateBaggage": false
+                    }
+                  },
+                  "meal": ""
+                }
+              ],
+              "returnScheduleAddonsList": null
+            }
+          }
+        ],
+        "otherFares": null
+      }
+    },
+    "otherFares": null,
+    "integratorRevalidateItineraryRequest": {
+      "distributionType": "sabre-gds",
+      "account": {
+        "name": "tiketcomSabre",
+        "code": "tiketcomSabre"
+      },
+      "flightSelect": "OD 9106 ~ OD 802 ~ OD 803",
+      "origin": "CGK",
+      "destination": "SIN",
+      "adult": 1,
+      "child": 0,
+      "infant": 0,
+      "departureDate": "2026-09-21",
+      "returnDate": "",
+      "cabinClass": "ECONOMY",
+      "international": 1,
+      "validatingAirline": "OD",
+      "tripTypes": [
+        "MULTI_CITY"
+      ],
+      "currency": {
+        "departureCurrency": "IDR",
+        "returnCurrency": ""
+      },
+      "itineraries": [
+        {
+          "origin": "CGK",
+          "destination": "SIN",
+          "journeySellKey": "",
+          "fareSellKey": "",
+          "schedules": [
+            {
+              "departureDate": "2026-09-21T07:45",
+              "arrivalDate": "2026-09-21T10:30",
+              "operatingAirline": {
+                "code": "ID",
+                "number": "7153"
+              },
+              "fareClass": "H",
+              "origin": "CGK",
+              "destination": "SIN",
+              "marketingAirline": "OD",
+              "flightNumber": "9106",
+              "fareBasis": {
+                "adult": "HCSOWID"
+              }
+            }
+          ]
+        },
+        {
+          "origin": "SIN",
+          "destination": "KUL",
+          "journeySellKey": "",
+          "fareSellKey": "",
+          "schedules": [
+            {
+              "departureDate": "2026-09-23T10:20",
+              "arrivalDate": "2026-09-23T11:20",
+              "operatingAirline": {
+                "code": "OD",
+                "number": "802"
+              },
+              "fareClass": "X",
+              "origin": "SIN",
+              "destination": "KUL",
+              "marketingAirline": "OD",
+              "flightNumber": "802",
+              "fareBasis": {
+                "adult": "XRTBSSSG"
+              }
+            }
+          ]
+        },
+        {
+          "origin": "KUL",
+          "destination": "SIN",
+          "journeySellKey": "",
+          "fareSellKey": "",
+          "schedules": [
+            {
+              "departureDate": "2026-09-25T10:30",
+              "arrivalDate": "2026-09-25T11:30",
+              "operatingAirline": {
+                "code": "OD",
+                "number": "803"
+              },
+              "fareClass": "X",
+              "origin": "KUL",
+              "destination": "SIN",
+              "marketingAirline": "OD",
+              "flightNumber": "803",
+              "fareBasis": {
+                "adult": "XRTBSSSG"
+              }
+            }
+          ]
+        }
+      ],
+      "corporate": null,
+      "promotionCode": {
+        "id": "",
+        "name": ""
+      },
+      "source": "PRP",
+      "multiFare": false
+    }
+  },
+  "serverTime": "2026-08-31T19:01:02.467338065+07:00"
+}
