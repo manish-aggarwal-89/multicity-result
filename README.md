@@ -20,3 +20,47 @@ curl -sL https://raw.githubusercontent.com/manish-aggarwal-89/multicity-result/m
 ```
 
 The results Google Sheet **Dump** column links the Confluence page, never a file in here.
+
+## Validating fares (`fare_validator.py`)
+
+`fare_validator.py` walks every run under a directory and checks that fares reconcile **within**
+each response and **across** the search → revalidate → booking flow. Point it at the `runs/` tree
+(local path or this GitHub URL) and it reports every fare that does not match, in one shot.
+
+```bash
+python3 fare_validator.py                       # embedded self-check (no data needed)
+python3 fare_validator.py runs                  # validate every run under ./runs
+python3 fare_validator.py runs/TC-292/2026-09-01_15-26-35_7c0a6d   # one run
+python3 fare_validator.py https://github.com/manish-aggarwal-89/multicity-result/tree/main/runs
+```
+
+The `.gz.b64` search bodies are decoded automatically; no dependencies beyond the Python 3 stdlib.
+
+### What it checks per run
+
+1. **Search self-check** (whenever a search response exists) — for every offered fare:
+   - per pax type: `base + tax − supplierDiscount == total`
+   - grand total: `originalTotalFare.total == Σ paxCount × paxTotal`
+     (counts from `data.integratorFareRequest`)
+2. **Booking internal reconciliation** (whenever a booking response exists):
+   - per pax, per itinerary: `base + tax + psc + iwjr − discount == fare`
+   - `itinerary.original{Pax}Fare` equals that per-pax fare
+   - `itinerary.originalFare == Σ perPaxFare × count`
+   - `passengerFareInfo.{pax}` equals the per-pax breakdown × count
+   - `originalBookingFare.{fare,adultFare,…}` equals the rolled-up totals
+3. **Cross-stage fare chain** `search → revalidate → revalidate_itin_prp → booking` — the chosen
+   itinerary is matched across stages by its flight-number sequence, and the per-single-pax
+   whole-trip fare (adult / child / infant) must be identical between each adjacent stage.
+
+Runs that contain only a search response get just the self-check; partial chains
+(e.g. search + revalidate, no booking) are handled automatically. Exit code is non-zero if any run
+fails. Money comparisons use a sub-unit tolerance so fares split across legs into repeating decimals
+(e.g. `9887600 / 3`) don't produce false positives.
+
+### File names understood in each run dir
+
+| pattern | role | notes |
+| --- | --- | --- |
+| `*search*.json` / `*search*.json.gz.b64` | search | gz.b64 auto-decoded |
+| `*revalidate*.json` | revalidate | e.g. `02_revalidate`, `03_revalidate_itin_prp` |
+| `*booking*.json` | booking | highest-numbered wins (`04_booking` over `03_booking`) |
