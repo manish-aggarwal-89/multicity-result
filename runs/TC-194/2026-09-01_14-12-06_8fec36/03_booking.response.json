@@ -1,0 +1,463 @@
+{
+  "code": "SUCCESS",
+  "message": "SUCCESS",
+  "data": {
+    "mandatoryRequest": {
+      "storeId": "TIKETCOM",
+      "channelId": "WEB",
+      "requestId": "681a8940-f90c-4681-bc91-59ffb54c5e21",
+      "serviceId": "GATEWAY",
+      "resellerId": "",
+      "identity": "",
+      "username": "guest"
+    },
+    "integratorBookRequest": {
+      "distributionType": "sabre-gds",
+      "account": {
+        "name": "tiketcomSabre",
+        "code": "tiketcomSabre"
+      },
+      "adult": 1,
+      "child": 0,
+      "infant": 0,
+      "multiFare": false,
+      "validatingAirline": "OD",
+      "tripType": "MULTI_CITY",
+      "promotionCode": {
+        "id": "",
+        "name": ""
+      },
+      "flightSelect": "JT 34~OD 178|OD 324",
+      "contact": {
+        "profileId": "",
+        "firstName": "Manish",
+        "lastName": "Aggarwal",
+        "dob": "",
+        "phoneCode": "+91",
+        "phoneCodeCs": "",
+        "phoneCodePassenger": "",
+        "phoneNumber": "7042190130",
+        "phoneNumberCs": "",
+        "phoneNumberPassenger": "",
+        "title": "mr",
+        "gender": "",
+        "email": "manish.aggarwal@tiket.com",
+        "emailPassenger": "manish.aggarwal@tiket.com",
+        "emailAgent": "manish.aggarwal@tiket.com",
+        "accountId": ""
+      },
+      "paxes": [
+        {
+          "paxNumber": 10000,
+          "type": "adult",
+          "title": "mr",
+          "gender": "male",
+          "firstName": "Manish",
+          "lastName": "Aggarwal",
+          "originalFirstName": "Manish",
+          "originalLastName": "Aggarwal",
+          "nationality": "IN",
+          "dob": "1998-08-13",
+          "passport": {
+            "id": "A1234567",
+            "expired": "2036-12-17",
+            "country": "IN",
+            "issuingDate": "2017-12-06"
+          }
+        }
+      ],
+      "itineraries": [
+        {
+          "airline": "JT",
+          "departure": "CGK",
+          "arrival": "DPS",
+          "date": "2026-12-02",
+          "connecting": "",
+          "international": 1,
+          "cabinClass": "ECONOMY",
+          "schedules": [
+            {
+              "arrivalDate": "2026-12-02 12:35",
+              "departureDate": "2026-12-02 09:40",
+              "operatingAirline": {
+                "code": "JT",
+                "number": "34"
+              },
+              "fareClass": "K",
+              "origin": "CGK",
+              "destination": "DPS",
+              "marketingAirline": "JT",
+              "flightNumber": "34",
+              "marriageGroup": "O",
+              "fareBasisCodes": {}
+            }
+          ]
+        },
+        {
+          "airline": "OD",
+          "departure": "DPS",
+          "arrival": "KNO",
+          "date": "2026-12-05",
+          "connecting": "",
+          "international": 1,
+          "cabinClass": "ECONOMY",
+          "schedules": [
+            {
+              "arrivalDate": "2026-12-05 15:25",
+              "departureDate": "2026-12-05 12:15",
+              "operatingAirline": {
+                "code": "OD",
+                "number": "178"
+              },
+              "fareClass": "Q",
+              "origin": "DPS",
+              "destination": "KUL",
+              "marketingAirline": "OD",
+              "flightNumber": "178",
+              "marriageGroup": "O",
+              "fareBasisCodes": {}
+            },
+            {
+              "arrivalDate": "2026-12-05 17:00",
+              "departureDate": "2026-12-05 16:50",
+              "operatingAirline": {
+                "code": "OD",
+                "number": "324"
+              },
+              "fareClass": "V",
+              "origin": "KUL",
+              "destination": "KNO",
+              "marketingAirline": "OD",
+              "flightNumber": "324",
+              "marriageGroup": "O",
+              "fareBasisCodes": {}
+            }
+          ]
+        }
+      ],
+      "currency": "IDR",
+      "countryId": "ID",
+      "commission": 0,
+      "maxBookRetry": 0
+    },
+    "bookDetail": {
+      "distributionType": "sabre-gds",
+      "account": {
+        "name": "tiketcomSabre",
+        "code": "tiketcomSabre"
+      },
+      "corporateCodes": [],
+      "bookingCode": "APIGAV",
+      "bookingExpired": "2026-09-01 16:12:22",
+      "originalCurrency": "IDR",
+      "originalBookingFare": {
+        "balanceDue": 4594791,
+        "bookedFare": 4594791,
+        "fare": 4594791,
+        "adultFare": 4594791,
+        "childFare": 0,
+        "infantFare": 0,
+        "commission": 0,
+        "commissionPercent": 0,
+        "commissionAddons": 0,
+        "commissionPercentAddons": 0,
+        "nta": 4594791,
+        "ssrFee": {
+          "ssrFare": 0,
+          "baggageFare": 0,
+          "mealsFare": 0,
+          "seatsFare": 0,
+          "medicalsFare": 0,
+          "commissionBaggage": 0,
+          "commissionMeals": 0,
+          "commissionSeats": 0,
+          "commissionMedicals": 0,
+          "ssrItineraries": [
+            {
+              "departureDateTime": "",
+              "ssrPaxMeals": [],
+              "ssrPaxSeats": [],
+              "ssrPaxBaggages": [],
+              "ssrPaxMedicals": []
+            },
+            {
+              "departureDateTime": "",
+              "ssrPaxMeals": [],
+              "ssrPaxSeats": [],
+              "ssrPaxBaggages": [],
+              "ssrPaxMedicals": []
+            }
+          ]
+        },
+        "markup": 0,
+        "fareExcludeSsr": 4594791,
+        "discount": 0
+      },
+      "promotionCode": {
+        "id": "",
+        "name": ""
+      },
+      "itineraries": [
+        {
+          "international": 1,
+          "originalCurrency": "IDR",
+          "originalFare": 2297395.5,
+          "originalAdultFare": 2297395.5,
+          "originalChildFare": 0,
+          "originalInfantFare": 0,
+          "adult": 1,
+          "child": 0,
+          "infant": 0,
+          "cabinClass": "ECONOMY",
+          "schedules": [
+            {
+              "departureDate": "2026-12-02 09:40",
+              "arrivalDate": "2026-12-02 12:35",
+              "operatingAirline": {
+                "code": "JT",
+                "number": "34"
+              },
+              "departureTerminal": "1",
+              "fareBasisCodes": {
+                "adult": "KOW"
+              },
+              "fareClass": "K",
+              "origin": "CGK",
+              "destination": "DPS",
+              "marketingAirline": "JT",
+              "marketingFlightNumber": "34",
+              "baggage": {
+                "cabin": {
+                  "measurement": "Kg",
+                  "qty": 0,
+                  "validateBaggage": false
+                },
+                "checkIn": {
+                  "measurement": "Kg",
+                  "qty": 10,
+                  "validateBaggage": false
+                }
+              },
+              "stopQuantity": "0",
+              "aircraftType": "739",
+              "supplierBookingCode": "DCJT*APMZKS",
+              "connectings": null
+            }
+          ],
+          "markupInfo": null,
+          "breakdownInfo": {
+            "originalAdult": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 1843500,
+              "nta": 2297395.5,
+              "commission": 0,
+              "fare": 2297395.5,
+              "tax": 453895.5,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalChild": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 0,
+              "nta": 0,
+              "commission": 0,
+              "fare": 0,
+              "tax": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalInfant": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 0,
+              "nta": 0,
+              "commission": 0,
+              "fare": 0,
+              "tax": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalBaggage": 0
+          }
+        },
+        {
+          "international": 1,
+          "originalCurrency": "IDR",
+          "originalFare": 2297395.5,
+          "originalAdultFare": 2297395.5,
+          "originalChildFare": 0,
+          "originalInfantFare": 0,
+          "adult": 1,
+          "child": 0,
+          "infant": 0,
+          "cabinClass": "ECONOMY",
+          "schedules": [
+            {
+              "departureDate": "2026-12-05 12:15",
+              "arrivalDate": "2026-12-05 15:25",
+              "operatingAirline": {
+                "code": "OD",
+                "number": "178"
+              },
+              "departureTerminal": "I",
+              "arrivalTerminal": "1",
+              "fareBasisCodes": {
+                "adult": "QOBSSID"
+              },
+              "fareClass": "Q",
+              "origin": "DPS",
+              "destination": "KUL",
+              "marketingAirline": "OD",
+              "marketingFlightNumber": "178",
+              "baggage": {
+                "cabin": {
+                  "measurement": "Kg",
+                  "qty": 7,
+                  "validateBaggage": false
+                },
+                "checkIn": {
+                  "measurement": "Kg",
+                  "qty": 10,
+                  "validateBaggage": false
+                }
+              },
+              "stopQuantity": "0",
+              "aircraftType": "7M8",
+              "supplierBookingCode": "DCOD*ANYMVY",
+              "connectings": null
+            },
+            {
+              "departureDate": "2026-12-05 16:50",
+              "arrivalDate": "2026-12-05 17:00",
+              "operatingAirline": {
+                "code": "OD",
+                "number": "324"
+              },
+              "fareBasisCodes": {
+                "adult": "VOWBSSID"
+              },
+              "fareClass": "V",
+              "origin": "KUL",
+              "destination": "KNO",
+              "marketingAirline": "OD",
+              "marketingFlightNumber": "324",
+              "baggage": {
+                "cabin": {
+                  "measurement": "Kg",
+                  "qty": 7,
+                  "validateBaggage": false
+                },
+                "checkIn": {
+                  "measurement": "Kg",
+                  "qty": 10,
+                  "validateBaggage": false
+                }
+              },
+              "stopQuantity": "0",
+              "aircraftType": "738",
+              "supplierBookingCode": "DCOD*ANYMVY",
+              "connectings": null
+            }
+          ],
+          "markupInfo": null,
+          "breakdownInfo": {
+            "originalAdult": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 1843500,
+              "nta": 2297395.5,
+              "commission": 0,
+              "fare": 2297395.5,
+              "tax": 453895.5,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalChild": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 0,
+              "nta": 0,
+              "commission": 0,
+              "fare": 0,
+              "tax": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalInfant": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 0,
+              "nta": 0,
+              "commission": 0,
+              "fare": 0,
+              "tax": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalBaggage": 0
+          }
+        }
+      ],
+      "passengerFareInfo": {
+        "originalAdult": {
+          "psc": 0,
+          "iwjr": 0,
+          "discount": 0,
+          "baseFare": 3687000,
+          "nta": 4594791,
+          "commission": 0,
+          "fare": 4594791,
+          "tax": 907791,
+          "markup": 0,
+          "privateMarkup": 0,
+          "breakdownTaxes": null
+        },
+        "originalChild": {
+          "psc": 0,
+          "iwjr": 0,
+          "discount": 0,
+          "baseFare": 0,
+          "nta": 0,
+          "commission": 0,
+          "fare": 0,
+          "tax": 0,
+          "markup": 0,
+          "privateMarkup": 0,
+          "breakdownTaxes": null
+        },
+        "originalInfant": {
+          "psc": 0,
+          "iwjr": 0,
+          "discount": 0,
+          "baseFare": 0,
+          "nta": 0,
+          "commission": 0,
+          "fare": 0,
+          "tax": 0,
+          "markup": 0,
+          "privateMarkup": 0,
+          "breakdownTaxes": null
+        },
+        "originalBaggage": 0
+      },
+      "additionalData": {
+        "validatingAirline": "OD"
+      }
+    }
+  },
+  "serverTime": "2026-09-01T15:42:22.445062585+07:00"
+}
