@@ -250,27 +250,87 @@ def check_search(resp: dict) -> list[str]:
             issues.append(
                 f"search opt[{oi}] originalTotalFare.total={grand} != Σ count*paxTotal={exp} (counts={counts})"
             )
+        for x in _tax_breakdown_issues(f"search opt[{oi}]", fare):
+            issues.append(x)
     return issues
 
 
+FIELDS = ("total", "base", "tax")
+
+
 def _per_single_from_fare(fare: dict) -> dict:
+    """Whole-trip, per-single-pax {total,base,tax} for each pax type (search/revalidate)."""
     pax = _fare_pax(fare)
-    return {t: pax[t]["total"] for t in PTYPES}
+    return {t: {f: pax[t][f] for f in FIELDS} for t in PTYPES}
 
 
 def _per_single_from_booking(bd: dict) -> dict:
-    out = {t: 0 for t in PTYPES}
+    """Whole-trip, per-single-pax {total,base,tax} summed over booking itineraries."""
+    out = {t: {f: 0 for f in FIELDS} for t in PTYPES}
     for it in bd.get("itineraries") or []:
-        for t in PTYPES:
-            out[t] += _num(it.get(f"original{t.capitalize()}Fare"))
+        bi = it.get("breakdownInfo") or {}
+        for t, key in PAX:
+            n = bi.get(key) or {}
+            out[t]["total"] += _num(n.get("fare"))
+            out[t]["base"] += _num(n.get("baseFare"))
+            out[t]["tax"] += _num(n.get("tax"))
     return out
 
 
 def _cmp_stage(label_a: str, a: dict, label_b: str, b: dict) -> list[str]:
+    """Every pax type × every fare field must match between two stages."""
     out = []
     for t in PTYPES:
-        if not _eq(a.get(t, 0), b.get(t, 0)):
-            out.append(f"{t} per-pax fare {label_a}={a.get(t, 0)} != {label_b}={b.get(t, 0)}")
+        for f in FIELDS:
+            av, bv = a.get(t, {}).get(f, 0), b.get(t, {}).get(f, 0)
+            if not _eq(av, bv):
+                out.append(f"{t} {f}: {label_a}={av} != {label_b}={bv}")
+    return out
+
+
+def _tax_breakdown_issues(tag: str, fare: dict) -> list[str]:
+    """Within one fare: Σ breakdownTaxes[].amount == tax (when a breakdown is given)."""
+    out = []
+    for t, key in FARE_PAX:
+        f = fare.get(key) or {}
+        bd = f.get("breakdownTaxes")
+        if isinstance(bd, list) and bd:
+            s = sum(_num(x.get("amount")) for x in bd)
+            if not _eq(s, _num(f.get("tax"))):
+                out.append(f"{tag} {t}: Σ breakdownTaxes={s} != tax={_num(f.get('tax'))}")
+    return out
+
+
+def _checkin(seg_baggage: dict) -> tuple:
+    b = (seg_baggage or {}).get("checkIn") or {}
+    return (_num(b.get("qty")), str(b.get("measurement") or "").lower())
+
+
+def _seg_key(airline, flightno, origin, dest) -> tuple:
+    return (str(airline or ""), str(flightno or ""), origin, dest)
+
+
+def _baggage_issues(search_fare: dict, bd: dict) -> list[str]:
+    """Per-segment check-in baggage: search inclusiveAddons vs booked schedules.
+
+    Segments are matched by (airline, flightNumber, origin, destination) rather than
+    position, so a different ordering never produces a false mismatch.
+    """
+    addons = ((search_fare.get("inclusiveAddons") or {}).get("departureScheduleAddonsList")) or []
+    idx = {
+        _seg_key(a.get("airline"), a.get("flightNumber"), a.get("origin"), a.get("destination")):
+        _checkin(a.get("baggage"))
+        for a in addons
+    }
+    out = []
+    for seg in (sc for it in (bd.get("itineraries") or []) for sc in (it.get("schedules") or [])):
+        k = _seg_key(
+            seg.get("marketingAirline") or seg.get("operatingAirline"),
+            seg.get("marketingFlightNumber") or seg.get("flightNumber"),
+            seg.get("origin"), seg.get("destination"),
+        )
+        if k in idx and idx[k] != _checkin(seg.get("baggage")):
+            out.append(f"{k[0]}{k[1]} {k[2]}->{k[3]} check-in baggage search={idx[k]} != booking={_checkin(seg.get('baggage'))}")
     return out
 
 
@@ -323,10 +383,10 @@ def process_run(run_dir: str, root: str) -> tuple[bool, str]:
         ref_sig = _booking_sig((booking.get("data") or {}).get("bookDetail") or {})
 
     chain: list[tuple[str, dict]] = []
+    chosen = None
 
     if search:
         opts = search_options(search)
-        chosen = None
         if ref_sig:
             for o in opts:
                 if _leg_sig(o["avail"]) == ref_sig:
@@ -335,19 +395,26 @@ def process_run(run_dir: str, root: str) -> tuple[bool, str]:
         if chosen is None and len(opts) == 1:
             chosen = opts[0]
         if chosen is not None:
+            issues += _tax_breakdown_issues("search", chosen["fares"][0])
             chain.append(("search", _per_single_from_fare(chosen["fares"][0])))
         elif reval_opts or booking:
             notes.append("could not match chosen itinerary to a search option (search->next skipped)")
 
     for n, o in reval_opts:
         label = "revalidate_itin_prp" if "itin_prp" in n else "revalidate"
+        issues += _tax_breakdown_issues(label, o["fares"][0])
         chain.append((label, _per_single_from_fare(o["fares"][0])))
 
+    bd = (booking.get("data") or {}).get("bookDetail") or {} if booking else {}
     if booking:
-        chain.append(("booking", _per_single_from_booking((booking.get("data") or {}).get("bookDetail") or {})))
+        chain.append(("booking", _per_single_from_booking(bd)))
 
     for (la, a), (lb, b) in zip(chain, chain[1:]):
         issues += _cmp_stage(la, a, lb, b)
+
+    # per-segment baggage: what search offered must be what got booked
+    if chosen is not None and booking:
+        issues += _baggage_issues(chosen["fares"][0], bd)
 
     present = "search={} revalidate={} booking={}".format(
         "Y" if search else "-", len(reval_opts), "Y" if booking else "-"
@@ -513,10 +580,20 @@ def _self_check() -> None:
     b = _per_single_from_booking(_BOOKING_FIXTURE["data"]["bookDetail"])
     assert _cmp_stage("search", s, "revalidate", r) == [], "search==revalidate must hold"
     assert _cmp_stage("revalidate", r, "booking", b) == [], "revalidate==booking must hold"
-    # a drifted revalidate fare must be caught
-    assert _cmp_stage("search", {"adult": 9948000}, "revalidate", {"adult": 9000000}), "fare drift must be flagged"
+    # a drift in ANY field (here: same total, different base/tax split) must be caught
+    r_split = copy.deepcopy(r)
+    r_split["adult"]["base"] += 1
+    r_split["adult"]["tax"] -= 1
+    assert _cmp_stage("search", s, "revalidate", r_split), "base/tax drift at equal total must be flagged"
 
-    print("self-check OK: booking, search self-check, and search->revalidate->booking chain all validated")
+    # tax-breakdown reconciliation
+    tb_fare = {"originalAdultFare": {"tax": 100, "breakdownTaxes": [{"amount": 60}, {"amount": 40}]}}
+    assert _tax_breakdown_issues("t", tb_fare) == [], "matching tax breakdown must pass"
+    tb_fare["originalAdultFare"]["breakdownTaxes"][0]["amount"] = 59
+    assert _tax_breakdown_issues("t", tb_fare), "tax breakdown that doesn't sum to tax must be flagged"
+
+    print("self-check OK: booking, search self-check, tax breakdowns, and the full "
+          "search->revalidate->booking field-by-field chain all validated")
 
 
 def main(argv: list[str]) -> int:

@@ -48,9 +48,13 @@ The `.gz.b64` search bodies are decoded automatically; no dependencies beyond th
    - `itinerary.originalFare == Σ perPaxFare × count`
    - `passengerFareInfo.{pax}` equals the per-pax breakdown × count
    - `originalBookingFare.{fare,adultFare,…}` equals the rolled-up totals
+   - tax breakdown: `Σ breakdownTaxes[].amount == tax` (per pax type, when a breakdown is present)
 3. **Cross-stage fare chain** `search → revalidate → revalidate_itin_prp → booking` — the chosen
-   itinerary is matched across stages by its flight-number sequence, and the per-single-pax
-   whole-trip fare (adult / child / infant) must be identical between each adjacent stage.
+   itinerary is matched across stages by its flight-number sequence, and **every field**
+   (`total`, `base`, `tax`) of the per-single-pax whole-trip fare (adult / child / infant) must be
+   identical between each adjacent stage — a matching `total` with a different base/tax split fails.
+   Per-segment check-in **baggage** offered in search is also cross-checked against the booking
+   (matched by airline + flight number + route, not position).
 
 Runs that contain only a search response get just the self-check; partial chains
 (e.g. search + revalidate, no booking) are handled automatically. Exit code is non-zero if any run
