@@ -1,0 +1,529 @@
+{
+  "code": "SUCCESS",
+  "message": "SUCCESS",
+  "data": {
+    "mainFare": {
+      "departureFlight": null,
+      "returnFlight": null,
+      "roundTripCombine": null,
+      "multiCities": {
+        "searchAvailabilities": [
+          {
+            "flighSelect": "QG 522",
+            "currency": "IDR",
+            "origin": "CGK",
+            "destination": "SIN",
+            "date": "2026-09-21",
+            "marketingAirline": "QG",
+            "adult": 1,
+            "child": 0,
+            "infant": 0,
+            "departure": {
+              "date": "2026-09-21",
+              "time": "06:20",
+              "timezone": 7,
+              "airportCode": "CGK",
+              "terminal": "2"
+            },
+            "arrival": {
+              "date": "2026-09-21",
+              "time": "09:10",
+              "timezone": 8,
+              "airportCode": "SIN",
+              "terminal": "3"
+            },
+            "totalTransit": 0,
+            "seatsAvailable": 0,
+            "upgradable": false,
+            "schedules": [
+              {
+                "flightNumber": "522",
+                "airline": "QG",
+                "aircraftType": "320",
+                "departureDetail": {
+                  "date": "2026-09-21",
+                  "time": "06:20",
+                  "timezone": 7,
+                  "airportCode": "CGK",
+                  "terminal": "2"
+                },
+                "arrivalDetail": {
+                  "date": "2026-09-21",
+                  "time": "09:10",
+                  "timezone": 8,
+                  "airportCode": "SIN",
+                  "terminal": "3"
+                },
+                "cabinClass": "ECONOMY",
+                "fareClass": "P",
+                "travelTime": 110,
+                "baggage": {
+                  "cabin": {
+                    "measurement": "Kg",
+                    "qty": 7,
+                    "validateBaggage": false
+                  },
+                  "checkIn": {
+                    "measurement": "Kg",
+                    "qty": 0,
+                    "validateBaggage": false
+                  }
+                },
+                "connectings": null,
+                "marriageGroup": "O",
+                "operatingAirline": "QG",
+                "operatingFlightNumber": "522"
+              }
+            ],
+            "journeySellKey": "",
+            "fareSellKey": ""
+          },
+          {
+            "flighSelect": "QG 503",
+            "currency": "IDR",
+            "origin": "KUL",
+            "destination": "CGK",
+            "date": "2026-09-23",
+            "marketingAirline": "QG",
+            "adult": 1,
+            "child": 0,
+            "infant": 0,
+            "departure": {
+              "date": "2026-09-23",
+              "time": "20:10",
+              "timezone": 8,
+              "airportCode": "KUL",
+              "terminal": "0"
+            },
+            "arrival": {
+              "date": "2026-09-23",
+              "time": "21:40",
+              "timezone": 7,
+              "airportCode": "CGK",
+              "terminal": "2"
+            },
+            "totalTransit": 0,
+            "seatsAvailable": 0,
+            "upgradable": false,
+            "schedules": [
+              {
+                "flightNumber": "503",
+                "airline": "QG",
+                "aircraftType": "320",
+                "departureDetail": {
+                  "date": "2026-09-23",
+                  "time": "20:10",
+                  "timezone": 8,
+                  "airportCode": "KUL",
+                  "terminal": "0"
+                },
+                "arrivalDetail": {
+                  "date": "2026-09-23",
+                  "time": "21:40",
+                  "timezone": 7,
+                  "airportCode": "CGK",
+                  "terminal": "2"
+                },
+                "cabinClass": "ECONOMY",
+                "fareClass": "Q",
+                "travelTime": 150,
+                "baggage": {
+                  "cabin": {
+                    "measurement": "Kg",
+                    "qty": 7,
+                    "validateBaggage": false
+                  },
+                  "checkIn": {
+                    "measurement": "Kg",
+                    "qty": 0,
+                    "validateBaggage": false
+                  }
+                },
+                "connectings": null,
+                "marriageGroup": "O",
+                "operatingAirline": "QG",
+                "operatingFlightNumber": "503"
+              }
+            ],
+            "journeySellKey": "",
+            "fareSellKey": ""
+          }
+        ],
+        "fares": [
+          {
+            "distributionType": "sabre-gds",
+            "supplierId": "tiketcomSabre",
+            "originalCurrency": "IDR",
+            "validatingAirline": "QG",
+            "promotionCode": {
+              "id": "",
+              "name": ""
+            },
+            "brandedFare": null,
+            "fareClassDetails": [
+              {
+                "origin": "CGK",
+                "destination": "SIN",
+                "fareClass": "P"
+              },
+              {
+                "origin": "KUL",
+                "destination": "CGK",
+                "fareClass": "Q"
+              }
+            ],
+            "originalTotalFare": {
+              "total": 2846000,
+              "base": 1248000,
+              "tax": 1598000,
+              "taxBreakDowns": null,
+              "supplierDiscount": 0,
+              "seatAvailables": 9,
+              "fareBasisCodes": [
+                "PNN00BS",
+                "QNN00BS"
+              ],
+              "fareClasses": [
+                "P",
+                "Q"
+              ],
+              "iwjr": 0,
+              "psc": 0,
+              "commission": 0,
+              "agt": 0,
+              "gst": 0,
+              "airportTax": 0,
+              "unidentified": 0,
+              "flyThru": 0,
+              "upselling": 0,
+              "nta": 2846000,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null,
+              "penaltyInfos": null,
+              "scheduleFareDetailInformations": null
+            },
+            "originalAdultFare": {
+              "total": 2846000,
+              "base": 1248000,
+              "tax": 1598000,
+              "taxBreakDowns": {},
+              "supplierDiscount": 0,
+              "seatAvailables": 9,
+              "fareBasisCodes": [
+                "PNN00BS",
+                "QNN00BS"
+              ],
+              "fareClasses": [
+                "P",
+                "Q"
+              ],
+              "iwjr": 0,
+              "psc": 0,
+              "commission": 0,
+              "agt": 0,
+              "gst": 0,
+              "airportTax": 0,
+              "unidentified": 0,
+              "flyThru": 0,
+              "upselling": 0,
+              "nta": 2846000,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": [
+                {
+                  "code": "YQF",
+                  "currencyCode": "IDR",
+                  "amount": 406600
+                },
+                {
+                  "code": "YQF",
+                  "currencyCode": "IDR",
+                  "amount": 507100
+                },
+                {
+                  "code": "YRI",
+                  "currencyCode": "IDR",
+                  "amount": 70000
+                },
+                {
+                  "code": "YRI",
+                  "currencyCode": "IDR",
+                  "amount": 75000
+                },
+                {
+                  "code": "D5",
+                  "currencyCode": "IDR",
+                  "amount": 177600
+                },
+                {
+                  "code": "G1",
+                  "currencyCode": "IDR",
+                  "amount": 35300
+                },
+                {
+                  "code": "H8",
+                  "currencyCode": "IDR",
+                  "amount": 4500
+                },
+                {
+                  "code": "MY",
+                  "currencyCode": "IDR",
+                  "amount": 321900
+                }
+              ],
+              "penaltyInfos": [
+                {
+                  "penaltyType": "RESCHEDULE",
+                  "penaltyStatus": "YES",
+                  "applicability": "Before",
+                  "amount": 300000,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 300000,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                },
+                {
+                  "penaltyType": "RESCHEDULE",
+                  "penaltyStatus": "YES",
+                  "applicability": "After",
+                  "amount": 300000,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 300000,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                },
+                {
+                  "penaltyType": "REFUND",
+                  "penaltyStatus": "YES",
+                  "applicability": "Before",
+                  "amount": 1124000,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 1124000,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                },
+                {
+                  "penaltyType": "REFUND",
+                  "penaltyStatus": "YES",
+                  "applicability": "After",
+                  "amount": 1186000,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 1186000,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                }
+              ],
+              "scheduleFareDetailInformations": [
+                {
+                  "origin": "CGK",
+                  "destination": "SIN",
+                  "fareBasisCode": "PNN00BS",
+                  "breakpoint": true,
+                  "fareClasses": "P"
+                },
+                {
+                  "origin": "KUL",
+                  "destination": "CGK",
+                  "fareBasisCode": "QNN00BS",
+                  "breakpoint": true,
+                  "fareClasses": "Q"
+                }
+              ]
+            },
+            "originalChildFare": {
+              "total": 0,
+              "base": 0,
+              "tax": 0,
+              "taxBreakDowns": null,
+              "supplierDiscount": 0,
+              "fareBasisCodes": null,
+              "fareClasses": null,
+              "iwjr": 0,
+              "psc": 0,
+              "commission": 0,
+              "agt": 0,
+              "gst": 0,
+              "airportTax": 0,
+              "unidentified": 0,
+              "flyThru": 0,
+              "upselling": 0,
+              "nta": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null,
+              "penaltyInfos": null,
+              "scheduleFareDetailInformations": null
+            },
+            "originalInfantFare": {
+              "total": 0,
+              "base": 0,
+              "tax": 0,
+              "taxBreakDowns": null,
+              "supplierDiscount": 0,
+              "fareBasisCodes": null,
+              "fareClasses": null,
+              "iwjr": 0,
+              "psc": 0,
+              "commission": 0,
+              "agt": 0,
+              "gst": 0,
+              "airportTax": 0,
+              "unidentified": 0,
+              "flyThru": 0,
+              "upselling": 0,
+              "nta": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null,
+              "penaltyInfos": null,
+              "scheduleFareDetailInformations": null
+            },
+            "fareClasses": "P|Q",
+            "otherFares": [],
+            "flexiFare": false,
+            "privateFare": false,
+            "inclusiveAddons": {
+              "departureScheduleAddonsList": [
+                {
+                  "origin": "CGK",
+                  "departureDateTime": "2026-09-21 06:20",
+                  "destination": "SIN",
+                  "airline": "QG",
+                  "flightNumber": "522",
+                  "baggage": {
+                    "cabin": {
+                      "measurement": "Kg",
+                      "qty": 7,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 0,
+                      "validateBaggage": false
+                    }
+                  },
+                  "meal": ""
+                },
+                {
+                  "origin": "KUL",
+                  "departureDateTime": "2026-09-23 20:10",
+                  "destination": "CGK",
+                  "airline": "QG",
+                  "flightNumber": "503",
+                  "baggage": {
+                    "cabin": {
+                      "measurement": "Kg",
+                      "qty": 7,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 0,
+                      "validateBaggage": false
+                    }
+                  },
+                  "meal": ""
+                }
+              ],
+              "returnScheduleAddonsList": null
+            }
+          }
+        ],
+        "otherFares": null
+      }
+    },
+    "otherFares": null,
+    "integratorRevalidateItineraryRequest": {
+      "distributionType": "sabre-gds",
+      "account": {
+        "name": "tiketcomSabre",
+        "code": "tiketcomSabre"
+      },
+      "flightSelect": "QG 522 ~ QG 503",
+      "origin": "CGK",
+      "destination": "CGK",
+      "adult": 1,
+      "child": 0,
+      "infant": 0,
+      "departureDate": "2026-09-21",
+      "returnDate": "",
+      "cabinClass": "ECONOMY",
+      "international": 1,
+      "validatingAirline": "QG",
+      "tripTypes": [
+        "MULTI_CITY"
+      ],
+      "currency": {
+        "departureCurrency": "IDR",
+        "returnCurrency": ""
+      },
+      "itineraries": [
+        {
+          "origin": "CGK",
+          "destination": "SIN",
+          "journeySellKey": "",
+          "fareSellKey": "",
+          "schedules": [
+            {
+              "departureDate": "2026-09-21T06:20",
+              "arrivalDate": "2026-09-21T09:10",
+              "operatingAirline": {
+                "code": "QG",
+                "number": "522"
+              },
+              "fareClass": "P",
+              "origin": "CGK",
+              "destination": "SIN",
+              "marketingAirline": "QG",
+              "flightNumber": "522",
+              "fareBasis": {
+                "adult": "PNN00BS"
+              }
+            }
+          ]
+        },
+        {
+          "origin": "KUL",
+          "destination": "CGK",
+          "journeySellKey": "",
+          "fareSellKey": "",
+          "schedules": [
+            {
+              "departureDate": "2026-09-23T20:10",
+              "arrivalDate": "2026-09-23T21:40",
+              "operatingAirline": {
+                "code": "QG",
+                "number": "503"
+              },
+              "fareClass": "Q",
+              "origin": "KUL",
+              "destination": "CGK",
+              "marketingAirline": "QG",
+              "flightNumber": "503",
+              "fareBasis": {
+                "adult": "QNN00BS"
+              }
+            }
+          ]
+        }
+      ],
+      "corporate": null,
+      "promotionCode": {
+        "id": "",
+        "name": ""
+      },
+      "source": "PRP",
+      "multiFare": false
+    }
+  },
+  "serverTime": "2026-08-31T19:01:10.076655539+07:00"
+}
