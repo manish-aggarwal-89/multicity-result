@@ -1,0 +1,653 @@
+{
+  "code": "SUCCESS",
+  "message": "SUCCESS",
+  "data": {
+    "mainFare": {
+      "departureFlight": null,
+      "returnFlight": null,
+      "roundTripCombine": null,
+      "multiCities": {
+        "searchAvailabilities": [
+          {
+            "flighSelect": "JT 12",
+            "currency": "IDR",
+            "origin": "CGK",
+            "destination": "DPS",
+            "date": "2026-12-02",
+            "marketingAirline": "JT",
+            "adult": 1,
+            "child": 0,
+            "infant": 0,
+            "departure": {
+              "date": "2026-12-02",
+              "time": "17:40",
+              "timezone": 7,
+              "airportCode": "CGK",
+              "terminal": "1"
+            },
+            "arrival": {
+              "date": "2026-12-02",
+              "time": "20:35",
+              "timezone": 8,
+              "airportCode": "DPS"
+            },
+            "totalTransit": 0,
+            "seatsAvailable": 0,
+            "upgradable": false,
+            "schedules": [
+              {
+                "flightNumber": "12",
+                "airline": "JT",
+                "aircraftType": "739",
+                "departureDetail": {
+                  "date": "2026-12-02",
+                  "time": "17:40",
+                  "timezone": 7,
+                  "airportCode": "CGK",
+                  "terminal": "1"
+                },
+                "arrivalDetail": {
+                  "date": "2026-12-02",
+                  "time": "20:35",
+                  "timezone": 8,
+                  "airportCode": "DPS"
+                },
+                "cabinClass": "ECONOMY",
+                "fareClass": "K",
+                "travelTime": 115,
+                "baggage": {
+                  "cabin": {
+                    "qty": 0,
+                    "validateBaggage": false
+                  },
+                  "checkIn": {
+                    "measurement": "Kg",
+                    "qty": 10,
+                    "validateBaggage": false
+                  }
+                },
+                "connectings": null,
+                "marriageGroup": "O",
+                "operatingAirline": "JT",
+                "operatingFlightNumber": "12"
+              }
+            ],
+            "journeySellKey": "",
+            "fareSellKey": ""
+          },
+          {
+            "flighSelect": "JT 805",
+            "currency": "IDR",
+            "origin": "DPS",
+            "destination": "SUB",
+            "date": "2026-12-05",
+            "marketingAirline": "JT",
+            "adult": 1,
+            "child": 0,
+            "infant": 0,
+            "departure": {
+              "date": "2026-12-05",
+              "time": "10:35",
+              "timezone": 8,
+              "airportCode": "DPS"
+            },
+            "arrival": {
+              "date": "2026-12-05",
+              "time": "10:35",
+              "timezone": 7,
+              "airportCode": "SUB"
+            },
+            "totalTransit": 0,
+            "seatsAvailable": 0,
+            "upgradable": false,
+            "schedules": [
+              {
+                "flightNumber": "805",
+                "airline": "JT",
+                "aircraftType": "739",
+                "departureDetail": {
+                  "date": "2026-12-05",
+                  "time": "10:35",
+                  "timezone": 8,
+                  "airportCode": "DPS"
+                },
+                "arrivalDetail": {
+                  "date": "2026-12-05",
+                  "time": "10:35",
+                  "timezone": 7,
+                  "airportCode": "SUB"
+                },
+                "cabinClass": "ECONOMY",
+                "fareClass": "Y",
+                "travelTime": 60,
+                "baggage": {
+                  "cabin": {
+                    "qty": 0,
+                    "validateBaggage": false
+                  },
+                  "checkIn": {
+                    "measurement": "Kg",
+                    "qty": 10,
+                    "validateBaggage": false
+                  }
+                },
+                "connectings": null,
+                "marriageGroup": "O",
+                "operatingAirline": "JT",
+                "operatingFlightNumber": "805"
+              }
+            ],
+            "journeySellKey": "",
+            "fareSellKey": ""
+          },
+          {
+            "flighSelect": "JT 882",
+            "currency": "IDR",
+            "origin": "SUB",
+            "destination": "UPG",
+            "date": "2026-12-08",
+            "marketingAirline": "JT",
+            "adult": 1,
+            "child": 0,
+            "infant": 0,
+            "departure": {
+              "date": "2026-12-08",
+              "time": "06:45",
+              "timezone": 7,
+              "airportCode": "SUB"
+            },
+            "arrival": {
+              "date": "2026-12-08",
+              "time": "09:15",
+              "timezone": 8,
+              "airportCode": "UPG"
+            },
+            "totalTransit": 0,
+            "seatsAvailable": 0,
+            "upgradable": false,
+            "schedules": [
+              {
+                "flightNumber": "882",
+                "airline": "JT",
+                "aircraftType": "739",
+                "departureDetail": {
+                  "date": "2026-12-08",
+                  "time": "06:45",
+                  "timezone": 7,
+                  "airportCode": "SUB"
+                },
+                "arrivalDetail": {
+                  "date": "2026-12-08",
+                  "time": "09:15",
+                  "timezone": 8,
+                  "airportCode": "UPG"
+                },
+                "cabinClass": "ECONOMY",
+                "fareClass": "G",
+                "travelTime": 90,
+                "baggage": {
+                  "cabin": {
+                    "qty": 0,
+                    "validateBaggage": false
+                  },
+                  "checkIn": {
+                    "measurement": "Kg",
+                    "qty": 10,
+                    "validateBaggage": false
+                  }
+                },
+                "connectings": null,
+                "marriageGroup": "O",
+                "operatingAirline": "JT",
+                "operatingFlightNumber": "882"
+              }
+            ],
+            "journeySellKey": "",
+            "fareSellKey": ""
+          }
+        ],
+        "fares": [
+          {
+            "distributionType": "sabre-gds",
+            "supplierId": "tiketcomSabre",
+            "originalCurrency": "IDR",
+            "validatingAirline": "JT",
+            "promotionCode": {
+              "id": "",
+              "name": ""
+            },
+            "brandedFare": null,
+            "fareClassDetails": [
+              {
+                "origin": "CGK",
+                "destination": "DPS",
+                "fareClass": "K"
+              },
+              {
+                "origin": "DPS",
+                "destination": "SUB",
+                "fareClass": "Y"
+              },
+              {
+                "origin": "SUB",
+                "destination": "UPG",
+                "fareClass": "G"
+              }
+            ],
+            "originalTotalFare": {
+              "total": 4605380,
+              "base": 2967000,
+              "tax": 1638380,
+              "taxBreakDowns": null,
+              "supplierDiscount": 0,
+              "seatAvailables": 9,
+              "fareBasisCodes": [
+                "KOW",
+                "YOW",
+                "GOW"
+              ],
+              "fareClasses": [
+                "K",
+                "Y",
+                "G"
+              ],
+              "iwjr": 0,
+              "psc": 0,
+              "commission": 0,
+              "agt": 0,
+              "gst": 0,
+              "airportTax": 0,
+              "unidentified": 0,
+              "flyThru": 0,
+              "upselling": 0,
+              "nta": 4605380,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null,
+              "penaltyInfos": null,
+              "scheduleFareDetailInformations": null
+            },
+            "originalAdultFare": {
+              "total": 4605380,
+              "base": 2967000,
+              "tax": 1638380,
+              "taxBreakDowns": {},
+              "supplierDiscount": 0,
+              "seatAvailables": 9,
+              "fareBasisCodes": [
+                "KOW",
+                "YOW",
+                "GOW"
+              ],
+              "fareClasses": [
+                "K",
+                "Y",
+                "G"
+              ],
+              "iwjr": 0,
+              "psc": 0,
+              "commission": 0,
+              "agt": 0,
+              "gst": 0,
+              "airportTax": 0,
+              "unidentified": 0,
+              "flyThru": 0,
+              "upselling": 0,
+              "nta": 4605380,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": [
+                {
+                  "code": "YQF",
+                  "currencyCode": "IDR",
+                  "amount": 364800
+                },
+                {
+                  "code": "YQF",
+                  "currencyCode": "IDR",
+                  "amount": 162600
+                },
+                {
+                  "code": "YQF",
+                  "currencyCode": "IDR",
+                  "amount": 333000
+                },
+                {
+                  "code": "D5",
+                  "currencyCode": "IDR",
+                  "amount": 100909
+                },
+                {
+                  "code": "D5",
+                  "currencyCode": "IDR",
+                  "amount": 121091
+                },
+                {
+                  "code": "D5",
+                  "currencyCode": "IDR",
+                  "amount": 119880
+                },
+                {
+                  "code": "ID",
+                  "currencyCode": "IDR",
+                  "amount": 421100
+                },
+                {
+                  "code": "P4",
+                  "currencyCode": "IDR",
+                  "amount": 5000
+                },
+                {
+                  "code": "P4",
+                  "currencyCode": "IDR",
+                  "amount": 5000
+                },
+                {
+                  "code": "P4",
+                  "currencyCode": "IDR",
+                  "amount": 5000
+                }
+              ],
+              "penaltyInfos": [
+                {
+                  "penaltyType": "RESCHEDULE",
+                  "penaltyStatus": "YES",
+                  "applicability": "Before",
+                  "amount": 2672000,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 2672000,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                },
+                {
+                  "penaltyType": "RESCHEDULE",
+                  "penaltyStatus": "YES",
+                  "applicability": "After",
+                  "amount": 2672000,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 2672000,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                },
+                {
+                  "penaltyType": "REFUND",
+                  "penaltyStatus": "YES",
+                  "applicability": "Before",
+                  "amount": 2672000,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 2672000,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                },
+                {
+                  "penaltyType": "REFUND",
+                  "penaltyStatus": "YES",
+                  "applicability": "After",
+                  "amount": 2672000,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 2672000,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                }
+              ],
+              "scheduleFareDetailInformations": [
+                {
+                  "origin": "CGK",
+                  "destination": "DPS",
+                  "fareBasisCode": "KOW",
+                  "breakpoint": true,
+                  "fareClasses": "K"
+                },
+                {
+                  "origin": "DPS",
+                  "destination": "SUB",
+                  "fareBasisCode": "YOW",
+                  "breakpoint": true,
+                  "fareClasses": "Y"
+                },
+                {
+                  "origin": "SUB",
+                  "destination": "UPG",
+                  "fareBasisCode": "GOW",
+                  "breakpoint": true,
+                  "fareClasses": "G"
+                }
+              ]
+            },
+            "originalChildFare": {
+              "total": 0,
+              "base": 0,
+              "tax": 0,
+              "taxBreakDowns": null,
+              "supplierDiscount": 0,
+              "fareBasisCodes": null,
+              "fareClasses": null,
+              "iwjr": 0,
+              "psc": 0,
+              "commission": 0,
+              "agt": 0,
+              "gst": 0,
+              "airportTax": 0,
+              "unidentified": 0,
+              "flyThru": 0,
+              "upselling": 0,
+              "nta": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null,
+              "penaltyInfos": null,
+              "scheduleFareDetailInformations": null
+            },
+            "originalInfantFare": {
+              "total": 0,
+              "base": 0,
+              "tax": 0,
+              "taxBreakDowns": null,
+              "supplierDiscount": 0,
+              "fareBasisCodes": null,
+              "fareClasses": null,
+              "iwjr": 0,
+              "psc": 0,
+              "commission": 0,
+              "agt": 0,
+              "gst": 0,
+              "airportTax": 0,
+              "unidentified": 0,
+              "flyThru": 0,
+              "upselling": 0,
+              "nta": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null,
+              "penaltyInfos": null,
+              "scheduleFareDetailInformations": null
+            },
+            "fareClasses": "K|Y|G",
+            "otherFares": [],
+            "flexiFare": false,
+            "privateFare": false,
+            "inclusiveAddons": {
+              "departureScheduleAddonsList": [
+                {
+                  "origin": "CGK",
+                  "departureDateTime": "2026-12-02 17:40",
+                  "destination": "DPS",
+                  "airline": "JT",
+                  "flightNumber": "12",
+                  "baggage": {
+                    "cabin": {
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 10,
+                      "validateBaggage": false
+                    }
+                  },
+                  "meal": ""
+                },
+                {
+                  "origin": "DPS",
+                  "departureDateTime": "2026-12-05 10:35",
+                  "destination": "SUB",
+                  "airline": "JT",
+                  "flightNumber": "805",
+                  "baggage": {
+                    "cabin": {
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 10,
+                      "validateBaggage": false
+                    }
+                  },
+                  "meal": ""
+                },
+                {
+                  "origin": "SUB",
+                  "departureDateTime": "2026-12-08 06:45",
+                  "destination": "UPG",
+                  "airline": "JT",
+                  "flightNumber": "882",
+                  "baggage": {
+                    "cabin": {
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 10,
+                      "validateBaggage": false
+                    }
+                  },
+                  "meal": ""
+                }
+              ],
+              "returnScheduleAddonsList": null
+            }
+          }
+        ],
+        "otherFares": null
+      }
+    },
+    "otherFares": null,
+    "integratorRevalidateItineraryRequest": {
+      "distributionType": "sabre-gds",
+      "account": {
+        "name": "tiketcomSabre",
+        "code": "tiketcomSabre"
+      },
+      "flightSelect": "JT 12 ~ JT 805 ~ JT 882",
+      "origin": "CGK",
+      "destination": "UPG",
+      "adult": 1,
+      "child": 0,
+      "infant": 0,
+      "departureDate": "2026-12-02",
+      "returnDate": "",
+      "cabinClass": "ECONOMY",
+      "international": 1,
+      "validatingAirline": "JT",
+      "tripTypes": [
+        "MULTI_CITY"
+      ],
+      "currency": {
+        "departureCurrency": "IDR",
+        "returnCurrency": ""
+      },
+      "itineraries": [
+        {
+          "origin": "CGK",
+          "destination": "DPS",
+          "journeySellKey": "",
+          "fareSellKey": "",
+          "schedules": [
+            {
+              "departureDate": "2026-12-02T17:40",
+              "arrivalDate": "2026-12-02T20:35",
+              "operatingAirline": {
+                "code": "JT",
+                "number": "12"
+              },
+              "fareClass": "K",
+              "origin": "CGK",
+              "destination": "DPS",
+              "marketingAirline": "JT",
+              "flightNumber": "12",
+              "fareBasis": {
+                "adult": "KOW"
+              }
+            }
+          ]
+        },
+        {
+          "origin": "DPS",
+          "destination": "SUB",
+          "journeySellKey": "",
+          "fareSellKey": "",
+          "schedules": [
+            {
+              "departureDate": "2026-12-05T10:35",
+              "arrivalDate": "2026-12-05T10:35",
+              "operatingAirline": {
+                "code": "JT",
+                "number": "805"
+              },
+              "fareClass": "Y",
+              "origin": "DPS",
+              "destination": "SUB",
+              "marketingAirline": "JT",
+              "flightNumber": "805",
+              "fareBasis": {
+                "adult": "YOW"
+              }
+            }
+          ]
+        },
+        {
+          "origin": "SUB",
+          "destination": "UPG",
+          "journeySellKey": "",
+          "fareSellKey": "",
+          "schedules": [
+            {
+              "departureDate": "2026-12-08T06:45",
+              "arrivalDate": "2026-12-08T09:15",
+              "operatingAirline": {
+                "code": "JT",
+                "number": "882"
+              },
+              "fareClass": "G",
+              "origin": "SUB",
+              "destination": "UPG",
+              "marketingAirline": "JT",
+              "flightNumber": "882",
+              "fareBasis": {
+                "adult": "GOW"
+              }
+            }
+          ]
+        }
+      ],
+      "corporate": null,
+      "promotionCode": {
+        "id": "",
+        "name": ""
+      },
+      "source": "PRP",
+      "multiFare": false
+    }
+  },
+  "serverTime": "2026-09-01T15:35:50.331803773+07:00"
+}
