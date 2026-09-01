@@ -1,0 +1,534 @@
+{
+  "code": "SUCCESS",
+  "message": "SUCCESS",
+  "data": {
+    "mandatoryRequest": {
+      "storeId": "TIKETCOM",
+      "channelId": "WEB",
+      "requestId": "abc5acf1-bc60-4f08-9e9a-0d6db2fee2de",
+      "serviceId": "GATEWAY",
+      "resellerId": "",
+      "identity": "",
+      "username": "guest"
+    },
+    "integratorBookRequest": {
+      "distributionType": "sabre-gds",
+      "account": {
+        "name": "tiketcomSabre",
+        "code": "tiketcomSabre"
+      },
+      "adult": 1,
+      "child": 0,
+      "infant": 0,
+      "multiFare": false,
+      "validatingAirline": "TR",
+      "tripType": "MULTI_CITY",
+      "promotionCode": {
+        "id": "",
+        "name": ""
+      },
+      "flightSelect": "TR 277~TR 468~TR 497",
+      "contact": {
+        "profileId": "",
+        "firstName": "Manish",
+        "lastName": "Aggarwal",
+        "dob": "",
+        "phoneCode": "+91",
+        "phoneCodeCs": "",
+        "phoneCodePassenger": "",
+        "phoneNumber": "7042190130",
+        "phoneNumberCs": "",
+        "phoneNumberPassenger": "",
+        "title": "mr",
+        "gender": "",
+        "email": "manish.aggarwal@tiket.com",
+        "emailPassenger": "manish.aggarwal@tiket.com",
+        "emailAgent": "manish.aggarwal@tiket.com",
+        "accountId": ""
+      },
+      "paxes": [
+        {
+          "paxNumber": 10000,
+          "type": "adult",
+          "title": "mr",
+          "gender": "male",
+          "firstName": "Manish",
+          "lastName": "Aggarwal",
+          "originalFirstName": "Manish",
+          "originalLastName": "Aggarwal",
+          "nationality": "IN",
+          "dob": "1998-08-13",
+          "passport": {
+            "id": "A1234567",
+            "expired": "2036-12-17",
+            "country": "IN",
+            "issuingDate": "2017-12-06"
+          }
+        }
+      ],
+      "itineraries": [
+        {
+          "airline": "TR",
+          "departure": "CGK",
+          "arrival": "SIN",
+          "date": "2026-12-02",
+          "connecting": "",
+          "international": 1,
+          "cabinClass": "ECONOMY",
+          "schedules": [
+            {
+              "arrivalDate": "2026-12-02 14:05",
+              "departureDate": "2026-12-02 11:20",
+              "operatingAirline": {
+                "code": "TR",
+                "number": "277"
+              },
+              "fareClass": "H",
+              "origin": "CGK",
+              "destination": "SIN",
+              "marketingAirline": "TR",
+              "flightNumber": "277",
+              "marriageGroup": "O",
+              "fareBasisCodes": {}
+            }
+          ]
+        },
+        {
+          "airline": "TR",
+          "departure": "SIN",
+          "arrival": "KUL",
+          "date": "2026-12-05",
+          "connecting": "",
+          "international": 1,
+          "cabinClass": "ECONOMY",
+          "schedules": [
+            {
+              "arrivalDate": "2026-12-05 18:15",
+              "departureDate": "2026-12-05 17:00",
+              "operatingAirline": {
+                "code": "TR",
+                "number": "468"
+              },
+              "fareClass": "H",
+              "origin": "SIN",
+              "destination": "KUL",
+              "marketingAirline": "TR",
+              "flightNumber": "468",
+              "marriageGroup": "O",
+              "fareBasisCodes": {}
+            }
+          ]
+        },
+        {
+          "airline": "TR",
+          "departure": "KUL",
+          "arrival": "SIN",
+          "date": "2026-12-08",
+          "connecting": "",
+          "international": 1,
+          "cabinClass": "ECONOMY",
+          "schedules": [
+            {
+              "arrivalDate": "2026-12-08 23:15",
+              "departureDate": "2026-12-08 22:00",
+              "operatingAirline": {
+                "code": "TR",
+                "number": "497"
+              },
+              "fareClass": "W",
+              "origin": "KUL",
+              "destination": "SIN",
+              "marketingAirline": "TR",
+              "flightNumber": "497",
+              "marriageGroup": "O",
+              "fareBasisCodes": {}
+            }
+          ]
+        }
+      ],
+      "currency": "IDR",
+      "countryId": "ID",
+      "commission": 0,
+      "maxBookRetry": 0
+    },
+    "bookDetail": {
+      "distributionType": "sabre-gds",
+      "account": {
+        "name": "tiketcomSabre",
+        "code": "tiketcomSabre"
+      },
+      "corporateCodes": [],
+      "bookingCode": "SWKLJF",
+      "bookingExpired": "2026-09-01 16:06:52",
+      "originalCurrency": "IDR",
+      "originalBookingFare": {
+        "balanceDue": 6322600,
+        "bookedFare": 6322600,
+        "fare": 6322600,
+        "adultFare": 6322600,
+        "childFare": 0,
+        "infantFare": 0,
+        "commission": 0,
+        "commissionPercent": 0,
+        "commissionAddons": 0,
+        "commissionPercentAddons": 0,
+        "nta": 6322600,
+        "ssrFee": {
+          "ssrFare": 0,
+          "baggageFare": 0,
+          "mealsFare": 0,
+          "seatsFare": 0,
+          "medicalsFare": 0,
+          "commissionBaggage": 0,
+          "commissionMeals": 0,
+          "commissionSeats": 0,
+          "commissionMedicals": 0,
+          "ssrItineraries": [
+            {
+              "departureDateTime": "",
+              "ssrPaxMeals": [],
+              "ssrPaxSeats": [],
+              "ssrPaxBaggages": [],
+              "ssrPaxMedicals": []
+            },
+            {
+              "departureDateTime": "",
+              "ssrPaxMeals": [],
+              "ssrPaxSeats": [],
+              "ssrPaxBaggages": [],
+              "ssrPaxMedicals": []
+            }
+          ]
+        },
+        "markup": 0,
+        "fareExcludeSsr": 6322600,
+        "discount": 0
+      },
+      "promotionCode": {
+        "id": "",
+        "name": ""
+      },
+      "itineraries": [
+        {
+          "international": 1,
+          "originalCurrency": "IDR",
+          "originalFare": 2107533.3333333335,
+          "originalAdultFare": 2107533.3333333335,
+          "originalChildFare": 0,
+          "originalInfantFare": 0,
+          "adult": 1,
+          "child": 0,
+          "infant": 0,
+          "cabinClass": "ECONOMY",
+          "schedules": [
+            {
+              "departureDate": "2026-12-02 11:20",
+              "arrivalDate": "2026-12-02 14:05",
+              "operatingAirline": {
+                "code": "TR",
+                "number": "277"
+              },
+              "departureTerminal": "3",
+              "arrivalTerminal": "1",
+              "fareBasisCodes": {
+                "adult": "H2TR24"
+              },
+              "fareClass": "H",
+              "origin": "CGK",
+              "destination": "SIN",
+              "marketingAirline": "TR",
+              "marketingFlightNumber": "277",
+              "baggage": {
+                "cabin": {
+                  "measurement": "Kg",
+                  "qty": 0,
+                  "validateBaggage": false
+                },
+                "checkIn": {
+                  "measurement": "Kg",
+                  "qty": 30,
+                  "validateBaggage": false
+                }
+              },
+              "stopQuantity": "0",
+              "aircraftType": "32N",
+              "supplierBookingCode": "DCTR*LBKKFW",
+              "connectings": null
+            }
+          ],
+          "markupInfo": null,
+          "breakdownInfo": {
+            "originalAdult": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 1417666.6666666667,
+              "nta": 2107533.3333333335,
+              "commission": 0,
+              "fare": 2107533.3333333335,
+              "tax": 689866.6666666666,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalChild": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 0,
+              "nta": 0,
+              "commission": 0,
+              "fare": 0,
+              "tax": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalInfant": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 0,
+              "nta": 0,
+              "commission": 0,
+              "fare": 0,
+              "tax": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalBaggage": 0
+          }
+        },
+        {
+          "international": 1,
+          "originalCurrency": "IDR",
+          "originalFare": 2107533.3333333335,
+          "originalAdultFare": 2107533.3333333335,
+          "originalChildFare": 0,
+          "originalInfantFare": 0,
+          "adult": 1,
+          "child": 0,
+          "infant": 0,
+          "cabinClass": "ECONOMY",
+          "schedules": [
+            {
+              "departureDate": "2026-12-05 17:00",
+              "arrivalDate": "2026-12-05 18:15",
+              "operatingAirline": {
+                "code": "TR",
+                "number": "468"
+              },
+              "departureTerminal": "1",
+              "arrivalTerminal": "2",
+              "fareBasisCodes": {
+                "adult": "H2TR24"
+              },
+              "fareClass": "H",
+              "origin": "SIN",
+              "destination": "KUL",
+              "marketingAirline": "TR",
+              "marketingFlightNumber": "468",
+              "baggage": {
+                "cabin": {
+                  "measurement": "Kg",
+                  "qty": 0,
+                  "validateBaggage": false
+                },
+                "checkIn": {
+                  "measurement": "Kg",
+                  "qty": 30,
+                  "validateBaggage": false
+                }
+              },
+              "stopQuantity": "0",
+              "aircraftType": "32N",
+              "supplierBookingCode": "DCTR*LBKKFW",
+              "connectings": null
+            }
+          ],
+          "markupInfo": null,
+          "breakdownInfo": {
+            "originalAdult": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 1417666.6666666667,
+              "nta": 2107533.3333333335,
+              "commission": 0,
+              "fare": 2107533.3333333335,
+              "tax": 689866.6666666666,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalChild": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 0,
+              "nta": 0,
+              "commission": 0,
+              "fare": 0,
+              "tax": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalInfant": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 0,
+              "nta": 0,
+              "commission": 0,
+              "fare": 0,
+              "tax": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalBaggage": 0
+          }
+        },
+        {
+          "international": 1,
+          "originalCurrency": "IDR",
+          "originalFare": 2107533.3333333335,
+          "originalAdultFare": 2107533.3333333335,
+          "originalChildFare": 0,
+          "originalInfantFare": 0,
+          "adult": 1,
+          "child": 0,
+          "infant": 0,
+          "cabinClass": "ECONOMY",
+          "schedules": [
+            {
+              "departureDate": "2026-12-08 22:00",
+              "arrivalDate": "2026-12-08 23:15",
+              "operatingAirline": {
+                "code": "TR",
+                "number": "497"
+              },
+              "departureTerminal": "2",
+              "arrivalTerminal": "1",
+              "fareBasisCodes": {
+                "adult": "W2TR24"
+              },
+              "fareClass": "W",
+              "origin": "KUL",
+              "destination": "SIN",
+              "marketingAirline": "TR",
+              "marketingFlightNumber": "497",
+              "baggage": {
+                "cabin": {
+                  "measurement": "Kg",
+                  "qty": 0,
+                  "validateBaggage": false
+                },
+                "checkIn": {
+                  "measurement": "Kg",
+                  "qty": 30,
+                  "validateBaggage": false
+                }
+              },
+              "stopQuantity": "0",
+              "aircraftType": "788",
+              "supplierBookingCode": "DCTR*LBKKFW",
+              "connectings": null
+            }
+          ],
+          "markupInfo": null,
+          "breakdownInfo": {
+            "originalAdult": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 1417666.6666666667,
+              "nta": 2107533.3333333335,
+              "commission": 0,
+              "fare": 2107533.3333333335,
+              "tax": 689866.6666666666,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalChild": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 0,
+              "nta": 0,
+              "commission": 0,
+              "fare": 0,
+              "tax": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalInfant": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 0,
+              "nta": 0,
+              "commission": 0,
+              "fare": 0,
+              "tax": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalBaggage": 0
+          }
+        }
+      ],
+      "passengerFareInfo": {
+        "originalAdult": {
+          "psc": 0,
+          "iwjr": 0,
+          "discount": 0,
+          "baseFare": 4253000,
+          "nta": 6322600,
+          "commission": 0,
+          "fare": 6322600,
+          "tax": 2069600,
+          "markup": 0,
+          "privateMarkup": 0,
+          "breakdownTaxes": null
+        },
+        "originalChild": {
+          "psc": 0,
+          "iwjr": 0,
+          "discount": 0,
+          "baseFare": 0,
+          "nta": 0,
+          "commission": 0,
+          "fare": 0,
+          "tax": 0,
+          "markup": 0,
+          "privateMarkup": 0,
+          "breakdownTaxes": null
+        },
+        "originalInfant": {
+          "psc": 0,
+          "iwjr": 0,
+          "discount": 0,
+          "baseFare": 0,
+          "nta": 0,
+          "commission": 0,
+          "fare": 0,
+          "tax": 0,
+          "markup": 0,
+          "privateMarkup": 0,
+          "breakdownTaxes": null
+        },
+        "originalBaggage": 0
+      },
+      "additionalData": {
+        "validatingAirline": "TR"
+      }
+    }
+  },
+  "serverTime": "2026-09-01T15:36:52.892206756+07:00"
+}
