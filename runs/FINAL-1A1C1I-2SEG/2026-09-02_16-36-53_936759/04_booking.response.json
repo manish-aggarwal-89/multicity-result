@@ -1,0 +1,457 @@
+{
+  "code": "SUCCESS",
+  "message": "SUCCESS",
+  "data": {
+    "mandatoryRequest": {
+      "storeId": "TIKETCOM",
+      "channelId": "WEB",
+      "requestId": "4132030c-616d-4be5-b8ef-5b1ae7acacc4",
+      "serviceId": "GATEWAY",
+      "resellerId": "",
+      "identity": "",
+      "username": "guest"
+    },
+    "integratorBookRequest": {
+      "distributionType": "sabre-gds",
+      "account": {
+        "name": "tiketcomSabre",
+        "code": "tiketcomSabre"
+      },
+      "adult": 1,
+      "child": 1,
+      "infant": 1,
+      "multiFare": false,
+      "validatingAirline": "SQ",
+      "tripType": "MULTI_CITY",
+      "promotionCode": {
+        "id": "",
+        "name": ""
+      },
+      "flightSelect": "SQ 959~SQ 712",
+      "contact": {
+        "profileId": "",
+        "firstName": "Manish",
+        "lastName": "Aggarwal",
+        "dob": "",
+        "phoneCode": "+91",
+        "phoneCodeCs": "",
+        "phoneCodePassenger": "",
+        "phoneNumber": "7042190130",
+        "phoneNumberCs": "",
+        "phoneNumberPassenger": "",
+        "title": "mr",
+        "gender": "",
+        "email": "manish.aggarwal@tiket.com",
+        "emailPassenger": "manish.aggarwal@tiket.com",
+        "emailAgent": "manish.aggarwal@tiket.com",
+        "accountId": ""
+      },
+      "paxes": [
+        {
+          "paxNumber": 10000,
+          "type": "adult",
+          "title": "mr",
+          "gender": "male",
+          "firstName": "Manish",
+          "lastName": "Aggarwal",
+          "originalFirstName": "Manish",
+          "originalLastName": "Aggarwal",
+          "nationality": "IN",
+          "dob": "1998-08-13",
+          "passport": {
+            "id": "A1234567",
+            "expired": "2036-12-17",
+            "country": "IN",
+            "issuingDate": "2017-12-06"
+          }
+        },
+        {
+          "paxNumber": 20000,
+          "type": "child",
+          "title": "mstr",
+          "gender": "male",
+          "firstName": "Akash",
+          "lastName": "Kumar",
+          "originalFirstName": "Akash",
+          "originalLastName": "Kumar",
+          "nationality": "IN",
+          "dob": "2021-12-15",
+          "passport": {
+            "id": "C1234543",
+            "expired": "2037-12-24",
+            "country": "IN",
+            "issuingDate": "2023-12-13"
+          }
+        },
+        {
+          "paxNumber": 30000,
+          "type": "infant",
+          "title": "mstr",
+          "gender": "male",
+          "firstName": "Krishna",
+          "lastName": "Aggarwal",
+          "originalFirstName": "Krishna",
+          "originalLastName": "Aggarwal",
+          "nationality": "ID",
+          "dob": "2025-12-25",
+          "passport": {
+            "id": "I1231311",
+            "expired": "2029-05-16",
+            "country": "ID",
+            "issuingDate": "2016-05-13"
+          }
+        }
+      ],
+      "itineraries": [
+        {
+          "airline": "SQ",
+          "departure": "CGK",
+          "arrival": "SIN",
+          "date": "2027-03-01",
+          "connecting": "",
+          "international": 1,
+          "cabinClass": "ECONOMY",
+          "schedules": [
+            {
+              "arrivalDate": "2027-03-01 17:10",
+              "departureDate": "2027-03-01 14:15",
+              "operatingAirline": {
+                "code": "SQ",
+                "number": "959"
+              },
+              "fareClass": "M",
+              "origin": "CGK",
+              "destination": "SIN",
+              "marketingAirline": "SQ",
+              "flightNumber": "959",
+              "marriageGroup": "O",
+              "fareBasisCodes": {}
+            }
+          ]
+        },
+        {
+          "airline": "SQ",
+          "departure": "SIN",
+          "arrival": "BKK",
+          "date": "2027-03-04",
+          "connecting": "",
+          "international": 1,
+          "cabinClass": "ECONOMY",
+          "schedules": [
+            {
+              "arrivalDate": "2027-03-04 17:00",
+              "departureDate": "2027-03-04 15:25",
+              "operatingAirline": {
+                "code": "SQ",
+                "number": "712"
+              },
+              "fareClass": "M",
+              "origin": "SIN",
+              "destination": "BKK",
+              "marketingAirline": "SQ",
+              "flightNumber": "712",
+              "marriageGroup": "I",
+              "fareBasisCodes": {}
+            }
+          ]
+        }
+      ],
+      "currency": "IDR",
+      "countryId": "ID",
+      "commission": 0,
+      "maxBookRetry": 0
+    },
+    "bookDetail": {
+      "distributionType": "sabre-gds",
+      "account": {
+        "name": "tiketcomSabre",
+        "code": "tiketcomSabre"
+      },
+      "corporateCodes": [],
+      "bookingCode": "YKNNMM",
+      "bookingExpired": "2026-09-02 17:07:11",
+      "originalCurrency": "IDR",
+      "originalBookingFare": {
+        "balanceDue": 14272600,
+        "bookedFare": 14272600,
+        "fare": 14272600,
+        "adultFare": 7570200,
+        "childFare": 6069200,
+        "infantFare": 633200,
+        "commission": 0,
+        "commissionPercent": 0,
+        "commissionAddons": 0,
+        "commissionPercentAddons": 0,
+        "nta": 14272600,
+        "ssrFee": {
+          "ssrFare": 0,
+          "baggageFare": 0,
+          "mealsFare": 0,
+          "seatsFare": 0,
+          "medicalsFare": 0,
+          "commissionBaggage": 0,
+          "commissionMeals": 0,
+          "commissionSeats": 0,
+          "commissionMedicals": 0,
+          "ssrItineraries": [
+            {
+              "departureDateTime": "",
+              "ssrPaxMeals": [],
+              "ssrPaxSeats": [],
+              "ssrPaxBaggages": [],
+              "ssrPaxMedicals": []
+            },
+            {
+              "departureDateTime": "",
+              "ssrPaxMeals": [],
+              "ssrPaxSeats": [],
+              "ssrPaxBaggages": [],
+              "ssrPaxMedicals": []
+            }
+          ]
+        },
+        "markup": 0,
+        "fareExcludeSsr": 14272600,
+        "discount": 0
+      },
+      "promotionCode": {
+        "id": "",
+        "name": ""
+      },
+      "itineraries": [
+        {
+          "international": 1,
+          "originalCurrency": "IDR",
+          "originalFare": 7136300,
+          "originalAdultFare": 3785100,
+          "originalChildFare": 3034600,
+          "originalInfantFare": 316600,
+          "adult": 1,
+          "child": 1,
+          "infant": 1,
+          "cabinClass": "ECONOMY",
+          "schedules": [
+            {
+              "departureDate": "2027-03-01 14:15",
+              "arrivalDate": "2027-03-01 17:10",
+              "operatingAirline": {
+                "code": "SQ",
+                "number": "959"
+              },
+              "departureTerminal": "3",
+              "fareBasisCodes": {
+                "adult": "M13IAOL",
+                "child": "M13IAOL",
+                "infant": "M13IAOL"
+              },
+              "fareClass": "M",
+              "origin": "CGK",
+              "destination": "SIN",
+              "marketingAirline": "SQ",
+              "marketingFlightNumber": "959",
+              "baggage": {
+                "cabin": {
+                  "unit": "1",
+                  "measurement": "Pc",
+                  "qty": 0,
+                  "validateBaggage": false
+                },
+                "checkIn": {
+                  "measurement": "Kg",
+                  "qty": 30,
+                  "validateBaggage": false
+                }
+              },
+              "stopQuantity": "0",
+              "aircraftType": "359",
+              "supplierBookingCode": "DCSQ",
+              "connectings": null
+            }
+          ],
+          "markupInfo": null,
+          "breakdownInfo": {
+            "originalAdult": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 3003500,
+              "nta": 3785100,
+              "commission": 0,
+              "fare": 3785100,
+              "tax": 781600,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalChild": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 2253000,
+              "nta": 3034600,
+              "commission": 0,
+              "fare": 3034600,
+              "tax": 781600,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalInfant": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 300500,
+              "nta": 316600,
+              "commission": 0,
+              "fare": 316600,
+              "tax": 16100,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalBaggage": 0
+          }
+        },
+        {
+          "international": 1,
+          "originalCurrency": "IDR",
+          "originalFare": 7136300,
+          "originalAdultFare": 3785100,
+          "originalChildFare": 3034600,
+          "originalInfantFare": 316600,
+          "adult": 1,
+          "child": 1,
+          "infant": 1,
+          "cabinClass": "ECONOMY",
+          "schedules": [
+            {
+              "departureDate": "2027-03-04 15:25",
+              "arrivalDate": "2027-03-04 17:00",
+              "operatingAirline": {
+                "code": "SQ",
+                "number": "712"
+              },
+              "departureTerminal": "2",
+              "fareBasisCodes": {
+                "adult": "M13IAOL",
+                "child": "M13IAOL",
+                "infant": "M13IAOL"
+              },
+              "fareClass": "M",
+              "origin": "SIN",
+              "destination": "BKK",
+              "marketingAirline": "SQ",
+              "marketingFlightNumber": "712",
+              "baggage": {
+                "cabin": {
+                  "unit": "1",
+                  "measurement": "Pc",
+                  "qty": 0,
+                  "validateBaggage": false
+                },
+                "checkIn": {
+                  "measurement": "Kg",
+                  "qty": 30,
+                  "validateBaggage": false
+                }
+              },
+              "stopQuantity": "0",
+              "aircraftType": "787",
+              "supplierBookingCode": "DCSQ",
+              "connectings": null
+            }
+          ],
+          "markupInfo": null,
+          "breakdownInfo": {
+            "originalAdult": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 3003500,
+              "nta": 3785100,
+              "commission": 0,
+              "fare": 3785100,
+              "tax": 781600,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalChild": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 2253000,
+              "nta": 3034600,
+              "commission": 0,
+              "fare": 3034600,
+              "tax": 781600,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalInfant": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 300500,
+              "nta": 316600,
+              "commission": 0,
+              "fare": 316600,
+              "tax": 16100,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalBaggage": 0
+          }
+        }
+      ],
+      "passengerFareInfo": {
+        "originalAdult": {
+          "psc": 0,
+          "iwjr": 0,
+          "discount": 0,
+          "baseFare": 6007000,
+          "nta": 7570200,
+          "commission": 0,
+          "fare": 7570200,
+          "tax": 1563200,
+          "markup": 0,
+          "privateMarkup": 0,
+          "breakdownTaxes": null
+        },
+        "originalChild": {
+          "psc": 0,
+          "iwjr": 0,
+          "discount": 0,
+          "baseFare": 4506000,
+          "nta": 6069200,
+          "commission": 0,
+          "fare": 6069200,
+          "tax": 1563200,
+          "markup": 0,
+          "privateMarkup": 0,
+          "breakdownTaxes": null
+        },
+        "originalInfant": {
+          "psc": 0,
+          "iwjr": 0,
+          "discount": 0,
+          "baseFare": 601000,
+          "nta": 633200,
+          "commission": 0,
+          "fare": 633200,
+          "tax": 32200,
+          "markup": 0,
+          "privateMarkup": 0,
+          "breakdownTaxes": null
+        },
+        "originalBaggage": 0
+      },
+      "additionalData": {
+        "validatingAirline": "SQ"
+      }
+    }
+  },
+  "serverTime": "2026-09-02T16:37:11.159319+05:30"
+}
