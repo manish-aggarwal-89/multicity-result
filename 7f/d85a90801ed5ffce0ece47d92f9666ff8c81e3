@@ -1,0 +1,503 @@
+fare_validator.py
+  s_34c5d5d8f376cb::t_2a68dabdf5d702 1099-1100,1112-1117
+  s_34c5d5d8f376cb::t_8c4055791345bb 1101-1111
+  s_34c5d5d8f376cb::t_b6a29b9ccf0a6c 32-42
+  s_34c5d5d8f376cb::t_20c1325ec000ed 459-460,462-463
+  s_34c5d5d8f376cb::t_82c62ddd91736d 670-675,678-679,681,686
+  s_34c5d5d8f376cb::t_88f7778b225681 24-30
+  s_34c5d5d8f376cb::t_bc320e23697560 888
+  s_34c5d5d8f376cb::t_b475d06aa02f91 898-899,904-922
+  s_34c5d5d8f376cb::t_2c22249569b2fe 579-580
+  s_34c5d5d8f376cb::t_5c625258e737f9 623-625
+  s_34c5d5d8f376cb::t_d3205509ba1447 563-570,572,581-593
+  s_34c5d5d8f376cb::t_e32cf74bcf772a 62
+  s_34c5d5d8f376cb::t_524499f641844d 873-875,881-883
+  s_34c5d5d8f376cb::t_e2d599ef6ed360 696-697
+  s_34c5d5d8f376cb::t_2fc6c607f492a4 454,461
+  s_34c5d5d8f376cb::t_0c943e665d3e68 596-622
+  s_34c5d5d8f376cb::t_d59cb59d2c6bab 821-822,836-837,844-845,849-850,852-854,856-857,859-861
+  s_34c5d5d8f376cb::t_d3e2dbcd2cd7d9 330-331,336,350,354-442
+  s_34c5d5d8f376cb::t_43bc0c335c3132 499-504
+  s_34c5d5d8f376cb::t_0ba4ce89ef29cb 863-870
+  s_34c5d5d8f376cb::t_660aceb3b99596 897,901-903
+  s_34c5d5d8f376cb::t_5cb308227fc684 1066-1098
+  s_34c5d5d8f376cb::t_601cacd5b9d559 719-721,723
+  s_34c5d5d8f376cb::t_126fea5b8947b1 445-453,455-458,464-498,505-562,571,573-578,594-595,626-669,676-677,680,682-685,687-695,698-718,722,724-760,766,768-772
+  s_34c5d5d8f376cb::t_4d3cb1ada92a8e 923-924
+  s_34c5d5d8f376cb::t_fd7a48a6969598 761-765,767
+  s_34c5d5d8f376cb::t_26c8dc796430c0 31
+  s_34c5d5d8f376cb::t_d57723a5d4bbfd 443-444
+  s_34c5d5d8f376cb::t_a7bd8409f3efc5 862
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/01_search.response.json.gz.b64
+  s_34c5d5d8f376cb::t_896c2f52f3ece5 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/02_revalidate.response.json
+  s_34c5d5d8f376cb::t_03cd8907727e55 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/03_revalidate_itin_prp.response.json
+  s_34c5d5d8f376cb::t_c4ea4aa01ebc78 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/04_booking.response.json
+  s_34c5d5d8f376cb::t_d6b71c995c7c4e 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/05_cancel.response.json
+  s_34c5d5d8f376cb::t_660fa0c0b6ea22 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/01_search.supplier_FindFare_request.json
+  s_34c5d5d8f376cb::t_5c2b33979ed3b2 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/01_search.supplier_FindFare_response.json
+  s_34c5d5d8f376cb::t_79bcc83f529ca6 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/02_revalidate.supplier_GetAuthorization_response.json
+  s_34c5d5d8f376cb::t_527ad42e531d8b 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/02_revalidate.supplier_RevalidateItinerary_request.json
+  s_34c5d5d8f376cb::t_c5c95c558cfee8 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/02_revalidate.supplier_RevalidateItinerary_response.json
+  s_34c5d5d8f376cb::t_a98246f58e4181 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/03_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_34c5d5d8f376cb::t_c88c6fbc457b38 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_34c5d5d8f376cb::t_5fe4404b590d4e 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_34c5d5d8f376cb::t_3815de0fe70a5b 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/04_booking.supplier_Book_request.json
+  s_34c5d5d8f376cb::t_4781a52797add3 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/04_booking.supplier_Book_response.json
+  s_34c5d5d8f376cb::t_6bb792bc5deccf 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/04_booking.supplier_GetAuthorization_response.json
+  s_34c5d5d8f376cb::t_97ff0779feebdc 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/04_booking.supplier_GetAuthorization_response_2.json
+  s_34c5d5d8f376cb::t_2fd1e8b173d7bf 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/04_booking.supplier_RevalidateItinerary_request.json
+  s_34c5d5d8f376cb::t_2264cf5be52c7a 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/04_booking.supplier_RevalidateItinerary_response.json
+  s_34c5d5d8f376cb::t_31755967f9fea5 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/05_cancel.supplier_CancelBook_request.xml
+  s_34c5d5d8f376cb::t_20186f09e17341 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/05_cancel.supplier_CancelBook_response.xml
+  s_34c5d5d8f376cb::t_6d70ce5f99c643 2,4
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/05_cancel.supplier_EndTransaction_request.xml
+  s_34c5d5d8f376cb::t_8f8b6251cebb0a 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/05_cancel.supplier_EndTransaction_response.xml
+  s_34c5d5d8f376cb::t_515610961dca3c 2,4,6
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/05_cancel.supplier_GetReservation_request.xml
+  s_34c5d5d8f376cb::t_97178e4fb47fb7 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/05_cancel.supplier_GetReservation_response.xml
+  s_34c5d5d8f376cb::t_521ab751e5ae9e 2
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/05_cancel.supplier_SessionClose_request.xml
+  s_34c5d5d8f376cb::t_88a6a19e8d5e14 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/05_cancel.supplier_SessionClose_response.xml
+  s_34c5d5d8f376cb::t_7cc33b02c89fee 2
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/05_cancel.supplier_SessionCreate_request.xml
+  s_34c5d5d8f376cb::t_6cfa4d8c48f776 1
+runs/FINAL-1A1C1I-2SEG/2026-09-02_16-36-53_936759_localhost/outbound/05_cancel.supplier_SessionCreate_response.xml
+  s_34c5d5d8f376cb::t_5b7f346b414964 2
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/01_search.response.json.gz.b64
+  s_34c5d5d8f376cb::t_3ed5329efb03bf 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/02_revalidate.response.json
+  s_34c5d5d8f376cb::t_157e95fd738737 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/03_revalidate_itin_prp.response.json
+  s_34c5d5d8f376cb::t_f56930d8e4f4e0 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/04_booking.response.json
+  s_34c5d5d8f376cb::t_62bd5e4bb28619 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/05_cancel.response.json
+  s_34c5d5d8f376cb::t_c4ea06ab94eaf5 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/01_search.supplier_FindFare_request.json
+  s_34c5d5d8f376cb::t_41096c5044219b 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/01_search.supplier_FindFare_response.json
+  s_34c5d5d8f376cb::t_67f3dc1488064f 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/02_revalidate.supplier_GetAuthorization_response.json
+  s_34c5d5d8f376cb::t_b9adbd48f7f79e 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/02_revalidate.supplier_RevalidateItinerary_request.json
+  s_34c5d5d8f376cb::t_0d9296595f3995 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/02_revalidate.supplier_RevalidateItinerary_response.json
+  s_34c5d5d8f376cb::t_5c24a4b5ca3d90 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/03_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_34c5d5d8f376cb::t_486673eaf82145 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_34c5d5d8f376cb::t_48b41afe9b2fad 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_34c5d5d8f376cb::t_ac303aadf5e08b 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/04_booking.supplier_Book_request.json
+  s_34c5d5d8f376cb::t_5d3d7a00ee7556 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/04_booking.supplier_Book_response.json
+  s_34c5d5d8f376cb::t_902edcbdbe077c 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/04_booking.supplier_GetAuthorization_response.json
+  s_34c5d5d8f376cb::t_05c50d05e62d50 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/04_booking.supplier_GetAuthorization_response_2.json
+  s_34c5d5d8f376cb::t_ef38e0774d7f8d 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/04_booking.supplier_RevalidateItinerary_request.json
+  s_34c5d5d8f376cb::t_23aff224f83d57 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/04_booking.supplier_RevalidateItinerary_response.json
+  s_34c5d5d8f376cb::t_6bfa0c7a553bc2 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/05_cancel.supplier_CancelBook_request.xml
+  s_34c5d5d8f376cb::t_85161808c3e4bb 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/05_cancel.supplier_CancelBook_response.xml
+  s_34c5d5d8f376cb::t_6207761bc23bea 2,4,6
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/05_cancel.supplier_EndTransaction_request.xml
+  s_34c5d5d8f376cb::t_d59b08791eddf2 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/05_cancel.supplier_EndTransaction_response.xml
+  s_34c5d5d8f376cb::t_19555e017520dd 2-4,6,8,10-13
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/05_cancel.supplier_GetReservation_request.xml
+  s_34c5d5d8f376cb::t_5915fc33aca52b 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/05_cancel.supplier_GetReservation_response.xml
+  s_34c5d5d8f376cb::t_26cc2134a6de84 1-2
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/05_cancel.supplier_SessionClose_request.xml
+  s_34c5d5d8f376cb::t_70b2f310ea514e 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/05_cancel.supplier_SessionClose_response.xml
+  s_34c5d5d8f376cb::t_b7a438642d1793 2
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/05_cancel.supplier_SessionCreate_request.xml
+  s_34c5d5d8f376cb::t_2e4f29a787e2af 1
+runs/FINAL-1A1C1I-4SEG/2026-09-02_16-38-42_2950a2_localhost/outbound/05_cancel.supplier_SessionCreate_response.xml
+  s_34c5d5d8f376cb::t_9c9448daa10988 2
+runs/FINAL-1A1C1I-5SEG/2026-09-02_16-40-29_2b463d_localhost/01_search.response.json.gz.b64
+  s_34c5d5d8f376cb::t_d475b8169c6533 1
+runs/FINAL-1A1C1I-5SEG/2026-09-02_16-40-29_2b463d_localhost/outbound/01_search.supplier_FindFare_request.json
+  s_34c5d5d8f376cb::t_abd0561372af22 1
+runs/FINAL-1A1C1I-5SEG/2026-09-02_16-40-29_2b463d_localhost/outbound/01_search.supplier_FindFare_response.json
+  s_34c5d5d8f376cb::t_3b78ecd5a5a66a 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/01_search.response.json.gz.b64
+  s_34c5d5d8f376cb::t_f8cfec69f237ed 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/02_revalidate.response.json
+  s_34c5d5d8f376cb::t_b8919a615e7b35 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/03_revalidate_itin_prp.response.json
+  s_34c5d5d8f376cb::t_eb75b6debadf6d 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/04_booking.response.json
+  s_34c5d5d8f376cb::t_cfe2c164af0dd4 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/05_cancel.response.json
+  s_34c5d5d8f376cb::t_a427fb8c72d9d2 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/01_search.supplier_FindFare_request.json
+  s_34c5d5d8f376cb::t_e4612addac158f 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/01_search.supplier_FindFare_response.json
+  s_34c5d5d8f376cb::t_eebdbcc76abc01 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/02_revalidate.supplier_GetAuthorization_response.json
+  s_34c5d5d8f376cb::t_8ac04725a9d5dc 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/02_revalidate.supplier_RevalidateItinerary_request.json
+  s_34c5d5d8f376cb::t_8f91439ec3f850 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/02_revalidate.supplier_RevalidateItinerary_response.json
+  s_34c5d5d8f376cb::t_96f5e0b79665a9 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/03_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_34c5d5d8f376cb::t_b5b06ccf915177 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_34c5d5d8f376cb::t_f1f3e245bdc787 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_34c5d5d8f376cb::t_ec8730256c273b 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/04_booking.supplier_Book_request.json
+  s_34c5d5d8f376cb::t_afb9334bedab4f 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/04_booking.supplier_Book_response.json
+  s_34c5d5d8f376cb::t_a7dea459193a9d 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/04_booking.supplier_GetAuthorization_response.json
+  s_34c5d5d8f376cb::t_3eaf75bc6f58dc 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/04_booking.supplier_GetAuthorization_response_2.json
+  s_34c5d5d8f376cb::t_54d3dad553a325 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/04_booking.supplier_RevalidateItinerary_request.json
+  s_34c5d5d8f376cb::t_38433c32fb31c5 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/04_booking.supplier_RevalidateItinerary_response.json
+  s_34c5d5d8f376cb::t_6bf6d56c22d181 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/05_cancel.supplier_CancelBook_request.xml
+  s_34c5d5d8f376cb::t_4381e06d868466 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/05_cancel.supplier_CancelBook_response.xml
+  s_34c5d5d8f376cb::t_a6c98ccfafe001 1-7
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/05_cancel.supplier_EndTransaction_request.xml
+  s_34c5d5d8f376cb::t_b80f0dd4b47f63 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/05_cancel.supplier_EndTransaction_response.xml
+  s_34c5d5d8f376cb::t_23f5219ee9a97b 1-12
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/05_cancel.supplier_GetReservation_request.xml
+  s_34c5d5d8f376cb::t_57317d473fe6fd 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/05_cancel.supplier_GetReservation_response.xml
+  s_34c5d5d8f376cb::t_dda2185522b8c5 1-2
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/05_cancel.supplier_SessionClose_request.xml
+  s_34c5d5d8f376cb::t_32b8cc1cb87d3a 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/05_cancel.supplier_SessionClose_response.xml
+  s_34c5d5d8f376cb::t_ce8ea9eb73bc79 2
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/05_cancel.supplier_SessionCreate_request.xml
+  s_34c5d5d8f376cb::t_d9d5e7f04c3878 1
+runs/FINAL-2A-2SEG/2026-09-02_16-41-18_ee9797_localhost/outbound/05_cancel.supplier_SessionCreate_response.xml
+  s_34c5d5d8f376cb::t_ac99925c7e42a5 1-2
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/01_search.response.json.gz.b64
+  s_34c5d5d8f376cb::t_be4eb479b28d1e 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/02_revalidate.response.json
+  s_34c5d5d8f376cb::t_db1e3db5c68c8a 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/03_revalidate_itin_prp.response.json
+  s_34c5d5d8f376cb::t_72b39c869dc860 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/04_booking.response.json
+  s_34c5d5d8f376cb::t_1ea2e33220c76c 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/05_cancel.response.json
+  s_34c5d5d8f376cb::t_7b45aae5512a69 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/01_search.supplier_FindFare_request.json
+  s_34c5d5d8f376cb::t_fb0745fafa6358 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/01_search.supplier_FindFare_response.json
+  s_34c5d5d8f376cb::t_e95bc44e8127c0 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/02_revalidate.supplier_GetAuthorization_response.json
+  s_34c5d5d8f376cb::t_b2fedc5efd6277 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/02_revalidate.supplier_RevalidateItinerary_request.json
+  s_34c5d5d8f376cb::t_e3bbe8c8131cd3 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/02_revalidate.supplier_RevalidateItinerary_response.json
+  s_34c5d5d8f376cb::t_ac1ad5a670505e 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/03_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_34c5d5d8f376cb::t_eee58fcf827842 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_34c5d5d8f376cb::t_cdf768d54da10a 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_34c5d5d8f376cb::t_062dce7927528c 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/04_booking.supplier_Book_request.json
+  s_34c5d5d8f376cb::t_a73c69f002f9af 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/04_booking.supplier_Book_response.json
+  s_34c5d5d8f376cb::t_7ac389ddef295e 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/04_booking.supplier_GetAuthorization_response.json
+  s_34c5d5d8f376cb::t_afc9d372f7b530 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/04_booking.supplier_GetAuthorization_response_2.json
+  s_34c5d5d8f376cb::t_5e006db8ba535d 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/04_booking.supplier_RevalidateItinerary_request.json
+  s_34c5d5d8f376cb::t_4eeb95e2cd5e09 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/04_booking.supplier_RevalidateItinerary_response.json
+  s_34c5d5d8f376cb::t_79c6a4aa94c00d 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/05_cancel.supplier_CancelBook_request.xml
+  s_34c5d5d8f376cb::t_2f3ac6a885685d 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/05_cancel.supplier_CancelBook_response.xml
+  s_34c5d5d8f376cb::t_842ecf8d5401ef 2,4,6
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/05_cancel.supplier_EndTransaction_request.xml
+  s_34c5d5d8f376cb::t_3efb21efeee352 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/05_cancel.supplier_EndTransaction_response.xml
+  s_34c5d5d8f376cb::t_05b8f5a7a69202 2-4,6,8,10-13
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/05_cancel.supplier_GetReservation_request.xml
+  s_34c5d5d8f376cb::t_4769cb4b4bd26a 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/05_cancel.supplier_GetReservation_response.xml
+  s_34c5d5d8f376cb::t_9ab6e75e6a6b71 2
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/05_cancel.supplier_SessionClose_request.xml
+  s_34c5d5d8f376cb::t_cf5be159876390 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/05_cancel.supplier_SessionClose_response.xml
+  s_34c5d5d8f376cb::t_d0f3d2cce877c9 2
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/05_cancel.supplier_SessionCreate_request.xml
+  s_34c5d5d8f376cb::t_7c783bc98aa81e 1
+runs/FINAL-2A-4SEG/2026-09-02_16-43-06_0e05ea_localhost/outbound/05_cancel.supplier_SessionCreate_response.xml
+  s_34c5d5d8f376cb::t_2bdb2ae22d360b 2
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/01_search.response.json.gz.b64
+  s_34c5d5d8f376cb::t_269d66d4034897 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/02_revalidate.response.json
+  s_34c5d5d8f376cb::t_e7b1e63ea0b9c9 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/03_revalidate_itin_prp.response.json
+  s_34c5d5d8f376cb::t_ae239018804138 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/04_booking.response.json
+  s_34c5d5d8f376cb::t_2a5b4e25e966db 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/05_cancel.response.json
+  s_34c5d5d8f376cb::t_19e88e1591347e 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/01_search.supplier_FindFare_request.json
+  s_34c5d5d8f376cb::t_37268020ac63fa 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/01_search.supplier_FindFare_response.json
+  s_34c5d5d8f376cb::t_99382ff2868023 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/02_revalidate.supplier_GetAuthorization_response.json
+  s_34c5d5d8f376cb::t_5a00a5c66a1272 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/02_revalidate.supplier_RevalidateItinerary_request.json
+  s_34c5d5d8f376cb::t_c9585fb7cddb75 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/02_revalidate.supplier_RevalidateItinerary_response.json
+  s_34c5d5d8f376cb::t_8420b4670e4763 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/03_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_34c5d5d8f376cb::t_09fe572f1275f9 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_34c5d5d8f376cb::t_b92f1f0ff8053d 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_34c5d5d8f376cb::t_c6192ab334c281 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/04_booking.supplier_Book_request.json
+  s_34c5d5d8f376cb::t_9af5471a26efbd 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/04_booking.supplier_Book_response.json
+  s_34c5d5d8f376cb::t_d7e78aa2c45752 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/04_booking.supplier_GetAuthorization_response.json
+  s_34c5d5d8f376cb::t_9e6111ff91b86a 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/04_booking.supplier_GetAuthorization_response_2.json
+  s_34c5d5d8f376cb::t_36e3f855d689c7 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/04_booking.supplier_RevalidateItinerary_request.json
+  s_34c5d5d8f376cb::t_7b24daf14c08fa 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/04_booking.supplier_RevalidateItinerary_response.json
+  s_34c5d5d8f376cb::t_4ed6ef1b3acc5a 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/05_cancel.supplier_CancelBook_request.xml
+  s_34c5d5d8f376cb::t_4a2bdcc95b6393 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/05_cancel.supplier_CancelBook_response.xml
+  s_34c5d5d8f376cb::t_619e2ecf7703ba 2,4
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/05_cancel.supplier_EndTransaction_request.xml
+  s_34c5d5d8f376cb::t_a538bc11d8edd0 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/05_cancel.supplier_EndTransaction_response.xml
+  s_34c5d5d8f376cb::t_613a6e3476dd00 1-14
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/05_cancel.supplier_GetReservation_request.xml
+  s_34c5d5d8f376cb::t_40c324480fb5c8 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/05_cancel.supplier_GetReservation_response.xml
+  s_34c5d5d8f376cb::t_c72309a381c1df 2
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/05_cancel.supplier_SessionClose_request.xml
+  s_34c5d5d8f376cb::t_b8b56b54b80c30 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/05_cancel.supplier_SessionClose_response.xml
+  s_34c5d5d8f376cb::t_6cf5a178dba914 1-2
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/05_cancel.supplier_SessionCreate_request.xml
+  s_34c5d5d8f376cb::t_5d5e0924f18b1f 1
+runs/FINAL-2A-5SEG/2026-09-02_16-44-51_d9a1fc_localhost/outbound/05_cancel.supplier_SessionCreate_response.xml
+  s_34c5d5d8f376cb::t_c44f68fd9b674f 2
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/01_search.response.json.gz.b64
+  s_34c5d5d8f376cb::t_7edf01c31f7b42 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/02_revalidate.response.json
+  s_34c5d5d8f376cb::t_cfbc3748fbb7a6 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/03_revalidate_itin_prp.response.json
+  s_34c5d5d8f376cb::t_dd2eb94f73b10f 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/04_booking.response.json
+  s_34c5d5d8f376cb::t_856f7a5f0de94d 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/05_cancel.response.json
+  s_34c5d5d8f376cb::t_9f200d81b20ce4 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/01_search.supplier_FindFare_request.json
+  s_34c5d5d8f376cb::t_031773f5d392fc 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/01_search.supplier_FindFare_response.json
+  s_34c5d5d8f376cb::t_e9b0130489ba73 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/02_revalidate.supplier_GetAuthorization_response.json
+  s_34c5d5d8f376cb::t_d09429b5af14c3 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/02_revalidate.supplier_RevalidateItinerary_request.json
+  s_34c5d5d8f376cb::t_a10d08ae257dca 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/02_revalidate.supplier_RevalidateItinerary_response.json
+  s_34c5d5d8f376cb::t_c7d992fc87c1f9 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/03_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_34c5d5d8f376cb::t_9a816c716365bb 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_34c5d5d8f376cb::t_fec1d67056c31d 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_34c5d5d8f376cb::t_7faea210d32ad2 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/04_booking.supplier_Book_request.json
+  s_34c5d5d8f376cb::t_9ec532a871fc41 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/04_booking.supplier_Book_response.json
+  s_34c5d5d8f376cb::t_69af767ea2fc82 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/04_booking.supplier_GetAuthorization_response.json
+  s_34c5d5d8f376cb::t_7fbf95395d4328 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/04_booking.supplier_GetAuthorization_response_2.json
+  s_34c5d5d8f376cb::t_c21c5c6c14c378 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/04_booking.supplier_RevalidateItinerary_request.json
+  s_34c5d5d8f376cb::t_835b06aa9bc8a6 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/04_booking.supplier_RevalidateItinerary_response.json
+  s_34c5d5d8f376cb::t_6e03bdb7f12e5a 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/05_cancel.supplier_CancelBook_request.xml
+  s_34c5d5d8f376cb::t_f19b791e6bfd5e 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/05_cancel.supplier_CancelBook_response.xml
+  s_34c5d5d8f376cb::t_84137f8facf1b2 1-7
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/05_cancel.supplier_EndTransaction_request.xml
+  s_34c5d5d8f376cb::t_c1b70936f6bbc3 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/05_cancel.supplier_EndTransaction_response.xml
+  s_34c5d5d8f376cb::t_9d0d60ab0743ba 2,4,6
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/05_cancel.supplier_GetReservation_request.xml
+  s_34c5d5d8f376cb::t_ff13bfc393be08 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/05_cancel.supplier_GetReservation_response.xml
+  s_34c5d5d8f376cb::t_b6ad8a35ca115e 2
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/05_cancel.supplier_SessionClose_request.xml
+  s_34c5d5d8f376cb::t_eafe049727e8bf 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/05_cancel.supplier_SessionClose_response.xml
+  s_34c5d5d8f376cb::t_a3a9982102d502 1-2
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/05_cancel.supplier_SessionCreate_request.xml
+  s_34c5d5d8f376cb::t_7e586c25e3f75e 1
+runs/FINAL-2A2C2I-2SEG/2026-09-02_16-46-37_c0ba29_localhost/outbound/05_cancel.supplier_SessionCreate_response.xml
+  s_34c5d5d8f376cb::t_652422cdd2ebc1 1-2
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/01_search.response.json.gz.b64
+  s_34c5d5d8f376cb::t_04df4f5931f3aa 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/02_revalidate.response.json
+  s_34c5d5d8f376cb::t_025de386a4d63a 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/03_revalidate_itin_prp.response.json
+  s_34c5d5d8f376cb::t_303017a33ed64e 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/04_booking.response.json
+  s_34c5d5d8f376cb::t_1670923c9f9238 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/05_cancel.response.json
+  s_34c5d5d8f376cb::t_010eee9c0eb3be 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/01_search.supplier_FindFare_request.json
+  s_34c5d5d8f376cb::t_10da09b45d12e6 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/01_search.supplier_FindFare_response.json
+  s_34c5d5d8f376cb::t_3cc9b2cbd9d5c5 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/02_revalidate.supplier_GetAuthorization_response.json
+  s_34c5d5d8f376cb::t_29d8f8df0c0fe7 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/02_revalidate.supplier_RevalidateItinerary_request.json
+  s_34c5d5d8f376cb::t_78b7925612042a 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/02_revalidate.supplier_RevalidateItinerary_response.json
+  s_34c5d5d8f376cb::t_bf067e3d340528 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/03_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_34c5d5d8f376cb::t_c50f568282ee36 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_34c5d5d8f376cb::t_1a831d3bb1e417 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_34c5d5d8f376cb::t_58f705ab6af6ad 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/04_booking.supplier_Book_request.json
+  s_34c5d5d8f376cb::t_8ad0381a846d2f 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/04_booking.supplier_Book_response.json
+  s_34c5d5d8f376cb::t_75ad9687005be7 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/04_booking.supplier_GetAuthorization_response.json
+  s_34c5d5d8f376cb::t_da53e9845301ef 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/04_booking.supplier_GetAuthorization_response_2.json
+  s_34c5d5d8f376cb::t_4ca9276935c6d5 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/04_booking.supplier_RevalidateItinerary_request.json
+  s_34c5d5d8f376cb::t_19d5f5d85a4165 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/04_booking.supplier_RevalidateItinerary_response.json
+  s_34c5d5d8f376cb::t_2f60632f0933e6 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/05_cancel.supplier_CancelBook_request.xml
+  s_34c5d5d8f376cb::t_0c852ef05998bd 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/05_cancel.supplier_CancelBook_response.xml
+  s_34c5d5d8f376cb::t_d4176e8e8ba126 1-7
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/05_cancel.supplier_EndTransaction_request.xml
+  s_34c5d5d8f376cb::t_beddc6d0113376 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/05_cancel.supplier_EndTransaction_response.xml
+  s_34c5d5d8f376cb::t_4d0b5e2c4f6f24 1-14
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/05_cancel.supplier_GetReservation_request.xml
+  s_34c5d5d8f376cb::t_cca491889e9723 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/05_cancel.supplier_GetReservation_response.xml
+  s_34c5d5d8f376cb::t_a033203fc4821c 1-2
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/05_cancel.supplier_SessionClose_request.xml
+  s_34c5d5d8f376cb::t_121f72bd8b987e 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/05_cancel.supplier_SessionClose_response.xml
+  s_34c5d5d8f376cb::t_ce8a2e22847863 1-2
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/05_cancel.supplier_SessionCreate_request.xml
+  s_34c5d5d8f376cb::t_de647a812243e1 1
+runs/FINAL-2A2C2I-4SEG/2026-09-02_16-48-33_9d9dec_localhost/outbound/05_cancel.supplier_SessionCreate_response.xml
+  s_34c5d5d8f376cb::t_05ad85c45736b8 1-2
+runs/FINAL-2A2C2I-5SEG/2026-09-02_16-50-18_a481e2_localhost/01_search.response.json.gz.b64
+  s_34c5d5d8f376cb::t_06f78adcdd9980 1
+runs/FINAL-2A2C2I-5SEG/2026-09-02_16-50-18_a481e2_localhost/outbound/01_search.supplier_FindFare_request.json
+  s_34c5d5d8f376cb::t_0a8422737d1149 1
+runs/FINAL-2A2C2I-5SEG/2026-09-02_16-50-18_a481e2_localhost/outbound/01_search.supplier_FindFare_response.json
+  s_34c5d5d8f376cb::t_ac785184d08f11 1
+runs/FINAL-ONEWAY-1A1C1I/2026-09-02_12-27-04_a8b749_localhost/01_search.response.json.gz.b64
+  s_34c5d5d8f376cb::t_277eed39755e09 1
+runs/FINAL-ONEWAY-1A1C1I/2026-09-02_12-27-04_a8b749_localhost/outbound/01_search.supplier_FindFare_request.json
+  s_34c5d5d8f376cb::t_a1eeb1328bb59a 1
+runs/FINAL-ONEWAY-1A1C1I/2026-09-02_12-27-04_a8b749_localhost/outbound/01_search.supplier_FindFare_response.json
+  s_34c5d5d8f376cb::t_314e0b4376701c 1
+runs/FINAL-ONEWAY-1A1C1I/2026-09-02_16-51-10_ee57bd_localhost/01_search.response.json.gz.b64
+  s_34c5d5d8f376cb::t_8602fd2f6faafb 1
+runs/FINAL-ONEWAY-1A1C1I/2026-09-02_16-51-10_ee57bd_localhost/outbound/01_search.supplier_FindFare_request.json
+  s_34c5d5d8f376cb::t_2da40f528c7dcf 1
+runs/FINAL-ONEWAY-1A1C1I/2026-09-02_16-51-10_ee57bd_localhost/outbound/01_search.supplier_FindFare_response.json
+  s_34c5d5d8f376cb::t_64550de4b06200 1
+runs/FINAL-ROUNDTRIP-2A/2026-09-02_12-27-07_c18ab4_localhost/01_search.response.json.gz.b64
+  s_34c5d5d8f376cb::t_9a5cf946e370d4 1
+runs/FINAL-ROUNDTRIP-2A/2026-09-02_12-27-07_c18ab4_localhost/outbound/01_search.supplier_FindFare_request.json
+  s_34c5d5d8f376cb::t_d28b94635a2b74 1
+runs/FINAL-ROUNDTRIP-2A/2026-09-02_12-27-07_c18ab4_localhost/outbound/01_search.supplier_FindFare_response.json
+  s_34c5d5d8f376cb::t_25328fde00ac81 1
+runs/FINAL-ROUNDTRIP-2A/2026-09-02_16-51-52_3b6007_localhost/01_search.response.json.gz.b64
+  s_34c5d5d8f376cb::t_ef34287083df55 1
+runs/FINAL-ROUNDTRIP-2A/2026-09-02_16-51-52_3b6007_localhost/outbound/01_search.supplier_FindFare_request.json
+  s_34c5d5d8f376cb::t_2be22981bdd1c6 1
+runs/FINAL-ROUNDTRIP-2A/2026-09-02_16-51-52_3b6007_localhost/outbound/01_search.supplier_FindFare_response.json
+  s_34c5d5d8f376cb::t_739831d1218f62 1
+runs/MH-CORRECTED-FARE/2026-09-02_12-27-38_mh/03_booking.response.json
+  s_34c5d5d8f376cb::t_b6c87b1b1fc6cd 8,15,17,29,31-33,35,38,42-45,51,55-56,58,60-61,63,69,71-73,78-79,81-82,84,86-88,90-110,115-119,124-125,127-128,131,133-134,136-150,152-153,155-156,158,160-162,164-167,173,175,178,180,184-185,188-191,198,227,238-239,248-249,251-252,254-255,257,259,261-263,266-271,273-303,309,314-315,325-326,328-329,366-367,376-377,379-380,382,385,388,390-391,394-396,401,407,409-437,439-466,468-469,471-472,474-475,477-478,480,482-484,487-489,494,499-500,510-511,513-514,554-555,557-558,592,596
+runs/MH-CORRECTED-FARE/2026-09-02_12-27-38_mh/outbound/03_booking.supplier_Book_request.json
+  s_34c5d5d8f376cb::t_0a9c6624b2a46f 1
+runs/MH-CORRECTED-FARE/2026-09-02_12-27-38_mh/outbound/03_booking.supplier_Book_response.json
+  s_34c5d5d8f376cb::t_6e90ca84677293 1
+runs/MH-CORRECTED-FARE/2026-09-02_12-27-38_mh/outbound/03_booking.supplier_GetAuthorization_response.json
+  s_34c5d5d8f376cb::t_ccc3b6e02907aa 1
+runs/MH-CORRECTED-FARE/2026-09-02_12-27-38_mh/outbound/03_booking.supplier_GetAuthorization_response_2.json
+  s_34c5d5d8f376cb::t_f32a1e358c4414 1
+runs/MH-CORRECTED-FARE/2026-09-02_12-27-38_mh/outbound/03_booking.supplier_RevalidateItinerary_request.json
+  s_34c5d5d8f376cb::t_e4c22c3955724d 1
+runs/MH-CORRECTED-FARE/2026-09-02_12-27-38_mh/outbound/03_booking.supplier_RevalidateItinerary_response.json
+  s_34c5d5d8f376cb::t_9573b45a43b0f9 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "7fd85a90801ed5ffce0ece47d92f9666ff8c81e3",
+  "prompts": {},
+  "sessions": {
+    "s_34c5d5d8f376cb": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "09d9b94c-9745-44ba-bc88-0f3fadd003ad",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "manish-aggarwal-89 <manish.aggarwal@tiket.com>"
+    }
+  }
+}
