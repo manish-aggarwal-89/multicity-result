@@ -1,0 +1,1068 @@
+{
+  "code": "SUCCESS",
+  "message": "SUCCESS",
+  "data": {
+    "mainFare": {
+      "departureFlight": null,
+      "returnFlight": null,
+      "roundTripCombine": null,
+      "multiCities": {
+        "searchAvailabilities": [
+          {
+            "flighSelect": "TR 275",
+            "currency": "IDR",
+            "origin": "CGK",
+            "destination": "SIN",
+            "date": "2027-03-01",
+            "marketingAirline": "TR",
+            "adult": 2,
+            "child": 0,
+            "infant": 0,
+            "departure": {
+              "date": "2027-03-01",
+              "time": "09:35",
+              "timezone": 7,
+              "airportCode": "CGK",
+              "terminal": "3"
+            },
+            "arrival": {
+              "date": "2027-03-01",
+              "time": "12:25",
+              "timezone": 8,
+              "airportCode": "SIN",
+              "terminal": "1"
+            },
+            "totalTransit": 0,
+            "seatsAvailable": 0,
+            "upgradable": false,
+            "schedules": [
+              {
+                "flightNumber": "275",
+                "airline": "TR",
+                "aircraftType": "32N",
+                "departureDetail": {
+                  "date": "2027-03-01",
+                  "time": "09:35",
+                  "timezone": 7,
+                  "airportCode": "CGK",
+                  "terminal": "3"
+                },
+                "arrivalDetail": {
+                  "date": "2027-03-01",
+                  "time": "12:25",
+                  "timezone": 8,
+                  "airportCode": "SIN",
+                  "terminal": "1"
+                },
+                "cabinClass": "ECONOMY",
+                "fareClass": "Y",
+                "travelTime": 110,
+                "baggage": {
+                  "cabin": {
+                    "qty": 0,
+                    "validateBaggage": false
+                  },
+                  "checkIn": {
+                    "measurement": "Kg",
+                    "qty": 30,
+                    "validateBaggage": false
+                  }
+                },
+                "connectings": null,
+                "marriageGroup": "O",
+                "operatingAirline": "TR",
+                "operatingFlightNumber": "275"
+              }
+            ],
+            "journeySellKey": "",
+            "fareSellKey": ""
+          },
+          {
+            "flighSelect": "TR 608",
+            "currency": "IDR",
+            "origin": "SIN",
+            "destination": "BKK",
+            "date": "2027-03-04",
+            "marketingAirline": "TR",
+            "adult": 2,
+            "child": 0,
+            "infant": 0,
+            "departure": {
+              "date": "2027-03-04",
+              "time": "06:40",
+              "timezone": 8,
+              "airportCode": "SIN",
+              "terminal": "1"
+            },
+            "arrival": {
+              "date": "2027-03-04",
+              "time": "08:15",
+              "timezone": 7,
+              "airportCode": "BKK"
+            },
+            "totalTransit": 0,
+            "seatsAvailable": 0,
+            "upgradable": false,
+            "schedules": [
+              {
+                "flightNumber": "608",
+                "airline": "TR",
+                "aircraftType": "32N",
+                "departureDetail": {
+                  "date": "2027-03-04",
+                  "time": "06:40",
+                  "timezone": 8,
+                  "airportCode": "SIN",
+                  "terminal": "1"
+                },
+                "arrivalDetail": {
+                  "date": "2027-03-04",
+                  "time": "08:15",
+                  "timezone": 7,
+                  "airportCode": "BKK"
+                },
+                "cabinClass": "ECONOMY",
+                "fareClass": "H",
+                "travelTime": 155,
+                "baggage": {
+                  "cabin": {
+                    "qty": 0,
+                    "validateBaggage": false
+                  },
+                  "checkIn": {
+                    "measurement": "Kg",
+                    "qty": 30,
+                    "validateBaggage": false
+                  }
+                },
+                "connectings": null,
+                "marriageGroup": "O",
+                "operatingAirline": "TR",
+                "operatingFlightNumber": "608"
+              }
+            ],
+            "journeySellKey": "",
+            "fareSellKey": ""
+          },
+          {
+            "flighSelect": "TR 607|TR 468",
+            "currency": "IDR",
+            "origin": "BKK",
+            "destination": "KUL",
+            "date": "2027-03-07",
+            "marketingAirline": "TR",
+            "adult": 2,
+            "child": 0,
+            "infant": 0,
+            "departure": {
+              "date": "2027-03-07",
+              "time": "11:50",
+              "timezone": 7,
+              "airportCode": "BKK"
+            },
+            "arrival": {
+              "date": "2027-03-07",
+              "time": "18:15",
+              "timezone": 8,
+              "airportCode": "KUL",
+              "terminal": "2"
+            },
+            "totalTransit": 1,
+            "seatsAvailable": 0,
+            "upgradable": false,
+            "schedules": [
+              {
+                "flightNumber": "607",
+                "airline": "TR",
+                "aircraftType": "788",
+                "departureDetail": {
+                  "date": "2027-03-07",
+                  "time": "11:50",
+                  "timezone": 7,
+                  "airportCode": "BKK"
+                },
+                "arrivalDetail": {
+                  "date": "2027-03-07",
+                  "time": "15:25",
+                  "timezone": 8,
+                  "airportCode": "SIN",
+                  "terminal": "1"
+                },
+                "cabinClass": "ECONOMY",
+                "fareClass": "H",
+                "travelTime": 155,
+                "baggage": {
+                  "cabin": {
+                    "qty": 0,
+                    "validateBaggage": false
+                  },
+                  "checkIn": {
+                    "measurement": "Kg",
+                    "qty": 30,
+                    "validateBaggage": false
+                  }
+                },
+                "connectings": null,
+                "marriageGroup": "O",
+                "operatingAirline": "TR",
+                "operatingFlightNumber": "607"
+              },
+              {
+                "flightNumber": "468",
+                "airline": "TR",
+                "aircraftType": "32N",
+                "departureDetail": {
+                  "date": "2027-03-07",
+                  "time": "17:00",
+                  "timezone": 8,
+                  "airportCode": "SIN",
+                  "terminal": "1"
+                },
+                "arrivalDetail": {
+                  "date": "2027-03-07",
+                  "time": "18:15",
+                  "timezone": 8,
+                  "airportCode": "KUL",
+                  "terminal": "2"
+                },
+                "cabinClass": "ECONOMY",
+                "fareClass": "H",
+                "travelTime": 75,
+                "transitTime": 95,
+                "baggage": {
+                  "cabin": {
+                    "qty": 0,
+                    "validateBaggage": false
+                  },
+                  "checkIn": {
+                    "measurement": "Kg",
+                    "qty": 30,
+                    "validateBaggage": false
+                  }
+                },
+                "connectings": null,
+                "marriageGroup": "I",
+                "operatingAirline": "TR",
+                "operatingFlightNumber": "468"
+              }
+            ],
+            "journeySellKey": "",
+            "fareSellKey": ""
+          },
+          {
+            "flighSelect": "TR 453",
+            "currency": "IDR",
+            "origin": "KUL",
+            "destination": "SIN",
+            "date": "2027-03-10",
+            "marketingAirline": "TR",
+            "adult": 2,
+            "child": 0,
+            "infant": 0,
+            "departure": {
+              "date": "2027-03-10",
+              "time": "11:15",
+              "timezone": 8,
+              "airportCode": "KUL",
+              "terminal": "2"
+            },
+            "arrival": {
+              "date": "2027-03-10",
+              "time": "12:35",
+              "timezone": 8,
+              "airportCode": "SIN",
+              "terminal": "1"
+            },
+            "totalTransit": 0,
+            "seatsAvailable": 0,
+            "upgradable": false,
+            "schedules": [
+              {
+                "flightNumber": "453",
+                "airline": "TR",
+                "aircraftType": "788",
+                "departureDetail": {
+                  "date": "2027-03-10",
+                  "time": "11:15",
+                  "timezone": 8,
+                  "airportCode": "KUL",
+                  "terminal": "2"
+                },
+                "arrivalDetail": {
+                  "date": "2027-03-10",
+                  "time": "12:35",
+                  "timezone": 8,
+                  "airportCode": "SIN",
+                  "terminal": "1"
+                },
+                "cabinClass": "ECONOMY",
+                "fareClass": "B",
+                "travelTime": 80,
+                "baggage": {
+                  "cabin": {
+                    "qty": 0,
+                    "validateBaggage": false
+                  },
+                  "checkIn": {
+                    "measurement": "Kg",
+                    "qty": 30,
+                    "validateBaggage": false
+                  }
+                },
+                "connectings": null,
+                "marriageGroup": "O",
+                "operatingAirline": "TR",
+                "operatingFlightNumber": "453"
+              }
+            ],
+            "journeySellKey": "",
+            "fareSellKey": ""
+          },
+          {
+            "flighSelect": "TR 274",
+            "currency": "IDR",
+            "origin": "SIN",
+            "destination": "CGK",
+            "date": "2027-03-13",
+            "marketingAirline": "TR",
+            "adult": 2,
+            "child": 0,
+            "infant": 0,
+            "departure": {
+              "date": "2027-03-13",
+              "time": "07:55",
+              "timezone": 8,
+              "airportCode": "SIN",
+              "terminal": "1"
+            },
+            "arrival": {
+              "date": "2027-03-13",
+              "time": "08:50",
+              "timezone": 7,
+              "airportCode": "CGK",
+              "terminal": "3"
+            },
+            "totalTransit": 0,
+            "seatsAvailable": 0,
+            "upgradable": false,
+            "schedules": [
+              {
+                "flightNumber": "274",
+                "airline": "TR",
+                "aircraftType": "32N",
+                "departureDetail": {
+                  "date": "2027-03-13",
+                  "time": "07:55",
+                  "timezone": 8,
+                  "airportCode": "SIN",
+                  "terminal": "1"
+                },
+                "arrivalDetail": {
+                  "date": "2027-03-13",
+                  "time": "08:50",
+                  "timezone": 7,
+                  "airportCode": "CGK",
+                  "terminal": "3"
+                },
+                "cabinClass": "ECONOMY",
+                "fareClass": "Y",
+                "travelTime": 115,
+                "baggage": {
+                  "cabin": {
+                    "qty": 0,
+                    "validateBaggage": false
+                  },
+                  "checkIn": {
+                    "measurement": "Kg",
+                    "qty": 30,
+                    "validateBaggage": false
+                  }
+                },
+                "connectings": null,
+                "marriageGroup": "O",
+                "operatingAirline": "TR",
+                "operatingFlightNumber": "274"
+              }
+            ],
+            "journeySellKey": "",
+            "fareSellKey": ""
+          }
+        ],
+        "fares": [
+          {
+            "distributionType": "sabre-gds",
+            "supplierId": "tiketcomSabre",
+            "originalCurrency": "IDR",
+            "validatingAirline": "TR",
+            "promotionCode": {
+              "id": "",
+              "name": ""
+            },
+            "brandedFare": null,
+            "fareClassDetails": [
+              {
+                "origin": "CGK",
+                "destination": "SIN",
+                "fareClass": "Y"
+              },
+              {
+                "origin": "SIN",
+                "destination": "BKK",
+                "fareClass": "H"
+              },
+              {
+                "origin": "BKK",
+                "destination": "SIN",
+                "fareClass": "H"
+              },
+              {
+                "origin": "SIN",
+                "destination": "KUL",
+                "fareClass": "H"
+              },
+              {
+                "origin": "KUL",
+                "destination": "SIN",
+                "fareClass": "B"
+              },
+              {
+                "origin": "SIN",
+                "destination": "CGK",
+                "fareClass": "Y"
+              }
+            ],
+            "originalTotalFare": {
+              "total": 34952800,
+              "base": 25958000,
+              "tax": 8994800,
+              "taxBreakDowns": null,
+              "supplierDiscount": 0,
+              "seatAvailables": 9,
+              "fareBasisCodes": [
+                "Y2TR24",
+                "H2TR24",
+                "H2TR24",
+                "H2TR24",
+                "B2TR24",
+                "Y2TR24"
+              ],
+              "fareClasses": [
+                "Y",
+                "H",
+                "H",
+                "H",
+                "B",
+                "Y"
+              ],
+              "iwjr": 0,
+              "psc": 0,
+              "commission": 0,
+              "agt": 0,
+              "gst": 0,
+              "airportTax": 0,
+              "unidentified": 0,
+              "flyThru": 0,
+              "upselling": 0,
+              "nta": 34952800,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null,
+              "penaltyInfos": null,
+              "scheduleFareDetailInformations": null
+            },
+            "originalAdultFare": {
+              "total": 17476400,
+              "base": 12979000,
+              "tax": 4497400,
+              "taxBreakDowns": {},
+              "supplierDiscount": 0,
+              "seatAvailables": 9,
+              "fareBasisCodes": [
+                "Y2TR24",
+                "H2TR24",
+                "H2TR24",
+                "H2TR24",
+                "B2TR24",
+                "Y2TR24"
+              ],
+              "fareClasses": [
+                "Y",
+                "H",
+                "H",
+                "H",
+                "B",
+                "Y"
+              ],
+              "iwjr": 0,
+              "psc": 0,
+              "commission": 0,
+              "agt": 0,
+              "gst": 0,
+              "airportTax": 0,
+              "unidentified": 0,
+              "flyThru": 0,
+              "upselling": 0,
+              "nta": 17476400,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": [
+                {
+                  "code": "YRI",
+                  "currencyCode": "IDR",
+                  "amount": 213000
+                },
+                {
+                  "code": "YRI",
+                  "currencyCode": "IDR",
+                  "amount": 213000
+                },
+                {
+                  "code": "YRI",
+                  "currencyCode": "IDR",
+                  "amount": 213000
+                },
+                {
+                  "code": "YRI",
+                  "currencyCode": "IDR",
+                  "amount": 213000
+                },
+                {
+                  "code": "YRI",
+                  "currencyCode": "IDR",
+                  "amount": 213000
+                },
+                {
+                  "code": "YRI",
+                  "currencyCode": "IDR",
+                  "amount": 213000
+                },
+                {
+                  "code": "D5",
+                  "currencyCode": "IDR",
+                  "amount": 266400
+                },
+                {
+                  "code": "G1",
+                  "currencyCode": "IDR",
+                  "amount": 35300
+                },
+                {
+                  "code": "H8",
+                  "currencyCode": "IDR",
+                  "amount": 4500
+                },
+                {
+                  "code": "MY",
+                  "currencyCode": "IDR",
+                  "amount": 220600
+                },
+                {
+                  "code": "L7",
+                  "currencyCode": "IDR",
+                  "amount": 150700
+                },
+                {
+                  "code": "L7",
+                  "currencyCode": "IDR",
+                  "amount": 41900
+                },
+                {
+                  "code": "L7",
+                  "currencyCode": "IDR",
+                  "amount": 150700
+                },
+                {
+                  "code": "OP",
+                  "currencyCode": "IDR",
+                  "amount": 111600
+                },
+                {
+                  "code": "OP",
+                  "currencyCode": "IDR",
+                  "amount": 111600
+                },
+                {
+                  "code": "SG",
+                  "currencyCode": "IDR",
+                  "amount": 647300
+                },
+                {
+                  "code": "SG",
+                  "currencyCode": "IDR",
+                  "amount": 167400
+                },
+                {
+                  "code": "SG",
+                  "currencyCode": "IDR",
+                  "amount": 647300
+                },
+                {
+                  "code": "E7",
+                  "currencyCode": "IDR",
+                  "amount": 18800
+                },
+                {
+                  "code": "E72",
+                  "currencyCode": "IDR",
+                  "amount": 18800
+                },
+                {
+                  "code": "G8",
+                  "currencyCode": "IDR",
+                  "amount": 13400
+                },
+                {
+                  "code": "G82",
+                  "currencyCode": "IDR",
+                  "amount": 13400
+                },
+                {
+                  "code": "TS",
+                  "currencyCode": "IDR",
+                  "amount": 599700
+                }
+              ],
+              "penaltyInfos": [
+                {
+                  "penaltyType": "RESCHEDULE",
+                  "penaltyStatus": "YES",
+                  "applicability": "Before",
+                  "amount": 9142000,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 9142000,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                },
+                {
+                  "penaltyType": "RESCHEDULE",
+                  "penaltyStatus": "YES",
+                  "applicability": "After",
+                  "amount": 9142000,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 9142000,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                },
+                {
+                  "penaltyType": "REFUND",
+                  "penaltyStatus": "NO",
+                  "applicability": "Before",
+                  "amount": 0,
+                  "currencyCode": "",
+                  "decimalPlaces": 0,
+                  "originalAmount": 0,
+                  "originalCurrencyCode": "",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                },
+                {
+                  "penaltyType": "REFUND",
+                  "penaltyStatus": "NO",
+                  "applicability": "After",
+                  "amount": 0,
+                  "currencyCode": "",
+                  "decimalPlaces": 0,
+                  "originalAmount": 0,
+                  "originalCurrencyCode": "",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                }
+              ],
+              "scheduleFareDetailInformations": [
+                {
+                  "origin": "CGK",
+                  "destination": "SIN",
+                  "fareBasisCode": "Y2TR24",
+                  "breakpoint": true,
+                  "fareClasses": "Y"
+                },
+                {
+                  "origin": "SIN",
+                  "destination": "BKK",
+                  "fareBasisCode": "H2TR24",
+                  "breakpoint": true,
+                  "fareClasses": "H"
+                },
+                {
+                  "origin": "BKK",
+                  "destination": "SIN",
+                  "fareBasisCode": "H2TR24",
+                  "fareClasses": "H"
+                },
+                {
+                  "origin": "SIN",
+                  "destination": "KUL",
+                  "fareBasisCode": "H2TR24",
+                  "breakpoint": true,
+                  "fareClasses": "H"
+                },
+                {
+                  "origin": "KUL",
+                  "destination": "SIN",
+                  "fareBasisCode": "B2TR24",
+                  "breakpoint": true,
+                  "fareClasses": "B"
+                },
+                {
+                  "origin": "SIN",
+                  "destination": "CGK",
+                  "fareBasisCode": "Y2TR24",
+                  "breakpoint": true,
+                  "fareClasses": "Y"
+                }
+              ]
+            },
+            "originalChildFare": {
+              "total": 0,
+              "base": 0,
+              "tax": 0,
+              "taxBreakDowns": null,
+              "supplierDiscount": 0,
+              "fareBasisCodes": null,
+              "fareClasses": null,
+              "iwjr": 0,
+              "psc": 0,
+              "commission": 0,
+              "agt": 0,
+              "gst": 0,
+              "airportTax": 0,
+              "unidentified": 0,
+              "flyThru": 0,
+              "upselling": 0,
+              "nta": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null,
+              "penaltyInfos": null,
+              "scheduleFareDetailInformations": null
+            },
+            "originalInfantFare": {
+              "total": 0,
+              "base": 0,
+              "tax": 0,
+              "taxBreakDowns": null,
+              "supplierDiscount": 0,
+              "fareBasisCodes": null,
+              "fareClasses": null,
+              "iwjr": 0,
+              "psc": 0,
+              "commission": 0,
+              "agt": 0,
+              "gst": 0,
+              "airportTax": 0,
+              "unidentified": 0,
+              "flyThru": 0,
+              "upselling": 0,
+              "nta": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null,
+              "penaltyInfos": null,
+              "scheduleFareDetailInformations": null
+            },
+            "fareClasses": "Y|H|H|H|B|Y",
+            "otherFares": [],
+            "flexiFare": false,
+            "privateFare": false,
+            "inclusiveAddons": {
+              "departureScheduleAddonsList": [
+                {
+                  "origin": "CGK",
+                  "departureDateTime": "2027-03-01 09:35",
+                  "destination": "SIN",
+                  "airline": "TR",
+                  "flightNumber": "275",
+                  "baggage": {
+                    "cabin": {
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 30,
+                      "validateBaggage": false
+                    }
+                  },
+                  "meal": ""
+                },
+                {
+                  "origin": "SIN",
+                  "departureDateTime": "2027-03-04 06:40",
+                  "destination": "BKK",
+                  "airline": "TR",
+                  "flightNumber": "608",
+                  "baggage": {
+                    "cabin": {
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 30,
+                      "validateBaggage": false
+                    }
+                  },
+                  "meal": ""
+                },
+                {
+                  "origin": "BKK",
+                  "departureDateTime": "2027-03-07 11:50",
+                  "destination": "SIN",
+                  "airline": "TR",
+                  "flightNumber": "607",
+                  "baggage": {
+                    "cabin": {
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 30,
+                      "validateBaggage": false
+                    }
+                  },
+                  "meal": ""
+                },
+                {
+                  "origin": "SIN",
+                  "departureDateTime": "2027-03-07 17:00",
+                  "destination": "KUL",
+                  "airline": "TR",
+                  "flightNumber": "468",
+                  "baggage": {
+                    "cabin": {
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 30,
+                      "validateBaggage": false
+                    }
+                  },
+                  "meal": ""
+                },
+                {
+                  "origin": "KUL",
+                  "departureDateTime": "2027-03-10 11:15",
+                  "destination": "SIN",
+                  "airline": "TR",
+                  "flightNumber": "453",
+                  "baggage": {
+                    "cabin": {
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 30,
+                      "validateBaggage": false
+                    }
+                  },
+                  "meal": ""
+                },
+                {
+                  "origin": "SIN",
+                  "departureDateTime": "2027-03-13 07:55",
+                  "destination": "CGK",
+                  "airline": "TR",
+                  "flightNumber": "274",
+                  "baggage": {
+                    "cabin": {
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 30,
+                      "validateBaggage": false
+                    }
+                  },
+                  "meal": ""
+                }
+              ],
+              "returnScheduleAddonsList": null
+            }
+          }
+        ],
+        "otherFares": null
+      }
+    },
+    "otherFares": null,
+    "integratorRevalidateItineraryRequest": {
+      "distributionType": "sabre-gds",
+      "account": {
+        "name": "tiketcomSabre",
+        "code": "tiketcomSabre"
+      },
+      "flightSelect": "TR 275 ~ TR 608 ~ TR 607|TR 468 ~ TR 453 ~ TR 274",
+      "origin": "CGK",
+      "destination": "CGK",
+      "adult": 2,
+      "child": 0,
+      "infant": 0,
+      "departureDate": "2027-03-01",
+      "returnDate": "",
+      "cabinClass": "ECONOMY",
+      "international": 1,
+      "validatingAirline": "TR",
+      "tripTypes": [
+        "MULTI_CITY"
+      ],
+      "currency": {
+        "departureCurrency": "IDR",
+        "returnCurrency": ""
+      },
+      "itineraries": [
+        {
+          "origin": "CGK",
+          "destination": "SIN",
+          "journeySellKey": "",
+          "fareSellKey": "",
+          "schedules": [
+            {
+              "departureDate": "2027-03-01T09:35",
+              "arrivalDate": "2027-03-01T12:25",
+              "operatingAirline": {
+                "code": "TR",
+                "number": "275"
+              },
+              "fareClass": "Y",
+              "origin": "CGK",
+              "destination": "SIN",
+              "marketingAirline": "TR",
+              "flightNumber": "275",
+              "fareBasis": {
+                "adult": "Y2TR24"
+              }
+            }
+          ]
+        },
+        {
+          "origin": "SIN",
+          "destination": "BKK",
+          "journeySellKey": "",
+          "fareSellKey": "",
+          "schedules": [
+            {
+              "departureDate": "2027-03-04T06:40",
+              "arrivalDate": "2027-03-04T08:15",
+              "operatingAirline": {
+                "code": "TR",
+                "number": "608"
+              },
+              "fareClass": "H",
+              "origin": "SIN",
+              "destination": "BKK",
+              "marketingAirline": "TR",
+              "flightNumber": "608",
+              "fareBasis": {
+                "adult": "H2TR24"
+              }
+            }
+          ]
+        },
+        {
+          "origin": "BKK",
+          "destination": "KUL",
+          "journeySellKey": "",
+          "fareSellKey": "",
+          "schedules": [
+            {
+              "departureDate": "2027-03-07T11:50",
+              "arrivalDate": "2027-03-07T15:25",
+              "operatingAirline": {
+                "code": "TR",
+                "number": "607"
+              },
+              "fareClass": "H",
+              "origin": "BKK",
+              "destination": "SIN",
+              "marketingAirline": "TR",
+              "flightNumber": "607",
+              "fareBasis": {
+                "adult": "H2TR24"
+              }
+            },
+            {
+              "departureDate": "2027-03-07T17:00",
+              "arrivalDate": "2027-03-07T18:15",
+              "operatingAirline": {
+                "code": "TR",
+                "number": "468"
+              },
+              "fareClass": "H",
+              "origin": "SIN",
+              "destination": "KUL",
+              "marketingAirline": "TR",
+              "flightNumber": "468",
+              "fareBasis": {
+                "adult": "H2TR24"
+              }
+            }
+          ]
+        },
+        {
+          "origin": "KUL",
+          "destination": "SIN",
+          "journeySellKey": "",
+          "fareSellKey": "",
+          "schedules": [
+            {
+              "departureDate": "2027-03-10T11:15",
+              "arrivalDate": "2027-03-10T12:35",
+              "operatingAirline": {
+                "code": "TR",
+                "number": "453"
+              },
+              "fareClass": "B",
+              "origin": "KUL",
+              "destination": "SIN",
+              "marketingAirline": "TR",
+              "flightNumber": "453",
+              "fareBasis": {
+                "adult": "B2TR24"
+              }
+            }
+          ]
+        },
+        {
+          "origin": "SIN",
+          "destination": "CGK",
+          "journeySellKey": "",
+          "fareSellKey": "",
+          "schedules": [
+            {
+              "departureDate": "2027-03-13T07:55",
+              "arrivalDate": "2027-03-13T08:50",
+              "operatingAirline": {
+                "code": "TR",
+                "number": "274"
+              },
+              "fareClass": "Y",
+              "origin": "SIN",
+              "destination": "CGK",
+              "marketingAirline": "TR",
+              "flightNumber": "274",
+              "fareBasis": {
+                "adult": "Y2TR24"
+              }
+            }
+          ]
+        }
+      ],
+      "corporate": null,
+      "promotionCode": {
+        "id": "",
+        "name": ""
+      },
+      "source": "PRP",
+      "multiFare": false
+    }
+  },
+  "serverTime": "2026-09-02T16:45:02.2248+05:30"
+}
