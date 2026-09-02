@@ -1,0 +1,597 @@
+{
+  "code": "SUCCESS",
+  "message": "SUCCESS",
+  "data": {
+    "mandatoryRequest": {
+      "storeId": "TIKETCOM",
+      "channelId": "WEB",
+      "requestId": "",
+      "serviceId": "GATEWAY",
+      "resellerId": "",
+      "identity": "",
+      "username": "guest"
+    },
+    "integratorBookRequest": {
+      "distributionType": "sabre",
+      "account": {
+        "name": "sabre",
+        "code": "tiketcomSabre"
+      },
+      "adult": 1,
+      "child": 0,
+      "infant": 0,
+      "multiFare": false,
+      "tripType": "MULTI_CITY",
+      "promotionCode": {
+        "id": "",
+        "name": ""
+      },
+      "flightSelect": "MH 712~MH 608~MH 727",
+      "contact": {
+        "profileId": "32724735",
+        "firstName": "Dono",
+        "lastName": "Kasino",
+        "dob": "",
+        "phoneCode": "62",
+        "phoneCodeCs": "",
+        "phoneCodePassenger": "",
+        "phoneNumber": "878555152",
+        "phoneNumberCs": "",
+        "phoneNumberPassenger": "",
+        "title": "mr",
+        "gender": "male",
+        "email": "sabreteam@tiket.com",
+        "emailPassenger": "testing@tiket.com",
+        "emailAgent": "sabreteam@tiket.com",
+        "accountId": ""
+      },
+      "paxes": [
+        {
+          "paxNumber": 10000,
+          "profileId": "32724735",
+          "type": "adult",
+          "title": "mr",
+          "gender": "male",
+          "firstName": "Dono",
+          "lastName": "Kasino",
+          "nationality": "IN",
+          "dob": "1988-02-01",
+          "passport": {
+            "id": "22929292",
+            "expired": "2030-11-07",
+            "country": "IN",
+            "issuingDate": "2020-11-07"
+          }
+        }
+      ],
+      "itineraries": [
+        {
+          "airline": "MH",
+          "departure": "CGK",
+          "arrival": "SIN",
+          "date": "2026-11-01",
+          "connecting": "0",
+          "international": 1,
+          "cabinClass": "ECONOMY",
+          "schedules": [
+            {
+              "arrivalDate": "2026-11-01 12:55",
+              "departureDate": "2026-11-01 09:40",
+              "operatingAirline": {
+                "code": "MH",
+                "number": "712"
+              },
+              "fareClass": "Q",
+              "origin": "CGK",
+              "destination": "KUL",
+              "marketingAirline": "MH",
+              "flightNumber": "712",
+              "marriageGroup": "O",
+              "fareBasisCodes": {
+                "adult": "QBX1YID"
+              }
+            },
+            {
+              "arrivalDate": "2026-11-02 00:30",
+              "departureDate": "2026-11-01 23:20",
+              "operatingAirline": {
+                "code": "MH",
+                "number": "609"
+              },
+              "fareClass": "Q",
+              "origin": "KUL",
+              "destination": "SIN",
+              "marketingAirline": "MH",
+              "flightNumber": "609",
+              "marriageGroup": "I",
+              "fareBasisCodes": {
+                "adult": "QBX1YID",
+                "adultBreakpoint": true
+              }
+            }
+          ]
+        },
+        {
+          "airline": "MH",
+          "departure": "SIN",
+          "arrival": "KUL",
+          "date": "2026-11-02",
+          "connecting": "0",
+          "international": 1,
+          "cabinClass": "ECONOMY",
+          "schedules": [
+            {
+              "arrivalDate": "2026-11-02 18:45",
+              "departureDate": "2026-11-02 17:25",
+              "operatingAirline": {
+                "code": "MH",
+                "number": "608"
+              },
+              "fareClass": "Q",
+              "origin": "SIN",
+              "destination": "KUL",
+              "marketingAirline": "MH",
+              "flightNumber": "608",
+              "marriageGroup": "O",
+              "fareBasisCodes": {
+                "adult": "NBX1YID"
+              }
+            }
+          ]
+        },
+        {
+          "airline": "MH",
+          "departure": "KUL",
+          "arrival": "CGK",
+          "date": "2026-11-03",
+          "connecting": "0",
+          "international": 1,
+          "cabinClass": "ECONOMY",
+          "schedules": [
+            {
+              "arrivalDate": "2026-11-03 23:45",
+              "departureDate": "2026-11-03 22:35",
+              "operatingAirline": {
+                "code": "MH",
+                "number": "727"
+              },
+              "fareClass": "Q",
+              "origin": "KUL",
+              "destination": "CGK",
+              "marketingAirline": "MH",
+              "flightNumber": "727",
+              "marriageGroup": "O",
+              "fareBasisCodes": {
+                "adult": "NBX1YID",
+                "adultBreakpoint": true
+              }
+            }
+          ]
+        }
+      ],
+      "currency": "IDR",
+      "countryId": "id|sg~sg|my~my|id",
+      "commission": 0,
+      "maxBookRetry": 1
+    },
+    "bookDetail": {
+      "distributionType": "sabre",
+      "account": {
+        "name": "sabre",
+        "code": "tiketcomSabre"
+      },
+      "corporateCodes": [],
+      "bookingCode": "ETKTNY",
+      "bookingExpired": "2026-09-02 12:57:38",
+      "originalCurrency": "IDR",
+      "originalBookingFare": {
+        "balanceDue": 4637600,
+        "bookedFare": 4637600,
+        "fare": 4637600,
+        "adultFare": 4637600,
+        "childFare": 0,
+        "infantFare": 0,
+        "commission": 0,
+        "commissionPercent": 0,
+        "commissionAddons": 0,
+        "commissionPercentAddons": 0,
+        "nta": 4637600,
+        "ssrFee": {
+          "ssrFare": 0,
+          "baggageFare": 0,
+          "mealsFare": 0,
+          "seatsFare": 0,
+          "medicalsFare": 0,
+          "commissionBaggage": 0,
+          "commissionMeals": 0,
+          "commissionSeats": 0,
+          "commissionMedicals": 0,
+          "ssrItineraries": [
+            {
+              "departureDateTime": "",
+              "ssrPaxMeals": [],
+              "ssrPaxSeats": [],
+              "ssrPaxBaggages": [],
+              "ssrPaxMedicals": []
+            },
+            {
+              "departureDateTime": "",
+              "ssrPaxMeals": [],
+              "ssrPaxSeats": [],
+              "ssrPaxBaggages": [],
+              "ssrPaxMedicals": []
+            }
+          ]
+        },
+        "markup": 0,
+        "fareExcludeSsr": 4637600,
+        "discount": 0
+      },
+      "promotionCode": {
+        "id": "",
+        "name": ""
+      },
+      "itineraries": [
+        {
+          "international": 1,
+          "originalCurrency": "IDR",
+          "originalFare": 1545866.6666666667,
+          "originalAdultFare": 1545866.6666666667,
+          "originalChildFare": 0,
+          "originalInfantFare": 0,
+          "adult": 1,
+          "child": 0,
+          "infant": 0,
+          "cabinClass": "ECONOMY",
+          "schedules": [
+            {
+              "departureDate": "2026-11-01 09:40",
+              "arrivalDate": "2026-11-01 12:55",
+              "operatingAirline": {
+                "code": "MH",
+                "number": "712"
+              },
+              "departureTerminal": "3",
+              "arrivalTerminal": "1",
+              "fareBasisCodes": {
+                "adult": "QBX1YID"
+              },
+              "fareClass": "Q",
+              "origin": "CGK",
+              "destination": "KUL",
+              "marketingAirline": "MH",
+              "marketingFlightNumber": "712",
+              "baggage": {
+                "cabin": {
+                  "unit": "1",
+                  "measurement": "Pc",
+                  "qty": 0,
+                  "validateBaggage": false
+                },
+                "checkIn": {
+                  "measurement": "Kg",
+                  "qty": 25,
+                  "validateBaggage": false
+                }
+              },
+              "stopQuantity": "0",
+              "aircraftType": "7M8",
+              "supplierBookingCode": "DCMH",
+              "connectings": null
+            },
+            {
+              "departureDate": "2026-11-01 23:20",
+              "arrivalDate": "2026-11-02 00:30",
+              "operatingAirline": {
+                "code": "MH",
+                "number": "609"
+              },
+              "departureTerminal": "1",
+              "arrivalTerminal": "2",
+              "fareBasisCodes": {
+                "adult": "QBX1YID",
+                "adultBreakpoint": true
+              },
+              "fareClass": "Q",
+              "origin": "KUL",
+              "destination": "SIN",
+              "marketingAirline": "MH",
+              "marketingFlightNumber": "609",
+              "baggage": {
+                "cabin": {
+                  "unit": "1",
+                  "measurement": "Pc",
+                  "qty": 0,
+                  "validateBaggage": false
+                },
+                "checkIn": {
+                  "measurement": "Kg",
+                  "qty": 25,
+                  "validateBaggage": false
+                }
+              },
+              "stopQuantity": "0",
+              "aircraftType": "73H",
+              "supplierBookingCode": "DCMH",
+              "connectings": null
+            }
+          ],
+          "markupInfo": null,
+          "breakdownInfo": {
+            "originalAdult": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 850000,
+              "nta": 1545866.6666666667,
+              "commission": 0,
+              "fare": 1545866.6666666667,
+              "tax": 695866.6666666666,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalChild": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 0,
+              "nta": 0,
+              "commission": 0,
+              "fare": 0,
+              "tax": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalInfant": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 0,
+              "nta": 0,
+              "commission": 0,
+              "fare": 0,
+              "tax": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalBaggage": 0
+          }
+        },
+        {
+          "international": 1,
+          "originalCurrency": "IDR",
+          "originalFare": 1545866.6666666667,
+          "originalAdultFare": 1545866.6666666667,
+          "originalChildFare": 0,
+          "originalInfantFare": 0,
+          "adult": 1,
+          "child": 0,
+          "infant": 0,
+          "cabinClass": "ECONOMY",
+          "schedules": [
+            {
+              "departureDate": "2026-11-02 17:25",
+              "arrivalDate": "2026-11-02 18:45",
+              "operatingAirline": {
+                "code": "MH",
+                "number": "608"
+              },
+              "departureTerminal": "2",
+              "arrivalTerminal": "1",
+              "fareBasisCodes": {
+                "adult": "NBX1YID"
+              },
+              "fareClass": "Q",
+              "origin": "SIN",
+              "destination": "KUL",
+              "marketingAirline": "MH",
+              "marketingFlightNumber": "608",
+              "baggage": {
+                "cabin": {
+                  "unit": "1",
+                  "measurement": "Pc",
+                  "qty": 0,
+                  "validateBaggage": false
+                },
+                "checkIn": {
+                  "measurement": "Kg",
+                  "qty": 25,
+                  "validateBaggage": false
+                }
+              },
+              "stopQuantity": "0",
+              "aircraftType": "7M8",
+              "supplierBookingCode": "DCMH",
+              "connectings": null
+            }
+          ],
+          "markupInfo": null,
+          "breakdownInfo": {
+            "originalAdult": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 850000,
+              "nta": 1545866.6666666667,
+              "commission": 0,
+              "fare": 1545866.6666666667,
+              "tax": 695866.6666666666,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalChild": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 0,
+              "nta": 0,
+              "commission": 0,
+              "fare": 0,
+              "tax": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalInfant": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 0,
+              "nta": 0,
+              "commission": 0,
+              "fare": 0,
+              "tax": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalBaggage": 0
+          }
+        },
+        {
+          "international": 1,
+          "originalCurrency": "IDR",
+          "originalFare": 1545866.6666666667,
+          "originalAdultFare": 1545866.6666666667,
+          "originalChildFare": 0,
+          "originalInfantFare": 0,
+          "adult": 1,
+          "child": 0,
+          "infant": 0,
+          "cabinClass": "ECONOMY",
+          "schedules": [
+            {
+              "departureDate": "2026-11-03 22:35",
+              "arrivalDate": "2026-11-03 23:45",
+              "operatingAirline": {
+                "code": "MH",
+                "number": "727"
+              },
+              "departureTerminal": "1",
+              "arrivalTerminal": "3",
+              "fareBasisCodes": {
+                "adult": "NBX1YID",
+                "adultBreakpoint": true
+              },
+              "fareClass": "Q",
+              "origin": "KUL",
+              "destination": "CGK",
+              "marketingAirline": "MH",
+              "marketingFlightNumber": "727",
+              "baggage": {
+                "cabin": {
+                  "unit": "1",
+                  "measurement": "Pc",
+                  "qty": 0,
+                  "validateBaggage": false
+                },
+                "checkIn": {
+                  "measurement": "Kg",
+                  "qty": 25,
+                  "validateBaggage": false
+                }
+              },
+              "stopQuantity": "0",
+              "aircraftType": "73H",
+              "supplierBookingCode": "DCMH",
+              "connectings": null
+            }
+          ],
+          "markupInfo": null,
+          "breakdownInfo": {
+            "originalAdult": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 850000,
+              "nta": 1545866.6666666667,
+              "commission": 0,
+              "fare": 1545866.6666666667,
+              "tax": 695866.6666666666,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalChild": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 0,
+              "nta": 0,
+              "commission": 0,
+              "fare": 0,
+              "tax": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalInfant": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 0,
+              "nta": 0,
+              "commission": 0,
+              "fare": 0,
+              "tax": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalBaggage": 0
+          }
+        }
+      ],
+      "passengerFareInfo": {
+        "originalAdult": {
+          "psc": 0,
+          "iwjr": 0,
+          "discount": 0,
+          "baseFare": 2550000,
+          "nta": 4637600,
+          "commission": 0,
+          "fare": 4637600,
+          "tax": 2087600,
+          "markup": 0,
+          "privateMarkup": 0,
+          "breakdownTaxes": null
+        },
+        "originalChild": {
+          "psc": 0,
+          "iwjr": 0,
+          "discount": 0,
+          "baseFare": 0,
+          "nta": 0,
+          "commission": 0,
+          "fare": 0,
+          "tax": 0,
+          "markup": 0,
+          "privateMarkup": 0,
+          "breakdownTaxes": null
+        },
+        "originalInfant": {
+          "psc": 0,
+          "iwjr": 0,
+          "discount": 0,
+          "baseFare": 0,
+          "nta": 0,
+          "commission": 0,
+          "fare": 0,
+          "tax": 0,
+          "markup": 0,
+          "privateMarkup": 0,
+          "breakdownTaxes": null
+        },
+        "originalBaggage": 0
+      },
+      "additionalData": {
+        "validatingAirline": "MH"
+      }
+    }
+  },
+  "serverTime": "2026-09-02T12:27:38.843688+05:30"
+}

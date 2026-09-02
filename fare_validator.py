@@ -21,9 +21,25 @@ Per run it does three things:
 
 3. CROSS-STAGE fare chain  search -> revalidate[ -> revalidate_itin_prp] -> booking
    The chosen itinerary is matched across stages by its flight-number sequence.
-   For every adjacent pair present, the per-single-pax whole-trip fare
-   (adult / child / infant) must be identical. This is the "the fare I saw in
-   search is the fare I get in revalidate and in booking" guarantee.
+   For every adjacent pair the per-single-pax whole-trip fare (adult/child/infant)
+   plus fareClass and fareBasis are compared, with two severities:
+     - search vs the next stage: search can be a cached / sold-out supplier quote,
+       so any difference (fare, baggage, fareClass, fareBasis) is a WARNING and the
+       fareClass/fareBasis change is spelled out — it does not fail the run.
+     - revalidate -> revalidate_itin_prp -> booking: authoritative, so fare,
+       fareClass and fareBasis MUST match; any difference is a hard FAIL.
+
+4. OUTBOUND Sabre checks (when run_dir/outbound/ exists)
+   - Book ApplicationResults must be Complete; flags RULE VALIDATION FAILED /
+     ERR.SP.PROVIDER_ERROR (the MH Q/N fare-basis mismatch failure mode).
+   - If Book request forces FareBasis codes, they must match revalidate priced
+     fareBasisCode set.
+   - Book segments (flight/O-D/RBD) must match integrator bookDetail schedules.
+   - Sabre FreeBaggageAllowance (FareCalculationBreakdown) vs integrator booked
+     check-in baggage per segment.
+   - Revalidate supplier total vs integrator revalidate grand total.
+
+Console output groups runs under === PASS === and === FAIL === sections.
 
 File names understood in each run dir (numeric prefixes optional):
     *search*    .json or .json.gz.b64   (gzip+base64 wrapped is auto-decoded)
@@ -43,6 +59,7 @@ import base64
 import gzip
 import json
 import os
+import re
 import sys
 
 # breakdownInfo / passengerFareInfo keys (booking side)
@@ -310,13 +327,13 @@ def _seg_key(airline, flightno, origin, dest) -> tuple:
     return (str(airline or ""), str(flightno or ""), origin, dest)
 
 
-def _baggage_issues(search_fare: dict, bd: dict) -> list[str]:
-    """Per-segment check-in baggage: search inclusiveAddons vs booked schedules.
+def _baggage_issues(source_fare: dict, bd: dict, source_label: str = "search") -> list[str]:
+    """Per-segment check-in baggage: source-stage inclusiveAddons vs booked schedules.
 
     Segments are matched by (airline, flightNumber, origin, destination) rather than
     position, so a different ordering never produces a false mismatch.
     """
-    addons = ((search_fare.get("inclusiveAddons") or {}).get("departureScheduleAddonsList")) or []
+    addons = ((source_fare.get("inclusiveAddons") or {}).get("departureScheduleAddonsList")) or []
     idx = {
         _seg_key(a.get("airline"), a.get("flightNumber"), a.get("origin"), a.get("destination")):
         _checkin(a.get("baggage"))
@@ -330,8 +347,427 @@ def _baggage_issues(search_fare: dict, bd: dict) -> list[str]:
             seg.get("origin"), seg.get("destination"),
         )
         if k in idx and idx[k] != _checkin(seg.get("baggage")):
-            out.append(f"{k[0]}{k[1]} {k[2]}->{k[3]} check-in baggage search={idx[k]} != booking={_checkin(seg.get('baggage'))}")
+            out.append(f"{k[0]}{k[1]} {k[2]}->{k[3]} check-in baggage {source_label}={idx[k]} != booking={_checkin(seg.get('baggage'))}")
     return out
+
+
+# --------------------------------------------------------------------------- #
+# fareClass / fareBasis identity across stages                                 #
+# --------------------------------------------------------------------------- #
+def _stage_fare_meta(avail: list, fare: dict) -> tuple[set, set]:
+    """(fareClasses, fareBasisCodes) advertised for a search/revalidate option.
+
+    Pulled from everywhere Sabre/Amadeus/AirAsia stash them: per-segment RBD,
+    per-pax fareClasses/fareBasisCodes, the rolled-up originalTotalFare, the
+    fareClassDetails list and scheduleFareDetailInformations. Upper-cased so a
+    case wobble never reads as a change.
+    """
+    classes: set[str] = set()
+    bases: set[str] = set()
+    for a in avail or []:
+        for s in a.get("schedules") or []:
+            if s.get("fareClass"):
+                classes.add(str(s.get("fareClass")).upper())
+    for _, key in FARE_PAX:
+        f = fare.get(key) or {}
+        for c in f.get("fareClasses") or []:
+            classes.add(str(c).upper())
+        for b in f.get("fareBasisCodes") or []:
+            bases.add(str(b).upper())
+        for sfi in f.get("scheduleFareDetailInformations") or []:
+            if sfi.get("fareBasisCode"):
+                bases.add(str(sfi.get("fareBasisCode")).upper())
+    ot = fare.get("originalTotalFare") or {}
+    for c in ot.get("fareClasses") or []:
+        classes.add(str(c).upper())
+    for b in ot.get("fareBasisCodes") or []:
+        bases.add(str(b).upper())
+    for fcd in fare.get("fareClassDetails") or []:
+        if fcd.get("fareClass"):
+            classes.add(str(fcd.get("fareClass")).upper())
+    return classes, bases
+
+
+def _booking_fare_meta(bd: dict) -> tuple[set, set]:
+    """(fareClasses, fareBasisCodes) actually booked, read from bookDetail."""
+    classes: set[str] = set()
+    bases: set[str] = set()
+    for it in bd.get("itineraries") or []:
+        for s in it.get("schedules") or []:
+            if s.get("fareClass"):
+                classes.add(str(s.get("fareClass")).upper())
+    for b in _walk_strings(bd, {"fareBasisCode", "fareBasis"}):
+        bases.add(b.upper())
+    return classes, bases
+
+
+def _cross_stage_diffs(chain: list) -> tuple[list[str], list[str]]:
+    """Fare / fareClass / fareBasis diffs across the stage chain, split by severity.
+
+    chain items are (label, per_single_fares, fareClasses, fareBasisCodes).
+
+    Search is allowed to drift from the rest — it can be a cached supplier quote or
+    the class/basis sold out before pricing — so any search<->next difference is a
+    WARNING (with the fareClass/fareBasis change spelled out). Every other adjacent
+    pair (revalidate, revalidate_itin_prp, booking) is authoritative and MUST agree
+    on fare, fareClass and fareBasis, so differences there are hard FAILs.
+    """
+    issues: list[str] = []
+    warnings: list[str] = []
+    for (la, a, ca, ba), (lb, b, cb, bb) in zip(chain, chain[1:]):
+        field_diffs = _cmp_stage(la, a, lb, b)
+        class_diff = bool(ca and cb and ca != cb)
+        basis_diff = bool(ba and bb and ba != bb)
+        if la == "search" or lb == "search":
+            for d in field_diffs:
+                warnings.append(f"{d}  (search may be a cached/sold-out quote; {lb} is authoritative)")
+            if class_diff or basis_diff:
+                warnings.append(
+                    f"fare selection changed {la}->{lb}: "
+                    f"fareClass {sorted(ca) or ['?']}->{sorted(cb) or ['?']}, "
+                    f"fareBasis {sorted(ba) or ['?']}->{sorted(bb) or ['?']}"
+                )
+        else:
+            issues += field_diffs
+            if class_diff:
+                issues.append(
+                    f"fareClass mismatch {la}={sorted(ca)} != {lb}={sorted(cb)} "
+                    f"(revalidate and booking must use the same fareClass)"
+                )
+            if basis_diff:
+                issues.append(
+                    f"fareBasis mismatch {la}={sorted(ba)} != {lb}={sorted(bb)} "
+                    f"(revalidate and booking must use the same fareBasis)"
+                )
+    return issues, warnings
+
+
+# --------------------------------------------------------------------------- #
+# outbound Sabre request/response (run_dir/outbound/*.supplier_*.json)         #
+# --------------------------------------------------------------------------- #
+def _outbound_dir(run_dir: str) -> str | None:
+    p = os.path.join(run_dir, "outbound")
+    return p if os.path.isdir(p) else None
+
+
+def _outbound_pick(out_dir: str, step_hint: str, op: str, kind: str) -> str | None:
+    """Pick outbound file; prefer unsuffixed `*.supplier_Op_kind.json` (not `_2`)."""
+    hits = sorted(
+        f for f in os.listdir(out_dir)
+        if f.endswith(".json") and op in f and kind in f and step_hint in f
+    )
+    if not hits:
+        return None
+    plain = [h for h in hits if re.search(rf"\.supplier_{re.escape(op)}_{re.escape(kind)}\.json$", h)]
+    pick = plain[-1] if plain else hits[-1]
+    return os.path.join(out_dir, pick)
+
+
+def _walk_strings(obj, keys: set[str]) -> list[str]:
+    out: list[str] = []
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            if k in keys and isinstance(v, str) and v.strip():
+                out.append(v.strip())
+            out.extend(_walk_strings(v, keys))
+    elif isinstance(obj, list):
+        for v in obj:
+            out.extend(_walk_strings(v, keys))
+    return out
+
+
+def _parse_sabre_baggage(code: str) -> tuple[int, str]:
+    """Sabre FreeBaggageAllowance -> (qty, measurement). KG010/NONIL/PC002."""
+    c = (code or "").upper().strip()
+    if c in ("NIL", "NONIL", "NO", "0", ""):
+        return 0, "kg"
+    m = re.match(r"^KG(\d+)$", c)
+    if m:
+        return int(m.group(1)), "kg"
+    m = re.match(r"^PC(\d+)$", c) or re.match(r"^(\d+)P$", c)
+    if m:
+        return int(m.group(1)), "piece"
+    if c.endswith("K") and c[:-1].isdigit():
+        return int(c[:-1]), "kg"
+    return 0, "unknown"
+
+
+def _book_request_segments(req: dict) -> list[dict]:
+    segs: list[dict] = []
+    rq = req.get("CreatePassengerNameRecordRQ") or req
+    airbook = rq.get("AirBook") or {}
+    odi = airbook.get("OriginDestinationInformation") or []
+    if isinstance(odi, dict):
+        odi = [odi]
+    for block in odi:
+        if not isinstance(block, dict):
+            continue
+        items = block.get("FlightSegment")
+        if isinstance(items, dict):
+            items = [items]
+        for seg in items or []:
+            if not isinstance(seg, dict):
+                continue
+            o = ((seg.get("OriginLocation") or {}).get("LocationCode") or "").upper()
+            d = ((seg.get("DestinationLocation") or {}).get("LocationCode") or "").upper()
+            fn = str(seg.get("FlightNumber") or (seg.get("MarketingAirline") or {}).get("FlightNumber") or "")
+            segs.append({
+                "origin": o,
+                "destination": d,
+                "flightNumber": fn.lstrip("0") or fn,
+                "rbd": str(seg.get("ResBookDesigCode") or "").upper(),
+                "party": _num(seg.get("NumberInParty")),
+            })
+    return segs
+
+
+def _integrator_segments(bd: dict) -> list[dict]:
+    segs: list[dict] = []
+    for it in bd.get("itineraries") or []:
+        for sc in it.get("schedules") or []:
+            fn = str(sc.get("marketingFlightNumber") or sc.get("flightNumber") or "")
+            segs.append({
+                "origin": str(sc.get("origin") or "").upper(),
+                "destination": str(sc.get("destination") or "").upper(),
+                "flightNumber": fn.lstrip("0") or fn,
+                "rbd": str(sc.get("fareClass") or "").upper(),
+                "baggage": _checkin(sc.get("baggage")),
+            })
+    return segs
+
+
+def _sabre_book_messages(resp: dict) -> tuple[str | None, list[str]]:
+    rs = (resp.get("CreatePassengerNameRecordRS") or resp)
+    ar = rs.get("ApplicationResults") or {}
+    status = ar.get("status")
+    msgs: list[str] = []
+
+    def _pull(node):
+        if isinstance(node, dict):
+            for k in ("Message", "ShortText", "ErrorMessage", "text"):
+                v = node.get(k)
+                if isinstance(v, str) and v.strip():
+                    msgs.append(v.strip())
+            for v in node.values():
+                _pull(v)
+        elif isinstance(node, list):
+            for v in node:
+                _pull(v)
+
+    for key in ("Error", "Warning", "Success"):
+        _pull(ar.get(key))
+    return status, msgs
+
+
+def _sabre_fcb_baggage(resp: dict) -> list[tuple[int, str]]:
+    """Per-segment FreeBaggageAllowance from the ADULT fare breakdown.
+
+    Sabre returns one AirItineraryPricingInfo per passenger type and an infant
+    block (KG010) can sort ahead of the adult block (KG030). Comparing the first
+    block against the integrator's adult check-in baggage is a false mismatch.
+    Mirror the Go integrator (selectAdultPricingInfo): report the ADT allowance,
+    falling back to the first block only when no ADT breakdown exists.
+    """
+    rs = resp.get("CreatePassengerNameRecordRS") or resp
+    blocks: list[list[dict]] = []
+    for ap in rs.get("AirPrice") or []:
+        apis = (((ap.get("PriceQuote") or {}).get("PricedItinerary") or {})
+                .get("AirItineraryPricingInfo"))
+        if isinstance(apis, dict):
+            apis = [apis]
+        for info in apis or []:
+            fcb = info.get("FareCalculationBreakdown") or []
+            if fcb:
+                blocks.append(fcb)
+    if not blocks:
+        return []
+
+    def _is_adult(fcb: list[dict]) -> bool:
+        for row in fcb:
+            ptc = str((row.get("FareBasis") or {}).get("FarePassengerType") or "").upper()
+            if ptc in ("ADT", "ADULT"):
+                return True
+        return False
+
+    chosen = next((f for f in blocks if _is_adult(f)), blocks[0])
+    return [_parse_sabre_baggage(str(x.get("FreeBaggageAllowance") or "")) for x in chosen]
+
+
+def _revalidate_supplier_total(resp: dict) -> int | None:
+    gir = resp.get("groupedItineraryResponse") or {}
+    for g in gir.get("itineraryGroups") or []:
+        for it in g.get("itineraries") or []:
+            for pi in it.get("pricingInformation") or []:
+                tf = (pi.get("fare") or {}).get("totalFare") or {}
+                val = _num(tf.get("totalPrice"))
+                if val:
+                    return val
+    return None
+
+
+def _pick_revalidate_outbound(out_dir: str, integrator_total: int | None) -> str | None:
+    """Pick the RevalidateItinerary response whose total matches the integrator fare."""
+    hits = sorted(
+        f for f in os.listdir(out_dir)
+        if f.endswith(".json") and "RevalidateItinerary" in f and "response" in f
+    )
+    if integrator_total:
+        for h in hits:
+            try:
+                total = _revalidate_supplier_total(_load(os.path.join(out_dir, h)))
+            except Exception:  # noqa: BLE001
+                continue
+            if total and _eq(total, integrator_total):
+                return os.path.join(out_dir, h)
+    return _outbound_pick(out_dir, "revalidate", "RevalidateItinerary", "response")
+
+
+def _revalidate_fare_bases(resp: dict) -> set[str]:
+    bases = set(_walk_strings(resp, {"fareBasisCode", "FareBasisCode"}))
+    gir = resp.get("groupedItineraryResponse") or {}
+    for g in gir.get("itineraryGroups") or []:
+        for it in g.get("itineraries") or []:
+            for pi in it.get("pricingInformation") or []:
+                fare = pi.get("fare") or {}
+                for pil in fare.get("passengerInfoList") or []:
+                    pi2 = pil.get("passengerInfo") or {}
+                    for fc in pi2.get("fareComponents") or []:
+                        fb = fc.get("fareBasisCode")
+                        if isinstance(fb, str) and fb:
+                            bases.add(fb)
+    return bases
+
+
+def _book_forced_fare_bases(req: dict) -> set[str]:
+    return set(_walk_strings(req, {"FareBasis", "FareBasisCode"}))
+
+
+def _integrator_booking_failed(booking: dict | None) -> tuple[bool, str]:
+    if not booking:
+        return False, ""
+    body = booking.get("data") or booking
+    code = str(body.get("code") or booking.get("code") or "").upper()
+    msg = str(body.get("message") or booking.get("message") or "")
+    if code in ("BOOKING_FAILED", "ERR.SP.PROVIDER_ERROR"):
+        return True, f"{code}: {msg}".strip(": ")
+    if not body.get("bookDetail") and code:
+        return True, f"{code}: {msg}".strip(": ")
+    return False, ""
+
+
+def validate_outbound(
+    run_dir: str,
+    booking: dict | None,
+    revals: list[tuple[str, dict]],
+    bd: dict,
+) -> list[str]:
+    """Validate Sabre outbound payloads captured under run_dir/outbound/."""
+    out_dir = _outbound_dir(run_dir)
+    if not out_dir:
+        return []
+
+    issues: list[str] = []
+    integrator_reval_total = None
+    if revals:
+        opt = revalidate_option(revals[0][1])
+        if opt:
+            integrator_reval_total = _num((opt["fares"][0].get("originalTotalFare") or {}).get("total"))
+
+    book_req_path = _outbound_pick(out_dir, "booking", "Book", "request")
+    book_resp_path = _outbound_pick(out_dir, "booking", "Book", "response")
+    reval_resp_path = _pick_revalidate_outbound(out_dir, integrator_reval_total)
+    book_reval_path = _outbound_pick(out_dir, "booking", "RevalidateItinerary", "response")
+
+    book_req = book_resp = reval_resp = book_reval = None
+    for path, slot in (
+        (book_req_path, "book_req"),
+        (book_resp_path, "book_resp"),
+        (reval_resp_path, "reval_resp"),
+        (book_reval_path, "book_reval"),
+    ):
+        if not path:
+            continue
+        try:
+            data = _load(path)
+            if slot == "book_req":
+                book_req = data
+            elif slot == "book_resp":
+                book_resp = data
+            elif slot == "book_reval":
+                book_reval = data
+            else:
+                reval_resp = data
+        except Exception as e:  # noqa: BLE001
+            issues.append(f"outbound: could not load {os.path.basename(path)}: {e}")
+
+    integrator_failed, fail_reason = _integrator_booking_failed(booking)
+
+    # 1) Sabre Book response health
+    if book_resp:
+        status, msgs = _sabre_book_messages(book_resp)
+        blob = " | ".join(msgs).upper()
+        if status and status != "Complete":
+            issues.append(f"outbound Book ApplicationResults.status={status!r}")
+        for needle in ("RULE VALIDATION FAILED", "ERR.SP.PROVIDER_ERROR", "UNABLE TO PERFORM AIR BOOKING"):
+            if needle in blob:
+                issues.append(f"outbound Book Sabre error: {needle}")
+        if integrator_failed and status == "Complete":
+            issues.append(f"outbound Book Complete but integrator booking failed ({fail_reason})")
+        if not integrator_failed and status and status != "Complete":
+            issues.append(f"integrator booking OK but outbound Book status={status!r}")
+
+    # 2) Forced fare basis vs what RevalidateItinerary priced (pre-book revalidate)
+    fare_basis_src = book_reval or reval_resp
+    if book_req and fare_basis_src:
+        forced = _book_forced_fare_bases(book_req)
+        priced = _revalidate_fare_bases(fare_basis_src)
+        if forced:
+            bad = sorted(forced - priced)
+            if bad:
+                issues.append(
+                    f"outbound Book forces fare basis {sorted(forced)} but revalidate priced "
+                    f"{sorted(priced)} — mismatch {bad} (causes RULE VALIDATION FAILED / TRY WPQ)"
+                )
+
+    # 3) Segments sent to Sabre must match integrator bookDetail
+    if book_req and bd.get("itineraries"):
+        sent = _book_request_segments(book_req)
+        got = _integrator_segments(bd)
+        if sent and got:
+            if len(sent) != len(got):
+                issues.append(f"outbound Book segment count={len(sent)} != integrator schedules={len(got)}")
+            for i, (s, g) in enumerate(zip(sent, got)):
+                if s["flightNumber"] and g["flightNumber"] and s["flightNumber"] != g["flightNumber"]:
+                    issues.append(
+                        f"outbound Book seg[{i}] flight {s['flightNumber']} != integrator {g['flightNumber']}"
+                    )
+                if s["origin"] and g["origin"] and s["origin"] != g["origin"]:
+                    issues.append(f"outbound Book seg[{i}] origin {s['origin']} != integrator {g['origin']}")
+                if s["destination"] and g["destination"] and s["destination"] != g["destination"]:
+                    issues.append(
+                        f"outbound Book seg[{i}] dest {s['destination']} != integrator {g['destination']}"
+                    )
+
+    # 4) Sabre-authoritative baggage vs integrator booked schedules
+    if book_resp and bd.get("itineraries"):
+        sabre_bag = _sabre_fcb_baggage(book_resp)
+        ours = [g["baggage"] for g in _integrator_segments(bd)]
+        if sabre_bag and ours and len(sabre_bag) == len(ours):
+            for i, (sb, ob) in enumerate(zip(sabre_bag, ours)):
+                if sb != ob:
+                    issues.append(
+                        f"outbound Book seg[{i}] Sabre baggage {sb} != integrator checkIn {ob}"
+                    )
+
+    # 5) Revalidate supplier total vs integrator revalidate grand total
+    if reval_resp and integrator_reval_total:
+        sabre_total = _revalidate_supplier_total(reval_resp)
+        if sabre_total and not _eq(sabre_total, integrator_reval_total):
+            issues.append(
+                f"outbound revalidate total={sabre_total} != integrator originalTotalFare.total={integrator_reval_total}"
+            )
+
+    return issues
 
 
 # --------------------------------------------------------------------------- #
@@ -382,7 +818,8 @@ def process_run(run_dir: str, root: str) -> tuple[bool, str]:
     elif booking:
         ref_sig = _booking_sig((booking.get("data") or {}).get("bookDetail") or {})
 
-    chain: list[tuple[str, dict]] = []
+    warnings: list[str] = []
+    chain: list[tuple] = []
     chosen = None
 
     if search:
@@ -396,46 +833,59 @@ def process_run(run_dir: str, root: str) -> tuple[bool, str]:
             chosen = opts[0]
         if chosen is not None:
             issues += _tax_breakdown_issues("search", chosen["fares"][0])
-            chain.append(("search", _per_single_from_fare(chosen["fares"][0])))
+            sc_cls, sc_bas = _stage_fare_meta(chosen["avail"], chosen["fares"][0])
+            chain.append(("search", _per_single_from_fare(chosen["fares"][0]), sc_cls, sc_bas))
         elif reval_opts or booking:
             notes.append("could not match chosen itinerary to a search option (search->next skipped)")
 
     for n, o in reval_opts:
         label = "revalidate_itin_prp" if "itin_prp" in n else "revalidate"
         issues += _tax_breakdown_issues(label, o["fares"][0])
-        chain.append((label, _per_single_from_fare(o["fares"][0])))
+        rc_cls, rc_bas = _stage_fare_meta(o["avail"], o["fares"][0])
+        chain.append((label, _per_single_from_fare(o["fares"][0]), rc_cls, rc_bas))
 
     bd = (booking.get("data") or {}).get("bookDetail") or {} if booking else {}
     if booking:
-        chain.append(("booking", _per_single_from_booking(bd)))
+        bk_cls, bk_bas = _booking_fare_meta(bd)
+        chain.append(("booking", _per_single_from_booking(bd), bk_cls, bk_bas))
 
-    for (la, a), (lb, b) in zip(chain, chain[1:]):
-        issues += _cmp_stage(la, a, lb, b)
+    chain_issues, chain_warnings = _cross_stage_diffs(chain)
+    issues += chain_issues
+    warnings += chain_warnings
 
-    # per-segment baggage: what search offered must be what got booked
+    # per-segment baggage. search->booking may legitimately differ (cached search /
+    # sold-out reprice) -> warning; revalidate->booking is authoritative -> fail.
     if chosen is not None and booking:
-        issues += _baggage_issues(chosen["fares"][0], bd)
+        warnings += _baggage_issues(chosen["fares"][0], bd, "search")
+    if reval_opts and booking:
+        issues += _baggage_issues(reval_opts[-1][1]["fares"][0], bd, "revalidate")
 
-    present = "search={} revalidate={} booking={}".format(
-        "Y" if search else "-", len(reval_opts), "Y" if booking else "-"
+    # outbound Sabre request/response checks (when run_dir/outbound/ exists)
+    issues += validate_outbound(run_dir, booking, revals, bd)
+
+    present = "search={} revalidate={} booking={} outbound={}".format(
+        "Y" if search else "-",
+        len(reval_opts),
+        "Y" if booking else "-",
+        "Y" if _outbound_dir(run_dir) else "-",
     )
     ok = not issues
-    head = f"[{'PASS' if ok else 'FAIL'}] {rel}  ({present})"
+    status = "FAIL" if issues else "PASS"
+    warn_suffix = f"  [+{len(warnings)} warning(s)]" if warnings else ""
+    head = f"[{status}] {rel}  ({present}){warn_suffix}"
     lines = [head]
     for note in notes:
         lines.append(f"    note: {note}")
     for x in issues:
         lines.append(f"    - {x}")
-    return ok, "\n".join(lines)
+    for w in warnings:
+        lines.append(f"    ! warn: {w}")
+    return ok, "\n".join(lines), len(warnings)
 
 
 def _iter_run_dirs(root: str):
     for dp, _dn, fn in os.walk(root):
-        if any(
-            (("search" in f) or ("revalidate" in f) or ("booking" in f))
-            and (f.endswith(".json") or f.endswith(".gz.b64"))
-            for f in fn
-        ):
+        if any(f.endswith(".response.json") or f.endswith(".response.json.gz.b64") for f in fn):
             yield dp
 
 
@@ -444,13 +894,34 @@ def run_tree(root: str) -> int:
     if not run_dirs:
         print(f"no run directories with response files found under {root}")
         return 1
-    passed = failed = 0
+    passed = failed = warn_runs = 0
+    pass_blocks: list[str] = []
+    fail_blocks: list[str] = []
     for d in run_dirs:
-        ok, out = process_run(d, root)
-        print(out)
-        passed += ok
-        failed += not ok
-    print(f"\n{'=' * 60}\n{passed} passed, {failed} failed, {passed + failed} runs")
+        ok, out, nwarn = process_run(d, root)
+        if nwarn:
+            warn_runs += 1
+        if ok:
+            pass_blocks.append(out)
+            passed += 1
+        else:
+            fail_blocks.append(out)
+            failed += 1
+
+    print("=== PASS ===")
+    if pass_blocks:
+        print("\n\n".join(pass_blocks))
+    else:
+        print("(none)")
+
+    print("\n=== FAIL ===")
+    if fail_blocks:
+        print("\n\n".join(fail_blocks))
+    else:
+        print("(none)")
+
+    print(f"\n{'=' * 60}\n{passed} passed, {failed} failed, "
+          f"{warn_runs} with warning(s), {passed + failed} runs")
     return 0 if failed == 0 else 1
 
 
@@ -592,7 +1063,58 @@ def _self_check() -> None:
     tb_fare["originalAdultFare"]["breakdownTaxes"][0]["amount"] = 59
     assert _tax_breakdown_issues("t", tb_fare), "tax breakdown that doesn't sum to tax must be flagged"
 
-    print("self-check OK: booking, search self-check, tax breakdowns, and the full "
+    # fareClass / fareBasis extraction from a search/revalidate fare and a booking
+    fmeta = {
+        "originalAdultFare": {"fareClasses": ["M"], "fareBasisCodes": ["M13IAOL"]},
+        "originalTotalFare": {"fareClasses": ["M"]},
+    }
+    fc, fb = _stage_fare_meta([{"schedules": [{"fareClass": "M"}]}], fmeta)
+    assert fc == {"M"} and fb == {"M13IAOL"}, "stage meta must pull fareClass and fareBasis"
+    bfc, bfb = _booking_fare_meta(
+        {"itineraries": [{"schedules": [{"fareClass": "M", "fareBasisCode": "M13IAOL"}]}]}
+    )
+    assert bfc == {"M"} and bfb == {"M13IAOL"}, "booking meta must pull fareClass and fareBasis"
+
+    # severity routing: search may drift (warning); revalidate!=booking is a failure
+    zero = {t: {"total": 0, "base": 0, "tax": 0} for t in PTYPES}
+    s_fare = copy.deepcopy(zero); s_fare["adult"] = {"total": 5102200, "base": 3539000, "tax": 1563200}
+    r_fare = copy.deepcopy(zero); r_fare["adult"] = {"total": 7570200, "base": 6007000, "tax": 1563200}
+    ci, cw = _cross_stage_diffs([
+        ("search", s_fare, {"Q"}, {"Q15IAOL"}),
+        ("revalidate", r_fare, {"M"}, {"M13IAOL"}),
+    ])
+    assert ci == [] and cw, "search drift (fare + class/basis) must be warnings, not failures"
+    assert any("fareClass" in w for w in cw), "search drift must spell out the class/basis change"
+    ci2, _ = _cross_stage_diffs([
+        ("revalidate", r_fare, {"M"}, {"M13IAOL"}),
+        ("booking", r_fare, {"M"}, {"N13IAOL"}),
+    ])
+    assert any("fareBasis mismatch" in x for x in ci2), "revalidate!=booking fareBasis must fail"
+    ci3, cw3 = _cross_stage_diffs([
+        ("revalidate", r_fare, {"M"}, {"M13IAOL"}),
+        ("booking", r_fare, {"M"}, {"M13IAOL"}),
+    ])
+    assert ci3 == [] and cw3 == [], "revalidate==booking (fare + class + basis) must be clean"
+
+    assert _parse_sabre_baggage("KG010") == (10, "kg")
+    assert _parse_sabre_baggage("NONIL") == (0, "kg")
+
+    # ADT selection: an infant block (KG010) sorting ahead of the adult block
+    # (KG030) must not be mistaken for the itinerary allowance.
+    _bag_resp = {"CreatePassengerNameRecordRS": {"AirPrice": [{"PriceQuote": {"PricedItinerary": {
+        "AirItineraryPricingInfo": [
+            {"FareCalculationBreakdown": [
+                {"FareBasis": {"FarePassengerType": "INF"}, "FreeBaggageAllowance": "KG010"}]},
+            {"FareCalculationBreakdown": [
+                {"FareBasis": {"FarePassengerType": "ADT"}, "FreeBaggageAllowance": "KG030"}]},
+        ]}}}]}}
+    assert _sabre_fcb_baggage(_bag_resp) == [(30, "kg")], "must read the ADT baggage, not the infant's"
+    forced = {"QBX1YID", "QBX1YID"}
+    priced = {"QBX1YID", "NBX1YID"}
+    assert sorted(forced - priced) == [], "uniform Q should be subset when priced has Q"
+    assert sorted({"QBX1YID", "QBX1YID"} - {"NBX1YID"}) == ["QBX1YID"], "forced Q not priced as N must fail"
+
+    print("self-check OK: booking, search self-check, tax breakdowns, outbound helpers, and the full "
           "search->revalidate->booking field-by-field chain all validated")
 
 

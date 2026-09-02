@@ -374,7 +374,7 @@
             ],
             "originalTotalFare": {
               "total": 64538800,
-              "base": 61249000,
+              "base": 61249001,
               "tax": 3289800,
               "taxBreakDowns": null,
               "supplierDiscount": 0,
