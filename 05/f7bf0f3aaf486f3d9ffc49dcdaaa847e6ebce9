@@ -1,0 +1,25 @@
+runs/VI-SABRE-MULTICITY/FINDINGS.md
+  s_aee3fcb39128f5::t_13be3d3e2d621d 1-75
+runs/VI-SABRE-MULTICITY/evidence/A_1A1C1I_FAIL.json
+  s_aee3fcb39128f5::t_3ad0ab52bc6f7d 1-14
+runs/VI-SABRE-MULTICITY/evidence/B_1A_SUCCESS.json
+  s_aee3fcb39128f5::t_3be3a4131831d0 1-18
+runs/VI-SABRE-MULTICITY/evidence/C_1A0C1I_FAIL.json
+  s_aee3fcb39128f5::t_33260c0d246366 1-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "05f7bf0f3aaf486f3d9ffc49dcdaaa847e6ebce9",
+  "prompts": {},
+  "sessions": {
+    "s_aee3fcb39128f5": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "a5da34fa-e97a-45a6-8af7-4bbe32899467",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "manish-aggarwal-89 <manish.aggarwal@tiket.com>"
+    }
+  }
+}
