@@ -1,0 +1,119 @@
+{
+  "step": 2,
+  "name": "revalidate",
+  "flow": "VI-RT-2A-MF",
+  "test_case_id": "VI-RT-2A-MF",
+  "test_case_name": "VI Sabre — VI-RT-2A-MF",
+  "timestamp": "2026-09-03T12:15:15.517164+00:00",
+  "duration_ms": 1437.5854160171002,
+  "method": "POST",
+  "url": "http://flight-sabre-gds-integrator-be.flight-ns.svc.tiket/tix-flight-sabre-gds-integrator/revalidate-itinerary",
+  "service": "TIX-FLIGHT-SABRE-GDS-INTEGRATOR-BE",
+  "host": "flight-sabre-gds-integrator-be.flight-ns.svc.tiket",
+  "swagger": "http://flight-sabre-gds-integrator-be.flight-ns.svc.tiket/swagger/index.html",
+  "headers": {
+    "storeId": "TIKETCOM",
+    "channelId": "WEB",
+    "username": "guest",
+    "serviceId": "GATEWAY",
+    "requestId": "3c106f42-8375-45cb-9c43-35635b000a55",
+    "Content-Type": "application/json",
+    "Accept": "application/json"
+  },
+  "request_body": {
+    "account": {
+      "code": "tiketcomSabre",
+      "name": "tiketcomSabre"
+    },
+    "distributionType": "sabre",
+    "adult": 2,
+    "child": 0,
+    "infant": 0,
+    "cabinClass": "ECONOMY",
+    "currency": {
+      "departureCurrency": "IDR"
+    },
+    "origin": "CGK",
+    "destination": "SIN",
+    "departureDate": "2027-03-01",
+    "returnDate": "2027-03-04",
+    "international": 1,
+    "tripTypes": [
+      "ROUND_TRIP"
+    ],
+    "multiFare": true,
+    "validatingAirline": "QG",
+    "flightSelect": "QG 522 ~ QG 527",
+    "itineraries": [
+      {
+        "origin": "CGK",
+        "destination": "SIN",
+        "journeySellKey": "",
+        "fareSellKey": "",
+        "schedules": [
+          {
+            "origin": "CGK",
+            "destination": "SIN",
+            "departureDate": "2027-03-01T06:20",
+            "arrivalDate": "2027-03-01T09:10",
+            "marketingAirline": "QG",
+            "flightNumber": "522",
+            "operatingAirline": {
+              "code": "QG",
+              "number": "522"
+            },
+            "fareClass": "P",
+            "fareBasis": {
+              "adult": "PNN00BS",
+              "child": "",
+              "infant": ""
+            }
+          }
+        ]
+      },
+      {
+        "origin": "SIN",
+        "destination": "CGK",
+        "journeySellKey": "",
+        "fareSellKey": "",
+        "schedules": [
+          {
+            "origin": "SIN",
+            "destination": "CGK",
+            "departureDate": "2027-03-04T21:00",
+            "arrivalDate": "2027-03-04T21:55",
+            "marketingAirline": "QG",
+            "flightNumber": "527",
+            "operatingAirline": {
+              "code": "QG",
+              "number": "527"
+            },
+            "fareClass": "N",
+            "fareBasis": {
+              "adult": "NNN00BS",
+              "child": "",
+              "infant": ""
+            }
+          }
+        ]
+      }
+    ],
+    "source": "PRP"
+  },
+  "status": 200,
+  "response_headers": {
+    "content-type": "application/json",
+    "date": "Thu, 03 Sep 2026 12:15:15 GMT",
+    "content-length": "207"
+  },
+  "response_body": {
+    "code": "REVALIDATE_ITINERARY_FAILED",
+    "message": "revalidate itinerary failed\nflight not found",
+    "errors": [
+      "revalidate itinerary failed\nflight not found"
+    ],
+    "serverTime": "2026-09-03T19:15:15.634144516+07:00"
+  },
+  "error": null,
+  "curl": "curl --location 'http://flight-sabre-gds-integrator-be.flight-ns.svc.tiket/tix-flight-sabre-gds-integrator/revalidate-itinerary' \\\n  --request POST \\\n  --header 'storeId: TIKETCOM' \\\n  --header 'channelId: WEB' \\\n  --header 'username: guest' \\\n  --header 'serviceId: GATEWAY' \\\n  --header 'requestId: 3c106f42-8375-45cb-9c43-35635b000a55' \\\n  --header 'Content-Type: application/json' \\\n  --header 'Accept: application/json' \\\n  --data '{\"account\": {\"code\": \"tiketcomSabre\", \"name\": \"tiketcomSabre\"}, \"distributionType\": \"sabre\", \"adult\": 2, \"child\": 0, \"infant\": 0, \"cabinClass\": \"ECONOMY\", \"currency\": {\"departureCurrency\": \"IDR\"}, \"origin\": \"CGK\", \"destination\": \"SIN\", \"departureDate\": \"2027-03-01\", \"returnDate\": \"2027-03-04\", \"international\": 1, \"tripTypes\": [\"ROUND_TRIP\"], \"multiFare\": true, \"validatingAirline\": \"QG\", \"flightSelect\": \"QG 522 ~ QG 527\", \"itineraries\": [{\"origin\": \"CGK\", \"destination\": \"SIN\", \"journeySellKey\": \"\", \"fareSellKey\": \"\", \"schedules\": [{\"origin\": \"CGK\", \"destination\": \"SIN\", \"departureDate\": \"2027-03-01T06:20\", \"arrivalDate\": \"2027-03-01T09:10\", \"marketingAirline\": \"QG\", \"flightNumber\": \"522\", \"operatingAirline\": {\"code\": \"QG\", \"number\": \"522\"}, \"fareClass\": \"P\", \"fareBasis\": {\"adult\": \"PNN00BS\", \"child\": \"\", \"infant\": \"\"}}]}, {\"origin\": \"SIN\", \"destination\": \"CGK\", \"journeySellKey\": \"\", \"fareSellKey\": \"\", \"schedules\": [{\"origin\": \"SIN\", \"destination\": \"CGK\", \"departureDate\": \"2027-03-04T21:00\", \"arrivalDate\": \"2027-03-04T21:55\", \"marketingAirline\": \"QG\", \"flightNumber\": \"527\", \"operatingAirline\": {\"code\": \"QG\", \"number\": \"527\"}, \"fareClass\": \"N\", \"fareBasis\": {\"adult\": \"NNN00BS\", \"child\": \"\", \"infant\": \"\"}}]}], \"source\": \"PRP\"}'"
+}

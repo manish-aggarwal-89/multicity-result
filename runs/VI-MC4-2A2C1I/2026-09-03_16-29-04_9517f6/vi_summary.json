@@ -1,0 +1,15 @@
+{
+  "shape": "VI-MC4-2A2C1I",
+  "id": "VI-MC4-2A2C1I",
+  "segments": 4,
+  "pax": "2A2C1I",
+  "status": "FAIL",
+  "issues": [
+    "VI booking not SUCCESS (HTTP 200 code=BOOKING_FAILED): ERR.SP.PROVIDER_ERROR: Unable to perform air booking step",
+    "VI booking returned no supplier PNR"
+  ],
+  "vi_status": 200,
+  "vi_code": "BOOKING_FAILED",
+  "cancels": null,
+  "dump_dir": "/Users/manishaggarwal/PycharmProjects/multicity-result/runs/VI-MC4-2A2C1I/2026-09-03_16-29-04_9517f6"
+}

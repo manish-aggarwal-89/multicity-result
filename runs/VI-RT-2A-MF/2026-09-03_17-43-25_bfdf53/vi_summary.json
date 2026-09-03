@@ -1,0 +1,14 @@
+{
+  "shape": "VI-RT-2A-MF",
+  "id": "VI-RT-2A-MF",
+  "segments": 1,
+  "pax": "2A0C0I",
+  "status": "FAIL",
+  "issues": [
+    "search returned no ROUND_TRIP combos"
+  ],
+  "vi_status": null,
+  "vi_code": null,
+  "cancels": null,
+  "dump_dir": "/Users/manishaggarwal/PycharmProjects/multicity-result/runs/VI-RT-2A-MF/2026-09-03_17-43-25_bfdf53"
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "combo": 0,
+    "flightSelect": "SQ 951~SQ 720~MH 797~SQ 103|SQ 958",
+    "vi_status": 200,
+    "vi_code": "BOOKING_FAILED",
+    "message": "ERR.SP.PROVIDER_ERROR: Unable to perform air booking step",
+    "pnrs": []
+  },
+  {
+    "combo": 1,
+    "flightSelect": "SQ 953~SQ 720~MH 797~SQ 103|SQ 958",
+    "vi_status": 200,
+    "vi_code": "BOOKING_FAILED",
+    "message": "ERR.SP.PROVIDER_ERROR: Unable to perform air booking step",
+    "pnrs": []
+  },
+  {
+    "combo": 2,
+    "flightSelect": "SQ 951~SQ 720~MH 789~SQ 103|SQ 958",
+    "vi_status": 200,
+    "vi_code": "BOOKING_FAILED",
+    "message": "ERR.SP.PROVIDER_ERROR: Unable to perform air booking step",
+    "pnrs": []
+  },
+  {
+    "combo": 3,
+    "flightSelect": "SQ 953~SQ 720~MH 789~SQ 103|SQ 958",
+    "vi_status": 200,
+    "vi_code": "BOOKING_FAILED",
+    "message": "ERR.SP.PROVIDER_ERROR: Unable to perform air booking step",
+    "pnrs": []
+  },
+  {
+    "combo": 4,
+    "flightSelect": "SQ 961~SQ 710~MH 781~SQ 103|SQ 958",
+    "vi_status": 200,
+    "vi_code": "BOOKING_FAILED",
+    "message": "ERR.SP.PROVIDER_ERROR: Unable to perform air booking step",
+    "pnrs": []
+  },
+  {
+    "combo": 5,
+    "flightSelect": "SQ 961~SQ 710~MH 783~SQ 103|SQ 958",
+    "vi_status": 200,
+    "vi_code": "BOOKING_FAILED",
+    "message": "ERR.SP.PROVIDER_ERROR: Unable to perform air booking step",
+    "pnrs": []
+  }
+]

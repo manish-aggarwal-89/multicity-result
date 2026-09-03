@@ -1,0 +1,8 @@
+{
+  "distributionType": "sabre",
+  "bookingCode": "KKCNLD",
+  "account": {
+    "code": "tiketcomSabre",
+    "name": "tiketcomSabre"
+  }
+}

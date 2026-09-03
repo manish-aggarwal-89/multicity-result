@@ -1,0 +1,38 @@
+{
+  "status": 200,
+  "response_body": {
+    "code": "SUCCESS",
+    "message": "SUCCESS",
+    "data": {
+      "integratorCancelBookRequest": {
+        "distributionType": "sabre",
+        "bookingCode": "IUQINW",
+        "account": {
+          "name": "tiketcomSabre",
+          "code": "tiketcomSabre"
+        },
+        "sessionGroup": "",
+        "sessionGroupType": "",
+        "transactionId": "",
+        "additionalData": null
+      },
+      "mandatoryRequest": {
+        "storeId": "TIKETCOM",
+        "channelId": "WEB",
+        "requestId": "0f82d0e4-221d-47b8-9768-66db4151fb37",
+        "serviceId": "GATEWAY",
+        "resellerId": "",
+        "identity": "",
+        "username": "guest"
+      },
+      "bookingCode": "IUQINW",
+      "distributionType": "sabre",
+      "account": {
+        "name": "tiketcomSabre",
+        "code": "tiketcomSabre"
+      }
+    },
+    "serverTime": "2026-09-03T16:28:27.557406+05:30"
+  },
+  "error": null
+}

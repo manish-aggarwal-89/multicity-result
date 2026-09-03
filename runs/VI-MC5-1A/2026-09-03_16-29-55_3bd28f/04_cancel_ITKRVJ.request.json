@@ -1,0 +1,8 @@
+{
+  "distributionType": "sabre",
+  "bookingCode": "ITKRVJ",
+  "account": {
+    "code": "tiketcomSabre",
+    "name": "tiketcomSabre"
+  }
+}

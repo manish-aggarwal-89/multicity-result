@@ -1,0 +1,10 @@
+curl --location 'http://localhost:8857/tix-flight-sabre-gds-integrator/cancel-booking' \
+  --request POST \
+  --header 'storeId: TIKETCOM' \
+  --header 'channelId: WEB' \
+  --header 'username: guest' \
+  --header 'serviceId: GATEWAY' \
+  --header 'requestId: 52392702-4055-481e-b261-1ff0bc71c5f0' \
+  --header 'Content-Type: application/json' \
+  --header 'Accept: application/json' \
+  --data '{"distributionType": "sabre", "bookingCode": "GWDOBG", "account": {"code": "tiketcomSabre", "name": "tiketcomSabre"}}'

@@ -1,0 +1,20 @@
+{
+  "shape": "VI-RT-2A",
+  "id": "VI-RT-2A",
+  "segments": 2,
+  "pax": "2A0C0I",
+  "status": "PASS",
+  "issues": [],
+  "vi_status": 200,
+  "vi_code": "SUCCESS",
+  "cancels": [
+    {
+      "pnr": "EPOBND",
+      "status": 200,
+      "code": "SUCCESS",
+      "retrieved": true,
+      "cancelled": true
+    }
+  ],
+  "dump_dir": "/Users/manishaggarwal/PycharmProjects/multicity-result/runs/VI-RT-2A/2026-09-03_17-44-54_6d2f96"
+}

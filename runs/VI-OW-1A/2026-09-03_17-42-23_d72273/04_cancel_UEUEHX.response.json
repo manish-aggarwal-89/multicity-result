@@ -1,0 +1,38 @@
+{
+  "status": 200,
+  "response_body": {
+    "code": "SUCCESS",
+    "message": "SUCCESS",
+    "data": {
+      "integratorCancelBookRequest": {
+        "distributionType": "sabre",
+        "bookingCode": "UEUEHX",
+        "account": {
+          "name": "tiketcomSabre",
+          "code": "tiketcomSabre"
+        },
+        "sessionGroup": "",
+        "sessionGroupType": "",
+        "transactionId": "",
+        "additionalData": null
+      },
+      "mandatoryRequest": {
+        "storeId": "TIKETCOM",
+        "channelId": "WEB",
+        "requestId": "12888f0b-f08d-42bf-8573-731a26fcd7f3",
+        "serviceId": "GATEWAY",
+        "resellerId": "",
+        "identity": "",
+        "username": "guest"
+      },
+      "bookingCode": "UEUEHX",
+      "distributionType": "sabre",
+      "account": {
+        "name": "tiketcomSabre",
+        "code": "tiketcomSabre"
+      }
+    },
+    "serverTime": "2026-09-03T17:42:40.754972+05:30"
+  },
+  "error": null
+}

@@ -1,0 +1,20 @@
+{
+  "shape": "VI-MC4-1A1C",
+  "id": "VI-MC4-1A1C",
+  "segments": 4,
+  "pax": "1A1C0I",
+  "status": "PASS",
+  "issues": [],
+  "vi_status": 200,
+  "vi_code": "SUCCESS",
+  "cancels": [
+    {
+      "pnr": "IVCBYX",
+      "status": 200,
+      "code": "SUCCESS",
+      "retrieved": true,
+      "cancelled": true
+    }
+  ],
+  "dump_dir": "/Users/manishaggarwal/PycharmProjects/multicity-result/runs/VI-MC4-1A1C/2026-09-03_16-29-34_c59655"
+}

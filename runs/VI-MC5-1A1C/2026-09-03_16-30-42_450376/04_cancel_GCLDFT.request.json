@@ -1,0 +1,8 @@
+{
+  "distributionType": "sabre",
+  "bookingCode": "GCLDFT",
+  "account": {
+    "code": "tiketcomSabre",
+    "name": "tiketcomSabre"
+  }
+}

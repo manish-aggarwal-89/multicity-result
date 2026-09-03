@@ -1,0 +1,340 @@
+{
+  "status": 200,
+  "response_body": {
+    "code": "SUCCESS",
+    "message": "SUCCESS",
+    "bookSupplierResponses": {
+      "departure": [
+        {
+          "code": "SUCCESS",
+          "message": "SUCCESS",
+          "mandatoryRequest": {
+            "storeId": "TIKETCOM",
+            "channelId": "WEB",
+            "requestId": "ed67f36e-a6ab-497e-aaf4-441a0e6ef877",
+            "serviceId": "GATEWAY",
+            "resellerId": "",
+            "identity": "",
+            "username": "guest"
+          },
+          "integratorBookRequest": {
+            "distributionType": "sabre",
+            "account": {
+              "name": "tiketcomSabre",
+              "code": "tiketcomSabre"
+            },
+            "adult": 1,
+            "child": 1,
+            "infant": 1,
+            "multiFare": false,
+            "validatingAirline": "QG",
+            "promotionCode": {
+              "id": "",
+              "name": ""
+            },
+            "flightSelect": "QG 526",
+            "contact": {
+              "profileId": "",
+              "firstName": "Manish",
+              "lastName": "Aggarwal",
+              "dob": "",
+              "phoneCode": "+91",
+              "phoneCodeCs": "",
+              "phoneCodePassenger": "",
+              "phoneNumber": "7042190130",
+              "phoneNumberCs": "",
+              "phoneNumberPassenger": "",
+              "title": "mr",
+              "gender": "",
+              "email": "manish.aggarwal@tiket.com",
+              "emailPassenger": "manish.aggarwal@tiket.com",
+              "emailAgent": "manish.aggarwal@tiket.com",
+              "accountId": ""
+            },
+            "paxes": [
+              {
+                "paxNumber": 10000,
+                "type": "adult",
+                "title": "mr",
+                "gender": "male",
+                "firstName": "Manish",
+                "lastName": "Aggarwal",
+                "originalFirstName": "Manish",
+                "originalLastName": "Aggarwal",
+                "nationality": "IN",
+                "dob": "1998-08-13",
+                "passport": {
+                  "id": "A1234567",
+                  "expired": "2036-12-17",
+                  "country": "IN",
+                  "issuingDate": "2017-12-06"
+                }
+              },
+              {
+                "paxNumber": 20000,
+                "type": "child",
+                "title": "mstr",
+                "gender": "male",
+                "firstName": "Akash",
+                "lastName": "Kumar",
+                "originalFirstName": "Akash",
+                "originalLastName": "Kumar",
+                "nationality": "IN",
+                "dob": "2021-12-15",
+                "passport": {
+                  "id": "C1234543",
+                  "expired": "2037-12-24",
+                  "country": "IN",
+                  "issuingDate": "2023-12-13"
+                }
+              },
+              {
+                "paxNumber": 30000,
+                "type": "infant",
+                "title": "mstr",
+                "gender": "male",
+                "firstName": "Krishna",
+                "lastName": "Aggarwal",
+                "originalFirstName": "Krishna",
+                "originalLastName": "Aggarwal",
+                "nationality": "ID",
+                "dob": "2025-12-25",
+                "passport": {
+                  "id": "I1231311",
+                  "expired": "2029-05-16",
+                  "country": "ID",
+                  "issuingDate": "2016-05-13"
+                }
+              }
+            ],
+            "itineraries": [
+              {
+                "airline": "QG",
+                "departure": "CGK",
+                "arrival": "SIN",
+                "date": "2027-03-01",
+                "connecting": "",
+                "international": 1,
+                "cabinClass": "ECONOMY",
+                "schedules": [
+                  {
+                    "arrivalDate": "2027-03-01 20:00",
+                    "departureDate": "2027-03-01 17:10",
+                    "operatingAirline": {
+                      "code": "QG",
+                      "number": "526"
+                    },
+                    "fareClass": "P",
+                    "origin": "CGK",
+                    "destination": "SIN",
+                    "marketingAirline": "QG",
+                    "flightNumber": "526",
+                    "marriageGroup": "O",
+                    "fareBasisCodes": {}
+                  }
+                ]
+              }
+            ],
+            "currency": "IDR",
+            "countryId": "ID",
+            "commission": 0,
+            "maxBookRetry": 0
+          },
+          "bookDetail": {
+            "distributionType": "sabre",
+            "account": {
+              "name": "tiketcomSabre",
+              "code": "tiketcomSabre"
+            },
+            "corporateCodes": [],
+            "bookingCode": "KKCNLD",
+            "bookingExpired": "2026-09-03 19:46:08",
+            "originalCurrency": "IDR",
+            "originalBookingFare": {
+              "balanceDue": 3104000,
+              "bookedFare": 3104000,
+              "fare": 3104000,
+              "adultFare": 1282200,
+              "childFare": 1282200,
+              "infantFare": 539600,
+              "commission": 0,
+              "commissionPercent": 0,
+              "commissionAddons": 0,
+              "commissionPercentAddons": 0,
+              "nta": 3104000,
+              "ssrFee": {
+                "ssrFare": 0,
+                "baggageFare": 0,
+                "mealsFare": 0,
+                "seatsFare": 0,
+                "medicalsFare": 0,
+                "commissionBaggage": 0,
+                "commissionMeals": 0,
+                "commissionSeats": 0,
+                "commissionMedicals": 0,
+                "ssrItineraries": [
+                  {
+                    "departureDateTime": "",
+                    "ssrPaxMeals": [],
+                    "ssrPaxSeats": [],
+                    "ssrPaxBaggages": [],
+                    "ssrPaxMedicals": []
+                  }
+                ]
+              },
+              "markup": 0,
+              "fareExcludeSsr": 3104000,
+              "discount": 0
+            },
+            "promotionCode": {
+              "id": "",
+              "name": ""
+            },
+            "itineraries": [
+              {
+                "international": 1,
+                "originalCurrency": "IDR",
+                "originalFare": 3104000,
+                "originalAdultFare": 1282200,
+                "originalChildFare": 1282200,
+                "originalInfantFare": 539600,
+                "adult": 1,
+                "child": 1,
+                "infant": 1,
+                "cabinClass": "ECONOMY",
+                "schedules": [
+                  {
+                    "departureDate": "2027-03-01 17:10",
+                    "arrivalDate": "2027-03-01 20:00",
+                    "operatingAirline": {
+                      "code": "QG",
+                      "number": "526"
+                    },
+                    "departureTerminal": "2",
+                    "arrivalTerminal": "3",
+                    "fareBasisCodes": {
+                      "adult": "PNN00BS",
+                      "child": "PNN00BS",
+                      "infant": "PNN00BS"
+                    },
+                    "fareClass": "P",
+                    "origin": "CGK",
+                    "destination": "SIN",
+                    "marketingAirline": "QG",
+                    "marketingFlightNumber": "526",
+                    "baggage": {
+                      "cabin": {
+                        "measurement": "Kg",
+                        "qty": 7,
+                        "validateBaggage": false
+                      },
+                      "checkIn": {
+                        "measurement": "Kg",
+                        "qty": 0,
+                        "validateBaggage": false
+                      }
+                    },
+                    "stopQuantity": "0",
+                    "aircraftType": "320",
+                    "supplierBookingCode": "DCQG",
+                    "connectings": null
+                  }
+                ],
+                "markupInfo": null,
+                "breakdownInfo": {
+                  "originalAdult": {
+                    "psc": 0,
+                    "iwjr": 0,
+                    "discount": 0,
+                    "baseFare": 628000,
+                    "nta": 1282200,
+                    "commission": 0,
+                    "fare": 1282200,
+                    "tax": 654200,
+                    "markup": 0,
+                    "privateMarkup": 0,
+                    "breakdownTaxes": null
+                  },
+                  "originalChild": {
+                    "psc": 0,
+                    "iwjr": 0,
+                    "discount": 0,
+                    "baseFare": 628000,
+                    "nta": 1282200,
+                    "commission": 0,
+                    "fare": 1282200,
+                    "tax": 654200,
+                    "markup": 0,
+                    "privateMarkup": 0,
+                    "breakdownTaxes": null
+                  },
+                  "originalInfant": {
+                    "psc": 0,
+                    "iwjr": 0,
+                    "discount": 0,
+                    "baseFare": 63000,
+                    "nta": 539600,
+                    "commission": 0,
+                    "fare": 539600,
+                    "tax": 476600,
+                    "markup": 0,
+                    "privateMarkup": 0,
+                    "breakdownTaxes": null
+                  },
+                  "originalBaggage": 0
+                }
+              }
+            ],
+            "passengerFareInfo": {
+              "originalAdult": {
+                "psc": 0,
+                "iwjr": 0,
+                "discount": 0,
+                "baseFare": 628000,
+                "nta": 1282200,
+                "commission": 0,
+                "fare": 1282200,
+                "tax": 654200,
+                "markup": 0,
+                "privateMarkup": 0,
+                "breakdownTaxes": null
+              },
+              "originalChild": {
+                "psc": 0,
+                "iwjr": 0,
+                "discount": 0,
+                "baseFare": 628000,
+                "nta": 1282200,
+                "commission": 0,
+                "fare": 1282200,
+                "tax": 654200,
+                "markup": 0,
+                "privateMarkup": 0,
+                "breakdownTaxes": null
+              },
+              "originalInfant": {
+                "psc": 0,
+                "iwjr": 0,
+                "discount": 0,
+                "baseFare": 63000,
+                "nta": 539600,
+                "commission": 0,
+                "fare": 539600,
+                "tax": 476600,
+                "markup": 0,
+                "privateMarkup": 0,
+                "breakdownTaxes": null
+              },
+              "originalBaggage": 0
+            },
+            "additionalData": {
+              "validatingAirline": "QG"
+            }
+          }
+        }
+      ],
+      "return": []
+    }
+  },
+  "error": null
+}

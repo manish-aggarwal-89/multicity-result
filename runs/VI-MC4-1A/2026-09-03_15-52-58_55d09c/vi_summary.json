@@ -1,0 +1,15 @@
+{
+  "shape": "VI-MC4-1A",
+  "id": "VI-MC4-1A",
+  "segments": 4,
+  "pax": "1A0C0I",
+  "status": "FAIL",
+  "issues": [
+    "VI booking not SUCCESS (HTTP 200 code=BOOKING_FAILED): TIMEOUT",
+    "VI booking returned no supplier PNR"
+  ],
+  "vi_status": 200,
+  "vi_code": "BOOKING_FAILED",
+  "cancels": null,
+  "dump_dir": "/Users/manishaggarwal/PycharmProjects/multicity-result/runs/VI-MC4-1A/2026-09-03_15-52-58_55d09c"
+}

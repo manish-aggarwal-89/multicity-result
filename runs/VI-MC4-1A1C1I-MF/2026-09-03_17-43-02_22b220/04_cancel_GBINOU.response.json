@@ -1,0 +1,38 @@
+{
+  "status": 200,
+  "response_body": {
+    "code": "SUCCESS",
+    "message": "SUCCESS",
+    "data": {
+      "integratorCancelBookRequest": {
+        "distributionType": "sabre",
+        "bookingCode": "GBINOU",
+        "account": {
+          "name": "tiketcomSabre",
+          "code": "tiketcomSabre"
+        },
+        "sessionGroup": "",
+        "sessionGroupType": "",
+        "transactionId": "",
+        "additionalData": null
+      },
+      "mandatoryRequest": {
+        "storeId": "TIKETCOM",
+        "channelId": "WEB",
+        "requestId": "21ed5182-369a-4b13-966b-b34f57566298",
+        "serviceId": "GATEWAY",
+        "resellerId": "",
+        "identity": "",
+        "username": "guest"
+      },
+      "bookingCode": "GBINOU",
+      "distributionType": "sabre",
+      "account": {
+        "name": "tiketcomSabre",
+        "code": "tiketcomSabre"
+      }
+    },
+    "serverTime": "2026-09-03T17:43:23.522354+05:30"
+  },
+  "error": null
+}

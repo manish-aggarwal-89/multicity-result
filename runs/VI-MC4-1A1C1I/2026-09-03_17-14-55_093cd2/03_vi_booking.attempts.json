@@ -1,0 +1,12 @@
+[
+  {
+    "combo": 0,
+    "flightSelect": "SQ 961~SQ 710~MH 797~SQ 103|SQ 958",
+    "vi_status": 200,
+    "vi_code": "SUCCESS",
+    "message": "SUCCESS",
+    "pnrs": [
+      "ISKAEC"
+    ]
+  }
+]

@@ -1,0 +1,241 @@
+{
+  "integratorBookRequests": {
+    "departure": [
+      {
+        "distributionType": "sabre",
+        "account": {
+          "code": "tiketcomSabre",
+          "name": "tiketcomSabre"
+        },
+        "adult": 1,
+        "child": 1,
+        "infant": 0,
+        "multiFare": false,
+        "validatingAirline": "TR",
+        "tripType": "MULTI_CITY",
+        "contact": {
+          "title": "mr",
+          "firstName": "Manish",
+          "lastName": "Aggarwal",
+          "email": "manish.aggarwal@tiket.com",
+          "emailPassenger": "manish.aggarwal@tiket.com",
+          "emailAgent": "manish.aggarwal@tiket.com",
+          "phoneCode": "+91",
+          "phoneNumber": "7042190130"
+        },
+        "paxes": [
+          {
+            "paxNumber": 10000,
+            "type": "adult",
+            "title": "mr",
+            "gender": "male",
+            "firstName": "Manish",
+            "lastName": "Aggarwal",
+            "originalFirstName": "Manish",
+            "originalLastName": "Aggarwal",
+            "nationality": "IN",
+            "dob": "1998-08-13",
+            "passport": {
+              "id": "A1234567",
+              "expired": "2036-12-17",
+              "country": "IN",
+              "issuingDate": "2017-12-06"
+            }
+          },
+          {
+            "paxNumber": 20000,
+            "type": "child",
+            "title": "mstr",
+            "gender": "male",
+            "firstName": "Akash",
+            "lastName": "Kumar",
+            "originalFirstName": "Akash",
+            "originalLastName": "Kumar",
+            "nationality": "IN",
+            "dob": "2021-12-15",
+            "passport": {
+              "id": "C1234543",
+              "expired": "2037-12-24",
+              "country": "IN",
+              "issuingDate": "2023-12-13"
+            }
+          }
+        ],
+        "itineraries": [
+          {
+            "airline": "TR",
+            "departure": "CGK",
+            "arrival": "SIN",
+            "date": "2027-02-05",
+            "international": 1,
+            "cabinClass": "ECONOMY",
+            "schedules": [
+              {
+                "origin": "CGK",
+                "destination": "SIN",
+                "departureDate": "2027-02-05 09:35",
+                "arrivalDate": "2027-02-05 12:25",
+                "marketingAirline": "TR",
+                "flightNumber": "275",
+                "operatingAirline": {
+                  "code": "TR",
+                  "number": "275"
+                },
+                "fareClass": "H",
+                "fareBasis": {
+                  "adult": "H2TR24",
+                  "child": "H2TR24CH",
+                  "infant": ""
+                },
+                "marriageGroup": "O"
+              }
+            ]
+          },
+          {
+            "airline": "TR",
+            "departure": "SIN",
+            "arrival": "BKK",
+            "date": "2027-02-08",
+            "international": 1,
+            "cabinClass": "ECONOMY",
+            "schedules": [
+              {
+                "origin": "SIN",
+                "destination": "BKK",
+                "departureDate": "2027-02-08 09:20",
+                "arrivalDate": "2027-02-08 10:50",
+                "marketingAirline": "TR",
+                "flightNumber": "606",
+                "operatingAirline": {
+                  "code": "TR",
+                  "number": "606"
+                },
+                "fareClass": "R",
+                "fareBasis": {
+                  "adult": "R2TR24",
+                  "child": "R2TR24CH",
+                  "infant": ""
+                },
+                "marriageGroup": "O"
+              }
+            ]
+          },
+          {
+            "airline": "TR",
+            "departure": "BKK",
+            "arrival": "KUL",
+            "date": "2027-02-11",
+            "international": 1,
+            "cabinClass": "ECONOMY",
+            "schedules": [
+              {
+                "origin": "BKK",
+                "destination": "SIN",
+                "departureDate": "2027-02-11 11:50",
+                "arrivalDate": "2027-02-11 15:25",
+                "marketingAirline": "TR",
+                "flightNumber": "607",
+                "operatingAirline": {
+                  "code": "TR",
+                  "number": "607"
+                },
+                "fareClass": "B",
+                "fareBasis": {
+                  "adult": "B2TR24",
+                  "child": "B2TR24CH",
+                  "infant": ""
+                },
+                "marriageGroup": "O"
+              },
+              {
+                "origin": "SIN",
+                "destination": "KUL",
+                "departureDate": "2027-02-11 17:00",
+                "arrivalDate": "2027-02-11 18:10",
+                "marketingAirline": "TR",
+                "flightNumber": "468",
+                "operatingAirline": {
+                  "code": "TR",
+                  "number": "468"
+                },
+                "fareClass": "B",
+                "fareBasis": {
+                  "adult": "B2TR24",
+                  "child": "B2TR24CH",
+                  "infant": ""
+                },
+                "marriageGroup": "I"
+              }
+            ]
+          },
+          {
+            "airline": "TR",
+            "departure": "KUL",
+            "arrival": "SIN",
+            "date": "2027-02-14",
+            "international": 1,
+            "cabinClass": "ECONOMY",
+            "schedules": [
+              {
+                "origin": "KUL",
+                "destination": "SIN",
+                "departureDate": "2027-02-14 11:15",
+                "arrivalDate": "2027-02-14 12:35",
+                "marketingAirline": "TR",
+                "flightNumber": "453",
+                "operatingAirline": {
+                  "code": "TR",
+                  "number": "453"
+                },
+                "fareClass": "R",
+                "fareBasis": {
+                  "adult": "R2TR24",
+                  "child": "R2TR24CH",
+                  "infant": ""
+                },
+                "marriageGroup": "O"
+              }
+            ]
+          },
+          {
+            "airline": "TR",
+            "departure": "SIN",
+            "arrival": "CGK",
+            "date": "2027-02-17",
+            "international": 1,
+            "cabinClass": "ECONOMY",
+            "schedules": [
+              {
+                "origin": "SIN",
+                "destination": "CGK",
+                "departureDate": "2027-02-17 07:55",
+                "arrivalDate": "2027-02-17 08:50",
+                "marketingAirline": "TR",
+                "flightNumber": "274",
+                "operatingAirline": {
+                  "code": "TR",
+                  "number": "274"
+                },
+                "fareClass": "N",
+                "fareBasis": {
+                  "adult": "N2TR24",
+                  "child": "N2TR24CH",
+                  "infant": ""
+                },
+                "marriageGroup": "O"
+              }
+            ]
+          }
+        ],
+        "currency": "IDR",
+        "countryId": "ID",
+        "fareSellKey": "",
+        "flightSelect": "TR 275~TR 606~TR 607|TR 468~TR 453~TR 274",
+        "commission": 0,
+        "maxBookRetry": 0,
+        "additionalData": {}
+      }
+    ],
+    "return": []
+  }
+}

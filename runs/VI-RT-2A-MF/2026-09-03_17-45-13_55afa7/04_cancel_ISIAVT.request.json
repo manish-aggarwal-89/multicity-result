@@ -1,0 +1,8 @@
+{
+  "distributionType": "sabre",
+  "bookingCode": "ISIAVT",
+  "account": {
+    "code": "tiketcomSabre",
+    "name": "tiketcomSabre"
+  }
+}

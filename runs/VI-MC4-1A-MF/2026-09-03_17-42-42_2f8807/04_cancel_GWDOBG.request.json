@@ -1,0 +1,8 @@
+{
+  "distributionType": "sabre",
+  "bookingCode": "GWDOBG",
+  "account": {
+    "code": "tiketcomSabre",
+    "name": "tiketcomSabre"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "distributionType": "sabre",
+  "bookingCode": "EPOBND",
+  "account": {
+    "code": "tiketcomSabre",
+    "name": "tiketcomSabre"
+  }
+}

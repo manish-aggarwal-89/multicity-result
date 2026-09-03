@@ -1,0 +1,125 @@
+{
+  "integratorBookRequests": {
+    "departure": [
+      {
+        "distributionType": "sabre",
+        "account": {
+          "code": "tiketcomSabre",
+          "name": "tiketcomSabre"
+        },
+        "adult": 2,
+        "child": 0,
+        "infant": 0,
+        "multiFare": false,
+        "validatingAirline": "QG",
+        "tripType": "",
+        "contact": {
+          "title": "mr",
+          "firstName": "Manish",
+          "lastName": "Aggarwal",
+          "email": "manish.aggarwal@tiket.com",
+          "emailPassenger": "manish.aggarwal@tiket.com",
+          "emailAgent": "manish.aggarwal@tiket.com",
+          "phoneCode": "+91",
+          "phoneNumber": "7042190130"
+        },
+        "paxes": [
+          {
+            "paxNumber": 10000,
+            "type": "adult",
+            "title": "mr",
+            "gender": "male",
+            "firstName": "Manish",
+            "lastName": "Aggarwal",
+            "originalFirstName": "Manish",
+            "originalLastName": "Aggarwal",
+            "nationality": "IN",
+            "dob": "1998-08-13",
+            "passport": {
+              "id": "A1234567",
+              "expired": "2036-12-17",
+              "country": "IN",
+              "issuingDate": "2017-12-06"
+            }
+          },
+          {
+            "paxNumber": 10001,
+            "type": "adult",
+            "title": "mr",
+            "gender": "male",
+            "firstName": "Gaurav",
+            "lastName": "Aggarwal",
+            "originalFirstName": "Gaurav",
+            "originalLastName": "Aggarwal",
+            "nationality": "IN",
+            "dob": "1998-12-17",
+            "passport": {
+              "id": "A1234568",
+              "expired": "2033-12-22",
+              "country": "IN",
+              "issuingDate": "2017-12-13"
+            }
+          }
+        ],
+        "itineraries": [
+          {
+            "airline": "QG",
+            "departure": "CGK",
+            "arrival": "SIN",
+            "date": "2027-03-01",
+            "international": 1,
+            "cabinClass": "ECONOMY",
+            "schedules": [
+              {
+                "origin": "CGK",
+                "destination": "SIN",
+                "departureDate": "2027-03-01 06:20",
+                "arrivalDate": "2027-03-01 09:10",
+                "marketingAirline": "QG",
+                "flightNumber": "522",
+                "operatingAirline": {
+                  "code": "QG",
+                  "number": "522"
+                },
+                "fareClass": "P",
+                "marriageGroup": "O"
+              }
+            ]
+          },
+          {
+            "airline": "QG",
+            "departure": "SIN",
+            "arrival": "CGK",
+            "date": "2027-03-04",
+            "international": 1,
+            "cabinClass": "ECONOMY",
+            "schedules": [
+              {
+                "origin": "SIN",
+                "destination": "CGK",
+                "departureDate": "2027-03-04 10:10",
+                "arrivalDate": "2027-03-04 11:05",
+                "marketingAirline": "QG",
+                "flightNumber": "523",
+                "operatingAirline": {
+                  "code": "QG",
+                  "number": "523"
+                },
+                "fareClass": "N",
+                "marriageGroup": "O"
+              }
+            ]
+          }
+        ],
+        "currency": "IDR",
+        "countryId": "ID",
+        "fareSellKey": "",
+        "flightSelect": "QG 522~QG 523",
+        "commission": 0,
+        "maxBookRetry": 0,
+        "additionalData": {}
+      }
+    ],
+    "return": []
+  }
+}

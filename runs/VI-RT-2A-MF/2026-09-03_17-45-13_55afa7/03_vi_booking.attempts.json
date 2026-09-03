@@ -1,0 +1,28 @@
+[
+  {
+    "combo": 0,
+    "flightSelect": "QG 522~QG 527",
+    "vi_status": 200,
+    "vi_code": "BOOKING_FAILED",
+    "message": "fare already sold out",
+    "pnrs": []
+  },
+  {
+    "combo": 1,
+    "flightSelect": "QG 522~QG 523",
+    "vi_status": 200,
+    "vi_code": "BOOKING_FAILED",
+    "message": "fare already sold out",
+    "pnrs": []
+  },
+  {
+    "combo": 2,
+    "flightSelect": "QG 526~QG 527",
+    "vi_status": 200,
+    "vi_code": "SUCCESS",
+    "message": "SUCCESS",
+    "pnrs": [
+      "ISIAVT"
+    ]
+  }
+]

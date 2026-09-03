@@ -1,0 +1,10 @@
+curl --location 'http://flight-sabre-gds-integrator-be.flight-ns.svc.tiket/tix-flight-sabre-gds-integrator/v2/search' \
+  --request POST \
+  --header 'storeId: TIKETCOM' \
+  --header 'channelId: WEB' \
+  --header 'username: guest' \
+  --header 'serviceId: GATEWAY' \
+  --header 'requestId: a12ba1c6-f2d3-41bc-9274-f4e8b12f99c7' \
+  --header 'Content-Type: application/json' \
+  --header 'Accept: application/json' \
+  --data '{"distributionType": "sabre", "supplierRequest": {"accounts": [{"code": "tiketcomSabre", "name": "tiketcomSabre"}], "airlines": []}, "supplierMappings": [{"account": {"code": "tiketcomSabre", "name": "tiketcomSabre"}, "airlines": [], "ignoreAirline": true, "multiFare": false}], "origin": "CGK", "destination": "SIN", "adult": 2, "child": 0, "infant": 0, "departureDate": "2027-03-01", "returnDate": "2027-03-01", "cabinClass": "ECONOMY", "tripTypes": ["ROUND_TRIP"], "international": 1, "currency": {"departureCurrency": "IDR"}, "routes": [{"origin": "CGK", "destination": "SIN", "departureDate": "2027-03-01", "currency": "IDR"}], "additionalData": {}, "blacklistMap": {}}'

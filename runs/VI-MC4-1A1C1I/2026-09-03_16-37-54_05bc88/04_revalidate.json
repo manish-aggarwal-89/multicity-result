@@ -1,0 +1,1431 @@
+{
+  "step": 4,
+  "name": "revalidate",
+  "flow": "VI-MC4-1A1C1I",
+  "test_case_id": "VI-MC4-1A1C1I",
+  "test_case_name": "VI Sabre multi-city — VI-MC4-1A1C1I",
+  "timestamp": "2026-09-03T11:08:23.076126+00:00",
+  "duration_ms": 1621.98416586034,
+  "method": "POST",
+  "url": "http://flight-sabre-gds-integrator-be.flight-ns.svc.tiket/tix-flight-sabre-gds-integrator/revalidate-itinerary",
+  "service": "TIX-FLIGHT-SABRE-GDS-INTEGRATOR-BE",
+  "host": "flight-sabre-gds-integrator-be.flight-ns.svc.tiket",
+  "swagger": "http://flight-sabre-gds-integrator-be.flight-ns.svc.tiket/swagger/index.html",
+  "headers": {
+    "storeId": "TIKETCOM",
+    "channelId": "WEB",
+    "username": "guest",
+    "serviceId": "GATEWAY",
+    "requestId": "4f964bc2-80bf-45a8-9c45-c3ed115655f2",
+    "Content-Type": "application/json",
+    "Accept": "application/json"
+  },
+  "request_body": {
+    "account": {
+      "code": "tiketcomSabre",
+      "name": "tiketcomSabre"
+    },
+    "distributionType": "sabre",
+    "adult": 1,
+    "child": 1,
+    "infant": 1,
+    "cabinClass": "ECONOMY",
+    "currency": {
+      "departureCurrency": "IDR"
+    },
+    "origin": "CGK",
+    "destination": "CGK",
+    "departureDate": "2027-02-05",
+    "returnDate": "",
+    "international": 1,
+    "tripTypes": [
+      "MULTI_CITY"
+    ],
+    "multiFare": false,
+    "validatingAirline": "SQ",
+    "flightSelect": "SQ 951 ~ SQ 720 ~ MH 789 ~ SQ 103|SQ 958",
+    "itineraries": [
+      {
+        "origin": "CGK",
+        "destination": "SIN",
+        "journeySellKey": "",
+        "fareSellKey": "",
+        "schedules": [
+          {
+            "origin": "CGK",
+            "destination": "SIN",
+            "departureDate": "2027-02-05T05:25",
+            "arrivalDate": "2027-02-05T08:05",
+            "marketingAirline": "SQ",
+            "flightNumber": "951",
+            "operatingAirline": {
+              "code": "SQ",
+              "number": "951"
+            },
+            "fareClass": "Y",
+            "fareBasis": {
+              "adult": "YIFSQ",
+              "child": "YIFSQ",
+              "infant": "YIFSQ"
+            }
+          }
+        ]
+      },
+      {
+        "origin": "SIN",
+        "destination": "BKK",
+        "journeySellKey": "",
+        "fareSellKey": "",
+        "schedules": [
+          {
+            "origin": "SIN",
+            "destination": "BKK",
+            "departureDate": "2027-02-08T18:35",
+            "arrivalDate": "2027-02-08T20:00",
+            "marketingAirline": "SQ",
+            "flightNumber": "720",
+            "operatingAirline": {
+              "code": "SQ",
+              "number": "720"
+            },
+            "fareClass": "Y",
+            "fareBasis": {
+              "adult": "YIFSQ",
+              "child": "YIFSQ",
+              "infant": "YIFSQ"
+            }
+          }
+        ]
+      },
+      {
+        "origin": "BKK",
+        "destination": "KUL",
+        "journeySellKey": "",
+        "fareSellKey": "",
+        "schedules": [
+          {
+            "origin": "BKK",
+            "destination": "KUL",
+            "departureDate": "2027-02-11T14:15",
+            "arrivalDate": "2027-02-11T17:35",
+            "marketingAirline": "MH",
+            "flightNumber": "789",
+            "operatingAirline": {
+              "code": "MH",
+              "number": "789"
+            },
+            "fareClass": "S",
+            "fareBasis": {
+              "adult": "YIFSQ",
+              "child": "YIFSQ",
+              "infant": "YIFSQ"
+            }
+          }
+        ]
+      },
+      {
+        "origin": "KUL",
+        "destination": "CGK",
+        "journeySellKey": "",
+        "fareSellKey": "",
+        "schedules": [
+          {
+            "origin": "KUL",
+            "destination": "SIN",
+            "departureDate": "2027-02-14T09:00",
+            "arrivalDate": "2027-02-14T10:20",
+            "marketingAirline": "SQ",
+            "flightNumber": "103",
+            "operatingAirline": {
+              "code": "SQ",
+              "number": "103"
+            },
+            "fareClass": "Y",
+            "fareBasis": {
+              "adult": "YIFSQ",
+              "child": "YIFSQ",
+              "infant": "YIFSQ"
+            }
+          },
+          {
+            "origin": "SIN",
+            "destination": "CGK",
+            "departureDate": "2027-02-14T12:30",
+            "arrivalDate": "2027-02-14T13:20",
+            "marketingAirline": "SQ",
+            "flightNumber": "958",
+            "operatingAirline": {
+              "code": "SQ",
+              "number": "958"
+            },
+            "fareClass": "Y",
+            "fareBasis": {
+              "adult": "YIFSQ",
+              "child": "YIFSQ",
+              "infant": "YIFSQ"
+            }
+          }
+        ]
+      }
+    ],
+    "source": "PRP"
+  },
+  "status": 200,
+  "response_headers": {
+    "content-type": "application/json",
+    "date": "Thu, 03 Sep 2026 11:08:23 GMT",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "transfer-encoding": "chunked"
+  },
+  "response_body": {
+    "code": "SUCCESS",
+    "message": "SUCCESS",
+    "data": {
+      "mainFare": {
+        "departureFlight": null,
+        "returnFlight": null,
+        "roundTripCombine": null,
+        "multiCities": {
+          "searchAvailabilities": [
+            {
+              "flighSelect": "SQ 951",
+              "currency": "IDR",
+              "origin": "CGK",
+              "destination": "SIN",
+              "date": "2027-02-05",
+              "marketingAirline": "SQ",
+              "adult": 1,
+              "child": 1,
+              "infant": 1,
+              "departure": {
+                "date": "2027-02-05",
+                "time": "05:25",
+                "timezone": 7,
+                "airportCode": "CGK",
+                "terminal": "3"
+              },
+              "arrival": {
+                "date": "2027-02-05",
+                "time": "08:05",
+                "timezone": 8,
+                "airportCode": "SIN",
+                "terminal": "0"
+              },
+              "totalTransit": 0,
+              "seatsAvailable": 0,
+              "upgradable": false,
+              "schedules": [
+                {
+                  "flightNumber": "951",
+                  "airline": "SQ",
+                  "aircraftType": "359",
+                  "departureDetail": {
+                    "date": "2027-02-05",
+                    "time": "05:25",
+                    "timezone": 7,
+                    "airportCode": "CGK",
+                    "terminal": "3"
+                  },
+                  "arrivalDetail": {
+                    "date": "2027-02-05",
+                    "time": "08:05",
+                    "timezone": 8,
+                    "airportCode": "SIN",
+                    "terminal": "0"
+                  },
+                  "cabinClass": "ECONOMY",
+                  "fareClass": "Y",
+                  "travelTime": 100,
+                  "baggage": {
+                    "cabin": {
+                      "unit": "1",
+                      "measurement": "Pc",
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 30,
+                      "validateBaggage": false
+                    }
+                  },
+                  "connectings": null,
+                  "marriageGroup": "O",
+                  "meal": "M",
+                  "operatingAirline": "SQ",
+                  "operatingFlightNumber": "951"
+                }
+              ],
+              "journeySellKey": "",
+              "fareSellKey": ""
+            },
+            {
+              "flighSelect": "SQ 720",
+              "currency": "IDR",
+              "origin": "SIN",
+              "destination": "BKK",
+              "date": "2027-02-08",
+              "marketingAirline": "SQ",
+              "adult": 1,
+              "child": 1,
+              "infant": 1,
+              "departure": {
+                "date": "2027-02-08",
+                "time": "18:35",
+                "timezone": 8,
+                "airportCode": "SIN",
+                "terminal": "2"
+              },
+              "arrival": {
+                "date": "2027-02-08",
+                "time": "20:00",
+                "timezone": 7,
+                "airportCode": "BKK"
+              },
+              "totalTransit": 0,
+              "seatsAvailable": 0,
+              "upgradable": false,
+              "schedules": [
+                {
+                  "flightNumber": "720",
+                  "airline": "SQ",
+                  "aircraftType": "787",
+                  "departureDetail": {
+                    "date": "2027-02-08",
+                    "time": "18:35",
+                    "timezone": 8,
+                    "airportCode": "SIN",
+                    "terminal": "2"
+                  },
+                  "arrivalDetail": {
+                    "date": "2027-02-08",
+                    "time": "20:00",
+                    "timezone": 7,
+                    "airportCode": "BKK"
+                  },
+                  "cabinClass": "ECONOMY",
+                  "fareClass": "Y",
+                  "travelTime": 145,
+                  "baggage": {
+                    "cabin": {
+                      "unit": "1",
+                      "measurement": "Pc",
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 30,
+                      "validateBaggage": false
+                    }
+                  },
+                  "connectings": null,
+                  "marriageGroup": "I",
+                  "meal": "M",
+                  "operatingAirline": "SQ",
+                  "operatingFlightNumber": "720"
+                }
+              ],
+              "journeySellKey": "",
+              "fareSellKey": ""
+            },
+            {
+              "flighSelect": "MH 789",
+              "currency": "IDR",
+              "origin": "BKK",
+              "destination": "KUL",
+              "date": "2027-02-11",
+              "marketingAirline": "MH",
+              "adult": 1,
+              "child": 1,
+              "infant": 1,
+              "departure": {
+                "date": "2027-02-11",
+                "time": "14:15",
+                "timezone": 7,
+                "airportCode": "BKK"
+              },
+              "arrival": {
+                "date": "2027-02-11",
+                "time": "17:35",
+                "timezone": 8,
+                "airportCode": "KUL",
+                "terminal": "1"
+              },
+              "totalTransit": 0,
+              "seatsAvailable": 0,
+              "upgradable": false,
+              "schedules": [
+                {
+                  "flightNumber": "789",
+                  "airline": "MH",
+                  "aircraftType": "73H",
+                  "departureDetail": {
+                    "date": "2027-02-11",
+                    "time": "14:15",
+                    "timezone": 7,
+                    "airportCode": "BKK"
+                  },
+                  "arrivalDetail": {
+                    "date": "2027-02-11",
+                    "time": "17:35",
+                    "timezone": 8,
+                    "airportCode": "KUL",
+                    "terminal": "1"
+                  },
+                  "cabinClass": "ECONOMY",
+                  "fareClass": "S",
+                  "travelTime": 140,
+                  "baggage": {
+                    "cabin": {
+                      "unit": "1",
+                      "measurement": "Pc",
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 30,
+                      "validateBaggage": false
+                    }
+                  },
+                  "connectings": null,
+                  "marriageGroup": "O",
+                  "meal": "M",
+                  "operatingAirline": "MH",
+                  "operatingFlightNumber": "789"
+                }
+              ],
+              "journeySellKey": "",
+              "fareSellKey": ""
+            },
+            {
+              "flighSelect": "SQ 103|SQ 958",
+              "currency": "IDR",
+              "origin": "KUL",
+              "destination": "CGK",
+              "date": "2027-02-14",
+              "marketingAirline": "SQ",
+              "adult": 1,
+              "child": 1,
+              "infant": 1,
+              "departure": {
+                "date": "2027-02-14",
+                "time": "09:00",
+                "timezone": 8,
+                "airportCode": "KUL",
+                "terminal": "1"
+              },
+              "arrival": {
+                "date": "2027-02-14",
+                "time": "13:20",
+                "timezone": 7,
+                "airportCode": "CGK",
+                "terminal": "3"
+              },
+              "totalTransit": 1,
+              "seatsAvailable": 0,
+              "upgradable": false,
+              "schedules": [
+                {
+                  "flightNumber": "103",
+                  "airline": "SQ",
+                  "aircraftType": "7M8",
+                  "departureDetail": {
+                    "date": "2027-02-14",
+                    "time": "09:00",
+                    "timezone": 8,
+                    "airportCode": "KUL",
+                    "terminal": "1"
+                  },
+                  "arrivalDetail": {
+                    "date": "2027-02-14",
+                    "time": "10:20",
+                    "timezone": 8,
+                    "airportCode": "SIN",
+                    "terminal": "0"
+                  },
+                  "cabinClass": "ECONOMY",
+                  "fareClass": "Y",
+                  "travelTime": 80,
+                  "baggage": {
+                    "cabin": {
+                      "unit": "1",
+                      "measurement": "Pc",
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 30,
+                      "validateBaggage": false
+                    }
+                  },
+                  "connectings": null,
+                  "marriageGroup": "O",
+                  "meal": "M",
+                  "operatingAirline": "SQ",
+                  "operatingFlightNumber": "103"
+                },
+                {
+                  "flightNumber": "958",
+                  "airline": "SQ",
+                  "aircraftType": "359",
+                  "departureDetail": {
+                    "date": "2027-02-14",
+                    "time": "12:30",
+                    "timezone": 8,
+                    "airportCode": "SIN",
+                    "terminal": "2"
+                  },
+                  "arrivalDetail": {
+                    "date": "2027-02-14",
+                    "time": "13:20",
+                    "timezone": 7,
+                    "airportCode": "CGK",
+                    "terminal": "3"
+                  },
+                  "cabinClass": "ECONOMY",
+                  "fareClass": "Y",
+                  "travelTime": 110,
+                  "transitTime": 130,
+                  "baggage": {
+                    "cabin": {
+                      "unit": "1",
+                      "measurement": "Pc",
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 30,
+                      "validateBaggage": false
+                    }
+                  },
+                  "connectings": null,
+                  "marriageGroup": "I",
+                  "meal": "M",
+                  "operatingAirline": "SQ",
+                  "operatingFlightNumber": "958"
+                }
+              ],
+              "journeySellKey": "",
+              "fareSellKey": ""
+            }
+          ],
+          "fares": [
+            {
+              "distributionType": "sabre",
+              "supplierId": "tiketcomSabre",
+              "originalCurrency": "IDR",
+              "validatingAirline": "SQ",
+              "promotionCode": {
+                "id": "",
+                "name": ""
+              },
+              "brandedFare": null,
+              "fareClassDetails": [
+                {
+                  "origin": "CGK",
+                  "destination": "SIN",
+                  "fareClass": "Y"
+                },
+                {
+                  "origin": "SIN",
+                  "destination": "BKK",
+                  "fareClass": "Y"
+                },
+                {
+                  "origin": "BKK",
+                  "destination": "KUL",
+                  "fareClass": "S"
+                },
+                {
+                  "origin": "KUL",
+                  "destination": "SIN",
+                  "fareClass": "Y"
+                },
+                {
+                  "origin": "SIN",
+                  "destination": "CGK",
+                  "fareClass": "Y"
+                }
+              ],
+              "originalTotalFare": {
+                "total": 119959600,
+                "base": 113311000,
+                "tax": 6648600,
+                "taxBreakDowns": null,
+                "supplierDiscount": 0,
+                "seatAvailables": 9,
+                "fareBasisCodes": [
+                  "YIFSQ",
+                  "YIFSQ",
+                  "YIFSQ",
+                  "YIFSQ",
+                  "YIFSQ"
+                ],
+                "fareClasses": [
+                  "Y",
+                  "Y",
+                  "S",
+                  "Y",
+                  "Y"
+                ],
+                "iwjr": 0,
+                "psc": 0,
+                "commission": 0,
+                "agt": 0,
+                "gst": 0,
+                "airportTax": 0,
+                "unidentified": 0,
+                "flyThru": 0,
+                "upselling": 0,
+                "nta": 119959600,
+                "markup": 0,
+                "privateMarkup": 0,
+                "breakdownTaxes": null,
+                "penaltyInfos": null,
+                "scheduleFareDetailInformations": null
+              },
+              "originalAdultFare": {
+                "total": 64541200,
+                "base": 61249000,
+                "tax": 3292200,
+                "taxBreakDowns": {},
+                "supplierDiscount": 0,
+                "seatAvailables": 9,
+                "fareBasisCodes": [
+                  "YIFSQ",
+                  "YIFSQ",
+                  "YIFSQ",
+                  "YIFSQ",
+                  "YIFSQ"
+                ],
+                "fareClasses": [
+                  "Y",
+                  "Y",
+                  "S",
+                  "Y",
+                  "Y"
+                ],
+                "iwjr": 0,
+                "psc": 0,
+                "commission": 0,
+                "agt": 0,
+                "gst": 0,
+                "airportTax": 0,
+                "unidentified": 0,
+                "flyThru": 0,
+                "upselling": 0,
+                "nta": 64541200,
+                "markup": 0,
+                "privateMarkup": 0,
+                "breakdownTaxes": [
+                  {
+                    "code": "YRI",
+                    "currencyCode": "IDR",
+                    "amount": 354600
+                  },
+                  {
+                    "code": "YQF",
+                    "currencyCode": "IDR",
+                    "amount": 531900
+                  },
+                  {
+                    "code": "D5",
+                    "currencyCode": "IDR",
+                    "amount": 266400
+                  },
+                  {
+                    "code": "G1",
+                    "currencyCode": "IDR",
+                    "amount": 35200
+                  },
+                  {
+                    "code": "H8",
+                    "currencyCode": "IDR",
+                    "amount": 4400
+                  },
+                  {
+                    "code": "MY",
+                    "currencyCode": "IDR",
+                    "amount": 320700
+                  },
+                  {
+                    "code": "L7",
+                    "currencyCode": "IDR",
+                    "amount": 150500
+                  },
+                  {
+                    "code": "L7",
+                    "currencyCode": "IDR",
+                    "amount": 41800
+                  },
+                  {
+                    "code": "OP",
+                    "currencyCode": "IDR",
+                    "amount": 111500
+                  },
+                  {
+                    "code": "SG",
+                    "currencyCode": "IDR",
+                    "amount": 646400
+                  },
+                  {
+                    "code": "SG",
+                    "currencyCode": "IDR",
+                    "amount": 167200
+                  },
+                  {
+                    "code": "E7",
+                    "currencyCode": "IDR",
+                    "amount": 18700
+                  },
+                  {
+                    "code": "E72",
+                    "currencyCode": "IDR",
+                    "amount": 18700
+                  },
+                  {
+                    "code": "G8",
+                    "currencyCode": "IDR",
+                    "amount": 13400
+                  },
+                  {
+                    "code": "G82",
+                    "currencyCode": "IDR",
+                    "amount": 13400
+                  },
+                  {
+                    "code": "TS",
+                    "currencyCode": "IDR",
+                    "amount": 597400
+                  }
+                ],
+                "penaltyInfos": [
+                  {
+                    "penaltyType": "RESCHEDULE",
+                    "penaltyStatus": "YES",
+                    "applicability": "Before",
+                    "amount": 0,
+                    "currencyCode": "IDR",
+                    "decimalPlaces": 0,
+                    "originalAmount": 0,
+                    "originalCurrencyCode": "IDR",
+                    "originalDecimalPlaces": 0,
+                    "cat16Info": false
+                  },
+                  {
+                    "penaltyType": "RESCHEDULE",
+                    "penaltyStatus": "YES",
+                    "applicability": "After",
+                    "amount": 0,
+                    "currencyCode": "IDR",
+                    "decimalPlaces": 0,
+                    "originalAmount": 0,
+                    "originalCurrencyCode": "IDR",
+                    "originalDecimalPlaces": 0,
+                    "cat16Info": false
+                  },
+                  {
+                    "penaltyType": "REFUND",
+                    "penaltyStatus": "YES",
+                    "applicability": "Before",
+                    "amount": 0,
+                    "currencyCode": "IDR",
+                    "decimalPlaces": 0,
+                    "originalAmount": 0,
+                    "originalCurrencyCode": "IDR",
+                    "originalDecimalPlaces": 0,
+                    "cat16Info": false
+                  },
+                  {
+                    "penaltyType": "REFUND",
+                    "penaltyStatus": "YES",
+                    "applicability": "After",
+                    "amount": 0,
+                    "currencyCode": "IDR",
+                    "decimalPlaces": 0,
+                    "originalAmount": 0,
+                    "originalCurrencyCode": "IDR",
+                    "originalDecimalPlaces": 0,
+                    "cat16Info": false
+                  }
+                ],
+                "scheduleFareDetailInformations": [
+                  {
+                    "origin": "CGK",
+                    "destination": "SIN",
+                    "fareBasisCode": "YIFSQ",
+                    "fareClasses": "Y",
+                    "meal": "M"
+                  },
+                  {
+                    "origin": "SIN",
+                    "destination": "BKK",
+                    "fareBasisCode": "YIFSQ",
+                    "breakpoint": true,
+                    "fareClasses": "Y",
+                    "meal": "M"
+                  },
+                  {
+                    "origin": "BKK",
+                    "destination": "KUL",
+                    "fareBasisCode": "YIFSQ",
+                    "breakpoint": true,
+                    "fareClasses": "S",
+                    "meal": "M"
+                  },
+                  {
+                    "origin": "KUL",
+                    "destination": "SIN",
+                    "fareBasisCode": "YIFSQ",
+                    "fareClasses": "Y",
+                    "meal": "M"
+                  },
+                  {
+                    "origin": "SIN",
+                    "destination": "CGK",
+                    "fareBasisCode": "YIFSQ",
+                    "breakpoint": true,
+                    "fareClasses": "Y",
+                    "meal": "M"
+                  }
+                ]
+              },
+              "originalChildFare": {
+                "total": 49229200,
+                "base": 45937000,
+                "tax": 3292200,
+                "taxBreakDowns": {},
+                "supplierDiscount": 0,
+                "seatAvailables": 9,
+                "fareBasisCodes": [
+                  "YIFSQ",
+                  "YIFSQ",
+                  "YIFSQ",
+                  "YIFSQ",
+                  "YIFSQ"
+                ],
+                "fareClasses": [
+                  "Y",
+                  "Y",
+                  "S",
+                  "Y",
+                  "Y"
+                ],
+                "iwjr": 0,
+                "psc": 0,
+                "commission": 0,
+                "agt": 0,
+                "gst": 0,
+                "airportTax": 0,
+                "unidentified": 0,
+                "flyThru": 0,
+                "upselling": 0,
+                "nta": 49229200,
+                "markup": 0,
+                "privateMarkup": 0,
+                "breakdownTaxes": [
+                  {
+                    "code": "YRI",
+                    "currencyCode": "IDR",
+                    "amount": 354600
+                  },
+                  {
+                    "code": "YQF",
+                    "currencyCode": "IDR",
+                    "amount": 531900
+                  },
+                  {
+                    "code": "D5",
+                    "currencyCode": "IDR",
+                    "amount": 266400
+                  },
+                  {
+                    "code": "G1",
+                    "currencyCode": "IDR",
+                    "amount": 35200
+                  },
+                  {
+                    "code": "H8",
+                    "currencyCode": "IDR",
+                    "amount": 4400
+                  },
+                  {
+                    "code": "MY",
+                    "currencyCode": "IDR",
+                    "amount": 320700
+                  },
+                  {
+                    "code": "L7",
+                    "currencyCode": "IDR",
+                    "amount": 150500
+                  },
+                  {
+                    "code": "L7",
+                    "currencyCode": "IDR",
+                    "amount": 41800
+                  },
+                  {
+                    "code": "OP",
+                    "currencyCode": "IDR",
+                    "amount": 111500
+                  },
+                  {
+                    "code": "SG",
+                    "currencyCode": "IDR",
+                    "amount": 646400
+                  },
+                  {
+                    "code": "SG",
+                    "currencyCode": "IDR",
+                    "amount": 167200
+                  },
+                  {
+                    "code": "E7",
+                    "currencyCode": "IDR",
+                    "amount": 18700
+                  },
+                  {
+                    "code": "E72",
+                    "currencyCode": "IDR",
+                    "amount": 18700
+                  },
+                  {
+                    "code": "G8",
+                    "currencyCode": "IDR",
+                    "amount": 13400
+                  },
+                  {
+                    "code": "G82",
+                    "currencyCode": "IDR",
+                    "amount": 13400
+                  },
+                  {
+                    "code": "TS",
+                    "currencyCode": "IDR",
+                    "amount": 597400
+                  }
+                ],
+                "penaltyInfos": [
+                  {
+                    "penaltyType": "RESCHEDULE",
+                    "penaltyStatus": "YES",
+                    "applicability": "Before",
+                    "amount": 0,
+                    "currencyCode": "IDR",
+                    "decimalPlaces": 0,
+                    "originalAmount": 0,
+                    "originalCurrencyCode": "IDR",
+                    "originalDecimalPlaces": 0,
+                    "cat16Info": false
+                  },
+                  {
+                    "penaltyType": "RESCHEDULE",
+                    "penaltyStatus": "YES",
+                    "applicability": "After",
+                    "amount": 0,
+                    "currencyCode": "IDR",
+                    "decimalPlaces": 0,
+                    "originalAmount": 0,
+                    "originalCurrencyCode": "IDR",
+                    "originalDecimalPlaces": 0,
+                    "cat16Info": false
+                  },
+                  {
+                    "penaltyType": "REFUND",
+                    "penaltyStatus": "YES",
+                    "applicability": "Before",
+                    "amount": 0,
+                    "currencyCode": "IDR",
+                    "decimalPlaces": 0,
+                    "originalAmount": 0,
+                    "originalCurrencyCode": "IDR",
+                    "originalDecimalPlaces": 0,
+                    "cat16Info": false
+                  },
+                  {
+                    "penaltyType": "REFUND",
+                    "penaltyStatus": "YES",
+                    "applicability": "After",
+                    "amount": 0,
+                    "currencyCode": "IDR",
+                    "decimalPlaces": 0,
+                    "originalAmount": 0,
+                    "originalCurrencyCode": "IDR",
+                    "originalDecimalPlaces": 0,
+                    "cat16Info": false
+                  }
+                ],
+                "scheduleFareDetailInformations": [
+                  {
+                    "origin": "CGK",
+                    "destination": "SIN",
+                    "fareBasisCode": "YIFSQ",
+                    "fareClasses": "Y",
+                    "meal": "M"
+                  },
+                  {
+                    "origin": "SIN",
+                    "destination": "BKK",
+                    "fareBasisCode": "YIFSQ",
+                    "breakpoint": true,
+                    "fareClasses": "Y",
+                    "meal": "M"
+                  },
+                  {
+                    "origin": "BKK",
+                    "destination": "KUL",
+                    "fareBasisCode": "YIFSQ",
+                    "breakpoint": true,
+                    "fareClasses": "S",
+                    "meal": "M"
+                  },
+                  {
+                    "origin": "KUL",
+                    "destination": "SIN",
+                    "fareBasisCode": "YIFSQ",
+                    "fareClasses": "Y",
+                    "meal": "M"
+                  },
+                  {
+                    "origin": "SIN",
+                    "destination": "CGK",
+                    "fareBasisCode": "YIFSQ",
+                    "breakpoint": true,
+                    "fareClasses": "Y",
+                    "meal": "M"
+                  }
+                ]
+              },
+              "originalInfantFare": {
+                "total": 6189200,
+                "base": 6125000,
+                "tax": 64200,
+                "taxBreakDowns": {},
+                "supplierDiscount": 0,
+                "seatAvailables": 9,
+                "fareBasisCodes": [
+                  "YIFSQ",
+                  "YIFSQ",
+                  "YIFSQ",
+                  "YIFSQ",
+                  "YIFSQ"
+                ],
+                "fareClasses": [
+                  "Y",
+                  "Y",
+                  "S",
+                  "Y",
+                  "Y"
+                ],
+                "iwjr": 0,
+                "psc": 0,
+                "commission": 0,
+                "agt": 0,
+                "gst": 0,
+                "airportTax": 0,
+                "unidentified": 0,
+                "flyThru": 0,
+                "upselling": 0,
+                "nta": 6189200,
+                "markup": 0,
+                "privateMarkup": 0,
+                "breakdownTaxes": [
+                  {
+                    "code": "E7",
+                    "currencyCode": "IDR",
+                    "amount": 18700
+                  },
+                  {
+                    "code": "E72",
+                    "currencyCode": "IDR",
+                    "amount": 18700
+                  },
+                  {
+                    "code": "G8",
+                    "currencyCode": "IDR",
+                    "amount": 13400
+                  },
+                  {
+                    "code": "G82",
+                    "currencyCode": "IDR",
+                    "amount": 13400
+                  }
+                ],
+                "penaltyInfos": [
+                  {
+                    "penaltyType": "RESCHEDULE",
+                    "penaltyStatus": "YES",
+                    "applicability": "Before",
+                    "amount": 0,
+                    "currencyCode": "IDR",
+                    "decimalPlaces": 0,
+                    "originalAmount": 0,
+                    "originalCurrencyCode": "IDR",
+                    "originalDecimalPlaces": 0,
+                    "cat16Info": false
+                  },
+                  {
+                    "penaltyType": "RESCHEDULE",
+                    "penaltyStatus": "YES",
+                    "applicability": "After",
+                    "amount": 0,
+                    "currencyCode": "IDR",
+                    "decimalPlaces": 0,
+                    "originalAmount": 0,
+                    "originalCurrencyCode": "IDR",
+                    "originalDecimalPlaces": 0,
+                    "cat16Info": false
+                  },
+                  {
+                    "penaltyType": "REFUND",
+                    "penaltyStatus": "YES",
+                    "applicability": "Before",
+                    "amount": 0,
+                    "currencyCode": "IDR",
+                    "decimalPlaces": 0,
+                    "originalAmount": 0,
+                    "originalCurrencyCode": "IDR",
+                    "originalDecimalPlaces": 0,
+                    "cat16Info": false
+                  },
+                  {
+                    "penaltyType": "REFUND",
+                    "penaltyStatus": "YES",
+                    "applicability": "After",
+                    "amount": 0,
+                    "currencyCode": "IDR",
+                    "decimalPlaces": 0,
+                    "originalAmount": 0,
+                    "originalCurrencyCode": "IDR",
+                    "originalDecimalPlaces": 0,
+                    "cat16Info": false
+                  }
+                ],
+                "scheduleFareDetailInformations": [
+                  {
+                    "origin": "CGK",
+                    "destination": "SIN",
+                    "fareBasisCode": "YIFSQ",
+                    "fareClasses": "Y",
+                    "meal": "M"
+                  },
+                  {
+                    "origin": "SIN",
+                    "destination": "BKK",
+                    "fareBasisCode": "YIFSQ",
+                    "breakpoint": true,
+                    "fareClasses": "Y",
+                    "meal": "M"
+                  },
+                  {
+                    "origin": "BKK",
+                    "destination": "KUL",
+                    "fareBasisCode": "YIFSQ",
+                    "breakpoint": true,
+                    "fareClasses": "S",
+                    "meal": "M"
+                  },
+                  {
+                    "origin": "KUL",
+                    "destination": "SIN",
+                    "fareBasisCode": "YIFSQ",
+                    "fareClasses": "Y",
+                    "meal": "M"
+                  },
+                  {
+                    "origin": "SIN",
+                    "destination": "CGK",
+                    "fareBasisCode": "YIFSQ",
+                    "breakpoint": true,
+                    "fareClasses": "Y",
+                    "meal": "M"
+                  }
+                ]
+              },
+              "fareClasses": "Y|Y|S|Y|Y",
+              "otherFares": [],
+              "flexiFare": true,
+              "privateFare": false,
+              "inclusiveAddons": {
+                "departureScheduleAddonsList": [
+                  {
+                    "origin": "CGK",
+                    "departureDateTime": "2027-02-05 05:25",
+                    "destination": "SIN",
+                    "airline": "SQ",
+                    "flightNumber": "951",
+                    "baggage": {
+                      "cabin": {
+                        "unit": "1",
+                        "measurement": "Pc",
+                        "qty": 0,
+                        "validateBaggage": false
+                      },
+                      "checkIn": {
+                        "measurement": "Kg",
+                        "qty": 30,
+                        "validateBaggage": false
+                      }
+                    },
+                    "meal": "M"
+                  },
+                  {
+                    "origin": "SIN",
+                    "departureDateTime": "2027-02-08 18:35",
+                    "destination": "BKK",
+                    "airline": "SQ",
+                    "flightNumber": "720",
+                    "baggage": {
+                      "cabin": {
+                        "unit": "1",
+                        "measurement": "Pc",
+                        "qty": 0,
+                        "validateBaggage": false
+                      },
+                      "checkIn": {
+                        "measurement": "Kg",
+                        "qty": 30,
+                        "validateBaggage": false
+                      }
+                    },
+                    "meal": "M"
+                  },
+                  {
+                    "origin": "BKK",
+                    "departureDateTime": "2027-02-11 14:15",
+                    "destination": "KUL",
+                    "airline": "MH",
+                    "flightNumber": "789",
+                    "baggage": {
+                      "cabin": {
+                        "unit": "1",
+                        "measurement": "Pc",
+                        "qty": 0,
+                        "validateBaggage": false
+                      },
+                      "checkIn": {
+                        "measurement": "Kg",
+                        "qty": 30,
+                        "validateBaggage": false
+                      }
+                    },
+                    "meal": "M"
+                  },
+                  {
+                    "origin": "KUL",
+                    "departureDateTime": "2027-02-14 09:00",
+                    "destination": "SIN",
+                    "airline": "SQ",
+                    "flightNumber": "103",
+                    "baggage": {
+                      "cabin": {
+                        "unit": "1",
+                        "measurement": "Pc",
+                        "qty": 0,
+                        "validateBaggage": false
+                      },
+                      "checkIn": {
+                        "measurement": "Kg",
+                        "qty": 30,
+                        "validateBaggage": false
+                      }
+                    },
+                    "meal": "M"
+                  },
+                  {
+                    "origin": "SIN",
+                    "departureDateTime": "2027-02-14 12:30",
+                    "destination": "CGK",
+                    "airline": "SQ",
+                    "flightNumber": "958",
+                    "baggage": {
+                      "cabin": {
+                        "unit": "1",
+                        "measurement": "Pc",
+                        "qty": 0,
+                        "validateBaggage": false
+                      },
+                      "checkIn": {
+                        "measurement": "Kg",
+                        "qty": 30,
+                        "validateBaggage": false
+                      }
+                    },
+                    "meal": "M"
+                  }
+                ],
+                "returnScheduleAddonsList": null
+              }
+            }
+          ],
+          "otherFares": null
+        }
+      },
+      "otherFares": null,
+      "integratorRevalidateItineraryRequest": {
+        "distributionType": "sabre",
+        "account": {
+          "name": "tiketcomSabre",
+          "code": "tiketcomSabre"
+        },
+        "flightSelect": "SQ 951 ~ SQ 720 ~ MH 789 ~ SQ 103|SQ 958",
+        "origin": "CGK",
+        "destination": "CGK",
+        "adult": 1,
+        "child": 1,
+        "infant": 1,
+        "departureDate": "2027-02-05",
+        "returnDate": "",
+        "cabinClass": "ECONOMY",
+        "international": 1,
+        "validatingAirline": "SQ",
+        "tripTypes": [
+          "MULTI_CITY"
+        ],
+        "currency": {
+          "departureCurrency": "IDR",
+          "returnCurrency": ""
+        },
+        "itineraries": [
+          {
+            "origin": "CGK",
+            "destination": "SIN",
+            "journeySellKey": "",
+            "fareSellKey": "",
+            "schedules": [
+              {
+                "departureDate": "2027-02-05T05:25",
+                "arrivalDate": "2027-02-05T08:05",
+                "operatingAirline": {
+                  "code": "SQ",
+                  "number": "951"
+                },
+                "fareClass": "Y",
+                "origin": "CGK",
+                "destination": "SIN",
+                "marketingAirline": "SQ",
+                "flightNumber": "951",
+                "fareBasis": {
+                  "adult": "YIFSQ",
+                  "child": "YIFSQ",
+                  "infant": "YIFSQ"
+                }
+              }
+            ]
+          },
+          {
+            "origin": "SIN",
+            "destination": "BKK",
+            "journeySellKey": "",
+            "fareSellKey": "",
+            "schedules": [
+              {
+                "departureDate": "2027-02-08T18:35",
+                "arrivalDate": "2027-02-08T20:00",
+                "operatingAirline": {
+                  "code": "SQ",
+                  "number": "720"
+                },
+                "fareClass": "Y",
+                "origin": "SIN",
+                "destination": "BKK",
+                "marketingAirline": "SQ",
+                "flightNumber": "720",
+                "fareBasis": {
+                  "adult": "YIFSQ",
+                  "child": "YIFSQ",
+                  "infant": "YIFSQ"
+                }
+              }
+            ]
+          },
+          {
+            "origin": "BKK",
+            "destination": "KUL",
+            "journeySellKey": "",
+            "fareSellKey": "",
+            "schedules": [
+              {
+                "departureDate": "2027-02-11T14:15",
+                "arrivalDate": "2027-02-11T17:35",
+                "operatingAirline": {
+                  "code": "MH",
+                  "number": "789"
+                },
+                "fareClass": "S",
+                "origin": "BKK",
+                "destination": "KUL",
+                "marketingAirline": "MH",
+                "flightNumber": "789",
+                "fareBasis": {
+                  "adult": "YIFSQ",
+                  "child": "YIFSQ",
+                  "infant": "YIFSQ"
+                }
+              }
+            ]
+          },
+          {
+            "origin": "KUL",
+            "destination": "CGK",
+            "journeySellKey": "",
+            "fareSellKey": "",
+            "schedules": [
+              {
+                "departureDate": "2027-02-14T09:00",
+                "arrivalDate": "2027-02-14T10:20",
+                "operatingAirline": {
+                  "code": "SQ",
+                  "number": "103"
+                },
+                "fareClass": "Y",
+                "origin": "KUL",
+                "destination": "SIN",
+                "marketingAirline": "SQ",
+                "flightNumber": "103",
+                "fareBasis": {
+                  "adult": "YIFSQ",
+                  "child": "YIFSQ",
+                  "infant": "YIFSQ"
+                }
+              },
+              {
+                "departureDate": "2027-02-14T12:30",
+                "arrivalDate": "2027-02-14T13:20",
+                "operatingAirline": {
+                  "code": "SQ",
+                  "number": "958"
+                },
+                "fareClass": "Y",
+                "origin": "SIN",
+                "destination": "CGK",
+                "marketingAirline": "SQ",
+                "flightNumber": "958",
+                "fareBasis": {
+                  "adult": "YIFSQ",
+                  "child": "YIFSQ",
+                  "infant": "YIFSQ"
+                }
+              }
+            ]
+          }
+        ],
+        "corporate": null,
+        "promotionCode": {
+          "id": "",
+          "name": ""
+        },
+        "source": "PRP",
+        "multiFare": false
+      }
+    },
+    "serverTime": "2026-09-03T18:08:23.122554567+07:00"
+  },
+  "error": null,
+  "curl": "curl --location 'http://flight-sabre-gds-integrator-be.flight-ns.svc.tiket/tix-flight-sabre-gds-integrator/revalidate-itinerary' \\\n  --request POST \\\n  --header 'storeId: TIKETCOM' \\\n  --header 'channelId: WEB' \\\n  --header 'username: guest' \\\n  --header 'serviceId: GATEWAY' \\\n  --header 'requestId: 4f964bc2-80bf-45a8-9c45-c3ed115655f2' \\\n  --header 'Content-Type: application/json' \\\n  --header 'Accept: application/json' \\\n  --data '{\"account\": {\"code\": \"tiketcomSabre\", \"name\": \"tiketcomSabre\"}, \"distributionType\": \"sabre\", \"adult\": 1, \"child\": 1, \"infant\": 1, \"cabinClass\": \"ECONOMY\", \"currency\": {\"departureCurrency\": \"IDR\"}, \"origin\": \"CGK\", \"destination\": \"CGK\", \"departureDate\": \"2027-02-05\", \"returnDate\": \"\", \"international\": 1, \"tripTypes\": [\"MULTI_CITY\"], \"multiFare\": false, \"validatingAirline\": \"SQ\", \"flightSelect\": \"SQ 951 ~ SQ 720 ~ MH 789 ~ SQ 103|SQ 958\", \"itineraries\": [{\"origin\": \"CGK\", \"destination\": \"SIN\", \"journeySellKey\": \"\", \"fareSellKey\": \"\", \"schedules\": [{\"origin\": \"CGK\", \"destination\": \"SIN\", \"departureDate\": \"2027-02-05T05:25\", \"arrivalDate\": \"2027-02-05T08:05\", \"marketingAirline\": \"SQ\", \"flightNumber\": \"951\", \"operatingAirline\": {\"code\": \"SQ\", \"number\": \"951\"}, \"fareClass\": \"Y\", \"fareBasis\": {\"adult\": \"YIFSQ\", \"child\": \"YIFSQ\", \"infant\": \"YIFSQ\"}}]}, {\"origin\": \"SIN\", \"destination\": \"BKK\", \"journeySellKey\": \"\", \"fareSellKey\": \"\", \"schedules\": [{\"origin\": \"SIN\", \"destination\": \"BKK\", \"departureDate\": \"2027-02-08T18:35\", \"arrivalDate\": \"2027-02-08T20:00\", \"marketingAirline\": \"SQ\", \"flightNumber\": \"720\", \"operatingAirline\": {\"code\": \"SQ\", \"number\": \"720\"}, \"fareClass\": \"Y\", \"fareBasis\": {\"adult\": \"YIFSQ\", \"child\": \"YIFSQ\", \"infant\": \"YIFSQ\"}}]}, {\"origin\": \"BKK\", \"destination\": \"KUL\", \"journeySellKey\": \"\", \"fareSellKey\": \"\", \"schedules\": [{\"origin\": \"BKK\", \"destination\": \"KUL\", \"departureDate\": \"2027-02-11T14:15\", \"arrivalDate\": \"2027-02-11T17:35\", \"marketingAirline\": \"MH\", \"flightNumber\": \"789\", \"operatingAirline\": {\"code\": \"MH\", \"number\": \"789\"}, \"fareClass\": \"S\", \"fareBasis\": {\"adult\": \"YIFSQ\", \"child\": \"YIFSQ\", \"infant\": \"YIFSQ\"}}]}, {\"origin\": \"KUL\", \"destination\": \"CGK\", \"journeySellKey\": \"\", \"fareSellKey\": \"\", \"schedules\": [{\"origin\": \"KUL\", \"destination\": \"SIN\", \"departureDate\": \"2027-02-14T09:00\", \"arrivalDate\": \"2027-02-14T10:20\", \"marketingAirline\": \"SQ\", \"flightNumber\": \"103\", \"operatingAirline\": {\"code\": \"SQ\", \"number\": \"103\"}, \"fareClass\": \"Y\", \"fareBasis\": {\"adult\": \"YIFSQ\", \"child\": \"YIFSQ\", \"infant\": \"YIFSQ\"}}, {\"origin\": \"SIN\", \"destination\": \"CGK\", \"departureDate\": \"2027-02-14T12:30\", \"arrivalDate\": \"2027-02-14T13:20\", \"marketingAirline\": \"SQ\", \"flightNumber\": \"958\", \"operatingAirline\": {\"code\": \"SQ\", \"number\": \"958\"}, \"fareClass\": \"Y\", \"fareBasis\": {\"adult\": \"YIFSQ\", \"child\": \"YIFSQ\", \"infant\": \"YIFSQ\"}}]}], \"source\": \"PRP\"}'"
+}

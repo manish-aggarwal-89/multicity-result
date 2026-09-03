@@ -1,0 +1,111 @@
+{
+  "step": 1,
+  "name": "search",
+  "flow": "VI-MC5-2A2C1I",
+  "test_case_id": "VI-MC5-2A2C1I",
+  "test_case_name": "VI Sabre multi-city — VI-MC5-2A2C1I",
+  "timestamp": "2026-09-03T11:00:31.305324+00:00",
+  "duration_ms": 11481.157958041877,
+  "method": "POST",
+  "url": "http://flight-sabre-gds-integrator-be.flight-ns.svc.tiket/tix-flight-sabre-gds-integrator/v2/search",
+  "service": "TIX-FLIGHT-SABRE-GDS-INTEGRATOR-BE",
+  "host": "flight-sabre-gds-integrator-be.flight-ns.svc.tiket",
+  "swagger": "http://flight-sabre-gds-integrator-be.flight-ns.svc.tiket/swagger/index.html",
+  "headers": {
+    "storeId": "TIKETCOM",
+    "channelId": "WEB",
+    "username": "guest",
+    "serviceId": "GATEWAY",
+    "requestId": "ec850695-5a5c-482b-8aa2-64ccf8f16613",
+    "Content-Type": "application/json",
+    "Accept": "application/json"
+  },
+  "request_body": {
+    "distributionType": "sabre",
+    "supplierRequest": {
+      "accounts": [
+        {
+          "code": "tiketcomSabre",
+          "name": "tiketcomSabre"
+        }
+      ],
+      "airlines": []
+    },
+    "supplierMappings": [
+      {
+        "account": {
+          "code": "tiketcomSabre",
+          "name": "tiketcomSabre"
+        },
+        "airlines": [],
+        "ignoreAirline": true,
+        "multiFare": false
+      }
+    ],
+    "origin": "CGK",
+    "destination": "CGK",
+    "adult": 2,
+    "child": 2,
+    "infant": 1,
+    "departureDate": "2027-02-05",
+    "returnDate": "",
+    "cabinClass": "ECONOMY",
+    "tripTypes": [
+      "MULTI_CITY"
+    ],
+    "international": 1,
+    "currency": {
+      "departureCurrency": "IDR"
+    },
+    "routes": [
+      {
+        "origin": "CGK",
+        "destination": "SIN",
+        "departureDate": "2027-02-05",
+        "currency": "IDR"
+      },
+      {
+        "origin": "SIN",
+        "destination": "BKK",
+        "departureDate": "2027-02-08",
+        "currency": "IDR"
+      },
+      {
+        "origin": "BKK",
+        "destination": "KUL",
+        "departureDate": "2027-02-11",
+        "currency": "IDR"
+      },
+      {
+        "origin": "KUL",
+        "destination": "SIN",
+        "departureDate": "2027-02-14",
+        "currency": "IDR"
+      },
+      {
+        "origin": "SIN",
+        "destination": "CGK",
+        "departureDate": "2027-02-17",
+        "currency": "IDR"
+      }
+    ],
+    "additionalData": {},
+    "blacklistMap": {}
+  },
+  "status": 200,
+  "response_headers": {
+    "content-type": "application/json",
+    "date": "Thu, 03 Sep 2026 11:00:31 GMT",
+    "content-length": "138"
+  },
+  "response_body": {
+    "code": "FLIGHT_NOT_FOUND",
+    "message": "flight not found",
+    "errors": [
+      "flight not found"
+    ],
+    "serverTime": "2026-09-03T18:00:31.349945905+07:00"
+  },
+  "error": null,
+  "curl": "curl --location 'http://flight-sabre-gds-integrator-be.flight-ns.svc.tiket/tix-flight-sabre-gds-integrator/v2/search' \\\n  --request POST \\\n  --header 'storeId: TIKETCOM' \\\n  --header 'channelId: WEB' \\\n  --header 'username: guest' \\\n  --header 'serviceId: GATEWAY' \\\n  --header 'requestId: ec850695-5a5c-482b-8aa2-64ccf8f16613' \\\n  --header 'Content-Type: application/json' \\\n  --header 'Accept: application/json' \\\n  --data '{\"distributionType\": \"sabre\", \"supplierRequest\": {\"accounts\": [{\"code\": \"tiketcomSabre\", \"name\": \"tiketcomSabre\"}], \"airlines\": []}, \"supplierMappings\": [{\"account\": {\"code\": \"tiketcomSabre\", \"name\": \"tiketcomSabre\"}, \"airlines\": [], \"ignoreAirline\": true, \"multiFare\": false}], \"origin\": \"CGK\", \"destination\": \"CGK\", \"adult\": 2, \"child\": 2, \"infant\": 1, \"departureDate\": \"2027-02-05\", \"returnDate\": \"\", \"cabinClass\": \"ECONOMY\", \"tripTypes\": [\"MULTI_CITY\"], \"international\": 1, \"currency\": {\"departureCurrency\": \"IDR\"}, \"routes\": [{\"origin\": \"CGK\", \"destination\": \"SIN\", \"departureDate\": \"2027-02-05\", \"currency\": \"IDR\"}, {\"origin\": \"SIN\", \"destination\": \"BKK\", \"departureDate\": \"2027-02-08\", \"currency\": \"IDR\"}, {\"origin\": \"BKK\", \"destination\": \"KUL\", \"departureDate\": \"2027-02-11\", \"currency\": \"IDR\"}, {\"origin\": \"KUL\", \"destination\": \"SIN\", \"departureDate\": \"2027-02-14\", \"currency\": \"IDR\"}, {\"origin\": \"SIN\", \"destination\": \"CGK\", \"departureDate\": \"2027-02-17\", \"currency\": \"IDR\"}], \"additionalData\": {}, \"blacklistMap\": {}}'"
+}

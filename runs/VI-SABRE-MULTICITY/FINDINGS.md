@@ -1,3 +1,9 @@
+> **CORRECTION (2026-09-03):** the "MH+infant multicity cannot book" conclusion below was
+> **date/availability specific to 2027-02-05**, not a hard limit. The same route/pax
+> (`SQ~SQ~MH~SQ`, 1A1C1I) books cleanly via VI on **2027-03-01** (PNR ISKAEC; and GBINOU under
+> multiFare). It depends on whether the MH flight/date has an infant fare/RBD filed. See
+> `runs/MULTIFARE-OWRT-VI-RESULTS.md`.
+
 # VI integrator — Sabre multi-city booking (4 & 5 segments, future dates)
 
 Flow tested: **VI swagger `POST /tix-flight-vi-integrator/booking`** (fan-out to Sabre GDS) →

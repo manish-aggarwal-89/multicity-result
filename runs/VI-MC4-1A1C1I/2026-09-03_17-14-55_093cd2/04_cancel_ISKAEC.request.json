@@ -1,0 +1,8 @@
+{
+  "distributionType": "sabre",
+  "bookingCode": "ISKAEC",
+  "account": {
+    "code": "tiketcomSabre",
+    "name": "tiketcomSabre"
+  }
+}

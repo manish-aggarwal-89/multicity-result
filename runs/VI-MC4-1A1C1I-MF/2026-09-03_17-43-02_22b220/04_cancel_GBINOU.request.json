@@ -1,0 +1,8 @@
+{
+  "distributionType": "sabre",
+  "bookingCode": "GBINOU",
+  "account": {
+    "code": "tiketcomSabre",
+    "name": "tiketcomSabre"
+  }
+}
