@@ -1,0 +1,21 @@
+NONHOLD-VALIDATION-REPORT.json
+  s_aee3fcb39128f5::t_ca1c27e1a60c06 1-122
+nonhold_validate.py
+  s_aee3fcb39128f5::t_02dc1f57d07df2 1-152
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "660e450977c072d92d1fa6f39e4bb38fd797c61a",
+  "prompts": {},
+  "sessions": {
+    "s_aee3fcb39128f5": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "a5da34fa-e97a-45a6-8af7-4bbe32899467",
+        "model": "unknown"
+      },
+      "human_author": "manish-aggarwal-89 <manish.aggarwal@tiket.com>"
+    }
+  }
+}
