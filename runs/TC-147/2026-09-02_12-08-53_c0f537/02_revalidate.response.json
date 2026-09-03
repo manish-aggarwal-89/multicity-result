@@ -1,0 +1,1365 @@
+{
+  "code": "SUCCESS",
+  "message": "SUCCESS",
+  "data": {
+    "mainFare": {
+      "departureFlight": null,
+      "returnFlight": null,
+      "roundTripCombine": null,
+      "multiCities": {
+        "searchAvailabilities": [
+          {
+            "flighSelect": "MH 726|MH 611",
+            "currency": "IDR",
+            "origin": "CGK",
+            "destination": "SIN",
+            "date": "2026-12-03",
+            "marketingAirline": "MH",
+            "adult": 2,
+            "child": 1,
+            "infant": 1,
+            "departure": {
+              "date": "2026-12-03",
+              "time": "04:25",
+              "timezone": 7,
+              "airportCode": "CGK",
+              "terminal": "3"
+            },
+            "arrival": {
+              "date": "2026-12-03",
+              "time": "10:30",
+              "timezone": 8,
+              "airportCode": "SIN",
+              "terminal": "2"
+            },
+            "totalTransit": 1,
+            "seatsAvailable": 0,
+            "upgradable": false,
+            "schedules": [
+              {
+                "flightNumber": "726",
+                "airline": "MH",
+                "aircraftType": "73H",
+                "departureDetail": {
+                  "date": "2026-12-03",
+                  "time": "04:25",
+                  "timezone": 7,
+                  "airportCode": "CGK",
+                  "terminal": "3"
+                },
+                "arrivalDetail": {
+                  "date": "2026-12-03",
+                  "time": "07:30",
+                  "timezone": 8,
+                  "airportCode": "KUL",
+                  "terminal": "1"
+                },
+                "cabinClass": "ECONOMY",
+                "fareClass": "M",
+                "travelTime": 125,
+                "baggage": {
+                  "cabin": {
+                    "unit": "1",
+                    "measurement": "Pc",
+                    "qty": 0,
+                    "validateBaggage": false
+                  },
+                  "checkIn": {
+                    "measurement": "Kg",
+                    "qty": 35,
+                    "validateBaggage": false
+                  }
+                },
+                "connectings": null,
+                "marriageGroup": "O",
+                "meal": "M",
+                "operatingAirline": "MH",
+                "operatingFlightNumber": "726"
+              },
+              {
+                "flightNumber": "611",
+                "airline": "MH",
+                "aircraftType": "7M8",
+                "departureDetail": {
+                  "date": "2026-12-03",
+                  "time": "09:20",
+                  "timezone": 8,
+                  "airportCode": "KUL",
+                  "terminal": "1"
+                },
+                "arrivalDetail": {
+                  "date": "2026-12-03",
+                  "time": "10:30",
+                  "timezone": 8,
+                  "airportCode": "SIN",
+                  "terminal": "2"
+                },
+                "cabinClass": "ECONOMY",
+                "fareClass": "M",
+                "travelTime": 70,
+                "transitTime": 110,
+                "baggage": {
+                  "cabin": {
+                    "unit": "1",
+                    "measurement": "Pc",
+                    "qty": 0,
+                    "validateBaggage": false
+                  },
+                  "checkIn": {
+                    "measurement": "Kg",
+                    "qty": 35,
+                    "validateBaggage": false
+                  }
+                },
+                "connectings": null,
+                "marriageGroup": "I",
+                "meal": "R",
+                "operatingAirline": "MH",
+                "operatingFlightNumber": "611"
+              }
+            ],
+            "journeySellKey": "",
+            "fareSellKey": ""
+          },
+          {
+            "flighSelect": "MH 616|MH 796",
+            "currency": "IDR",
+            "origin": "SIN",
+            "destination": "BKK",
+            "date": "2026-12-06",
+            "marketingAirline": "MH",
+            "adult": 2,
+            "child": 1,
+            "infant": 1,
+            "departure": {
+              "date": "2026-12-06",
+              "time": "19:30",
+              "timezone": 8,
+              "airportCode": "SIN",
+              "terminal": "2"
+            },
+            "arrival": {
+              "date": "2026-12-06",
+              "time": "23:10",
+              "timezone": 7,
+              "airportCode": "BKK"
+            },
+            "totalTransit": 1,
+            "seatsAvailable": 0,
+            "upgradable": false,
+            "schedules": [
+              {
+                "flightNumber": "616",
+                "airline": "MH",
+                "aircraftType": "73H",
+                "departureDetail": {
+                  "date": "2026-12-06",
+                  "time": "19:30",
+                  "timezone": 8,
+                  "airportCode": "SIN",
+                  "terminal": "2"
+                },
+                "arrivalDetail": {
+                  "date": "2026-12-06",
+                  "time": "20:45",
+                  "timezone": 8,
+                  "airportCode": "KUL",
+                  "terminal": "1"
+                },
+                "cabinClass": "ECONOMY",
+                "fareClass": "N",
+                "travelTime": 75,
+                "baggage": {
+                  "cabin": {
+                    "unit": "1",
+                    "measurement": "Pc",
+                    "qty": 0,
+                    "validateBaggage": false
+                  },
+                  "checkIn": {
+                    "measurement": "Kg",
+                    "qty": 35,
+                    "validateBaggage": false
+                  }
+                },
+                "connectings": null,
+                "marriageGroup": "O",
+                "meal": "R",
+                "operatingAirline": "MH",
+                "operatingFlightNumber": "616"
+              },
+              {
+                "flightNumber": "796",
+                "airline": "MH",
+                "aircraftType": "73H",
+                "departureDetail": {
+                  "date": "2026-12-06",
+                  "time": "22:00",
+                  "timezone": 8,
+                  "airportCode": "KUL",
+                  "terminal": "1"
+                },
+                "arrivalDetail": {
+                  "date": "2026-12-06",
+                  "time": "23:10",
+                  "timezone": 7,
+                  "airportCode": "BKK"
+                },
+                "cabinClass": "ECONOMY",
+                "fareClass": "N",
+                "travelTime": 130,
+                "transitTime": 75,
+                "baggage": {
+                  "cabin": {
+                    "unit": "1",
+                    "measurement": "Pc",
+                    "qty": 0,
+                    "validateBaggage": false
+                  },
+                  "checkIn": {
+                    "measurement": "Kg",
+                    "qty": 35,
+                    "validateBaggage": false
+                  }
+                },
+                "connectings": null,
+                "marriageGroup": "I",
+                "meal": "M",
+                "operatingAirline": "MH",
+                "operatingFlightNumber": "796"
+              }
+            ],
+            "journeySellKey": "",
+            "fareSellKey": ""
+          },
+          {
+            "flighSelect": "MH 797",
+            "currency": "IDR",
+            "origin": "BKK",
+            "destination": "KUL",
+            "date": "2026-12-09",
+            "marketingAirline": "MH",
+            "adult": 2,
+            "child": 1,
+            "infant": 1,
+            "departure": {
+              "date": "2026-12-09",
+              "time": "05:40",
+              "timezone": 7,
+              "airportCode": "BKK"
+            },
+            "arrival": {
+              "date": "2026-12-09",
+              "time": "08:55",
+              "timezone": 8,
+              "airportCode": "KUL",
+              "terminal": "1"
+            },
+            "totalTransit": 0,
+            "seatsAvailable": 0,
+            "upgradable": false,
+            "schedules": [
+              {
+                "flightNumber": "797",
+                "airline": "MH",
+                "aircraftType": "73H",
+                "departureDetail": {
+                  "date": "2026-12-09",
+                  "time": "05:40",
+                  "timezone": 7,
+                  "airportCode": "BKK"
+                },
+                "arrivalDetail": {
+                  "date": "2026-12-09",
+                  "time": "08:55",
+                  "timezone": 8,
+                  "airportCode": "KUL",
+                  "terminal": "1"
+                },
+                "cabinClass": "ECONOMY",
+                "fareClass": "M",
+                "travelTime": 135,
+                "baggage": {
+                  "cabin": {
+                    "unit": "1",
+                    "measurement": "Pc",
+                    "qty": 0,
+                    "validateBaggage": false
+                  },
+                  "checkIn": {
+                    "measurement": "Kg",
+                    "qty": 35,
+                    "validateBaggage": false
+                  }
+                },
+                "connectings": null,
+                "marriageGroup": "O",
+                "meal": "M",
+                "operatingAirline": "MH",
+                "operatingFlightNumber": "797"
+              }
+            ],
+            "journeySellKey": "",
+            "fareSellKey": ""
+          },
+          {
+            "flighSelect": "MH 711",
+            "currency": "IDR",
+            "origin": "KUL",
+            "destination": "CGK",
+            "date": "2026-12-12",
+            "marketingAirline": "MH",
+            "adult": 2,
+            "child": 1,
+            "infant": 1,
+            "departure": {
+              "date": "2026-12-12",
+              "time": "09:10",
+              "timezone": 8,
+              "airportCode": "KUL",
+              "terminal": "1"
+            },
+            "arrival": {
+              "date": "2026-12-12",
+              "time": "10:20",
+              "timezone": 7,
+              "airportCode": "CGK",
+              "terminal": "3"
+            },
+            "totalTransit": 0,
+            "seatsAvailable": 0,
+            "upgradable": false,
+            "schedules": [
+              {
+                "flightNumber": "711",
+                "airline": "MH",
+                "aircraftType": "7M8",
+                "departureDetail": {
+                  "date": "2026-12-12",
+                  "time": "09:10",
+                  "timezone": 8,
+                  "airportCode": "KUL",
+                  "terminal": "1"
+                },
+                "arrivalDetail": {
+                  "date": "2026-12-12",
+                  "time": "10:20",
+                  "timezone": 7,
+                  "airportCode": "CGK",
+                  "terminal": "3"
+                },
+                "cabinClass": "ECONOMY",
+                "fareClass": "M",
+                "travelTime": 130,
+                "baggage": {
+                  "cabin": {
+                    "unit": "1",
+                    "measurement": "Pc",
+                    "qty": 0,
+                    "validateBaggage": false
+                  },
+                  "checkIn": {
+                    "measurement": "Kg",
+                    "qty": 35,
+                    "validateBaggage": false
+                  }
+                },
+                "connectings": null,
+                "marriageGroup": "O",
+                "meal": "M",
+                "operatingAirline": "MH",
+                "operatingFlightNumber": "711"
+              }
+            ],
+            "journeySellKey": "",
+            "fareSellKey": ""
+          }
+        ],
+        "fares": [
+          {
+            "distributionType": "sabre-gds",
+            "supplierId": "tiketcomSabre",
+            "originalCurrency": "IDR",
+            "validatingAirline": "MH",
+            "promotionCode": {
+              "id": "",
+              "name": ""
+            },
+            "brandedFare": null,
+            "fareClassDetails": [
+              {
+                "origin": "CGK",
+                "destination": "KUL",
+                "fareClass": "M"
+              },
+              {
+                "origin": "KUL",
+                "destination": "SIN",
+                "fareClass": "M"
+              },
+              {
+                "origin": "SIN",
+                "destination": "KUL",
+                "fareClass": "N"
+              },
+              {
+                "origin": "KUL",
+                "destination": "BKK",
+                "fareClass": "N"
+              },
+              {
+                "origin": "BKK",
+                "destination": "KUL",
+                "fareClass": "M"
+              },
+              {
+                "origin": "KUL",
+                "destination": "CGK",
+                "fareClass": "M"
+              }
+            ],
+            "originalTotalFare": {
+              "total": 45036300,
+              "base": 34060000,
+              "tax": 10976300,
+              "taxBreakDowns": null,
+              "supplierDiscount": 0,
+              "seatAvailables": 9,
+              "fareBasisCodes": [
+                "MFLOWID",
+                "MFLOWID",
+                "NFLOWSG",
+                "NFLOWSG",
+                "MFLOWID",
+                "MFLOWID"
+              ],
+              "fareClasses": [
+                "M",
+                "M",
+                "N",
+                "N",
+                "M",
+                "M"
+              ],
+              "iwjr": 0,
+              "psc": 0,
+              "commission": 0,
+              "agt": 0,
+              "gst": 0,
+              "airportTax": 0,
+              "unidentified": 0,
+              "flyThru": 0,
+              "upselling": 0,
+              "nta": 45036300,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null,
+              "penaltyInfos": null,
+              "scheduleFareDetailInformations": null
+            },
+            "originalAdultFare": {
+              "total": 15443300,
+              "base": 11806000,
+              "tax": 3637300,
+              "taxBreakDowns": {},
+              "supplierDiscount": 0,
+              "seatAvailables": 9,
+              "fareBasisCodes": [
+                "MFLOWID",
+                "MFLOWID",
+                "NFLOWSG",
+                "NFLOWSG",
+                "MFLOWID",
+                "MFLOWID"
+              ],
+              "fareClasses": [
+                "M",
+                "M",
+                "N",
+                "N",
+                "M",
+                "M"
+              ],
+              "iwjr": 0,
+              "psc": 0,
+              "commission": 0,
+              "agt": 0,
+              "gst": 0,
+              "airportTax": 0,
+              "unidentified": 0,
+              "flyThru": 0,
+              "upselling": 0,
+              "nta": 15443300,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": [
+                {
+                  "code": "YQF",
+                  "currencyCode": "IDR",
+                  "amount": 532400
+                },
+                {
+                  "code": "YQF",
+                  "currencyCode": "IDR",
+                  "amount": 532400
+                },
+                {
+                  "code": "D5",
+                  "currencyCode": "IDR",
+                  "amount": 266400
+                },
+                {
+                  "code": "G1",
+                  "currencyCode": "IDR",
+                  "amount": 35300
+                },
+                {
+                  "code": "H8",
+                  "currencyCode": "IDR",
+                  "amount": 4500
+                },
+                {
+                  "code": "MY",
+                  "currencyCode": "IDR",
+                  "amount": 322000
+                },
+                {
+                  "code": "MY3",
+                  "currencyCode": "IDR",
+                  "amount": 185300
+                },
+                {
+                  "code": "MY3",
+                  "currencyCode": "IDR",
+                  "amount": 185300
+                },
+                {
+                  "code": "L7",
+                  "currencyCode": "IDR",
+                  "amount": 150700
+                },
+                {
+                  "code": "OP",
+                  "currencyCode": "IDR",
+                  "amount": 111600
+                },
+                {
+                  "code": "SG",
+                  "currencyCode": "IDR",
+                  "amount": 647300
+                },
+                {
+                  "code": "E7",
+                  "currencyCode": "IDR",
+                  "amount": 18800
+                },
+                {
+                  "code": "E72",
+                  "currencyCode": "IDR",
+                  "amount": 18800
+                },
+                {
+                  "code": "G8",
+                  "currencyCode": "IDR",
+                  "amount": 13400
+                },
+                {
+                  "code": "G82",
+                  "currencyCode": "IDR",
+                  "amount": 13400
+                },
+                {
+                  "code": "TS",
+                  "currencyCode": "IDR",
+                  "amount": 599700
+                }
+              ],
+              "penaltyInfos": [
+                {
+                  "penaltyType": "RESCHEDULE",
+                  "penaltyStatus": "YES",
+                  "applicability": "Before",
+                  "amount": 0,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 0,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                },
+                {
+                  "penaltyType": "RESCHEDULE",
+                  "penaltyStatus": "YES",
+                  "applicability": "After",
+                  "amount": 0,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 0,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                },
+                {
+                  "penaltyType": "REFUND",
+                  "penaltyStatus": "YES",
+                  "applicability": "Before",
+                  "amount": 2777000,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 2777000,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                },
+                {
+                  "penaltyType": "REFUND",
+                  "penaltyStatus": "YES",
+                  "applicability": "After",
+                  "amount": 2777000,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 2777000,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                }
+              ],
+              "scheduleFareDetailInformations": [
+                {
+                  "origin": "CGK",
+                  "destination": "KUL",
+                  "fareBasisCode": "MFLOWID",
+                  "fareClasses": "M",
+                  "meal": "M"
+                },
+                {
+                  "origin": "KUL",
+                  "destination": "SIN",
+                  "fareBasisCode": "MFLOWID",
+                  "breakpoint": true,
+                  "fareClasses": "M",
+                  "meal": "R"
+                },
+                {
+                  "origin": "SIN",
+                  "destination": "KUL",
+                  "fareBasisCode": "NFLOWSG",
+                  "fareClasses": "N",
+                  "meal": "R"
+                },
+                {
+                  "origin": "KUL",
+                  "destination": "BKK",
+                  "fareBasisCode": "NFLOWSG",
+                  "breakpoint": true,
+                  "fareClasses": "N",
+                  "meal": "M"
+                },
+                {
+                  "origin": "BKK",
+                  "destination": "KUL",
+                  "fareBasisCode": "MFLOWID",
+                  "breakpoint": true,
+                  "fareClasses": "M",
+                  "meal": "M"
+                },
+                {
+                  "origin": "KUL",
+                  "destination": "CGK",
+                  "fareBasisCode": "MFLOWID",
+                  "breakpoint": true,
+                  "fareClasses": "M",
+                  "meal": "M"
+                }
+              ]
+            },
+            "originalChildFare": {
+              "total": 12581300,
+              "base": 8944000,
+              "tax": 3637300,
+              "taxBreakDowns": {},
+              "supplierDiscount": 0,
+              "seatAvailables": 9,
+              "fareBasisCodes": [
+                "MFLOWIDCH",
+                "MFLOWIDCH",
+                "NFLOWSGCH",
+                "NFLOWSGCH",
+                "MFLOWIDCH",
+                "MFLOWIDCH"
+              ],
+              "fareClasses": [
+                "M",
+                "M",
+                "N",
+                "N",
+                "M",
+                "M"
+              ],
+              "iwjr": 0,
+              "psc": 0,
+              "commission": 0,
+              "agt": 0,
+              "gst": 0,
+              "airportTax": 0,
+              "unidentified": 0,
+              "flyThru": 0,
+              "upselling": 0,
+              "nta": 12581300,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": [
+                {
+                  "code": "YQF",
+                  "currencyCode": "IDR",
+                  "amount": 532400
+                },
+                {
+                  "code": "YQF",
+                  "currencyCode": "IDR",
+                  "amount": 532400
+                },
+                {
+                  "code": "D5",
+                  "currencyCode": "IDR",
+                  "amount": 266400
+                },
+                {
+                  "code": "G1",
+                  "currencyCode": "IDR",
+                  "amount": 35300
+                },
+                {
+                  "code": "H8",
+                  "currencyCode": "IDR",
+                  "amount": 4500
+                },
+                {
+                  "code": "MY",
+                  "currencyCode": "IDR",
+                  "amount": 322000
+                },
+                {
+                  "code": "MY3",
+                  "currencyCode": "IDR",
+                  "amount": 185300
+                },
+                {
+                  "code": "MY3",
+                  "currencyCode": "IDR",
+                  "amount": 185300
+                },
+                {
+                  "code": "L7",
+                  "currencyCode": "IDR",
+                  "amount": 150700
+                },
+                {
+                  "code": "OP",
+                  "currencyCode": "IDR",
+                  "amount": 111600
+                },
+                {
+                  "code": "SG",
+                  "currencyCode": "IDR",
+                  "amount": 647300
+                },
+                {
+                  "code": "E7",
+                  "currencyCode": "IDR",
+                  "amount": 18800
+                },
+                {
+                  "code": "E72",
+                  "currencyCode": "IDR",
+                  "amount": 18800
+                },
+                {
+                  "code": "G8",
+                  "currencyCode": "IDR",
+                  "amount": 13400
+                },
+                {
+                  "code": "G82",
+                  "currencyCode": "IDR",
+                  "amount": 13400
+                },
+                {
+                  "code": "TS",
+                  "currencyCode": "IDR",
+                  "amount": 599700
+                }
+              ],
+              "penaltyInfos": [
+                {
+                  "penaltyType": "RESCHEDULE",
+                  "penaltyStatus": "YES",
+                  "applicability": "Before",
+                  "amount": 0,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 0,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                },
+                {
+                  "penaltyType": "RESCHEDULE",
+                  "penaltyStatus": "YES",
+                  "applicability": "After",
+                  "amount": 0,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 0,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                },
+                {
+                  "penaltyType": "REFUND",
+                  "penaltyStatus": "YES",
+                  "applicability": "Before",
+                  "amount": 2777000,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 2777000,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                },
+                {
+                  "penaltyType": "REFUND",
+                  "penaltyStatus": "YES",
+                  "applicability": "After",
+                  "amount": 2777000,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 2777000,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                }
+              ],
+              "scheduleFareDetailInformations": [
+                {
+                  "origin": "CGK",
+                  "destination": "KUL",
+                  "fareBasisCode": "MFLOWIDCH",
+                  "fareClasses": "M",
+                  "meal": "M"
+                },
+                {
+                  "origin": "KUL",
+                  "destination": "SIN",
+                  "fareBasisCode": "MFLOWIDCH",
+                  "breakpoint": true,
+                  "fareClasses": "M",
+                  "meal": "R"
+                },
+                {
+                  "origin": "SIN",
+                  "destination": "KUL",
+                  "fareBasisCode": "NFLOWSGCH",
+                  "fareClasses": "N",
+                  "meal": "R"
+                },
+                {
+                  "origin": "KUL",
+                  "destination": "BKK",
+                  "fareBasisCode": "NFLOWSGCH",
+                  "breakpoint": true,
+                  "fareClasses": "N",
+                  "meal": "M"
+                },
+                {
+                  "origin": "BKK",
+                  "destination": "KUL",
+                  "fareBasisCode": "MFLOWIDCH",
+                  "breakpoint": true,
+                  "fareClasses": "M",
+                  "meal": "M"
+                },
+                {
+                  "origin": "KUL",
+                  "destination": "CGK",
+                  "fareBasisCode": "MFLOWIDCH",
+                  "breakpoint": true,
+                  "fareClasses": "M",
+                  "meal": "M"
+                }
+              ]
+            },
+            "originalInfantFare": {
+              "total": 1568400,
+              "base": 1504000,
+              "tax": 64400,
+              "taxBreakDowns": {},
+              "supplierDiscount": 0,
+              "seatAvailables": 9,
+              "fareBasisCodes": [
+                "MFLOWIDIN",
+                "MFLOWIDIN",
+                "NFLOWSGIN",
+                "NFLOWSGIN",
+                "MFLOWIDIN",
+                "MFLOWIDIN"
+              ],
+              "fareClasses": [
+                "M",
+                "M",
+                "N",
+                "N",
+                "M",
+                "M"
+              ],
+              "iwjr": 0,
+              "psc": 0,
+              "commission": 0,
+              "agt": 0,
+              "gst": 0,
+              "airportTax": 0,
+              "unidentified": 0,
+              "flyThru": 0,
+              "upselling": 0,
+              "nta": 1568400,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": [
+                {
+                  "code": "E7",
+                  "currencyCode": "IDR",
+                  "amount": 18800
+                },
+                {
+                  "code": "E72",
+                  "currencyCode": "IDR",
+                  "amount": 18800
+                },
+                {
+                  "code": "G8",
+                  "currencyCode": "IDR",
+                  "amount": 13400
+                },
+                {
+                  "code": "G82",
+                  "currencyCode": "IDR",
+                  "amount": 13400
+                }
+              ],
+              "penaltyInfos": [
+                {
+                  "penaltyType": "RESCHEDULE",
+                  "penaltyStatus": "YES",
+                  "applicability": "Before",
+                  "amount": 0,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 0,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                },
+                {
+                  "penaltyType": "RESCHEDULE",
+                  "penaltyStatus": "YES",
+                  "applicability": "After",
+                  "amount": 0,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 0,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                },
+                {
+                  "penaltyType": "REFUND",
+                  "penaltyStatus": "YES",
+                  "applicability": "Before",
+                  "amount": 278000,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 278000,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                },
+                {
+                  "penaltyType": "REFUND",
+                  "penaltyStatus": "YES",
+                  "applicability": "After",
+                  "amount": 278000,
+                  "currencyCode": "IDR",
+                  "decimalPlaces": 0,
+                  "originalAmount": 278000,
+                  "originalCurrencyCode": "IDR",
+                  "originalDecimalPlaces": 0,
+                  "cat16Info": false
+                }
+              ],
+              "scheduleFareDetailInformations": [
+                {
+                  "origin": "CGK",
+                  "destination": "KUL",
+                  "fareBasisCode": "MFLOWIDIN",
+                  "fareClasses": "M",
+                  "meal": "M"
+                },
+                {
+                  "origin": "KUL",
+                  "destination": "SIN",
+                  "fareBasisCode": "MFLOWIDIN",
+                  "breakpoint": true,
+                  "fareClasses": "M",
+                  "meal": "R"
+                },
+                {
+                  "origin": "SIN",
+                  "destination": "KUL",
+                  "fareBasisCode": "NFLOWSGIN",
+                  "fareClasses": "N",
+                  "meal": "R"
+                },
+                {
+                  "origin": "KUL",
+                  "destination": "BKK",
+                  "fareBasisCode": "NFLOWSGIN",
+                  "breakpoint": true,
+                  "fareClasses": "N",
+                  "meal": "M"
+                },
+                {
+                  "origin": "BKK",
+                  "destination": "KUL",
+                  "fareBasisCode": "MFLOWIDIN",
+                  "breakpoint": true,
+                  "fareClasses": "M",
+                  "meal": "M"
+                },
+                {
+                  "origin": "KUL",
+                  "destination": "CGK",
+                  "fareBasisCode": "MFLOWIDIN",
+                  "breakpoint": true,
+                  "fareClasses": "M",
+                  "meal": "M"
+                }
+              ]
+            },
+            "fareClasses": "M|M|N|N|M|M",
+            "otherFares": [],
+            "flexiFare": true,
+            "privateFare": false,
+            "inclusiveAddons": {
+              "departureScheduleAddonsList": [
+                {
+                  "origin": "CGK",
+                  "departureDateTime": "2026-12-03 04:25",
+                  "destination": "KUL",
+                  "airline": "MH",
+                  "flightNumber": "726",
+                  "baggage": {
+                    "cabin": {
+                      "unit": "1",
+                      "measurement": "Pc",
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 35,
+                      "validateBaggage": false
+                    }
+                  },
+                  "meal": "M"
+                },
+                {
+                  "origin": "KUL",
+                  "departureDateTime": "2026-12-03 09:20",
+                  "destination": "SIN",
+                  "airline": "MH",
+                  "flightNumber": "611",
+                  "baggage": {
+                    "cabin": {
+                      "unit": "1",
+                      "measurement": "Pc",
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 35,
+                      "validateBaggage": false
+                    }
+                  },
+                  "meal": "R"
+                },
+                {
+                  "origin": "SIN",
+                  "departureDateTime": "2026-12-06 19:30",
+                  "destination": "KUL",
+                  "airline": "MH",
+                  "flightNumber": "616",
+                  "baggage": {
+                    "cabin": {
+                      "unit": "1",
+                      "measurement": "Pc",
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 35,
+                      "validateBaggage": false
+                    }
+                  },
+                  "meal": "R"
+                },
+                {
+                  "origin": "KUL",
+                  "departureDateTime": "2026-12-06 22:00",
+                  "destination": "BKK",
+                  "airline": "MH",
+                  "flightNumber": "796",
+                  "baggage": {
+                    "cabin": {
+                      "unit": "1",
+                      "measurement": "Pc",
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 35,
+                      "validateBaggage": false
+                    }
+                  },
+                  "meal": "M"
+                },
+                {
+                  "origin": "BKK",
+                  "departureDateTime": "2026-12-09 05:40",
+                  "destination": "KUL",
+                  "airline": "MH",
+                  "flightNumber": "797",
+                  "baggage": {
+                    "cabin": {
+                      "unit": "1",
+                      "measurement": "Pc",
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 35,
+                      "validateBaggage": false
+                    }
+                  },
+                  "meal": "M"
+                },
+                {
+                  "origin": "KUL",
+                  "departureDateTime": "2026-12-12 09:10",
+                  "destination": "CGK",
+                  "airline": "MH",
+                  "flightNumber": "711",
+                  "baggage": {
+                    "cabin": {
+                      "unit": "1",
+                      "measurement": "Pc",
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 35,
+                      "validateBaggage": false
+                    }
+                  },
+                  "meal": "M"
+                }
+              ],
+              "returnScheduleAddonsList": null
+            }
+          }
+        ],
+        "otherFares": null
+      }
+    },
+    "otherFares": null,
+    "integratorRevalidateItineraryRequest": {
+      "distributionType": "sabre-gds",
+      "account": {
+        "name": "tiketcomSabre",
+        "code": "tiketcomSabre"
+      },
+      "flightSelect": "MH 726|MH 611 ~ MH 616|MH 796 ~ MH 797 ~ MH 711",
+      "origin": "CGK",
+      "destination": "CGK",
+      "adult": 2,
+      "child": 1,
+      "infant": 1,
+      "departureDate": "2026-12-03",
+      "returnDate": "",
+      "cabinClass": "ECONOMY",
+      "international": 1,
+      "validatingAirline": "MH",
+      "tripTypes": [
+        "MULTI_CITY"
+      ],
+      "currency": {
+        "departureCurrency": "IDR",
+        "returnCurrency": ""
+      },
+      "itineraries": [
+        {
+          "origin": "CGK",
+          "destination": "SIN",
+          "journeySellKey": "",
+          "fareSellKey": "",
+          "schedules": [
+            {
+              "departureDate": "2026-12-03T04:25",
+              "arrivalDate": "2026-12-03T07:30",
+              "operatingAirline": {
+                "code": "MH",
+                "number": "726"
+              },
+              "fareClass": "M",
+              "origin": "CGK",
+              "destination": "KUL",
+              "marketingAirline": "MH",
+              "flightNumber": "726",
+              "fareBasis": {
+                "adult": "MFLOWID",
+                "child": "MFLOWIDCH",
+                "infant": "MFLOWIDIN"
+              }
+            },
+            {
+              "departureDate": "2026-12-03T09:20",
+              "arrivalDate": "2026-12-03T10:30",
+              "operatingAirline": {
+                "code": "MH",
+                "number": "611"
+              },
+              "fareClass": "M",
+              "origin": "KUL",
+              "destination": "SIN",
+              "marketingAirline": "MH",
+              "flightNumber": "611",
+              "fareBasis": {
+                "adult": "MFLOWID",
+                "child": "MFLOWIDCH",
+                "infant": "MFLOWIDIN"
+              }
+            }
+          ]
+        },
+        {
+          "origin": "SIN",
+          "destination": "BKK",
+          "journeySellKey": "",
+          "fareSellKey": "",
+          "schedules": [
+            {
+              "departureDate": "2026-12-06T19:30",
+              "arrivalDate": "2026-12-06T20:45",
+              "operatingAirline": {
+                "code": "MH",
+                "number": "616"
+              },
+              "fareClass": "N",
+              "origin": "SIN",
+              "destination": "KUL",
+              "marketingAirline": "MH",
+              "flightNumber": "616",
+              "fareBasis": {
+                "adult": "NFLOWSG",
+                "child": "NFLOWSGCH",
+                "infant": "NFLOWSGIN"
+              }
+            },
+            {
+              "departureDate": "2026-12-06T22:00",
+              "arrivalDate": "2026-12-06T23:10",
+              "operatingAirline": {
+                "code": "MH",
+                "number": "796"
+              },
+              "fareClass": "N",
+              "origin": "KUL",
+              "destination": "BKK",
+              "marketingAirline": "MH",
+              "flightNumber": "796",
+              "fareBasis": {
+                "adult": "NFLOWSG",
+                "child": "NFLOWSGCH",
+                "infant": "NFLOWSGIN"
+              }
+            }
+          ]
+        },
+        {
+          "origin": "BKK",
+          "destination": "KUL",
+          "journeySellKey": "",
+          "fareSellKey": "",
+          "schedules": [
+            {
+              "departureDate": "2026-12-09T05:40",
+              "arrivalDate": "2026-12-09T08:55",
+              "operatingAirline": {
+                "code": "MH",
+                "number": "797"
+              },
+              "fareClass": "M",
+              "origin": "BKK",
+              "destination": "KUL",
+              "marketingAirline": "MH",
+              "flightNumber": "797",
+              "fareBasis": {
+                "adult": "MFLOWID",
+                "child": "MFLOWIDCH",
+                "infant": "MFLOWIDIN"
+              }
+            }
+          ]
+        },
+        {
+          "origin": "KUL",
+          "destination": "CGK",
+          "journeySellKey": "",
+          "fareSellKey": "",
+          "schedules": [
+            {
+              "departureDate": "2026-12-12T09:10",
+              "arrivalDate": "2026-12-12T10:20",
+              "operatingAirline": {
+                "code": "MH",
+                "number": "711"
+              },
+              "fareClass": "M",
+              "origin": "KUL",
+              "destination": "CGK",
+              "marketingAirline": "MH",
+              "flightNumber": "711",
+              "fareBasis": {
+                "adult": "MFLOWID",
+                "child": "MFLOWIDCH",
+                "infant": "MFLOWIDIN"
+              }
+            }
+          ]
+        }
+      ],
+      "corporate": null,
+      "promotionCode": {
+        "id": "",
+        "name": ""
+      },
+      "source": "PRP",
+      "multiFare": false
+    }
+  },
+  "serverTime": "2026-09-02T12:09:01.566273+05:30"
+}
