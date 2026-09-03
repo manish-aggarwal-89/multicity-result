@@ -1,0 +1,11 @@
+{
+  "shape": "NONHOLD-RT-1A1C1I",
+  "id": "NONHOLD-RT-1A1C1I",
+  "trip_type": "ROUND_TRIP",
+  "status": "PASS",
+  "issues": [],
+  "booking_code": "2Z4YXB",
+  "nonhold_status": 200,
+  "nonhold_path": "/tix-flight-non-hold/booking",
+  "dump_dir": "/Users/manishaggarwal/PycharmProjects/multicity-result/runs/NONHOLD-RT-1A1C1I/2026-09-03_12-16-52_3475d5"
+}

@@ -1,0 +1,11 @@
+{
+  "shape": "NONHOLD-RT-1A",
+  "id": "NONHOLD-RT-1A",
+  "trip_type": "ROUND_TRIP",
+  "status": "PASS",
+  "issues": [],
+  "booking_code": "MQ7MDM",
+  "nonhold_status": 200,
+  "nonhold_path": "/tix-flight-non-hold/booking",
+  "dump_dir": "/Users/manishaggarwal/PycharmProjects/multicity-result/runs/NONHOLD-RT-1A/2026-09-03_12-16-47_7caa46"
+}

@@ -1,0 +1,11 @@
+{
+  "shape": "NONHOLD-MC4-1A",
+  "id": "NONHOLD-MC4-1A",
+  "trip_type": "MULTI_CITY",
+  "status": "PASS",
+  "issues": [],
+  "booking_code": "DHKVN5",
+  "nonhold_status": 200,
+  "nonhold_path": "/tix-flight-non-hold/v3/booking",
+  "dump_dir": "/Users/manishaggarwal/PycharmProjects/multicity-result/runs/NONHOLD-MC4-1A/2026-09-03_12-16-21_aa021c"
+}

@@ -1,0 +1,1777 @@
+{
+  "attempts": [
+    {
+      "path": "/tix-flight-non-hold/v3/booking",
+      "status": 200,
+      "error": null
+    }
+  ],
+  "chosen": {
+    "path": "/tix-flight-non-hold/v3/booking",
+    "url": "http://flight-non-hold-be.flight-ns.svc.tiket/tix-flight-non-hold/v3/booking",
+    "status": 200,
+    "response_body": {
+      "code": "SUCCESS",
+      "message": "SUCCESS",
+      "data": {
+        "mandatoryRequest": {
+          "storeId": "TIKETCOM",
+          "channelId": "WEB",
+          "requestId": "70eeaf86-4732-46bf-91e4-007ac71d8445",
+          "serviceId": "GATEWAY",
+          "resellerId": "",
+          "identity": "",
+          "username": "guest"
+        },
+        "integratorBookRequest": {
+          "distributionType": "sabre",
+          "account": {
+            "name": "tiketcomSabre",
+            "code": "tiketcomSabre"
+          },
+          "adult": 1,
+          "child": 1,
+          "infant": 1,
+          "multiFare": false,
+          "validatingAirline": "SQ",
+          "tripType": "MULTI_CITY",
+          "promotionCode": {
+            "id": "",
+            "name": ""
+          },
+          "flightSelect": "SQ 955~SQ 710~MH 797~SQ 103|SQ 958",
+          "contact": {
+            "profileId": "",
+            "firstName": "Manish",
+            "lastName": "Aggarwal",
+            "dob": "",
+            "phoneCode": "+91",
+            "phoneCodeCs": "",
+            "phoneCodePassenger": "",
+            "phoneNumber": "7042190130",
+            "phoneNumberCs": "",
+            "phoneNumberPassenger": "",
+            "title": "mr",
+            "gender": "",
+            "email": "manish.aggarwal@tiket.com",
+            "emailPassenger": "manish.aggarwal@tiket.com",
+            "emailAgent": "manish.aggarwal@tiket.com"
+          },
+          "paxes": [
+            {
+              "paxNumber": 10000,
+              "type": "adult",
+              "title": "mr",
+              "gender": "male",
+              "firstName": "Manish",
+              "lastName": "Aggarwal",
+              "originalFirstName": "Manish",
+              "originalLastName": "Aggarwal",
+              "nationality": "IN",
+              "dob": "1998-08-13",
+              "passport": {
+                "id": "A1234567",
+                "expired": "2036-12-17",
+                "country": "IN",
+                "issuingDate": "2017-12-06"
+              }
+            },
+            {
+              "paxNumber": 20000,
+              "type": "child",
+              "title": "mstr",
+              "gender": "male",
+              "firstName": "Akash",
+              "lastName": "Kumar",
+              "originalFirstName": "Akash",
+              "originalLastName": "Kumar",
+              "nationality": "IN",
+              "dob": "2021-12-15",
+              "passport": {
+                "id": "C1234543",
+                "expired": "2037-12-24",
+                "country": "IN",
+                "issuingDate": "2023-12-13"
+              }
+            },
+            {
+              "paxNumber": 30000,
+              "type": "infant",
+              "title": "mstr",
+              "gender": "male",
+              "firstName": "Krishna",
+              "lastName": "Aggarwal",
+              "originalFirstName": "Krishna",
+              "originalLastName": "Aggarwal",
+              "nationality": "ID",
+              "dob": "2025-12-25",
+              "passport": {
+                "id": "I1231311",
+                "expired": "2029-05-16",
+                "country": "ID",
+                "issuingDate": "2016-05-13"
+              }
+            }
+          ],
+          "itineraries": [
+            {
+              "airline": "SQ",
+              "departure": "CGK",
+              "arrival": "SIN",
+              "date": "2027-03-01",
+              "connecting": "",
+              "international": 1,
+              "cabinClass": "ECONOMY",
+              "schedules": [
+                {
+                  "arrivalDate": "2027-03-01 12:15",
+                  "departureDate": "2027-03-01 09:30",
+                  "operatingAirline": {
+                    "code": "SQ",
+                    "number": "955"
+                  },
+                  "fareClass": "Y",
+                  "origin": "CGK",
+                  "destination": "SIN",
+                  "marketingAirline": "SQ",
+                  "flightNumber": "955",
+                  "marriageGroup": "O",
+                  "fareBasisCodes": {}
+                }
+              ]
+            },
+            {
+              "airline": "SQ",
+              "departure": "SIN",
+              "arrival": "BKK",
+              "date": "2027-03-04",
+              "connecting": "",
+              "international": 1,
+              "cabinClass": "ECONOMY",
+              "schedules": [
+                {
+                  "arrivalDate": "2027-03-04 14:35",
+                  "departureDate": "2027-03-04 13:15",
+                  "operatingAirline": {
+                    "code": "SQ",
+                    "number": "710"
+                  },
+                  "fareClass": "Y",
+                  "origin": "SIN",
+                  "destination": "BKK",
+                  "marketingAirline": "SQ",
+                  "flightNumber": "710",
+                  "marriageGroup": "I",
+                  "fareBasisCodes": {}
+                }
+              ]
+            },
+            {
+              "airline": "MH",
+              "departure": "BKK",
+              "arrival": "KUL",
+              "date": "2027-03-07",
+              "connecting": "",
+              "international": 1,
+              "cabinClass": "ECONOMY",
+              "schedules": [
+                {
+                  "arrivalDate": "2027-03-07 08:55",
+                  "departureDate": "2027-03-07 05:40",
+                  "operatingAirline": {
+                    "code": "MH",
+                    "number": "797"
+                  },
+                  "fareClass": "Q",
+                  "origin": "BKK",
+                  "destination": "KUL",
+                  "marketingAirline": "MH",
+                  "flightNumber": "797",
+                  "marriageGroup": "O",
+                  "fareBasisCodes": {}
+                }
+              ]
+            },
+            {
+              "airline": "SQ",
+              "departure": "KUL",
+              "arrival": "CGK",
+              "date": "2027-03-10",
+              "connecting": "",
+              "international": 1,
+              "cabinClass": "ECONOMY",
+              "schedules": [
+                {
+                  "arrivalDate": "2027-03-10 10:20",
+                  "departureDate": "2027-03-10 09:00",
+                  "operatingAirline": {
+                    "code": "SQ",
+                    "number": "103"
+                  },
+                  "fareClass": "Y",
+                  "origin": "KUL",
+                  "destination": "SIN",
+                  "marketingAirline": "SQ",
+                  "flightNumber": "103",
+                  "marriageGroup": "O",
+                  "fareBasisCodes": {}
+                },
+                {
+                  "arrivalDate": "2027-03-10 13:20",
+                  "departureDate": "2027-03-10 12:30",
+                  "operatingAirline": {
+                    "code": "SQ",
+                    "number": "958"
+                  },
+                  "fareClass": "Y",
+                  "origin": "SIN",
+                  "destination": "CGK",
+                  "marketingAirline": "SQ",
+                  "flightNumber": "958",
+                  "marriageGroup": "I",
+                  "fareBasisCodes": {}
+                }
+              ]
+            }
+          ],
+          "currency": "IDR",
+          "countryId": "ID",
+          "commission": 0,
+          "maxBookRetry": 0
+        },
+        "bookDetail": {
+          "distributionType": "sabre",
+          "account": {
+            "name": "tiketcomSabre",
+            "code": "tiketcomSabre"
+          },
+          "corporateCodes": null,
+          "bookingCode": "TQI86U",
+          "originalCurrency": "IDR",
+          "originalBookingFare": {
+            "balanceDue": 119959600,
+            "bookedFare": 119959600,
+            "fare": 119959600,
+            "adultFare": 64541200,
+            "childFare": 49229200,
+            "infantFare": 6189200,
+            "commission": 0,
+            "commissionPercent": 0,
+            "commissionAddons": 0,
+            "commissionPercentAddons": 0,
+            "nta": 119959600,
+            "ssrFee": {
+              "ssrFare": 0,
+              "baggageFare": 0,
+              "mealsFare": 0,
+              "seatsFare": 0,
+              "medicalsFare": 0,
+              "commissionBaggage": 0,
+              "commissionMeals": 0,
+              "commissionSeats": 0,
+              "commissionMedicals": 0,
+              "ssrItineraries": [
+                {
+                  "departureDateTime": "",
+                  "ssrPaxMeals": [
+                    {
+                      "paxNumber": 10000,
+                      "ssrMealsLegs": []
+                    },
+                    {
+                      "paxNumber": 20000,
+                      "ssrMealsLegs": []
+                    }
+                  ],
+                  "ssrPaxSeats": [
+                    {
+                      "paxNumber": 10000,
+                      "ssrSeatLegs": []
+                    },
+                    {
+                      "paxNumber": 20000,
+                      "ssrSeatLegs": []
+                    }
+                  ],
+                  "ssrPaxBaggages": [
+                    {
+                      "paxNumber": 10000,
+                      "ssrBaggagesLegs": []
+                    },
+                    {
+                      "paxNumber": 20000,
+                      "ssrBaggagesLegs": []
+                    }
+                  ],
+                  "ssrPaxMedicals": []
+                },
+                {
+                  "departureDateTime": "",
+                  "ssrPaxMeals": [
+                    {
+                      "paxNumber": 10000,
+                      "ssrMealsLegs": []
+                    },
+                    {
+                      "paxNumber": 20000,
+                      "ssrMealsLegs": []
+                    }
+                  ],
+                  "ssrPaxSeats": [
+                    {
+                      "paxNumber": 10000,
+                      "ssrSeatLegs": []
+                    },
+                    {
+                      "paxNumber": 20000,
+                      "ssrSeatLegs": []
+                    }
+                  ],
+                  "ssrPaxBaggages": [
+                    {
+                      "paxNumber": 10000,
+                      "ssrBaggagesLegs": []
+                    },
+                    {
+                      "paxNumber": 20000,
+                      "ssrBaggagesLegs": []
+                    }
+                  ],
+                  "ssrPaxMedicals": []
+                },
+                {
+                  "departureDateTime": "",
+                  "ssrPaxMeals": [
+                    {
+                      "paxNumber": 10000,
+                      "ssrMealsLegs": []
+                    },
+                    {
+                      "paxNumber": 20000,
+                      "ssrMealsLegs": []
+                    }
+                  ],
+                  "ssrPaxSeats": [
+                    {
+                      "paxNumber": 10000,
+                      "ssrSeatLegs": []
+                    },
+                    {
+                      "paxNumber": 20000,
+                      "ssrSeatLegs": []
+                    }
+                  ],
+                  "ssrPaxBaggages": [
+                    {
+                      "paxNumber": 10000,
+                      "ssrBaggagesLegs": []
+                    },
+                    {
+                      "paxNumber": 20000,
+                      "ssrBaggagesLegs": []
+                    }
+                  ],
+                  "ssrPaxMedicals": []
+                },
+                {
+                  "departureDateTime": "",
+                  "ssrPaxMeals": [
+                    {
+                      "paxNumber": 10000,
+                      "ssrMealsLegs": []
+                    },
+                    {
+                      "paxNumber": 20000,
+                      "ssrMealsLegs": []
+                    }
+                  ],
+                  "ssrPaxSeats": [
+                    {
+                      "paxNumber": 10000,
+                      "ssrSeatLegs": []
+                    },
+                    {
+                      "paxNumber": 20000,
+                      "ssrSeatLegs": []
+                    }
+                  ],
+                  "ssrPaxBaggages": [
+                    {
+                      "paxNumber": 10000,
+                      "ssrBaggagesLegs": []
+                    },
+                    {
+                      "paxNumber": 20000,
+                      "ssrBaggagesLegs": []
+                    }
+                  ],
+                  "ssrPaxMedicals": []
+                }
+              ]
+            },
+            "markup": 0,
+            "fareExcludeSsr": 119959600,
+            "discount": 0
+          },
+          "promotionCode": {
+            "id": "",
+            "name": ""
+          },
+          "itineraries": [
+            {
+              "international": 1,
+              "originalCurrency": "IDR",
+              "originalFare": 29989900,
+              "originalAdultFare": 16135300,
+              "originalChildFare": 12307300,
+              "originalInfantFare": 1547300,
+              "adult": 1,
+              "child": 1,
+              "infant": 1,
+              "cabinClass": "ECONOMY",
+              "schedules": [
+                {
+                  "departureDate": "2027-03-01 09:30",
+                  "arrivalDate": "2027-03-01 12:15",
+                  "operatingAirline": {
+                    "code": "SQ",
+                    "number": "955"
+                  },
+                  "departureTerminal": "3",
+                  "arrivalTerminal": "0",
+                  "fareBasisCodes": {
+                    "adult": "YIFSQ",
+                    "child": "YIFSQ",
+                    "infant": "YIFSQ"
+                  },
+                  "fareClass": "Y",
+                  "origin": "CGK",
+                  "destination": "SIN",
+                  "marketingAirline": "SQ",
+                  "marketingFlightNumber": "955",
+                  "baggage": {
+                    "cabin": {
+                      "unit": "1",
+                      "measurement": "Pc",
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 30,
+                      "validateBaggage": false
+                    }
+                  },
+                  "stopQuantity": "0",
+                  "aircraftType": "359",
+                  "marriageGroup": "O",
+                  "connectings": null
+                }
+              ],
+              "markupInfo": null,
+              "breakdownInfo": {
+                "originalAdult": {
+                  "psc": 0,
+                  "iwjr": 0,
+                  "discount": 0,
+                  "baseFare": 15312250,
+                  "nta": 16135300,
+                  "commission": 0,
+                  "fare": 16135300,
+                  "tax": 823050,
+                  "markup": 0,
+                  "privateMarkup": 0,
+                  "breakdownTaxes": [
+                    {
+                      "code": "YRI",
+                      "currencyCode": "IDR",
+                      "amount": 88650
+                    },
+                    {
+                      "code": "YQF",
+                      "currencyCode": "IDR",
+                      "amount": 132975
+                    },
+                    {
+                      "code": "D5",
+                      "currencyCode": "IDR",
+                      "amount": 66600
+                    },
+                    {
+                      "code": "G1",
+                      "currencyCode": "IDR",
+                      "amount": 8800
+                    },
+                    {
+                      "code": "H8",
+                      "currencyCode": "IDR",
+                      "amount": 1100
+                    },
+                    {
+                      "code": "MY",
+                      "currencyCode": "IDR",
+                      "amount": 80175
+                    },
+                    {
+                      "code": "L7",
+                      "currencyCode": "IDR",
+                      "amount": 37625
+                    },
+                    {
+                      "code": "L7",
+                      "currencyCode": "IDR",
+                      "amount": 10450
+                    },
+                    {
+                      "code": "OP",
+                      "currencyCode": "IDR",
+                      "amount": 27875
+                    },
+                    {
+                      "code": "SG",
+                      "currencyCode": "IDR",
+                      "amount": 161600
+                    },
+                    {
+                      "code": "SG",
+                      "currencyCode": "IDR",
+                      "amount": 41800
+                    },
+                    {
+                      "code": "E7",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "E72",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "G8",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    },
+                    {
+                      "code": "G82",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    },
+                    {
+                      "code": "TS",
+                      "currencyCode": "IDR",
+                      "amount": 149350
+                    }
+                  ]
+                },
+                "originalChild": {
+                  "psc": 0,
+                  "iwjr": 0,
+                  "discount": 0,
+                  "baseFare": 11484250,
+                  "nta": 12307300,
+                  "commission": 0,
+                  "fare": 12307300,
+                  "tax": 823050,
+                  "markup": 0,
+                  "privateMarkup": 0,
+                  "breakdownTaxes": [
+                    {
+                      "code": "YRI",
+                      "currencyCode": "IDR",
+                      "amount": 88650
+                    },
+                    {
+                      "code": "YQF",
+                      "currencyCode": "IDR",
+                      "amount": 132975
+                    },
+                    {
+                      "code": "D5",
+                      "currencyCode": "IDR",
+                      "amount": 66600
+                    },
+                    {
+                      "code": "G1",
+                      "currencyCode": "IDR",
+                      "amount": 8800
+                    },
+                    {
+                      "code": "H8",
+                      "currencyCode": "IDR",
+                      "amount": 1100
+                    },
+                    {
+                      "code": "MY",
+                      "currencyCode": "IDR",
+                      "amount": 80175
+                    },
+                    {
+                      "code": "L7",
+                      "currencyCode": "IDR",
+                      "amount": 37625
+                    },
+                    {
+                      "code": "L7",
+                      "currencyCode": "IDR",
+                      "amount": 10450
+                    },
+                    {
+                      "code": "OP",
+                      "currencyCode": "IDR",
+                      "amount": 27875
+                    },
+                    {
+                      "code": "SG",
+                      "currencyCode": "IDR",
+                      "amount": 161600
+                    },
+                    {
+                      "code": "SG",
+                      "currencyCode": "IDR",
+                      "amount": 41800
+                    },
+                    {
+                      "code": "E7",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "E72",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "G8",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    },
+                    {
+                      "code": "G82",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    },
+                    {
+                      "code": "TS",
+                      "currencyCode": "IDR",
+                      "amount": 149350
+                    }
+                  ]
+                },
+                "originalInfant": {
+                  "psc": 0,
+                  "iwjr": 0,
+                  "discount": 0,
+                  "baseFare": 1531250,
+                  "nta": 1547300,
+                  "commission": 0,
+                  "fare": 1547300,
+                  "tax": 16050,
+                  "markup": 0,
+                  "privateMarkup": 0,
+                  "breakdownTaxes": [
+                    {
+                      "code": "E7",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "E72",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "G8",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    },
+                    {
+                      "code": "G82",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    }
+                  ]
+                },
+                "originalBaggage": 0
+              }
+            },
+            {
+              "international": 1,
+              "originalCurrency": "IDR",
+              "originalFare": 29989900,
+              "originalAdultFare": 16135300,
+              "originalChildFare": 12307300,
+              "originalInfantFare": 1547300,
+              "adult": 1,
+              "child": 1,
+              "infant": 1,
+              "cabinClass": "ECONOMY",
+              "schedules": [
+                {
+                  "departureDate": "2027-03-04 13:15",
+                  "arrivalDate": "2027-03-04 14:35",
+                  "operatingAirline": {
+                    "code": "SQ",
+                    "number": "710"
+                  },
+                  "departureTerminal": "2",
+                  "fareBasisCodes": {
+                    "adult": "YIFSQ",
+                    "child": "YIFSQ",
+                    "infant": "YIFSQ"
+                  },
+                  "fareClass": "Y",
+                  "origin": "SIN",
+                  "destination": "BKK",
+                  "marketingAirline": "SQ",
+                  "marketingFlightNumber": "710",
+                  "baggage": {
+                    "cabin": {
+                      "unit": "1",
+                      "measurement": "Pc",
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 30,
+                      "validateBaggage": false
+                    }
+                  },
+                  "stopQuantity": "0",
+                  "aircraftType": "787",
+                  "marriageGroup": "I",
+                  "connectings": null
+                }
+              ],
+              "markupInfo": null,
+              "breakdownInfo": {
+                "originalAdult": {
+                  "psc": 0,
+                  "iwjr": 0,
+                  "discount": 0,
+                  "baseFare": 15312250,
+                  "nta": 16135300,
+                  "commission": 0,
+                  "fare": 16135300,
+                  "tax": 823050,
+                  "markup": 0,
+                  "privateMarkup": 0,
+                  "breakdownTaxes": [
+                    {
+                      "code": "YRI",
+                      "currencyCode": "IDR",
+                      "amount": 88650
+                    },
+                    {
+                      "code": "YQF",
+                      "currencyCode": "IDR",
+                      "amount": 132975
+                    },
+                    {
+                      "code": "D5",
+                      "currencyCode": "IDR",
+                      "amount": 66600
+                    },
+                    {
+                      "code": "G1",
+                      "currencyCode": "IDR",
+                      "amount": 8800
+                    },
+                    {
+                      "code": "H8",
+                      "currencyCode": "IDR",
+                      "amount": 1100
+                    },
+                    {
+                      "code": "MY",
+                      "currencyCode": "IDR",
+                      "amount": 80175
+                    },
+                    {
+                      "code": "L7",
+                      "currencyCode": "IDR",
+                      "amount": 37625
+                    },
+                    {
+                      "code": "L7",
+                      "currencyCode": "IDR",
+                      "amount": 10450
+                    },
+                    {
+                      "code": "OP",
+                      "currencyCode": "IDR",
+                      "amount": 27875
+                    },
+                    {
+                      "code": "SG",
+                      "currencyCode": "IDR",
+                      "amount": 161600
+                    },
+                    {
+                      "code": "SG",
+                      "currencyCode": "IDR",
+                      "amount": 41800
+                    },
+                    {
+                      "code": "E7",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "E72",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "G8",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    },
+                    {
+                      "code": "G82",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    },
+                    {
+                      "code": "TS",
+                      "currencyCode": "IDR",
+                      "amount": 149350
+                    }
+                  ]
+                },
+                "originalChild": {
+                  "psc": 0,
+                  "iwjr": 0,
+                  "discount": 0,
+                  "baseFare": 11484250,
+                  "nta": 12307300,
+                  "commission": 0,
+                  "fare": 12307300,
+                  "tax": 823050,
+                  "markup": 0,
+                  "privateMarkup": 0,
+                  "breakdownTaxes": [
+                    {
+                      "code": "YRI",
+                      "currencyCode": "IDR",
+                      "amount": 88650
+                    },
+                    {
+                      "code": "YQF",
+                      "currencyCode": "IDR",
+                      "amount": 132975
+                    },
+                    {
+                      "code": "D5",
+                      "currencyCode": "IDR",
+                      "amount": 66600
+                    },
+                    {
+                      "code": "G1",
+                      "currencyCode": "IDR",
+                      "amount": 8800
+                    },
+                    {
+                      "code": "H8",
+                      "currencyCode": "IDR",
+                      "amount": 1100
+                    },
+                    {
+                      "code": "MY",
+                      "currencyCode": "IDR",
+                      "amount": 80175
+                    },
+                    {
+                      "code": "L7",
+                      "currencyCode": "IDR",
+                      "amount": 37625
+                    },
+                    {
+                      "code": "L7",
+                      "currencyCode": "IDR",
+                      "amount": 10450
+                    },
+                    {
+                      "code": "OP",
+                      "currencyCode": "IDR",
+                      "amount": 27875
+                    },
+                    {
+                      "code": "SG",
+                      "currencyCode": "IDR",
+                      "amount": 161600
+                    },
+                    {
+                      "code": "SG",
+                      "currencyCode": "IDR",
+                      "amount": 41800
+                    },
+                    {
+                      "code": "E7",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "E72",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "G8",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    },
+                    {
+                      "code": "G82",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    },
+                    {
+                      "code": "TS",
+                      "currencyCode": "IDR",
+                      "amount": 149350
+                    }
+                  ]
+                },
+                "originalInfant": {
+                  "psc": 0,
+                  "iwjr": 0,
+                  "discount": 0,
+                  "baseFare": 1531250,
+                  "nta": 1547300,
+                  "commission": 0,
+                  "fare": 1547300,
+                  "tax": 16050,
+                  "markup": 0,
+                  "privateMarkup": 0,
+                  "breakdownTaxes": [
+                    {
+                      "code": "E7",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "E72",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "G8",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    },
+                    {
+                      "code": "G82",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    }
+                  ]
+                },
+                "originalBaggage": 0
+              }
+            },
+            {
+              "international": 1,
+              "originalCurrency": "IDR",
+              "originalFare": 29989900,
+              "originalAdultFare": 16135300,
+              "originalChildFare": 12307300,
+              "originalInfantFare": 1547300,
+              "adult": 1,
+              "child": 1,
+              "infant": 1,
+              "cabinClass": "ECONOMY",
+              "schedules": [
+                {
+                  "departureDate": "2027-03-07 05:40",
+                  "arrivalDate": "2027-03-07 08:55",
+                  "operatingAirline": {
+                    "code": "MH",
+                    "number": "797"
+                  },
+                  "arrivalTerminal": "1",
+                  "fareBasisCodes": {
+                    "adult": "YIFSQ",
+                    "child": "YIFSQ",
+                    "infant": "YIFSQ"
+                  },
+                  "fareClass": "Q",
+                  "origin": "BKK",
+                  "destination": "KUL",
+                  "marketingAirline": "MH",
+                  "marketingFlightNumber": "797",
+                  "baggage": {
+                    "cabin": {
+                      "unit": "1",
+                      "measurement": "Pc",
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 30,
+                      "validateBaggage": false
+                    }
+                  },
+                  "stopQuantity": "0",
+                  "aircraftType": "73H",
+                  "marriageGroup": "O",
+                  "connectings": null
+                }
+              ],
+              "markupInfo": null,
+              "breakdownInfo": {
+                "originalAdult": {
+                  "psc": 0,
+                  "iwjr": 0,
+                  "discount": 0,
+                  "baseFare": 15312250,
+                  "nta": 16135300,
+                  "commission": 0,
+                  "fare": 16135300,
+                  "tax": 823050,
+                  "markup": 0,
+                  "privateMarkup": 0,
+                  "breakdownTaxes": [
+                    {
+                      "code": "YRI",
+                      "currencyCode": "IDR",
+                      "amount": 88650
+                    },
+                    {
+                      "code": "YQF",
+                      "currencyCode": "IDR",
+                      "amount": 132975
+                    },
+                    {
+                      "code": "D5",
+                      "currencyCode": "IDR",
+                      "amount": 66600
+                    },
+                    {
+                      "code": "G1",
+                      "currencyCode": "IDR",
+                      "amount": 8800
+                    },
+                    {
+                      "code": "H8",
+                      "currencyCode": "IDR",
+                      "amount": 1100
+                    },
+                    {
+                      "code": "MY",
+                      "currencyCode": "IDR",
+                      "amount": 80175
+                    },
+                    {
+                      "code": "L7",
+                      "currencyCode": "IDR",
+                      "amount": 37625
+                    },
+                    {
+                      "code": "L7",
+                      "currencyCode": "IDR",
+                      "amount": 10450
+                    },
+                    {
+                      "code": "OP",
+                      "currencyCode": "IDR",
+                      "amount": 27875
+                    },
+                    {
+                      "code": "SG",
+                      "currencyCode": "IDR",
+                      "amount": 161600
+                    },
+                    {
+                      "code": "SG",
+                      "currencyCode": "IDR",
+                      "amount": 41800
+                    },
+                    {
+                      "code": "E7",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "E72",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "G8",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    },
+                    {
+                      "code": "G82",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    },
+                    {
+                      "code": "TS",
+                      "currencyCode": "IDR",
+                      "amount": 149350
+                    }
+                  ]
+                },
+                "originalChild": {
+                  "psc": 0,
+                  "iwjr": 0,
+                  "discount": 0,
+                  "baseFare": 11484250,
+                  "nta": 12307300,
+                  "commission": 0,
+                  "fare": 12307300,
+                  "tax": 823050,
+                  "markup": 0,
+                  "privateMarkup": 0,
+                  "breakdownTaxes": [
+                    {
+                      "code": "YRI",
+                      "currencyCode": "IDR",
+                      "amount": 88650
+                    },
+                    {
+                      "code": "YQF",
+                      "currencyCode": "IDR",
+                      "amount": 132975
+                    },
+                    {
+                      "code": "D5",
+                      "currencyCode": "IDR",
+                      "amount": 66600
+                    },
+                    {
+                      "code": "G1",
+                      "currencyCode": "IDR",
+                      "amount": 8800
+                    },
+                    {
+                      "code": "H8",
+                      "currencyCode": "IDR",
+                      "amount": 1100
+                    },
+                    {
+                      "code": "MY",
+                      "currencyCode": "IDR",
+                      "amount": 80175
+                    },
+                    {
+                      "code": "L7",
+                      "currencyCode": "IDR",
+                      "amount": 37625
+                    },
+                    {
+                      "code": "L7",
+                      "currencyCode": "IDR",
+                      "amount": 10450
+                    },
+                    {
+                      "code": "OP",
+                      "currencyCode": "IDR",
+                      "amount": 27875
+                    },
+                    {
+                      "code": "SG",
+                      "currencyCode": "IDR",
+                      "amount": 161600
+                    },
+                    {
+                      "code": "SG",
+                      "currencyCode": "IDR",
+                      "amount": 41800
+                    },
+                    {
+                      "code": "E7",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "E72",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "G8",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    },
+                    {
+                      "code": "G82",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    },
+                    {
+                      "code": "TS",
+                      "currencyCode": "IDR",
+                      "amount": 149350
+                    }
+                  ]
+                },
+                "originalInfant": {
+                  "psc": 0,
+                  "iwjr": 0,
+                  "discount": 0,
+                  "baseFare": 1531250,
+                  "nta": 1547300,
+                  "commission": 0,
+                  "fare": 1547300,
+                  "tax": 16050,
+                  "markup": 0,
+                  "privateMarkup": 0,
+                  "breakdownTaxes": [
+                    {
+                      "code": "E7",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "E72",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "G8",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    },
+                    {
+                      "code": "G82",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    }
+                  ]
+                },
+                "originalBaggage": 0
+              }
+            },
+            {
+              "international": 1,
+              "originalCurrency": "IDR",
+              "originalFare": 29989900,
+              "originalAdultFare": 16135300,
+              "originalChildFare": 12307300,
+              "originalInfantFare": 1547300,
+              "adult": 1,
+              "child": 1,
+              "infant": 1,
+              "cabinClass": "ECONOMY",
+              "schedules": [
+                {
+                  "departureDate": "2027-03-10 09:00",
+                  "arrivalDate": "2027-03-10 10:20",
+                  "operatingAirline": {
+                    "code": "SQ",
+                    "number": "103"
+                  },
+                  "departureTerminal": "1",
+                  "arrivalTerminal": "0",
+                  "fareBasisCodes": {
+                    "adult": "YIFSQ",
+                    "child": "YIFSQ",
+                    "infant": "YIFSQ"
+                  },
+                  "fareClass": "Y",
+                  "origin": "KUL",
+                  "destination": "SIN",
+                  "marketingAirline": "SQ",
+                  "marketingFlightNumber": "103",
+                  "baggage": {
+                    "cabin": {
+                      "unit": "1",
+                      "measurement": "Pc",
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 30,
+                      "validateBaggage": false
+                    }
+                  },
+                  "stopQuantity": "0",
+                  "aircraftType": "7M8",
+                  "marriageGroup": "O",
+                  "connectings": null
+                },
+                {
+                  "departureDate": "2027-03-10 12:30",
+                  "arrivalDate": "2027-03-10 13:20",
+                  "operatingAirline": {
+                    "code": "SQ",
+                    "number": "958"
+                  },
+                  "departureTerminal": "2",
+                  "arrivalTerminal": "3",
+                  "fareBasisCodes": {
+                    "adult": "YIFSQ",
+                    "child": "YIFSQ",
+                    "infant": "YIFSQ"
+                  },
+                  "fareClass": "Y",
+                  "origin": "SIN",
+                  "destination": "CGK",
+                  "marketingAirline": "SQ",
+                  "marketingFlightNumber": "958",
+                  "baggage": {
+                    "cabin": {
+                      "unit": "1",
+                      "measurement": "Pc",
+                      "qty": 0,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 30,
+                      "validateBaggage": false
+                    }
+                  },
+                  "stopQuantity": "0",
+                  "aircraftType": "359",
+                  "marriageGroup": "I",
+                  "connectings": null
+                }
+              ],
+              "markupInfo": null,
+              "breakdownInfo": {
+                "originalAdult": {
+                  "psc": 0,
+                  "iwjr": 0,
+                  "discount": 0,
+                  "baseFare": 15312250,
+                  "nta": 16135300,
+                  "commission": 0,
+                  "fare": 16135300,
+                  "tax": 823050,
+                  "markup": 0,
+                  "privateMarkup": 0,
+                  "breakdownTaxes": [
+                    {
+                      "code": "YRI",
+                      "currencyCode": "IDR",
+                      "amount": 88650
+                    },
+                    {
+                      "code": "YQF",
+                      "currencyCode": "IDR",
+                      "amount": 132975
+                    },
+                    {
+                      "code": "D5",
+                      "currencyCode": "IDR",
+                      "amount": 66600
+                    },
+                    {
+                      "code": "G1",
+                      "currencyCode": "IDR",
+                      "amount": 8800
+                    },
+                    {
+                      "code": "H8",
+                      "currencyCode": "IDR",
+                      "amount": 1100
+                    },
+                    {
+                      "code": "MY",
+                      "currencyCode": "IDR",
+                      "amount": 80175
+                    },
+                    {
+                      "code": "L7",
+                      "currencyCode": "IDR",
+                      "amount": 37625
+                    },
+                    {
+                      "code": "L7",
+                      "currencyCode": "IDR",
+                      "amount": 10450
+                    },
+                    {
+                      "code": "OP",
+                      "currencyCode": "IDR",
+                      "amount": 27875
+                    },
+                    {
+                      "code": "SG",
+                      "currencyCode": "IDR",
+                      "amount": 161600
+                    },
+                    {
+                      "code": "SG",
+                      "currencyCode": "IDR",
+                      "amount": 41800
+                    },
+                    {
+                      "code": "E7",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "E72",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "G8",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    },
+                    {
+                      "code": "G82",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    },
+                    {
+                      "code": "TS",
+                      "currencyCode": "IDR",
+                      "amount": 149350
+                    }
+                  ]
+                },
+                "originalChild": {
+                  "psc": 0,
+                  "iwjr": 0,
+                  "discount": 0,
+                  "baseFare": 11484250,
+                  "nta": 12307300,
+                  "commission": 0,
+                  "fare": 12307300,
+                  "tax": 823050,
+                  "markup": 0,
+                  "privateMarkup": 0,
+                  "breakdownTaxes": [
+                    {
+                      "code": "YRI",
+                      "currencyCode": "IDR",
+                      "amount": 88650
+                    },
+                    {
+                      "code": "YQF",
+                      "currencyCode": "IDR",
+                      "amount": 132975
+                    },
+                    {
+                      "code": "D5",
+                      "currencyCode": "IDR",
+                      "amount": 66600
+                    },
+                    {
+                      "code": "G1",
+                      "currencyCode": "IDR",
+                      "amount": 8800
+                    },
+                    {
+                      "code": "H8",
+                      "currencyCode": "IDR",
+                      "amount": 1100
+                    },
+                    {
+                      "code": "MY",
+                      "currencyCode": "IDR",
+                      "amount": 80175
+                    },
+                    {
+                      "code": "L7",
+                      "currencyCode": "IDR",
+                      "amount": 37625
+                    },
+                    {
+                      "code": "L7",
+                      "currencyCode": "IDR",
+                      "amount": 10450
+                    },
+                    {
+                      "code": "OP",
+                      "currencyCode": "IDR",
+                      "amount": 27875
+                    },
+                    {
+                      "code": "SG",
+                      "currencyCode": "IDR",
+                      "amount": 161600
+                    },
+                    {
+                      "code": "SG",
+                      "currencyCode": "IDR",
+                      "amount": 41800
+                    },
+                    {
+                      "code": "E7",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "E72",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "G8",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    },
+                    {
+                      "code": "G82",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    },
+                    {
+                      "code": "TS",
+                      "currencyCode": "IDR",
+                      "amount": 149350
+                    }
+                  ]
+                },
+                "originalInfant": {
+                  "psc": 0,
+                  "iwjr": 0,
+                  "discount": 0,
+                  "baseFare": 1531250,
+                  "nta": 1547300,
+                  "commission": 0,
+                  "fare": 1547300,
+                  "tax": 16050,
+                  "markup": 0,
+                  "privateMarkup": 0,
+                  "breakdownTaxes": [
+                    {
+                      "code": "E7",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "E72",
+                      "currencyCode": "IDR",
+                      "amount": 4675
+                    },
+                    {
+                      "code": "G8",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    },
+                    {
+                      "code": "G82",
+                      "currencyCode": "IDR",
+                      "amount": 3350
+                    }
+                  ]
+                },
+                "originalBaggage": 0
+              }
+            }
+          ],
+          "passengerFareInfo": {
+            "originalAdult": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 61249000,
+              "nta": 64541200,
+              "commission": 0,
+              "fare": 64541200,
+              "tax": 3292200,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": [
+                {
+                  "code": "OP",
+                  "currencyCode": "IDR",
+                  "amount": 111500
+                },
+                {
+                  "code": "G8",
+                  "currencyCode": "IDR",
+                  "amount": 13400
+                },
+                {
+                  "code": "H8",
+                  "currencyCode": "IDR",
+                  "amount": 4400
+                },
+                {
+                  "code": "MY",
+                  "currencyCode": "IDR",
+                  "amount": 320700
+                },
+                {
+                  "code": "L7",
+                  "currencyCode": "IDR",
+                  "amount": 192300
+                },
+                {
+                  "code": "TS",
+                  "currencyCode": "IDR",
+                  "amount": 597400
+                },
+                {
+                  "code": "YRI",
+                  "currencyCode": "IDR",
+                  "amount": 354600
+                },
+                {
+                  "code": "D5",
+                  "currencyCode": "IDR",
+                  "amount": 266400
+                },
+                {
+                  "code": "G1",
+                  "currencyCode": "IDR",
+                  "amount": 35200
+                },
+                {
+                  "code": "E7",
+                  "currencyCode": "IDR",
+                  "amount": 18700
+                },
+                {
+                  "code": "E72",
+                  "currencyCode": "IDR",
+                  "amount": 18700
+                },
+                {
+                  "code": "SG",
+                  "currencyCode": "IDR",
+                  "amount": 813600
+                },
+                {
+                  "code": "G82",
+                  "currencyCode": "IDR",
+                  "amount": 13400
+                },
+                {
+                  "code": "YQF",
+                  "currencyCode": "IDR",
+                  "amount": 531900
+                }
+              ]
+            },
+            "originalChild": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 45937000,
+              "nta": 49229200,
+              "commission": 0,
+              "fare": 49229200,
+              "tax": 3292200,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": [
+                {
+                  "code": "E7",
+                  "currencyCode": "IDR",
+                  "amount": 18700
+                },
+                {
+                  "code": "L7",
+                  "currencyCode": "IDR",
+                  "amount": 192300
+                },
+                {
+                  "code": "H8",
+                  "currencyCode": "IDR",
+                  "amount": 4400
+                },
+                {
+                  "code": "E72",
+                  "currencyCode": "IDR",
+                  "amount": 18700
+                },
+                {
+                  "code": "OP",
+                  "currencyCode": "IDR",
+                  "amount": 111500
+                },
+                {
+                  "code": "TS",
+                  "currencyCode": "IDR",
+                  "amount": 597400
+                },
+                {
+                  "code": "YQF",
+                  "currencyCode": "IDR",
+                  "amount": 531900
+                },
+                {
+                  "code": "G1",
+                  "currencyCode": "IDR",
+                  "amount": 35200
+                },
+                {
+                  "code": "MY",
+                  "currencyCode": "IDR",
+                  "amount": 320700
+                },
+                {
+                  "code": "SG",
+                  "currencyCode": "IDR",
+                  "amount": 813600
+                },
+                {
+                  "code": "YRI",
+                  "currencyCode": "IDR",
+                  "amount": 354600
+                },
+                {
+                  "code": "G82",
+                  "currencyCode": "IDR",
+                  "amount": 13400
+                },
+                {
+                  "code": "D5",
+                  "currencyCode": "IDR",
+                  "amount": 266400
+                },
+                {
+                  "code": "G8",
+                  "currencyCode": "IDR",
+                  "amount": 13400
+                }
+              ]
+            },
+            "originalInfant": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 6125000,
+              "nta": 6189200,
+              "commission": 0,
+              "fare": 6189200,
+              "tax": 64200,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": [
+                {
+                  "code": "E7",
+                  "currencyCode": "IDR",
+                  "amount": 18700
+                },
+                {
+                  "code": "E72",
+                  "currencyCode": "IDR",
+                  "amount": 18700
+                },
+                {
+                  "code": "G8",
+                  "currencyCode": "IDR",
+                  "amount": 13400
+                },
+                {
+                  "code": "G82",
+                  "currencyCode": "IDR",
+                  "amount": 13400
+                }
+              ]
+            },
+            "originalBaggage": 0
+          },
+          "additionalData": {}
+        }
+      },
+      "serverTime": "2026-09-03T13:46:34.116244121+07:00"
+    },
+    "error": null
+  }
+}

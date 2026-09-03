@@ -1,0 +1,10 @@
+curl --location 'http://flight-sabre-gds-integrator-be.flight-ns.svc.tiket/tix-flight-sabre-gds-integrator/v2/search' \
+  --request POST \
+  --header 'storeId: TIKETCOM' \
+  --header 'channelId: WEB' \
+  --header 'username: guest' \
+  --header 'serviceId: GATEWAY' \
+  --header 'requestId: 70eeaf86-4732-46bf-91e4-007ac71d8445' \
+  --header 'Content-Type: application/json' \
+  --header 'Accept: application/json' \
+  --data '{"distributionType": "sabre", "supplierRequest": {"accounts": [{"code": "tiketcomSabre", "name": "tiketcomSabre"}], "airlines": []}, "supplierMappings": [{"account": {"code": "tiketcomSabre", "name": "tiketcomSabre"}, "airlines": [], "ignoreAirline": true, "multiFare": false}], "origin": "CGK", "destination": "CGK", "adult": 1, "child": 1, "infant": 1, "departureDate": "2027-03-01", "returnDate": "", "cabinClass": "ECONOMY", "tripTypes": ["MULTI_CITY"], "international": 1, "currency": {"departureCurrency": "IDR"}, "routes": [{"origin": "CGK", "destination": "SIN", "departureDate": "2027-03-01", "currency": "IDR"}, {"origin": "SIN", "destination": "BKK", "departureDate": "2027-03-04", "currency": "IDR"}, {"origin": "BKK", "destination": "KUL", "departureDate": "2027-03-07", "currency": "IDR"}, {"origin": "KUL", "destination": "CGK", "departureDate": "2027-03-10", "currency": "IDR"}], "additionalData": {}, "blacklistMap": {}}'

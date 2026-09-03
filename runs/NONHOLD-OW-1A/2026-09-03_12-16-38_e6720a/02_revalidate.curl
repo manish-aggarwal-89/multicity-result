@@ -1,0 +1,10 @@
+curl --location 'http://flight-sabre-gds-integrator-be.flight-ns.svc.tiket/tix-flight-sabre-gds-integrator/revalidate-itinerary' \
+  --request POST \
+  --header 'storeId: TIKETCOM' \
+  --header 'channelId: WEB' \
+  --header 'username: guest' \
+  --header 'serviceId: GATEWAY' \
+  --header 'requestId: 8e4076fa-ce33-48ef-8801-2e2919f1a185' \
+  --header 'Content-Type: application/json' \
+  --header 'Accept: application/json' \
+  --data '{"account": {"code": "tiketcomSabre", "name": "tiketcomSabre"}, "distributionType": "sabre", "adult": 1, "child": 0, "infant": 0, "cabinClass": "ECONOMY", "currency": {"departureCurrency": "IDR"}, "origin": "CGK", "destination": "SIN", "departureDate": "2027-03-01", "returnDate": "", "international": 1, "tripTypes": ["DEPARTURE"], "multiFare": false, "validatingAirline": "QG", "flightSelect": "QG 526", "itineraries": [{"origin": "CGK", "destination": "SIN", "journeySellKey": "", "fareSellKey": "", "schedules": [{"origin": "CGK", "destination": "SIN", "departureDate": "2027-03-01T17:10", "arrivalDate": "2027-03-01T20:00", "marketingAirline": "QG", "flightNumber": "526", "operatingAirline": {"code": "QG", "number": "526"}, "fareClass": "P", "fareBasis": {"adult": "PNN00BS", "child": "", "infant": ""}}]}], "source": "PRP"}'

@@ -1,0 +1,11 @@
+{
+  "shape": "NONHOLD-MC3-2A2C1I",
+  "id": "NONHOLD-MC3-2A2C1I",
+  "trip_type": "MULTI_CITY",
+  "status": "PASS",
+  "issues": [],
+  "booking_code": "X8NJ3G",
+  "nonhold_status": 200,
+  "nonhold_path": "/tix-flight-non-hold/v3/booking",
+  "dump_dir": "/Users/manishaggarwal/PycharmProjects/multicity-result/runs/NONHOLD-MC3-2A2C1I/2026-09-03_12-16-17_4bd072"
+}

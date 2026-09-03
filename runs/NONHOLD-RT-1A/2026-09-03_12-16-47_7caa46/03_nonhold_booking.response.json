@@ -1,0 +1,572 @@
+{
+  "attempts": [
+    {
+      "path": "/tix-flight-non-hold/booking",
+      "status": 200,
+      "error": null
+    }
+  ],
+  "chosen": {
+    "path": "/tix-flight-non-hold/booking",
+    "url": "http://flight-non-hold-be.flight-ns.svc.tiket/tix-flight-non-hold/booking",
+    "status": 200,
+    "response_body": {
+      "code": "SUCCESS",
+      "message": "SUCCESS",
+      "data": {
+        "mandatoryRequest": {
+          "storeId": "TIKETCOM",
+          "channelId": "WEB",
+          "requestId": "fed0129b-2134-4b9e-862c-4c1f8936da22",
+          "serviceId": "GATEWAY",
+          "resellerId": "",
+          "identity": "",
+          "username": "guest"
+        },
+        "integratorBookRequest": {
+          "distributionType": "sabre",
+          "account": {
+            "name": "tiketcomSabre",
+            "code": "tiketcomSabre"
+          },
+          "adult": 1,
+          "child": 0,
+          "infant": 0,
+          "multiFare": false,
+          "validatingAirline": "QG",
+          "tripType": "MULTI_CITY",
+          "promotionCode": {
+            "id": "",
+            "name": ""
+          },
+          "flightSelect": "QG 526~QG 523",
+          "contact": {
+            "profileId": "",
+            "firstName": "Manish",
+            "lastName": "Aggarwal",
+            "dob": "",
+            "phoneCode": "+91",
+            "phoneCodeCs": "",
+            "phoneCodePassenger": "",
+            "phoneNumber": "7042190130",
+            "phoneNumberCs": "",
+            "phoneNumberPassenger": "",
+            "title": "mr",
+            "gender": "",
+            "email": "manish.aggarwal@tiket.com",
+            "emailPassenger": "manish.aggarwal@tiket.com",
+            "emailAgent": "manish.aggarwal@tiket.com"
+          },
+          "paxes": [
+            {
+              "paxNumber": 10000,
+              "type": "adult",
+              "title": "mr",
+              "gender": "male",
+              "firstName": "Manish",
+              "lastName": "Aggarwal",
+              "originalFirstName": "Manish",
+              "originalLastName": "Aggarwal",
+              "nationality": "IN",
+              "dob": "1998-08-13",
+              "passport": {
+                "id": "A1234567",
+                "expired": "2036-12-17",
+                "country": "IN",
+                "issuingDate": "2017-12-06"
+              }
+            }
+          ],
+          "itineraries": [
+            {
+              "airline": "QG",
+              "departure": "CGK",
+              "arrival": "SIN",
+              "date": "2027-03-01",
+              "connecting": "",
+              "international": 1,
+              "cabinClass": "ECONOMY",
+              "schedules": [
+                {
+                  "arrivalDate": "2027-03-01 20:00",
+                  "departureDate": "2027-03-01 17:10",
+                  "operatingAirline": {
+                    "code": "QG",
+                    "number": "526"
+                  },
+                  "fareClass": "P",
+                  "origin": "CGK",
+                  "destination": "SIN",
+                  "marketingAirline": "QG",
+                  "flightNumber": "526",
+                  "marriageGroup": "O",
+                  "fareBasisCodes": {}
+                }
+              ]
+            },
+            {
+              "airline": "QG",
+              "departure": "SIN",
+              "arrival": "CGK",
+              "date": "2027-03-04",
+              "connecting": "",
+              "international": 1,
+              "cabinClass": "ECONOMY",
+              "schedules": [
+                {
+                  "arrivalDate": "2027-03-04 11:05",
+                  "departureDate": "2027-03-04 10:10",
+                  "operatingAirline": {
+                    "code": "QG",
+                    "number": "523"
+                  },
+                  "fareClass": "N",
+                  "origin": "SIN",
+                  "destination": "CGK",
+                  "marketingAirline": "QG",
+                  "flightNumber": "523",
+                  "marriageGroup": "O",
+                  "fareBasisCodes": {}
+                }
+              ]
+            }
+          ],
+          "currency": "IDR",
+          "countryId": "ID",
+          "commission": 0,
+          "maxBookRetry": 0
+        },
+        "bookDetail": {
+          "distributionType": "sabre",
+          "account": {
+            "name": "tiketcomSabre",
+            "code": "tiketcomSabre"
+          },
+          "corporateCodes": null,
+          "bookingCode": "MQ7MDM",
+          "bookingExpired": "2026-09-03 14:46:52",
+          "originalCurrency": "IDR",
+          "originalBookingFare": {
+            "balanceDue": 3610200,
+            "bookedFare": 3610200,
+            "fare": 3610200,
+            "adultFare": 3610200,
+            "childFare": 0,
+            "infantFare": 0,
+            "commission": 0,
+            "commissionPercent": 0,
+            "commissionAddons": 0,
+            "commissionPercentAddons": 0,
+            "nta": 3610200,
+            "ssrFee": {
+              "ssrFare": 0,
+              "baggageFare": 0,
+              "mealsFare": 0,
+              "seatsFare": 0,
+              "medicalsFare": 0,
+              "commissionBaggage": 0,
+              "commissionMeals": 0,
+              "commissionSeats": 0,
+              "commissionMedicals": 0,
+              "ssrItineraries": [
+                {
+                  "departureDateTime": "",
+                  "ssrPaxMeals": [
+                    {
+                      "paxNumber": 10000,
+                      "ssrMealsLegs": []
+                    }
+                  ],
+                  "ssrPaxSeats": [
+                    {
+                      "paxNumber": 10000,
+                      "ssrSeatLegs": []
+                    }
+                  ],
+                  "ssrPaxBaggages": [
+                    {
+                      "paxNumber": 10000,
+                      "ssrBaggagesLegs": []
+                    }
+                  ],
+                  "ssrPaxMedicals": []
+                },
+                {
+                  "departureDateTime": "",
+                  "ssrPaxMeals": [
+                    {
+                      "paxNumber": 10000,
+                      "ssrMealsLegs": []
+                    }
+                  ],
+                  "ssrPaxSeats": [
+                    {
+                      "paxNumber": 10000,
+                      "ssrSeatLegs": []
+                    }
+                  ],
+                  "ssrPaxBaggages": [
+                    {
+                      "paxNumber": 10000,
+                      "ssrBaggagesLegs": []
+                    }
+                  ],
+                  "ssrPaxMedicals": []
+                }
+              ]
+            },
+            "markup": 0,
+            "fareExcludeSsr": 3610200,
+            "discount": 0
+          },
+          "promotionCode": {
+            "id": "",
+            "name": ""
+          },
+          "itineraries": [
+            {
+              "international": 1,
+              "originalCurrency": "IDR",
+              "originalFare": 1805100,
+              "originalAdultFare": 1805100,
+              "originalChildFare": 0,
+              "originalInfantFare": 0,
+              "adult": 1,
+              "child": 0,
+              "infant": 0,
+              "cabinClass": "ECONOMY",
+              "schedules": [
+                {
+                  "departureDate": "2027-03-01 17:10",
+                  "arrivalDate": "2027-03-01 20:00",
+                  "operatingAirline": {
+                    "code": "QG",
+                    "number": "526"
+                  },
+                  "departureTerminal": "2",
+                  "arrivalTerminal": "3",
+                  "fareBasisCodes": {
+                    "adult": "PNN00BS"
+                  },
+                  "fareClass": "P",
+                  "origin": "CGK",
+                  "destination": "SIN",
+                  "marketingAirline": "QG",
+                  "marketingFlightNumber": "526",
+                  "baggage": {
+                    "cabin": {
+                      "measurement": "Kg",
+                      "qty": 7,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 0,
+                      "validateBaggage": false
+                    }
+                  },
+                  "stopQuantity": "0",
+                  "aircraftType": "320",
+                  "marriageGroup": "O",
+                  "connectings": null
+                }
+              ],
+              "markupInfo": null,
+              "breakdownInfo": {
+                "originalAdult": {
+                  "psc": 0,
+                  "iwjr": 0,
+                  "discount": 0,
+                  "baseFare": 773000,
+                  "nta": 1805100,
+                  "commission": 0,
+                  "fare": 1805100,
+                  "tax": 1032100,
+                  "markup": 0,
+                  "privateMarkup": 0,
+                  "breakdownTaxes": [
+                    {
+                      "code": "D5",
+                      "currencyCode": "IDR",
+                      "amount": 88800
+                    },
+                    {
+                      "code": "L7",
+                      "currencyCode": "IDR",
+                      "amount": 75250
+                    },
+                    {
+                      "code": "OP",
+                      "currencyCode": "IDR",
+                      "amount": 55750
+                    },
+                    {
+                      "code": "SG",
+                      "currencyCode": "IDR",
+                      "amount": 323200
+                    },
+                    {
+                      "code": "YQF",
+                      "currencyCode": "IDR",
+                      "amount": 203300
+                    },
+                    {
+                      "code": "YQF",
+                      "currencyCode": "IDR",
+                      "amount": 215950
+                    },
+                    {
+                      "code": "YRI",
+                      "currencyCode": "IDR",
+                      "amount": 35000
+                    },
+                    {
+                      "code": "YRI",
+                      "currencyCode": "IDR",
+                      "amount": 34850
+                    }
+                  ]
+                },
+                "originalChild": {
+                  "psc": 0,
+                  "iwjr": 0,
+                  "discount": 0,
+                  "baseFare": 0,
+                  "nta": 0,
+                  "commission": 0,
+                  "fare": 0,
+                  "tax": 0,
+                  "markup": 0,
+                  "privateMarkup": 0,
+                  "breakdownTaxes": []
+                },
+                "originalInfant": {
+                  "psc": 0,
+                  "iwjr": 0,
+                  "discount": 0,
+                  "baseFare": 0,
+                  "nta": 0,
+                  "commission": 0,
+                  "fare": 0,
+                  "tax": 0,
+                  "markup": 0,
+                  "privateMarkup": 0,
+                  "breakdownTaxes": []
+                },
+                "originalBaggage": 0
+              }
+            },
+            {
+              "international": 1,
+              "originalCurrency": "IDR",
+              "originalFare": 1805100,
+              "originalAdultFare": 1805100,
+              "originalChildFare": 0,
+              "originalInfantFare": 0,
+              "adult": 1,
+              "child": 0,
+              "infant": 0,
+              "cabinClass": "ECONOMY",
+              "schedules": [
+                {
+                  "departureDate": "2027-03-04 10:10",
+                  "arrivalDate": "2027-03-04 11:05",
+                  "operatingAirline": {
+                    "code": "QG",
+                    "number": "523"
+                  },
+                  "departureTerminal": "3",
+                  "arrivalTerminal": "2",
+                  "fareBasisCodes": {
+                    "adult": "NNN00BS"
+                  },
+                  "fareClass": "N",
+                  "origin": "SIN",
+                  "destination": "CGK",
+                  "marketingAirline": "QG",
+                  "marketingFlightNumber": "523",
+                  "baggage": {
+                    "cabin": {
+                      "measurement": "Kg",
+                      "qty": 7,
+                      "validateBaggage": false
+                    },
+                    "checkIn": {
+                      "measurement": "Kg",
+                      "qty": 0,
+                      "validateBaggage": false
+                    }
+                  },
+                  "stopQuantity": "0",
+                  "aircraftType": "320",
+                  "marriageGroup": "O",
+                  "connectings": null
+                }
+              ],
+              "markupInfo": null,
+              "breakdownInfo": {
+                "originalAdult": {
+                  "psc": 0,
+                  "iwjr": 0,
+                  "discount": 0,
+                  "baseFare": 773000,
+                  "nta": 1805100,
+                  "commission": 0,
+                  "fare": 1805100,
+                  "tax": 1032100,
+                  "markup": 0,
+                  "privateMarkup": 0,
+                  "breakdownTaxes": [
+                    {
+                      "code": "D5",
+                      "currencyCode": "IDR",
+                      "amount": 88800
+                    },
+                    {
+                      "code": "L7",
+                      "currencyCode": "IDR",
+                      "amount": 75250
+                    },
+                    {
+                      "code": "OP",
+                      "currencyCode": "IDR",
+                      "amount": 55750
+                    },
+                    {
+                      "code": "SG",
+                      "currencyCode": "IDR",
+                      "amount": 323200
+                    },
+                    {
+                      "code": "YQF",
+                      "currencyCode": "IDR",
+                      "amount": 203300
+                    },
+                    {
+                      "code": "YQF",
+                      "currencyCode": "IDR",
+                      "amount": 215950
+                    },
+                    {
+                      "code": "YRI",
+                      "currencyCode": "IDR",
+                      "amount": 35000
+                    },
+                    {
+                      "code": "YRI",
+                      "currencyCode": "IDR",
+                      "amount": 34850
+                    }
+                  ]
+                },
+                "originalChild": {
+                  "psc": 0,
+                  "iwjr": 0,
+                  "discount": 0,
+                  "baseFare": 0,
+                  "nta": 0,
+                  "commission": 0,
+                  "fare": 0,
+                  "tax": 0,
+                  "markup": 0,
+                  "privateMarkup": 0,
+                  "breakdownTaxes": []
+                },
+                "originalInfant": {
+                  "psc": 0,
+                  "iwjr": 0,
+                  "discount": 0,
+                  "baseFare": 0,
+                  "nta": 0,
+                  "commission": 0,
+                  "fare": 0,
+                  "tax": 0,
+                  "markup": 0,
+                  "privateMarkup": 0,
+                  "breakdownTaxes": []
+                },
+                "originalBaggage": 0
+              }
+            }
+          ],
+          "passengerFareInfo": {
+            "originalAdult": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 1546000,
+              "nta": 3610200,
+              "commission": 0,
+              "fare": 3610200,
+              "tax": 2064200,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": [
+                {
+                  "code": "D5",
+                  "currencyCode": "IDR",
+                  "amount": 177600
+                },
+                {
+                  "code": "L7",
+                  "currencyCode": "IDR",
+                  "amount": 150500
+                },
+                {
+                  "code": "OP",
+                  "currencyCode": "IDR",
+                  "amount": 111500
+                },
+                {
+                  "code": "SG",
+                  "currencyCode": "IDR",
+                  "amount": 646400
+                },
+                {
+                  "code": "YQF",
+                  "currencyCode": "IDR",
+                  "amount": 838500
+                },
+                {
+                  "code": "YRI",
+                  "currencyCode": "IDR",
+                  "amount": 139700
+                }
+              ]
+            },
+            "originalChild": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 0,
+              "nta": 0,
+              "commission": 0,
+              "fare": 0,
+              "tax": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalInfant": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 0,
+              "nta": 0,
+              "commission": 0,
+              "fare": 0,
+              "tax": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalBaggage": 0
+          },
+          "additionalData": null
+        }
+      },
+      "serverTime": "2026-09-03T13:46:52.148834249+07:00"
+    },
+    "error": null
+  }
+}
