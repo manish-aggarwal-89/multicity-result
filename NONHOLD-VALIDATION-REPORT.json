@@ -1,0 +1,122 @@
+[
+  {
+    "case": "NONHOLD-MC3-1A",
+    "bookingCode": "KHVHGD",
+    "status": 200,
+    "segments": 3,
+    "pax": "1A0C0I",
+    "total_fare": 10043000,
+    "chain": "CGK->SIN->BKK->CGK",
+    "verdict": "VALID",
+    "issues": [],
+    "notes": []
+  },
+  {
+    "case": "NONHOLD-MC3-1A1C1I",
+    "bookingCode": "GZQ6JR",
+    "status": 200,
+    "segments": 3,
+    "pax": "1A1C1I",
+    "total_fare": 19005200,
+    "chain": "CGK->SIN->BKK->CGK",
+    "verdict": "VALID",
+    "issues": [],
+    "notes": []
+  },
+  {
+    "case": "NONHOLD-MC3-2A2C1I",
+    "bookingCode": "X8NJ3G",
+    "status": 200,
+    "segments": 3,
+    "pax": "2A2C1I",
+    "total_fare": 37181200,
+    "chain": "CGK->SIN->BKK->CGK",
+    "verdict": "VALID",
+    "issues": [],
+    "notes": []
+  },
+  {
+    "case": "NONHOLD-MC4-1A",
+    "bookingCode": "DHKVN5",
+    "status": 200,
+    "segments": 4,
+    "pax": "1A0C0I",
+    "total_fare": 64541200,
+    "chain": "CGK->SIN->BKK->KUL->CGK",
+    "verdict": "VALID",
+    "issues": [],
+    "notes": []
+  },
+  {
+    "case": "NONHOLD-MC4-1A1C1I",
+    "bookingCode": "TQI86U",
+    "status": 200,
+    "segments": 4,
+    "pax": "1A1C1I",
+    "total_fare": 119959600,
+    "chain": "CGK->SIN->BKK->KUL->CGK",
+    "verdict": "VALID",
+    "issues": [],
+    "notes": []
+  },
+  {
+    "case": "NONHOLD-MC4-2A2C1I",
+    "bookingCode": "9ZFKQJ",
+    "status": 200,
+    "segments": 4,
+    "pax": "2A2C1I",
+    "total_fare": 233730000,
+    "chain": "CGK->SIN->BKK->KUL->CGK",
+    "verdict": "VALID",
+    "issues": [],
+    "notes": []
+  },
+  {
+    "case": "NONHOLD-OW-1A",
+    "bookingCode": "Q8CXA8",
+    "status": 200,
+    "segments": 1,
+    "pax": "1A0C0I",
+    "total_fare": 1282200,
+    "chain": "CGK->SIN",
+    "verdict": "VALID",
+    "issues": [],
+    "notes": []
+  },
+  {
+    "case": "NONHOLD-OW-1A1C1I",
+    "bookingCode": "6HA9TX",
+    "status": 200,
+    "segments": 1,
+    "pax": "1A1C1I",
+    "total_fare": 3104000,
+    "chain": "CGK->SIN",
+    "verdict": "VALID",
+    "issues": [],
+    "notes": []
+  },
+  {
+    "case": "NONHOLD-RT-1A",
+    "bookingCode": "MQ7MDM",
+    "status": 200,
+    "segments": 2,
+    "pax": "1A0C0I",
+    "total_fare": 3610200,
+    "chain": "CGK->SIN->CGK",
+    "verdict": "VALID",
+    "issues": [],
+    "notes": []
+  },
+  {
+    "case": "NONHOLD-RT-1A1C1I",
+    "bookingCode": "2Z4YXB",
+    "status": 200,
+    "segments": 2,
+    "pax": "1A1C1I",
+    "total_fare": 8353600,
+    "chain": "CGK->SIN->CGK",
+    "verdict": "VALID",
+    "issues": [],
+    "notes": []
+  }
+]
