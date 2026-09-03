@@ -1,0 +1,3 @@
+# Decoded search dumps produced by decompress_search.py — derived from the
+# tracked *.json.gz.b64, so don't commit them (that's why they're compressed).
+**/*search.response.json
