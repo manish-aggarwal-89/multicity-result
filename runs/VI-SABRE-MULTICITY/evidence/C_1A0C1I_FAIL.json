@@ -1,0 +1,14 @@
+{
+  "run_dir": "/Users/manishaggarwal/Desktop/mcp-apis/sabre-gds-multicity/INFANT-MH-LOCAL/2026-09-03_16-56-03_f07007/",
+  "flightSelect": "SQ 957~SQ 710~MH 797~SQ 103|SQ 958",
+  "sabre_messages": [
+    {
+      "code": "ERR.SP.PROVIDER_ERROR",
+      "content": "Unable to perform air booking step"
+    },
+    {
+      "code": "WARN.SWS.HOST.ERROR_IN_RESPONSE",
+      "content": "EnhancedAirBookRQ: *NO FARES/RBD/CARRIER"
+    }
+  ]
+}

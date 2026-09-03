@@ -1,0 +1,18 @@
+{
+  "run_dir": "/Users/manishaggarwal/Desktop/mcp-apis/sabre-gds-multicity/INFANT-MH-LOCAL/2026-09-03_16-55-32_d5c1bc/",
+  "flightSelect": "SQ 955~SQ 710~MH 797~SQ 103|SQ 958",
+  "sabre_messages": [
+    {
+      "code": "WARN.SWS.HOST.ERROR_IN_RESPONSE",
+      "content": "SpecialServiceLLSRQ: .FRMT.NOT ENT BGNG WITH"
+    },
+    {
+      "code": "WARN.SWS.HOST.WARNING_RESPONSE",
+      "content": "EndTransactionLLSRQ: TTY REQ PEND"
+    },
+    {
+      "code": "WARN.SP.BUSINESS_WARNING",
+      "content": "After maximum number of attempts it was not possible to obtain airline record locator and/or validate post booking flight segment HK status"
+    }
+  ]
+}
