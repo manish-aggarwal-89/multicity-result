@@ -1,0 +1,503 @@
+local_runs/README.md
+  s_aee3fcb39128f5::t_24490f109fe1d5 1-35,61,64,66-67
+  s_aee3fcb39128f5::t_c769284d00d4f9 62-63,65
+  s_aee3fcb39128f5::t_5c9a4ef3bdf780 36-60
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-18-44_32b044/01_search.response.json.gz.b64
+  s_aee3fcb39128f5::t_45585388954b40 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-18-44_32b044/02_revalidate.response.json
+  s_aee3fcb39128f5::t_e13b3451013179 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-18-44_32b044/03_revalidate_itin_prp.response.json
+  s_aee3fcb39128f5::t_47fec331ee5bb9 1-721
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-18-44_32b044/04_booking.response.json
+  s_aee3fcb39128f5::t_ec6e2cb68709a3 1-522
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-18-44_32b044/ISSUANCE_RESULT.json
+  s_aee3fcb39128f5::t_649cef97ffe7f3 1-83
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-18-44_32b044/LOCAL-1A-2SEG_run.txt
+  s_aee3fcb39128f5::t_14fd3c899e9c86 1-49928
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-18-44_32b044/outbound/01_search.supplier_FindFare_response.json
+  s_aee3fcb39128f5::t_ba2459ac3d0d4f 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-18-44_32b044/outbound/02_revalidate.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_5458cdbaa824c7 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-18-44_32b044/outbound/02_revalidate.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_5f21b8fcc3b32d 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-18-44_32b044/outbound/02_revalidate.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_e7ff76d7cb9877 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-18-44_32b044/outbound/03_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_8d5f3b3b9037bf 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-18-44_32b044/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_c9ee099f8f7286 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-18-44_32b044/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_0ef1099ddaf5ac 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-18-44_32b044/outbound/04_booking.supplier_Book_request.json
+  s_aee3fcb39128f5::t_f4873c6e60085e 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-18-44_32b044/outbound/04_booking.supplier_Book_response.json
+  s_aee3fcb39128f5::t_e1eea91de4c7c9 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-18-44_32b044/outbound/04_booking.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_e3dd5e5c577aac 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-18-44_32b044/outbound/04_booking.supplier_GetAuthorization_response_2.json
+  s_aee3fcb39128f5::t_e4d971f6bd9dd9 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-18-44_32b044/outbound/04_booking.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_e8555f058477ee 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-18-44_32b044/outbound/04_booking.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_e7bdb219b11513 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-39-56_7f1bc5/01_search.response.json.gz.b64
+  s_aee3fcb39128f5::t_e7b25512650426 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-39-56_7f1bc5/02_revalidate.response.json
+  s_aee3fcb39128f5::t_f9a481d9a2c571 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-39-56_7f1bc5/03_revalidate_itin_prp.response.json
+  s_aee3fcb39128f5::t_9c62d0ed309a9e 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-39-56_7f1bc5/04_booking.response.json
+  s_aee3fcb39128f5::t_eb9b4f56ab7bc0 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-39-56_7f1bc5/ISSUANCE_CURL.sh
+  s_aee3fcb39128f5::t_cf2a4570a23221 1-12
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-39-56_7f1bc5/ISSUANCE_INFO.json
+  s_aee3fcb39128f5::t_9399820121d807 1-6
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-39-56_7f1bc5/ISSUANCE_RESULT.json
+  s_aee3fcb39128f5::t_0728ab54d30232 1-75
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-39-56_7f1bc5/LOCAL-1A-2SEG_run.txt
+  s_aee3fcb39128f5::t_1d774a53a9ba23 1-78362
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-39-56_7f1bc5/outbound/01_search.supplier_FindFare_request.json
+  s_aee3fcb39128f5::t_165e9df37674e9 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-39-56_7f1bc5/outbound/01_search.supplier_FindFare_response.json
+  s_aee3fcb39128f5::t_e2596028ea40eb 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-39-56_7f1bc5/outbound/02_revalidate.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_a77eaeaa0091ef 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-39-56_7f1bc5/outbound/02_revalidate.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_a230793238ca0f 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-39-56_7f1bc5/outbound/02_revalidate.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_f30e6e0e9c52f1 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-39-56_7f1bc5/outbound/03_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_9f2d82a3543e8c 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-39-56_7f1bc5/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_7a8de136082cf0 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-39-56_7f1bc5/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_4071dd99e48324 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-39-56_7f1bc5/outbound/04_booking.supplier_Book_request.json
+  s_aee3fcb39128f5::t_e76949bdfe5898 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-39-56_7f1bc5/outbound/04_booking.supplier_Book_response.json
+  s_aee3fcb39128f5::t_c84a89219fcd8d 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-39-56_7f1bc5/outbound/04_booking.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_823abb161516ca 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-39-56_7f1bc5/outbound/04_booking.supplier_GetAuthorization_response_2.json
+  s_aee3fcb39128f5::t_ca7c3330b5f60d 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-39-56_7f1bc5/outbound/04_booking.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_5901a11ce16e68 1
+local_runs/LOCAL-1A-2SEG/2026-09-04_12-39-56_7f1bc5/outbound/04_booking.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_68e191703ea1d7 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/01_search.response.json.gz.b64
+  s_aee3fcb39128f5::t_ba3188741d748c 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/02_revalidate.response.json
+  s_aee3fcb39128f5::t_3acd93ca8bcfeb 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/03_revalidate_itin_prp.response.json
+  s_aee3fcb39128f5::t_d97f109e8eadab 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/04_booking.response.json
+  s_aee3fcb39128f5::t_587cec50324f5a 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/05_revalidate.response.json
+  s_aee3fcb39128f5::t_00e93240a88a73 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/06_revalidate_itin_prp.response.json
+  s_aee3fcb39128f5::t_e3449e934c7652 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/07_booking.response.json
+  s_aee3fcb39128f5::t_0907b56f694a0f 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/08_revalidate.response.json
+  s_aee3fcb39128f5::t_f742c804a8f342 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/09_revalidate_itin_prp.response.json
+  s_aee3fcb39128f5::t_41e1901e808928 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/ISSUANCE_CURL.sh
+  s_aee3fcb39128f5::t_ea68b49f373308 1-12
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/ISSUANCE_INFO.json
+  s_aee3fcb39128f5::t_43ef2c1e3ffc0a 1-6
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/LOCAL-1A-3SEG_run.txt
+  s_aee3fcb39128f5::t_55b6f1b4752431 1-34306
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/01_search.supplier_FindFare_request.json
+  s_aee3fcb39128f5::t_6b15ecf12bc5cb 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/01_search.supplier_FindFare_request_2.json
+  s_aee3fcb39128f5::t_aef31c704023a5 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/01_search.supplier_FindFare_response.json
+  s_aee3fcb39128f5::t_af3fd6bebe0dbb 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/01_search.supplier_FindFare_response_2.json
+  s_aee3fcb39128f5::t_a58cf745c4a1f8 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/01_search.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_d304ab00ab61ac 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/02_revalidate.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_c714950e3273a3 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/02_revalidate.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_c62ff0f7907440 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/02_revalidate.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_c3d66e0b08c29b 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/03_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_392f6d75dd0150 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_5ceb05d826ea77 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_ccd5ace1eaf1fe 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/04_booking.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_70982655f9f50f 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/04_booking.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_b3acf4c1910f1e 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/04_booking.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_0328ed62cf4947 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/05_revalidate.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_7f2ffab62d37e9 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/05_revalidate.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_db72efc692050a 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/05_revalidate.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_832d73b8c1b38b 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/06_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_a040aa79529d6e 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/06_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_de4dca8ff61183 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/06_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_b9760b22515ee4 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/07_booking.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_e403dcd7482f59 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/07_booking.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_c1a1ab030b6e23 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/07_booking.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_8dcc0030bef6ef 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/08_revalidate.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_33d89e12d6b2bb 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/08_revalidate.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_7f885206abcd42 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/08_revalidate.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_dba732482b4b5d 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/09_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_451a8ca0ba2e87 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/09_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_70a09d8ea271ee 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/09_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_062a093e14e5ec 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/10_booking.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_65a4efbff02275 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/10_booking.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_782c0968a33678 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/10_booking.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_72a3eb09f4203b 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/11_revalidate.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_c3188871aa07e5 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/11_revalidate.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_334852d8a41ead 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/11_revalidate.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_00a53bb158e067 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/12_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_46e17c75c4b53b 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/12_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_db19a1339d896c 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/12_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_1c812d99b4caef 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/13_booking.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_cc0ceb61fd7c03 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/13_booking.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_34f01812cc7291 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-03-10_d31840/outbound/13_booking.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_9dcf4561872b35 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-06-49_1fad84/01_search.response.json.gz.b64
+  s_aee3fcb39128f5::t_ae6b30629914d9 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-06-49_1fad84/02_revalidate.response.json
+  s_aee3fcb39128f5::t_d390c2c64e118d 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-06-49_1fad84/03_revalidate_itin_prp.response.json
+  s_aee3fcb39128f5::t_494258ec3b5eed 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-06-49_1fad84/04_booking.response.json
+  s_aee3fcb39128f5::t_05db13ff514412 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-06-49_1fad84/ISSUANCE_CURL.sh
+  s_aee3fcb39128f5::t_a296dfc42cc012 1-12
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-06-49_1fad84/ISSUANCE_INFO.json
+  s_aee3fcb39128f5::t_39f676c9c64e92 1-6
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-06-49_1fad84/LOCAL-1A-3SEG_run.txt
+  s_aee3fcb39128f5::t_aa64fe40a1a7a0 1-34306
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-06-49_1fad84/outbound/01_search.supplier_FindFare_request.json
+  s_aee3fcb39128f5::t_5493efae71b06b 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-06-49_1fad84/outbound/01_search.supplier_FindFare_response.json
+  s_aee3fcb39128f5::t_66614711f80c46 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-06-49_1fad84/outbound/02_revalidate.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_d7958c53c5b9b6 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-06-49_1fad84/outbound/02_revalidate.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_196c2f510f0e68 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-06-49_1fad84/outbound/02_revalidate.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_c8857ed40d4a16 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-06-49_1fad84/outbound/03_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_d192263ca9118c 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-06-49_1fad84/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_745c8b99d53991 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-06-49_1fad84/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_d9588d20a67772 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-06-49_1fad84/outbound/04_booking.supplier_Book_request.json
+  s_aee3fcb39128f5::t_b4d0c193102771 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-06-49_1fad84/outbound/04_booking.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_a41086c782ed07 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-06-49_1fad84/outbound/04_booking.supplier_GetAuthorization_response_2.json
+  s_aee3fcb39128f5::t_3f1e3ec4dde98c 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-06-49_1fad84/outbound/04_booking.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_611b58528af2ef 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-06-49_1fad84/outbound/04_booking.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_04ed0378a00802 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-14-33_596934/01_search.response.json.gz.b64
+  s_aee3fcb39128f5::t_bb5a25df86db79 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-14-33_596934/ISSUANCE_CURL.sh
+  s_aee3fcb39128f5::t_5bc69f9f90c793 1-3
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-14-33_596934/ISSUANCE_INFO.json
+  s_aee3fcb39128f5::t_d9139e09403461 1-6
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-14-33_596934/LOCAL-1A-3SEG_run.txt
+  s_aee3fcb39128f5::t_a03186a10ebd39 1-126
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-16-30_0994f5/01_search.response.json.gz.b64
+  s_aee3fcb39128f5::t_7f460b37680222 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-16-30_0994f5/02_revalidate.response.json
+  s_aee3fcb39128f5::t_3cb2545aa5bba4 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-16-30_0994f5/03_revalidate_itin_prp.response.json
+  s_aee3fcb39128f5::t_b5f51902dac294 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-16-30_0994f5/04_booking.response.json
+  s_aee3fcb39128f5::t_09c7573eae5f97 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-16-30_0994f5/ISSUANCE_INFO.json
+  s_aee3fcb39128f5::t_e99bc86ce22882 1-6
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-16-30_0994f5/LOCAL-1A-3SEG_run.txt
+  s_aee3fcb39128f5::t_82af84b8b2a257 1-34900
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-16-30_0994f5/outbound/01_search.supplier_FindFare_request.json
+  s_aee3fcb39128f5::t_825ce8e4fd5327 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-16-30_0994f5/outbound/01_search.supplier_FindFare_response.json
+  s_aee3fcb39128f5::t_16a2c1c0c52a0d 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-16-30_0994f5/outbound/02_revalidate.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_424e61afe1fb77 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-16-30_0994f5/outbound/02_revalidate.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_ee78608b69c0da 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-16-30_0994f5/outbound/02_revalidate.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_373a4722225a7a 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-16-30_0994f5/outbound/03_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_bdc3d10d3e1185 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-16-30_0994f5/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_dfee60f906ab8d 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-16-30_0994f5/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_8940398b677d32 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-16-30_0994f5/outbound/04_booking.supplier_Book_request.json
+  s_aee3fcb39128f5::t_4c299356acb6b9 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-16-30_0994f5/outbound/04_booking.supplier_Book_response.json
+  s_aee3fcb39128f5::t_b2ccd7a954346b 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-16-30_0994f5/outbound/04_booking.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_b09f7f8904ef9d 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-16-30_0994f5/outbound/04_booking.supplier_GetAuthorization_response_2.json
+  s_aee3fcb39128f5::t_232e5fa5dcba75 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-16-30_0994f5/outbound/04_booking.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_1fc8a07a44cb91 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-16-30_0994f5/outbound/04_booking.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_f84075d04e7b5d 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-40-51_413e3b/01_search.response.json.gz.b64
+  s_aee3fcb39128f5::t_4ba389214b574a 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-40-51_413e3b/02_revalidate.response.json
+  s_aee3fcb39128f5::t_97386ce07945dc 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-40-51_413e3b/03_revalidate_itin_prp.response.json
+  s_aee3fcb39128f5::t_7ac6e7b1c7d553 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-40-51_413e3b/04_booking.response.json
+  s_aee3fcb39128f5::t_dac4ea36dfc442 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-40-51_413e3b/ISSUANCE_CURL.sh
+  s_aee3fcb39128f5::t_b32cef65446c33 1-12
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-40-51_413e3b/ISSUANCE_INFO.json
+  s_aee3fcb39128f5::t_b6cb943cc39d6d 1-6
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-40-51_413e3b/ISSUANCE_RESULT.json
+  s_aee3fcb39128f5::t_abedd98514ae21 1-83
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-40-51_413e3b/LOCAL-1A-3SEG_run.txt
+  s_aee3fcb39128f5::t_866c3330e1ea99 1-34350
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-40-51_413e3b/outbound/01_search.supplier_FindFare_request.json
+  s_aee3fcb39128f5::t_7957d6c7d58f0e 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-40-51_413e3b/outbound/01_search.supplier_FindFare_response.json
+  s_aee3fcb39128f5::t_7fe7716b484f67 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-40-51_413e3b/outbound/02_revalidate.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_b68ca7f8792652 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-40-51_413e3b/outbound/02_revalidate.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_e254126c383c20 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-40-51_413e3b/outbound/02_revalidate.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_1acff886affdec 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-40-51_413e3b/outbound/03_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_a037e417ed8c0b 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-40-51_413e3b/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_33a3ef97470699 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-40-51_413e3b/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_5b68326baaf204 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-40-51_413e3b/outbound/04_booking.supplier_Book_request.json
+  s_aee3fcb39128f5::t_2b4016e10a5e6f 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-40-51_413e3b/outbound/04_booking.supplier_Book_response.json
+  s_aee3fcb39128f5::t_2db63e4ef929d9 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-40-51_413e3b/outbound/04_booking.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_c1e87e3c618800 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-40-51_413e3b/outbound/04_booking.supplier_GetAuthorization_response_2.json
+  s_aee3fcb39128f5::t_f95bb4305efda3 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-40-51_413e3b/outbound/04_booking.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_47f288c357ea5b 1
+local_runs/LOCAL-1A-3SEG/2026-09-04_12-40-51_413e3b/outbound/04_booking.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_5d6cb48eeb3f72 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/01_search.response.json.gz.b64
+  s_aee3fcb39128f5::t_f353b51372b1ff 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/02_revalidate.response.json
+  s_aee3fcb39128f5::t_61028928c76e10 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/03_revalidate_itin_prp.response.json
+  s_aee3fcb39128f5::t_a1274c862d8ed7 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/04_booking.response.json
+  s_aee3fcb39128f5::t_c9a5f7a1efea2f 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/05_revalidate.response.json
+  s_aee3fcb39128f5::t_978eb22a2fe4d4 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/06_revalidate_itin_prp.response.json
+  s_aee3fcb39128f5::t_699d31040c6cf6 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/07_booking.response.json
+  s_aee3fcb39128f5::t_3c7560f290c812 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/08_revalidate.response.json
+  s_aee3fcb39128f5::t_063b3ce1fb1c52 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/09_revalidate_itin_prp.response.json
+  s_aee3fcb39128f5::t_10738f13f64e4e 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/ISSUANCE_CURL.sh
+  s_aee3fcb39128f5::t_5f04e39064e5ed 1-12
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/ISSUANCE_INFO.json
+  s_aee3fcb39128f5::t_a3c8aaafc2b890 1-6
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/ISSUANCE_RESULT.json
+  s_aee3fcb39128f5::t_07312519b605a1 1-91
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/LOCAL-1A-4SEG_run.txt
+  s_aee3fcb39128f5::t_8bebcca6c6572f 1-58459
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/01_search.supplier_FindFare_request.json
+  s_aee3fcb39128f5::t_387a7727a3d43f 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/01_search.supplier_FindFare_response.json
+  s_aee3fcb39128f5::t_72d7649c9fe4f5 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/02_revalidate.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_2b2d1c0461710d 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/02_revalidate.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_424667e83280fe 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/02_revalidate.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_4fef7bb08d1653 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/03_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_53299a5bfe505e 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_0edabbf57e7e3d 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_c064a128cd6d80 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/04_booking.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_e6600fe7794555 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/04_booking.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_507776b7979668 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/04_booking.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_3bf8abdeafd95c 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/05_revalidate.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_08d25df05e9e85 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/05_revalidate.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_c82702d62f1997 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/05_revalidate.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_63e31cb466b8f2 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/06_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_d2ac44be465024 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/06_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_cdeae0bd72c621 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/06_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_a5d45f949a665d 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/07_booking.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_32edd9687682df 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/07_booking.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_40cd2b4219b057 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/07_booking.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_5bb9a51a90b072 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/08_revalidate.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_0e1dee6c1c090e 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/08_revalidate.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_62d3d1a2c43af0 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/08_revalidate.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_55c076fa84adc7 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/09_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_1be99100e0e7c9 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/09_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_1e1e9f082787c4 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/09_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_f4563b5b6a8ded 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/10_booking.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_a44e56ea07f13e 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/10_booking.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_d7a73af8a3ac89 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/10_booking.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_fdab1d36f79e3f 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/11_revalidate.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_51f3785a5871af 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/11_revalidate.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_c707b690b183dd 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/11_revalidate.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_87200ebc70157f 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/12_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_111ad8f9679c24 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/12_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_9d260b76b21b28 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/12_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_b2163b9a0a93c0 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/13_booking.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_cb446326792587 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/13_booking.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_35c8e6c30da533 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/13_booking.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_fbbd6551512562 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/14_revalidate.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_854da52a9ab83c 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/14_revalidate.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_c86fee556e3ecb 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/14_revalidate.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_a915aa8d2584a9 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/15_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_a1cb9277ebca08 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/15_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_97a70740fd665e 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/15_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_ada818c6e1431c 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/16_booking.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_6ee1edd907ea56 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/16_booking.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_ea58f286f51781 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/16_booking.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_88501c22b9753f 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/17_revalidate.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_c98ace9be896d4 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/17_revalidate.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_6869bf28714282 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/17_revalidate.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_e33652fd0c3afc 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/18_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_942d8d7b293aae 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/18_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_6210294810041c 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/18_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_9e3036f0dd553a 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/19_booking.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_b82f78336553e5 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/19_booking.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_095b7efc6f6f75 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/19_booking.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_614dfc6258005e 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/20_revalidate.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_8b2ce77a176edf 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/20_revalidate.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_4ee59812069894 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/20_revalidate.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_30ea6dd186205a 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/21_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_36c2d9cd40164c 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/21_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_ca40d8bc06c9a4 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/21_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_23eb106674c398 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/22_booking.supplier_Book_request.json
+  s_aee3fcb39128f5::t_9bc560c2e11efc 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/22_booking.supplier_Book_response.json
+  s_aee3fcb39128f5::t_f56d47df7a80dd 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/22_booking.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_dda4063d1de65e 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/22_booking.supplier_GetAuthorization_response_2.json
+  s_aee3fcb39128f5::t_d43ace1db2b074 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/22_booking.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_c98ef2e0334dce 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-41-49_6c553a/outbound/22_booking.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_c165037421edaa 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "047bac2fa87f8b27583bb0095f857b169214faa8",
+  "prompts": {},
+  "sessions": {
+    "s_aee3fcb39128f5": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "a5da34fa-e97a-45a6-8af7-4bbe32899467",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "manish-aggarwal-89 <manish.aggarwal@tiket.com>"
+    }
+  }
+}
