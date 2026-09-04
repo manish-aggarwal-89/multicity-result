@@ -225,7 +225,8 @@ def search_options(resp: dict) -> list[dict]:
         if isinstance(blk, list):
             for o in blk:
                 if isinstance(o, dict) and o.get("fares"):
-                    opts.append({"avail": _avail(o), "fares": o["fares"]})
+                    opts.append({"avail": _avail(o), "fares": o["fares"],
+                                 "otherFares": o.get("otherFares") or []})
     return opts
 
 
@@ -234,7 +235,8 @@ def revalidate_option(resp: dict) -> dict | None:
     for key in ("multiCities", "departureFlight", "returnFlight", "roundTripCombine"):
         blk = mf.get(key)
         if isinstance(blk, dict) and blk.get("fares"):
-            return {"avail": _avail(blk), "fares": blk["fares"]}
+            return {"avail": _avail(blk), "fares": blk["fares"],
+                    "otherFares": blk.get("otherFares") or []}
     return None
 
 
@@ -318,9 +320,27 @@ def _tax_breakdown_issues(tag: str, fare: dict) -> list[str]:
     return out
 
 
+_PIECE = {"pc", "pcs", "piece", "pieces"}
+
+
 def _checkin(seg_baggage: dict) -> tuple:
+    """(amount, unit) of the checked allowance, normalised for comparison.
+
+    The two shapes differ: weight is {"measurement":"Kg","qty":30} but a piece
+    allowance is {"unit":"2","measurement":"Pc","qty":0} — the count lives in
+    `unit`. Reading qty alone made every piece-based fare (branded GA/CX fares
+    are piece-based) look like a 0-bag booking. Unit spellings are folded too,
+    since Sabre says "piece" where the integrator says "Pc"."""
     b = (seg_baggage or {}).get("checkIn") or {}
-    return (_num(b.get("qty")), str(b.get("measurement") or "").lower())
+    unit = str(b.get("measurement") or "").lower()
+    amount = _num(b.get("qty"))
+    if unit in _PIECE:
+        unit = "piece"
+        if not amount:
+            # `unit` is the piece count and arrives as a string ("2")
+            raw = str(b.get("unit") or "").strip()
+            amount = int(raw) if raw.isdigit() else 0
+    return (amount, unit)
 
 
 def _seg_key(airline, flightno, origin, dest) -> tuple:
@@ -398,7 +418,42 @@ def _booking_fare_meta(bd: dict) -> tuple[set, set]:
                 classes.add(str(s.get("fareClass")).upper())
     for b in _walk_strings(bd, {"fareBasisCode", "fareBasis"}):
         bases.add(b.upper())
+    # bookDetail schedules carry the per-pax object `fareBasisCodes`
+    # {adult,child,infant}, which the string walk above cannot see — without this
+    # the booked fare basis reads as empty and every basis comparison involving
+    # booking silently passes.
+    for it in bd.get("itineraries") or []:
+        for s in (it or {}).get("schedules") or []:
+            for v in ((s or {}).get("fareBasisCodes") or {}).values():
+                if isinstance(v, str) and v.strip():
+                    bases.add(v.strip().upper())
     return classes, bases
+
+
+def _sold_fare(opt: dict, booked_bases: set) -> dict:
+    """The fare in this option that the booking actually sold.
+
+    A multiFare search/revalidate returns the regular fare in `fares[0]` and the
+    branded alternatives in `otherFares[]`. Comparing fares[0] across stages then
+    reads a deliberate brand upsell as fare drift, so pick the fare whose fare
+    basis codes match what was booked. Without a booking to anchor on (or with no
+    otherFares at all) this is just fares[0], as before."""
+    fares = [f for f in (opt.get("fares") or []) if isinstance(f, dict)]
+    others = [f for f in (opt.get("otherFares") or []) if isinstance(f, dict)]
+    if not fares:
+        return {}
+    if not others or not booked_bases:
+        return fares[0]
+    # Exact set match wins over overlap: one brand can appear at several class
+    # combinations, and a superset (e.g. {NL6MID, HL1MID} against a booked
+    # {NL6MID}) overlaps just as well while being a different fare.
+    best, best_score = fares[0], (-1, -1)
+    for f in fares + others:
+        bases = _stage_fare_meta(opt.get("avail") or [], f)[1]
+        score = (1 if bases == booked_bases else 0, len(bases & booked_bases))
+        if score > best_score:
+            best, best_score = f, score
+    return best
 
 
 def _cross_stage_diffs(chain: list) -> tuple[list[str], list[str]]:
@@ -822,6 +877,11 @@ def process_run(run_dir: str, root: str) -> tuple[bool, str]:
     chain: list[tuple] = []
     chosen = None
 
+    # What was booked anchors which fare each earlier stage is compared on, so it
+    # has to be read before the chain is built (see _sold_fare).
+    bd = (booking.get("data") or {}).get("bookDetail") or {} if booking else {}
+    bk_cls, bk_bas = _booking_fare_meta(bd) if booking else (set(), set())
+
     if search:
         opts = search_options(search)
         if ref_sig:
@@ -832,21 +892,21 @@ def process_run(run_dir: str, root: str) -> tuple[bool, str]:
         if chosen is None and len(opts) == 1:
             chosen = opts[0]
         if chosen is not None:
-            issues += _tax_breakdown_issues("search", chosen["fares"][0])
-            sc_cls, sc_bas = _stage_fare_meta(chosen["avail"], chosen["fares"][0])
-            chain.append(("search", _per_single_from_fare(chosen["fares"][0]), sc_cls, sc_bas))
+            sf = _sold_fare(chosen, bk_bas)
+            issues += _tax_breakdown_issues("search", sf)
+            sc_cls, sc_bas = _stage_fare_meta(chosen["avail"], sf)
+            chain.append(("search", _per_single_from_fare(sf), sc_cls, sc_bas))
         elif reval_opts or booking:
             notes.append("could not match chosen itinerary to a search option (search->next skipped)")
 
     for n, o in reval_opts:
         label = "revalidate_itin_prp" if "itin_prp" in n else "revalidate"
-        issues += _tax_breakdown_issues(label, o["fares"][0])
-        rc_cls, rc_bas = _stage_fare_meta(o["avail"], o["fares"][0])
-        chain.append((label, _per_single_from_fare(o["fares"][0]), rc_cls, rc_bas))
+        rf = _sold_fare(o, bk_bas)
+        issues += _tax_breakdown_issues(label, rf)
+        rc_cls, rc_bas = _stage_fare_meta(o["avail"], rf)
+        chain.append((label, _per_single_from_fare(rf), rc_cls, rc_bas))
 
-    bd = (booking.get("data") or {}).get("bookDetail") or {} if booking else {}
     if booking:
-        bk_cls, bk_bas = _booking_fare_meta(bd)
         chain.append(("booking", _per_single_from_booking(bd), bk_cls, bk_bas))
 
     chain_issues, chain_warnings = _cross_stage_diffs(chain)
@@ -856,9 +916,9 @@ def process_run(run_dir: str, root: str) -> tuple[bool, str]:
     # per-segment baggage. search->booking may legitimately differ (cached search /
     # sold-out reprice) -> warning; revalidate->booking is authoritative -> fail.
     if chosen is not None and booking:
-        warnings += _baggage_issues(chosen["fares"][0], bd, "search")
+        warnings += _baggage_issues(_sold_fare(chosen, bk_bas), bd, "search")
     if reval_opts and booking:
-        issues += _baggage_issues(reval_opts[-1][1]["fares"][0], bd, "revalidate")
+        issues += _baggage_issues(_sold_fare(reval_opts[-1][1], bk_bas), bd, "revalidate")
 
     # outbound Sabre request/response checks (when run_dir/outbound/ exists)
     issues += validate_outbound(run_dir, booking, revals, bd)
@@ -1074,6 +1134,10 @@ def _self_check() -> None:
         {"itineraries": [{"schedules": [{"fareClass": "M", "fareBasisCode": "M13IAOL"}]}]}
     )
     assert bfc == {"M"} and bfb == {"M13IAOL"}, "booking meta must pull fareClass and fareBasis"
+    # the real bookDetail shape: per-pax fareBasisCodes object, not a bare string
+    _, bfb2 = _booking_fare_meta({"itineraries": [{"schedules": [
+        {"fareClass": "E", "fareBasisCodes": {"adult": "E11IAOL", "child": "E11IAOL", "infant": "E11IAOL"}}]}]})
+    assert bfb2 == {"E11IAOL"}, f"booking meta must read fareBasisCodes object, got {bfb2}"
 
     # severity routing: search may drift (warning); revalidate!=booking is a failure
     zero = {t: {"total": 0, "base": 0, "tax": 0} for t in PTYPES}
@@ -1095,6 +1159,26 @@ def _self_check() -> None:
         ("booking", r_fare, {"M"}, {"M13IAOL"}),
     ])
     assert ci3 == [] and cw3 == [], "revalidate==booking (fare + class + basis) must be clean"
+
+    # multifare: the stage fare compared must be the branded one that was booked,
+    # not fares[0] — otherwise a brand upsell reads as fare drift on every stage.
+    _base = {"originalAdultFare": {"fareClasses": ["M"], "fareBasisCodes": ["M13IAOL"]}}
+    _brand = {"originalAdultFare": {"fareClasses": ["E"], "fareBasisCodes": ["E11IAOL"]}}
+    _opt = {"avail": [], "fares": [_base], "otherFares": [_brand]}
+    assert _sold_fare(_opt, {"E11IAOL"}) is _brand, "must compare the branded fare that was booked"
+    assert _sold_fare(_opt, {"M13IAOL"}) is _base, "booking the base fare must still compare the base fare"
+    assert _sold_fare(_opt, set()) is _base, "no booking to anchor on -> fares[0]"
+    assert _sold_fare({"avail": [], "fares": [_base]}, {"E11IAOL"}) is _base, "no otherFares -> fares[0]"
+    # a superset of the booked basis overlaps equally but is a different fare
+    _mixed = {"originalAdultFare": {"fareBasisCodes": ["NL6MID", "HL1MID"]}}
+    _asked = {"originalAdultFare": {"fareBasisCodes": ["NL6MID"]}}
+    assert _sold_fare({"avail": [], "fares": [_mixed], "otherFares": [_asked]}, {"NL6MID"}) is _asked, \
+        "exact fare-basis match must beat a partial overlap"
+
+    # piece allowances carry the count in `unit`, weight allowances in `qty`
+    assert _checkin({"checkIn": {"unit": "2", "measurement": "Pc", "qty": 0}}) == (2, "piece")
+    assert _checkin({"checkIn": {"measurement": "Kg", "qty": 30}}) == (30, "kg")
+    assert _checkin({"checkIn": {"unit": "1", "measurement": "piece", "qty": 1}}) == (1, "piece")
 
     assert _parse_sabre_baggage("KG010") == (10, "kg")
     assert _parse_sabre_baggage("NONIL") == (0, "kg")

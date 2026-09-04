@@ -1,0 +1,449 @@
+{
+  "CreatePassengerNameRecordRS": {
+    "ApplicationResults": {
+      "status": "Incomplete",
+      "Error": [
+        {
+          "type": "Application",
+          "timeStamp": "2026-09-03T12:53:38.923Z",
+          "SystemSpecificResults": [
+            {
+              "Message": [
+                {
+                  "code": "ERR.SP.PROVIDER_ERROR",
+                  "content": "Unable to perform air booking step"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "Warning": [
+        {
+          "type": "Validation",
+          "timeStamp": "2026-09-03T12:53:38.923Z",
+          "SystemSpecificResults": [
+            {
+              "Message": [
+                {
+                  "code": "WARN.SWS.CLIENT.VALIDATION_FAILED",
+                  "content": "EnhancedAirBookRQ: Brand@RPH must be combined with SegmentSelect@RPH"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "AirBook": {
+      "OriginDestinationOption": {
+        "FlightSegment": [
+          {
+            "ArrivalDateTime": "03-02T12:15",
+            "DepartureDateTime": "03-02T09:00",
+            "eTicket": true,
+            "FlightNumber": "0399",
+            "NumberInParty": "002",
+            "ResBookDesigCode": "V",
+            "Status": "NN",
+            "DestinationLocation": {
+              "LocationCode": "KUL"
+            },
+            "MarketingAirline": {
+              "Code": "OD",
+              "FlightNumber": "0399"
+            },
+            "OriginLocation": {
+              "LocationCode": "CGK"
+            }
+          },
+          {
+            "ArrivalDateTime": "03-02T16:00",
+            "DepartureDateTime": "03-02T15:00",
+            "eTicket": true,
+            "FlightNumber": "0807",
+            "NumberInParty": "002",
+            "ResBookDesigCode": "T",
+            "Status": "NN",
+            "DestinationLocation": {
+              "LocationCode": "SIN"
+            },
+            "MarketingAirline": {
+              "Code": "OD",
+              "FlightNumber": "0807"
+            },
+            "OriginLocation": {
+              "LocationCode": "KUL"
+            }
+          }
+        ]
+      }
+    },
+    "TravelItineraryRead": {
+      "TravelItinerary": {
+        "CustomerInfo": {
+          "ContactNumbers": {
+            "ContactNumber": [
+              {
+                "LocationCode": "JKT",
+                "Phone": "917042190130-C-1.1",
+                "RPH": "001",
+                "Id": "11"
+              },
+              {
+                "LocationCode": "JKT",
+                "Phone": "622150881045-A",
+                "RPH": "002",
+                "Id": "12"
+              }
+            ]
+          },
+          "PersonName": [
+            {
+              "WithInfant": "false",
+              "NameNumber": "01.01",
+              "NameReference": "ADT",
+              "PassengerType": "ADT",
+              "RPH": "1",
+              "elementId": "pnr-3.1",
+              "Email": [
+                {
+                  "Id": "10",
+                  "content": "MANISH.AGGARWAL@TIKET.COM"
+                }
+              ],
+              "GivenName": "MANISH MR",
+              "Surname": "AGGARWAL"
+            },
+            {
+              "WithInfant": "false",
+              "NameNumber": "02.01",
+              "NameReference": "C05",
+              "PassengerType": "CNN",
+              "RPH": "2",
+              "elementId": "pnr-5.2",
+              "GivenName": "AKASH MSTR",
+              "Surname": "KUMAR"
+            },
+            {
+              "WithInfant": "true",
+              "NameNumber": "03.01",
+              "NameReference": "I15",
+              "PassengerType": "INF",
+              "RPH": "3",
+              "elementId": "pnr-7.3",
+              "GivenName": "KRISHNA MSTR",
+              "Surname": "AGGARWAL"
+            }
+          ]
+        },
+        "ItineraryInfo": {
+          "ReservationItems": {
+            "Item": [
+              {
+                "RPH": "1",
+                "FlightSegment": [
+                  {
+                    "AirMilesFlown": "0707",
+                    "ArrivalDateTime": "03-02T12:15",
+                    "DayOfWeekInd": "2",
+                    "DepartureDateTime": "2027-03-02T09:00",
+                    "ElapsedTime": "02.15",
+                    "eTicket": true,
+                    "FlightNumber": "0399",
+                    "NumberInParty": "02",
+                    "ResBookDesigCode": "V",
+                    "SegmentNumber": "0001",
+                    "SmokingAllowed": false,
+                    "SpecialMeal": false,
+                    "Status": "SS",
+                    "StopQuantity": "00",
+                    "IsPast": false,
+                    "CodeShare": false,
+                    "Id": "13",
+                    "DestinationLocation": {
+                      "LocationCode": "KUL",
+                      "Terminal": "TERMINAL 1",
+                      "TerminalCode": "1"
+                    },
+                    "Equipment": {
+                      "AirEquipType": "738"
+                    },
+                    "MarketingAirline": {
+                      "Code": "OD",
+                      "FlightNumber": "0399",
+                      "ResBookDesigCode": "V",
+                      "Banner": "MARKETED BY BATIK AIR MALAYSIA"
+                    },
+                    "OperatingAirline": [
+                      {
+                        "Code": "OD",
+                        "FlightNumber": "0399",
+                        "ResBookDesigCode": "V",
+                        "Banner": "OPERATED BY BATIK AIR MALAYSIA"
+                      }
+                    ],
+                    "OperatingAirlinePricing": {
+                      "Code": "OD"
+                    },
+                    "DisclosureCarrier": {
+                      "Code": "OD",
+                      "DOT": false,
+                      "Banner": "BATIK AIR MALAYSIA"
+                    },
+                    "OriginLocation": {
+                      "LocationCode": "CGK",
+                      "Terminal": "TERMINAL 2",
+                      "TerminalCode": "2"
+                    },
+                    "SupplierRef": {
+                      "ID": "DCOD"
+                    },
+                    "UpdatedArrivalTime": "03-02T12:15",
+                    "UpdatedDepartureTime": "03-02T09:00",
+                    "Cabin": {
+                      "Code": "Y",
+                      "SabreCode": "Y",
+                      "Name": "ECONOMY",
+                      "ShortName": "ECONOMY",
+                      "Lang": "EN"
+                    }
+                  }
+                ],
+                "Product": {
+                  "ProductDetails": {
+                    "productCategory": "AIR",
+                    "ProductName": {
+                      "type": "AIR",
+                      "content": ""
+                    },
+                    "Air": {
+                      "sequence": 1,
+                      "segmentAssociationId": 2,
+                      "DepartureAirport": "CGK",
+                      "DepartureTerminalName": "TERMINAL 2",
+                      "DepartureTerminalCode": "2",
+                      "ArrivalAirport": "KUL",
+                      "ArrivalTerminalName": "TERMINAL 1",
+                      "ArrivalTerminalCode": "1",
+                      "EquipmentType": "738",
+                      "MarketingAirlineCode": "OD",
+                      "MarketingFlightNumber": "399",
+                      "MarketingClassOfService": "V",
+                      "Cabin": {
+                        "code": "Y",
+                        "sabreCode": "Y",
+                        "name": "ECONOMY",
+                        "shortName": "ECONOMY",
+                        "lang": "EN"
+                      },
+                      "ElapsedTime": 135,
+                      "AirMilesFlown": 707,
+                      "FunnelFlight": false,
+                      "ChangeOfGauge": false,
+                      "DisclosureCarrier": {
+                        "Code": "OD",
+                        "DOT": false,
+                        "Banner": "BATIK AIR MALAYSIA"
+                      },
+                      "AirlineRefId": "DCOD",
+                      "Eticket": true,
+                      "DepartureDateTime": "2027-03-02T09:00:00",
+                      "ArrivalDateTime": "2027-03-02T12:15:00",
+                      "FlightNumber": "399",
+                      "ClassOfService": "V",
+                      "ActionCode": "SS",
+                      "NumberInParty": 2,
+                      "inboundConnection": false,
+                      "outboundConnection": false,
+                      "ScheduleChangeIndicator": false
+                    }
+                  }
+                }
+              },
+              {
+                "RPH": "2",
+                "FlightSegment": [
+                  {
+                    "AirMilesFlown": "0184",
+                    "ArrivalDateTime": "03-02T16:00",
+                    "DayOfWeekInd": "2",
+                    "DepartureDateTime": "2027-03-02T15:00",
+                    "ElapsedTime": "01.00",
+                    "eTicket": true,
+                    "FlightNumber": "0807",
+                    "NumberInParty": "02",
+                    "ResBookDesigCode": "T",
+                    "SegmentNumber": "0002",
+                    "SmokingAllowed": false,
+                    "SpecialMeal": false,
+                    "Status": "SS",
+                    "StopQuantity": "00",
+                    "IsPast": false,
+                    "CodeShare": false,
+                    "Id": "14",
+                    "DestinationLocation": {
+                      "LocationCode": "SIN",
+                      "Terminal": "TERMINAL 4",
+                      "TerminalCode": "4"
+                    },
+                    "Equipment": {
+                      "AirEquipType": "738"
+                    },
+                    "MarketingAirline": {
+                      "Code": "OD",
+                      "FlightNumber": "0807",
+                      "ResBookDesigCode": "T",
+                      "Banner": "MARKETED BY BATIK AIR MALAYSIA"
+                    },
+                    "Meal": [
+                      {
+                        "Code": "S"
+                      }
+                    ],
+                    "OperatingAirline": [
+                      {
+                        "Code": "OD",
+                        "FlightNumber": "0807",
+                        "ResBookDesigCode": "T",
+                        "Banner": "OPERATED BY BATIK AIR MALAYSIA"
+                      }
+                    ],
+                    "OperatingAirlinePricing": {
+                      "Code": "OD"
+                    },
+                    "DisclosureCarrier": {
+                      "Code": "OD",
+                      "DOT": false,
+                      "Banner": "BATIK AIR MALAYSIA"
+                    },
+                    "OriginLocation": {
+                      "LocationCode": "KUL",
+                      "Terminal": "TERMINAL 1",
+                      "TerminalCode": "1"
+                    },
+                    "SupplierRef": {
+                      "ID": "DCOD"
+                    },
+                    "UpdatedArrivalTime": "03-02T16:00",
+                    "UpdatedDepartureTime": "03-02T15:00",
+                    "Cabin": {
+                      "Code": "Y",
+                      "SabreCode": "Y",
+                      "Name": "ECONOMY",
+                      "ShortName": "ECONOMY",
+                      "Lang": "EN"
+                    }
+                  }
+                ],
+                "Product": {
+                  "ProductDetails": {
+                    "productCategory": "AIR",
+                    "ProductName": {
+                      "type": "AIR",
+                      "content": ""
+                    },
+                    "Air": {
+                      "sequence": 2,
+                      "segmentAssociationId": 3,
+                      "DepartureAirport": "KUL",
+                      "DepartureTerminalName": "TERMINAL 1",
+                      "DepartureTerminalCode": "1",
+                      "ArrivalAirport": "SIN",
+                      "ArrivalTerminalName": "TERMINAL 4",
+                      "ArrivalTerminalCode": "4",
+                      "EquipmentType": "738",
+                      "MarketingAirlineCode": "OD",
+                      "MarketingFlightNumber": "807",
+                      "MarketingClassOfService": "T",
+                      "Cabin": {
+                        "code": "Y",
+                        "sabreCode": "Y",
+                        "name": "ECONOMY",
+                        "shortName": "ECONOMY",
+                        "lang": "EN"
+                      },
+                      "MealCode": [
+                        "S"
+                      ],
+                      "ElapsedTime": 60,
+                      "AirMilesFlown": 184,
+                      "FunnelFlight": false,
+                      "ChangeOfGauge": false,
+                      "DisclosureCarrier": {
+                        "Code": "OD",
+                        "DOT": false,
+                        "Banner": "BATIK AIR MALAYSIA"
+                      },
+                      "AirlineRefId": "DCOD",
+                      "Eticket": true,
+                      "DepartureDateTime": "2027-03-02T15:00:00",
+                      "ArrivalDateTime": "2027-03-02T16:00:00",
+                      "FlightNumber": "807",
+                      "ClassOfService": "T",
+                      "ActionCode": "SS",
+                      "NumberInParty": 2,
+                      "inboundConnection": false,
+                      "outboundConnection": false,
+                      "ScheduleChangeIndicator": false
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "Ticketing": [
+            {
+              "RPH": "01",
+              "TicketTimeLimit": "TAW/"
+            }
+          ]
+        },
+        "ItineraryRef": {
+          "AirExtras": false,
+          "InhibitCode": "U",
+          "PartitionID": "AA",
+          "PrimeHostID": "1B",
+          "Header": [
+            "CURRENTLY DISPLAYING A PNR OWNED BY THE SABRE PRIME HOST",
+            "RULES AND FUNCTIONALITY FOR THAT PRIME HOST WILL APPLY"
+          ],
+          "Source": {
+            "PseudoCityCode": "4ZB8"
+          }
+        },
+        "OpenReservationElements": {
+          "OpenReservationElement": [
+            {
+              "id": "10",
+              "type": "PSG_DETAILS_MAIL",
+              "elementId": "pnr-10",
+              "Email": {
+                "comment": "",
+                "Address": "MANISH.AGGARWAL@TIKET.COM"
+              },
+              "NameAssociation": [
+                {
+                  "LastName": "AGGARWAL",
+                  "FirstName": "MANISH MR",
+                  "ReferenceId": 1,
+                  "NameRefNumber": "01.01"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Links": [
+    {
+      "rel": "self",
+      "href": "https://api.platform.sabre.com/v2.4.0/passenger/records?mode=create"
+    },
+    {
+      "rel": "linkTemplate",
+      "href": "https://api.platform.sabre.com/<version>/passenger/records?mode=<mode>"
+    }
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "code": "SUCCESS",
+  "message": "SUCCESS",
+  "data": {
+    "mandatoryRequest": {
+      "storeId": "TIKETCOM",
+      "channelId": "WEB",
+      "requestId": "8f9a9442-55ec-444b-8e67-b6948220eb8d",
+      "serviceId": "GATEWAY",
+      "resellerId": "",
+      "identity": "",
+      "username": "guest"
+    },
+    "integratorBookRequest": {
+      "distributionType": "sabre-gds",
+      "account": {
+        "name": "tiketcomSabre",
+        "code": "tiketcomSabre"
+      },
+      "adult": 1,
+      "child": 1,
+      "infant": 1,
+      "multiFare": true,
+      "validatingAirline": "GA",
+      "promotionCode": {
+        "id": "",
+        "name": ""
+      },
+      "flightSelect": "GA 836",
+      "contact": {
+        "profileId": "",
+        "firstName": "Manish",
+        "lastName": "Aggarwal",
+        "dob": "",
+        "phoneCode": "+91",
+        "phoneCodeCs": "",
+        "phoneCodePassenger": "",
+        "phoneNumber": "7042190130",
+        "phoneNumberCs": "",
+        "phoneNumberPassenger": "",
+        "title": "mr",
+        "gender": "",
+        "email": "manish.aggarwal@tiket.com",
+        "emailPassenger": "manish.aggarwal@tiket.com",
+        "emailAgent": "manish.aggarwal@tiket.com",
+        "accountId": ""
+      },
+      "paxes": [
+        {
+          "paxNumber": 10000,
+          "type": "adult",
+          "title": "mr",
+          "gender": "male",
+          "firstName": "Manish",
+          "lastName": "Aggarwal",
+          "originalFirstName": "Manish",
+          "originalLastName": "Aggarwal",
+          "nationality": "IN",
+          "dob": "1998-08-13",
+          "passport": {
+            "id": "A1234567",
+            "expired": "2036-12-17",
+            "country": "IN",
+            "issuingDate": "2017-12-06"
+          }
+        },
+        {
+          "paxNumber": 20000,
+          "type": "child",
+          "title": "mstr",
+          "gender": "male",
+          "firstName": "Akash",
+          "lastName": "Kumar",
+          "originalFirstName": "Akash",
+          "originalLastName": "Kumar",
+          "nationality": "IN",
+          "dob": "2021-12-15",
+          "passport": {
+            "id": "C1234543",
+            "expired": "2037-12-24",
+            "country": "IN",
+            "issuingDate": "2023-12-13"
+          }
+        },
+        {
+          "paxNumber": 30000,
+          "type": "infant",
+          "title": "mstr",
+          "gender": "male",
+          "firstName": "Krishna",
+          "lastName": "Aggarwal",
+          "originalFirstName": "Krishna",
+          "originalLastName": "Aggarwal",
+          "nationality": "ID",
+          "dob": "2025-12-25",
+          "passport": {
+            "id": "I1231311",
+            "expired": "2029-05-16",
+            "country": "ID",
+            "issuingDate": "2016-05-13"
+          }
+        }
+      ],
+      "itineraries": [
+        {
+          "airline": "GA",
+          "departure": "CGK",
+          "arrival": "SIN",
+          "date": "2027-03-02",
+          "connecting": "",
+          "international": 1,
+          "cabinClass": "ECONOMY",
+          "schedules": [
+            {
+              "arrivalDate": "2027-03-02 18:25",
+              "departureDate": "2027-03-02 15:40",
+              "operatingAirline": {
+                "code": "GA",
+                "number": "836"
+              },
+              "fareClass": "Y",
+              "origin": "CGK",
+              "destination": "SIN",
+              "marketingAirline": "GA",
+              "flightNumber": "836",
+              "marriageGroup": "O",
+              "fareBasisCodes": {
+                "adult": "YLOXID",
+                "child": "YLOXID",
+                "infant": "YLOXID"
+              }
+            }
+          ],
+          "brandedFare": {
+            "code": "ECOFLEXI",
+            "name": "ECO FLEXIBLE"
+          }
+        }
+      ],
+      "currency": "IDR",
+      "countryId": "ID",
+      "commission": 0,
+      "maxBookRetry": 0
+    },
+    "bookDetail": {
+      "distributionType": "sabre-gds",
+      "account": {
+        "name": "tiketcomSabre",
+        "code": "tiketcomSabre"
+      },
+      "corporateCodes": [],
+      "bookingCode": "WLAYZU",
+      "bookingExpired": "2026-09-03 20:30:12",
+      "originalCurrency": "IDR",
+      "originalBookingFare": {
+        "balanceDue": 18005400,
+        "bookedFare": 18005400,
+        "fare": 18005400,
+        "adultFare": 9642700,
+        "childFare": 7507700,
+        "infantFare": 855000,
+        "commission": 0,
+        "commissionPercent": 0,
+        "commissionAddons": 0,
+        "commissionPercentAddons": 0,
+        "nta": 18005400,
+        "ssrFee": {
+          "ssrFare": 0,
+          "baggageFare": 0,
+          "mealsFare": 0,
+          "seatsFare": 0,
+          "medicalsFare": 0,
+          "commissionBaggage": 0,
+          "commissionMeals": 0,
+          "commissionSeats": 0,
+          "commissionMedicals": 0,
+          "ssrItineraries": [
+            {
+              "departureDateTime": "",
+              "ssrPaxMeals": [],
+              "ssrPaxSeats": [],
+              "ssrPaxBaggages": [],
+              "ssrPaxMedicals": []
+            }
+          ]
+        },
+        "markup": 0,
+        "fareExcludeSsr": 18005400,
+        "discount": 0
+      },
+      "promotionCode": {
+        "id": "",
+        "name": ""
+      },
+      "itineraries": [
+        {
+          "international": 1,
+          "originalCurrency": "IDR",
+          "originalFare": 18005400,
+          "originalAdultFare": 9642700,
+          "originalChildFare": 7507700,
+          "originalInfantFare": 855000,
+          "adult": 1,
+          "child": 1,
+          "infant": 1,
+          "cabinClass": "ECONOMY",
+          "schedules": [
+            {
+              "departureDate": "2027-03-02 15:40",
+              "arrivalDate": "2027-03-02 18:25",
+              "operatingAirline": {
+                "code": "GA",
+                "number": "836"
+              },
+              "departureTerminal": "3",
+              "arrivalTerminal": "3",
+              "fareBasisCodes": {
+                "adult": "YLOXID",
+                "child": "YLOXID",
+                "infant": "YLOXID"
+              },
+              "fareClass": "Y",
+              "origin": "CGK",
+              "destination": "SIN",
+              "marketingAirline": "GA",
+              "marketingFlightNumber": "836",
+              "baggage": {
+                "cabin": {
+                  "unit": "1",
+                  "measurement": "Pc",
+                  "qty": 0,
+                  "validateBaggage": false
+                },
+                "checkIn": {
+                  "unit": "2",
+                  "measurement": "Pc",
+                  "qty": 0,
+                  "validateBaggage": false
+                }
+              },
+              "stopQuantity": "0",
+              "aircraftType": "332",
+              "supplierBookingCode": "DCGA",
+              "connectings": null
+            }
+          ],
+          "markupInfo": null,
+          "breakdownInfo": {
+            "originalAdult": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 8543000,
+              "nta": 9642700,
+              "commission": 0,
+              "fare": 9642700,
+              "tax": 1099700,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalChild": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 6408000,
+              "nta": 7507700,
+              "commission": 0,
+              "fare": 7507700,
+              "tax": 1099700,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalInfant": {
+              "psc": 0,
+              "iwjr": 0,
+              "discount": 0,
+              "baseFare": 855000,
+              "nta": 855000,
+              "commission": 0,
+              "fare": 855000,
+              "tax": 0,
+              "markup": 0,
+              "privateMarkup": 0,
+              "breakdownTaxes": null
+            },
+            "originalBaggage": 0
+          }
+        }
+      ],
+      "passengerFareInfo": {
+        "originalAdult": {
+          "psc": 0,
+          "iwjr": 0,
+          "discount": 0,
+          "baseFare": 8543000,
+          "nta": 9642700,
+          "commission": 0,
+          "fare": 9642700,
+          "tax": 1099700,
+          "markup": 0,
+          "privateMarkup": 0,
+          "breakdownTaxes": null
+        },
+        "originalChild": {
+          "psc": 0,
+          "iwjr": 0,
+          "discount": 0,
+          "baseFare": 6408000,
+          "nta": 7507700,
+          "commission": 0,
+          "fare": 7507700,
+          "tax": 1099700,
+          "markup": 0,
+          "privateMarkup": 0,
+          "breakdownTaxes": null
+        },
+        "originalInfant": {
+          "psc": 0,
+          "iwjr": 0,
+          "discount": 0,
+          "baseFare": 855000,
+          "nta": 855000,
+          "commission": 0,
+          "fare": 855000,
+          "tax": 0,
+          "markup": 0,
+          "privateMarkup": 0,
+          "breakdownTaxes": null
+        },
+        "originalBaggage": 0
+      },
+      "additionalData": {
+        "validatingAirline": "GA"
+      }
+    }
+  },
+  "serverTime": "2026-09-03T20:00:12.480072+05:30"
+}

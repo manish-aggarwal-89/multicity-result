@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI">1</eb:PartyId></eb:From><eb:To><eb:PartyId eb:type="URI">1</eb:PartyId></eb:To><eb:CPAId>4ZB8</eb:CPAId><eb:ConversationId>0c6f1c4e-95b4-4de0-a152-86db8ab7f01ctesting</eb:ConversationId><eb:Service>EndTransactionLLSRQ</eb:Service><eb:Action>EndTransactionLLSRS</eb:Action><eb:MessageData><eb:MessageId>5939739521313731660</eb:MessageId><eb:Timestamp>2026-09-03T14:28:51</eb:Timestamp><eb:RefToMessageId>tiketcom</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESG!ICESMSLB\/RES.LB!1788445730008!5495!549!1</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><EndTransactionRS xmlns="http://webservices.sabre.com/sabreXML/2011/10" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stl="http://services.sabre.com/STL/v01" Version="2.2.0">
+ <stl:ApplicationResults status="Complete">
+  <stl:Success timeStamp="2026-09-03T14:28:51Z">
+   <stl:SystemSpecificResults>
+    <stl:HostCommand LNIATA="39377F">6107944§E</stl:HostCommand>
+   </stl:SystemSpecificResults>
+  </stl:Success>
+ </stl:ApplicationResults>
+ <ItineraryRef ID="FUEDFZ">
+  <Source CreateDateTime="2026-09-03T09:28"/>
+ </ItineraryRef>
+ <Text>OK 0928 FUEDFZ</Text>
+</EndTransactionRS></soap-env:Body></soap-env:Envelope>
