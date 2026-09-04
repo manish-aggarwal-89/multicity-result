@@ -1,0 +1,6 @@
+{
+  "booking_code": "PYQWYB",
+  "pnr_released": false,
+  "executed": false,
+  "cancel_curl": "curl --location 'http://localhost:8857/tix-flight-sabre-gds-integrator/cancel-booking' \\\n  --request POST \\\n  --header 'storeId: TIKETCOM' \\\n  --header 'channelId: WEB' \\\n  --header 'username: guest' \\\n  --header 'serviceId: GATEWAY' \\\n  --header 'requestId: e0fc214b-4184-4a68-9759-8f339188091a' \\\n  --header 'Content-Type: application/json' \\\n  --header 'Accept: application/json' \\\n  --data '{\"distributionType\": \"sabre-gds\", \"account\": {\"code\": \"tiketcomSabre\", \"name\": \"tiketcomSabre\"}, \"bookingCode\": \"PYQWYB\"}'"
+}
