@@ -1,0 +1,57 @@
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-19-35_363243/01_search.response.json.gz.b64
+  s_aee3fcb39128f5::t_e0b332175e084a 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-19-35_363243/02_revalidate.response.json
+  s_aee3fcb39128f5::t_66b3adc3d5b9fd 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-19-35_363243/03_revalidate_itin_prp.response.json
+  s_aee3fcb39128f5::t_7b87f879c03412 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-19-35_363243/04_booking.response.json
+  s_aee3fcb39128f5::t_0cbff1a82fd6ee 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-19-35_363243/ISSUANCE_INFO.json
+  s_aee3fcb39128f5::t_2d434253dcca41 1-6
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-19-35_363243/LOCAL-1A-4SEG_run.txt
+  s_aee3fcb39128f5::t_baad9b44365b63 1-5509
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-19-35_363243/outbound/01_search.supplier_FindFare_request.json
+  s_aee3fcb39128f5::t_b12258b05bebef 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-19-35_363243/outbound/01_search.supplier_FindFare_response.json
+  s_aee3fcb39128f5::t_9cda8383509917 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-19-35_363243/outbound/02_revalidate.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_8392a85abf5c69 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-19-35_363243/outbound/02_revalidate.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_b15b6c5fda3825 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-19-35_363243/outbound/02_revalidate.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_c77f04721278d2 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-19-35_363243/outbound/03_revalidate_itin_prp.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_4eabc46f8ab5ea 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-19-35_363243/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_aff8685279f4e2 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-19-35_363243/outbound/03_revalidate_itin_prp.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_9dc9328f566784 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-19-35_363243/outbound/04_booking.supplier_Book_request.json
+  s_aee3fcb39128f5::t_04b51dea5c61c4 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-19-35_363243/outbound/04_booking.supplier_Book_response.json
+  s_aee3fcb39128f5::t_c16f63ec5e73ad 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-19-35_363243/outbound/04_booking.supplier_GetAuthorization_response.json
+  s_aee3fcb39128f5::t_ba74ed61fe8556 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-19-35_363243/outbound/04_booking.supplier_GetAuthorization_response_2.json
+  s_aee3fcb39128f5::t_7929872c07e4b8 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-19-35_363243/outbound/04_booking.supplier_RevalidateItinerary_request.json
+  s_aee3fcb39128f5::t_487c82a03e64ac 1
+local_runs/LOCAL-1A-4SEG/2026-09-04_12-19-35_363243/outbound/04_booking.supplier_RevalidateItinerary_response.json
+  s_aee3fcb39128f5::t_96152ec4407040 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "54fcce182f85833db796b36e21f2666813256dec",
+  "prompts": {},
+  "sessions": {
+    "s_aee3fcb39128f5": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "a5da34fa-e97a-45a6-8af7-4bbe32899467",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "manish-aggarwal-89 <manish.aggarwal@tiket.com>"
+    }
+  }
+}
