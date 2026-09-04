@@ -1,0 +1,75 @@
+{
+    "code": "SUCCESS",
+    "message": "SUCCESS",
+    "data": {
+        "mandatoryRequest": {
+            "storeId": "TIKETCOM",
+            "channelId": "WEB",
+            "requestId": "manish-issue-sabre-LOCAL-1A-2SEG",
+            "serviceId": "GATEWAY",
+            "resellerId": "",
+            "identity": "",
+            "username": "guest"
+        },
+        "integratorIssuedRequest": {
+            "distributionType": "sabre",
+            "account": {
+                "name": "tiketcomSabre",
+                "code": "tiketcomSabre"
+            },
+            "bookingCode": "PSHPQY",
+            "flightSelect": "",
+            "commission": 0,
+            "balanceDue": 0,
+            "nta": 0,
+            "orderDetailId": "",
+            "departureDate": "",
+            "paxes": [
+                {
+                    "type": "adult",
+                    "title": "mr",
+                    "gender": "male",
+                    "firstName": "Manish",
+                    "lastName": "Aggarwal",
+                    "nationality": "IN",
+                    "dob": "1998-08-13",
+                    "passport": {
+                        "id": "A1234567",
+                        "expired": "2036-12-17",
+                        "country": "IN",
+                        "issuingDate": "2017-12-06"
+                    },
+                    "commission": null,
+                    "originalCommission": null,
+                    "paxNumber": 10000,
+                    "pqrNumber": 0
+                }
+            ]
+        },
+        "issuedDetail": {
+            "status": "SUCCESS",
+            "distributionType": "sabre",
+            "bookingCode": "PSHPQY",
+            "paymentAmount": 4725800,
+            "paxes": [
+                {
+                    "name": "MR MANISH AGGARWAL",
+                    "ticketNumber": "6185231881051"
+                }
+            ],
+            "ticketType": "paxes_data",
+            "bookingCodeSabres": [
+                {
+                    "flightNumber": "SQ 961",
+                    "bookingCode": "EJDV6N"
+                },
+                {
+                    "flightNumber": "SQ 714",
+                    "bookingCode": "EJDV6N"
+                }
+            ]
+        },
+        "additionalData": null
+    },
+    "serverTime": "2026-09-04T12:49:44.546771+05:30"
+}

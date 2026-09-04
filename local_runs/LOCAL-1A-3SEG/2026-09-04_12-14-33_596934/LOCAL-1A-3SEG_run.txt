@@ -1,0 +1,126 @@
+==================================================================
+SABRE-GDS MULTI-CITY RUN DUMP
+==================================================================
+id: LOCAL-1A-3SEG
+alias: None
+title: Local issuance prep (prp) — 1 adult 3 segments — search → revalidate → revalidate_prp → booking (issuance curl only)
+flow: search_to_issuance_curl   steps_executed: ['search']
+trip_type: MULTI_CITY
+final: ERROR
+ran_at: 2026-09-04T12:14:34+05:30
+dump_dir: /Users/manishaggarwal/Desktop/mcp-apis/sabre-gds-multicity/search_to_issuance_curl/2026-09-04_12-14-33_596934
+booking_code: 
+
+==================================================================
+APIs HIT (1)
+==================================================================
+   1. search                 POST  HTTP None ERROR     335 ms  localhost
+      http://localhost:8857/tix-flight-sabre-gds-integrator/search
+
+------------------------------------------------------------------
+STEP 1 — search   [localhost]
+------------------------------------------------------------------
+HTTP None  ok=False  335 ms  at 2026-09-04T06:44:34.263264+00:00
+POST http://localhost:8857/tix-flight-sabre-gds-integrator/search
+
+REQUEST CURL
+curl --location 'http://localhost:8857/tix-flight-sabre-gds-integrator/search' \
+  --request POST \
+  --header 'storeId: TIKETCOM' \
+  --header 'channelId: WEB' \
+  --header 'username: guest' \
+  --header 'serviceId: GATEWAY' \
+  --header 'requestId: 48b0c8ae-5919-47a4-9632-4623fe028404' \
+  --header 'Content-Type: application/json' \
+  --header 'Accept: application/json' \
+  --data '{"distributionType": "sabre-gds", "supplierRequest": {"accounts": [{"code": "tiketcomSabre", "name": "tiketcomSabre"}], "airlines": []}, "supplierMappings": [{"account": {"code": "tiketcomSabre", "name": "tiketcomSabre"}, "airlines": [], "ignoreAirline": true, "multiFare": false}], "origin": "CGK", "destination": "KUL", "adult": 1, "child": 0, "infant": 0, "departureDate": "2027-03-03", "returnDate": "", "cabinClass": "ECONOMY", "tripTypes": ["MULTI_CITY"], "international": 1, "currency": {"departureCurrency": "IDR"}, "routes": [{"origin": "CGK", "destination": "SIN", "departureDate": "2027-03-03", "currency": "IDR"}, {"origin": "SIN", "destination": "BKK", "departureDate": "2027-03-06", "currency": "IDR"}, {"origin": "BKK", "destination": "KUL", "departureDate": "2027-03-09", "currency": "IDR"}], "additionalData": {}, "blacklistMap": {}}'
+
+REQUEST HEADERS
+  storeId: TIKETCOM
+  channelId: WEB
+  username: guest
+  serviceId: GATEWAY
+  requestId: 48b0c8ae-5919-47a4-9632-4623fe028404
+  Content-Type: application/json
+  Accept: application/json
+
+REQUEST BODY
+{
+  "distributionType": "sabre-gds",
+  "supplierRequest": {
+    "accounts": [
+      {
+        "code": "tiketcomSabre",
+        "name": "tiketcomSabre"
+      }
+    ],
+    "airlines": []
+  },
+  "supplierMappings": [
+    {
+      "account": {
+        "code": "tiketcomSabre",
+        "name": "tiketcomSabre"
+      },
+      "airlines": [],
+      "ignoreAirline": true,
+      "multiFare": false
+    }
+  ],
+  "origin": "CGK",
+  "destination": "KUL",
+  "adult": 1,
+  "child": 0,
+  "infant": 0,
+  "departureDate": "2027-03-03",
+  "returnDate": "",
+  "cabinClass": "ECONOMY",
+  "tripTypes": [
+    "MULTI_CITY"
+  ],
+  "international": 1,
+  "currency": {
+    "departureCurrency": "IDR"
+  },
+  "routes": [
+    {
+      "origin": "CGK",
+      "destination": "SIN",
+      "departureDate": "2027-03-03",
+      "currency": "IDR"
+    },
+    {
+      "origin": "SIN",
+      "destination": "BKK",
+      "departureDate": "2027-03-06",
+      "currency": "IDR"
+    },
+    {
+      "origin": "BKK",
+      "destination": "KUL",
+      "departureDate": "2027-03-09",
+      "currency": "IDR"
+    }
+  ],
+  "additionalData": {},
+  "blacklistMap": {}
+}
+
+RESPONSE HEADERS
+(none)
+
+RESPONSE BODY
+(none)
+
+ERROR
+[Errno 61] Connection refused
+
+==================================================================
+VALIDATION / BUSINESS RULES
+==================================================================
+  integrator_reachable: ERROR
+    reason: search: [Errno 61] Connection refused — integrator did not serve the request. Nothing was validated; this is an environment failure, not a contract or supplier-data result.
+
+==================================================================
+FINAL RESULT: ERROR
+==================================================================

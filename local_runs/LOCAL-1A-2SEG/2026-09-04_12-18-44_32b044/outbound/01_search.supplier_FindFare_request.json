@@ -4,7 +4,7 @@
     "POS": {
       "Source": [
         {
-          "PseudoCityCode": "4ZB8",
+          "PseudoCityCode": "W3JD",
           "RequestorID": {
             "Type": "1",
             "CompanyName": {
@@ -19,7 +19,7 @@
     "OriginDestinationInformation": [
       {
         "RPH": "1",
-        "DepartureDateTime": "2027-03-02T00:00:00",
+        "DepartureDateTime": "2027-03-03T00:00:00",
         "OriginLocation": {
           "LocationCode": "CGK",
           "LocationType": "A"
@@ -37,7 +37,7 @@
       },
       {
         "RPH": "2",
-        "DepartureDateTime": "2027-03-05T00:00:00",
+        "DepartureDateTime": "2027-03-06T00:00:00",
         "OriginLocation": {
           "LocationCode": "SIN",
           "LocationType": "A"
@@ -74,31 +74,13 @@
     },
     "TravelerInfoSummary": {
       "SeatsRequested": [
-        2
+        1
       ],
       "AirTravelerAvail": [
         {
           "PassengerTypeQuantity": [
             {
               "Code": "ADT",
-              "Quantity": 1,
-              "TPA_Extensions": {
-                "VoluntaryChanges": {
-                  "Match": "Info"
-                }
-              }
-            },
-            {
-              "Code": "CNN",
-              "Quantity": 1,
-              "TPA_Extensions": {
-                "VoluntaryChanges": {
-                  "Match": "Info"
-                }
-              }
-            },
-            {
-              "Code": "INF",
               "Quantity": 1,
               "TPA_Extensions": {
                 "VoluntaryChanges": {

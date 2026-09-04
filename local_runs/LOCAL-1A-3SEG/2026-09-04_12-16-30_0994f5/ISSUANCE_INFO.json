@@ -1,0 +1,6 @@
+{
+  "booking_code": "PKUPAT",
+  "pnr_released": false,
+  "executed": false,
+  "cancel_curl": "curl --location 'http://localhost:8857/tix-flight-sabre-gds-integrator/cancel-booking' \\\n  --request POST \\\n  --header 'storeId: TIKETCOM' \\\n  --header 'channelId: WEB' \\\n  --header 'username: guest' \\\n  --header 'serviceId: GATEWAY' \\\n  --header 'requestId: c9bd8e44-d074-4022-a7d2-e0b9ceddba53' \\\n  --header 'Content-Type: application/json' \\\n  --header 'Accept: application/json' \\\n  --data '{\"distributionType\": \"sabre-gds\", \"account\": {\"code\": \"tiketcomSabre\", \"name\": \"tiketcomSabre\"}, \"bookingCode\": \"PKUPAT\"}'"
+}

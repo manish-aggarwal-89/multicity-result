@@ -1,0 +1,83 @@
+{
+    "code": "SUCCESS",
+    "message": "SUCCESS",
+    "data": {
+        "mandatoryRequest": {
+            "storeId": "TIKETCOM",
+            "channelId": "WEB",
+            "requestId": "a8440885-09fa-4fdd-93d1-aa6db1c73fa1",
+            "serviceId": "GATEWAY",
+            "resellerId": "",
+            "identity": "",
+            "username": "guest"
+        },
+        "integratorIssuedRequest": {
+            "distributionType": "sabre",
+            "account": {
+                "name": "tiketcomSabre",
+                "code": "tiketcomSabre"
+            },
+            "bookingCode": "PSBYQS",
+            "flightSelect": "",
+            "commission": 0,
+            "balanceDue": 0,
+            "nta": 0,
+            "orderDetailId": "",
+            "departureDate": "",
+            "paxes": [
+                {
+                    "type": "adult",
+                    "title": "mr",
+                    "gender": "male",
+                    "firstName": "Manish",
+                    "lastName": "Aggarwal",
+                    "nationality": "IN",
+                    "dob": "1998-08-13",
+                    "passport": {
+                        "id": "A1234567",
+                        "expired": "2036-12-17",
+                        "country": "IN",
+                        "issuingDate": "2017-12-06"
+                    },
+                    "commission": null,
+                    "originalCommission": null,
+                    "paxNumber": 10000,
+                    "pqrNumber": 0
+                }
+            ]
+        },
+        "issuedDetail": {
+            "status": "SUCCESS",
+            "distributionType": "sabre",
+            "bookingCode": "PSBYQS",
+            "paymentAmount": 38226100,
+            "paxes": [
+                {
+                    "name": "MR MANISH AGGARWAL",
+                    "ticketNumber": "9785231881049"
+                }
+            ],
+            "ticketType": "paxes_data",
+            "bookingCodeSabres": [
+                {
+                    "flightNumber": "VJ 854",
+                    "bookingCode": "RASM9F"
+                },
+                {
+                    "flightNumber": "VJ 811",
+                    "bookingCode": "RASM9F"
+                },
+                {
+                    "flightNumber": "VJ 812",
+                    "bookingCode": "RASM9F"
+                },
+                {
+                    "flightNumber": "VJ 803",
+                    "bookingCode": "RASM9F"
+                }
+            ]
+        },
+        "additionalData": null
+    },
+    "serverTime": "2026-09-04T12:31:10.422414+05:30"
+}

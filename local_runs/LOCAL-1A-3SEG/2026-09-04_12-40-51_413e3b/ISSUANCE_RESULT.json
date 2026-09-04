@@ -1,0 +1,83 @@
+{
+    "code": "SUCCESS",
+    "message": "SUCCESS",
+    "data": {
+        "mandatoryRequest": {
+            "storeId": "TIKETCOM",
+            "channelId": "WEB",
+            "requestId": "manish-issue-sabre-3seg",
+            "serviceId": "GATEWAY",
+            "resellerId": "",
+            "identity": "",
+            "username": "guest"
+        },
+        "integratorIssuedRequest": {
+            "distributionType": "sabre",
+            "account": {
+                "name": "tiketcomSabre",
+                "code": "tiketcomSabre"
+            },
+            "bookingCode": "PRAJTK",
+            "flightSelect": "",
+            "commission": 0,
+            "balanceDue": 0,
+            "nta": 0,
+            "orderDetailId": "",
+            "departureDate": "",
+            "paxes": [
+                {
+                    "type": "adult",
+                    "title": "mr",
+                    "gender": "male",
+                    "firstName": "Manish",
+                    "lastName": "Aggarwal",
+                    "nationality": "IN",
+                    "dob": "1998-08-13",
+                    "passport": {
+                        "id": "A1234567",
+                        "expired": "2036-12-17",
+                        "country": "IN",
+                        "issuingDate": "2017-12-06"
+                    },
+                    "commission": null,
+                    "originalCommission": null,
+                    "paxNumber": 10000,
+                    "pqrNumber": 0
+                }
+            ]
+        },
+        "issuedDetail": {
+            "status": "SUCCESS",
+            "distributionType": "sabre",
+            "bookingCode": "PRAJTK",
+            "paymentAmount": 8428300,
+            "paxes": [
+                {
+                    "name": "MR MANISH AGGARWAL",
+                    "ticketNumber": "6185231881050"
+                }
+            ],
+            "ticketType": "paxes_data",
+            "bookingCodeSabres": [
+                {
+                    "flightNumber": "TR 279",
+                    "bookingCode": "UYZVKW"
+                },
+                {
+                    "flightNumber": "TR 636",
+                    "bookingCode": "UYZVKW"
+                },
+                {
+                    "flightNumber": "TR 609",
+                    "bookingCode": "UYZVKW"
+                },
+                {
+                    "flightNumber": "TR 468",
+                    "bookingCode": "UYZVKW"
+                }
+            ]
+        },
+        "additionalData": null
+    },
+    "serverTime": "2026-09-04T12:44:32.087976+05:30"
+}
